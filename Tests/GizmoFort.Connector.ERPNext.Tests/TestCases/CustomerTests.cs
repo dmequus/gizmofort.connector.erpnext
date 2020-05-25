@@ -21,9 +21,11 @@ namespace GizmoFort.Connector.ERPNext.Tests.TestCases
             ERPCustomer initial_data = new ERPCustomer();
             initial_data.customer_type = CustomerType.Individual;
             initial_data.customer_name = test_customer_name;
-            initial_data.customer_group = "Individual";
+            initial_data.customer_group = "All Customer Groups";
             initial_data.website = test_customer_website;
-            initial_data.territory = "Australia";
+            initial_data.territory = "All Territories";
+            initial_data.mobile_no = "216-346-2739";
+            initial_data.tax_category = "Ohio Tax";
 
             #region Test - Insert
 
@@ -57,7 +59,7 @@ namespace GizmoFort.Connector.ERPNext.Tests.TestCases
             ERPCustomer customer = new ERPCustomer(full_customer_object);
             Assert.IsTrue(customer.customer_name == test_customer_name, "Customer name is invalid");
             Assert.IsTrue(customer.website == test_customer_website, "Customer website is invalid");
-            Assert.IsTrue(customer.status == CustomerStatus.Active, "Customer website is invalid");
+//            Assert.IsTrue(customer.status == CustomerStatus.Active, "Customer website is invalid");
 
             #endregion
 

@@ -50,6 +50,7 @@ namespace GizmoFort.Connector.ERPNext.PublicTypes
 
         #endregion
 
+        public static readonly DocType Address = new DocType("Address");
         public static readonly DocType Customer = new DocType("Customer");
         public static readonly DocType Item = new DocType("Item");
         public static readonly DocType StockLedgerEntry = new DocType("Stock Ledger Entry");

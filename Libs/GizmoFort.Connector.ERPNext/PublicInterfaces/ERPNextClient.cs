@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Dynamic;
 using System.Linq;
 using System.Net;
@@ -9,7 +8,7 @@ using GizmoFort.Connector.ERPNext.InternalTypes;
 using GizmoFort.Connector.ERPNext.PublicTypes;
 using GizmoFort.Connector.ERPNext.Utils;
 using RestSharp;
-using RestSharp.Deserializers;
+using RestSharp.Serialization.Json;
 using RestRequest = RestSharp.RestRequest;
 
 namespace GizmoFort.Connector.ERPNext.PublicInterfaces

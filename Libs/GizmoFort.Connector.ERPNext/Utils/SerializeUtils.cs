@@ -1,4 +1,4 @@
-using RestSharp.Serializers;
+using RestSharp.Serialization.Json;
 
 namespace GizmoFort.Connector.ERPNext.Utils
 {
