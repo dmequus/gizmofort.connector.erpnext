@@ -15,7 +15,7 @@ namespace GizmoFort.Connector.ERPNext.Tests.ERPTypes.Item
 
             var item_code = Guid.NewGuid().ToString();
 
-            var item = ERPItem.Create(item_code, "Hydration Water bag variant", "Products");
+            var item = ERPItem.Create("Hydration Water bag variant", item_code, "Products", "Each");
 
             var created_erp_item = item_service.Create(item);
 

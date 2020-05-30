@@ -19,7 +19,7 @@ namespace GizmoFort.Connector.ERPNext.Tests.TestCases
             string test_customer_website = Guid.NewGuid().ToString();
 
             ERPCustomer initial_data = new ERPCustomer();
-            initial_data.customer_type = CustomerType.Individual;
+            initial_data.customer_type = Customertype.Individual;
             initial_data.customer_name = test_customer_name;
             initial_data.customer_group = "All Customer Groups";
             initial_data.website = test_customer_website;

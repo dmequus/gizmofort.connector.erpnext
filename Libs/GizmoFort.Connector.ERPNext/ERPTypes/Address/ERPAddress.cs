@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using GizmoFort.Connector.ERPNext.PublicTypes;
+﻿using GizmoFort.Connector.ERPNext.PublicTypes;
 using GizmoFort.Connector.ERPNext.WrapperTypes;
 
 namespace GizmoFort.Connector.ERPNext.ERPTypes.Address

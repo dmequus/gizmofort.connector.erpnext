@@ -6,7 +6,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer
 {
     public class CustomerService : SubServiceBase<ERPCustomer>
     {
-        public CustomerService(ERPNextClient client) 
+        public CustomerService(ERPNextClient client)
             : base(DocType.Customer, client) { }
 
         protected override ERPCustomer fromERPObject(ERPObject obj)

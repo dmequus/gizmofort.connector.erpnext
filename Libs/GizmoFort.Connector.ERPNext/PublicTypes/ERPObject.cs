@@ -10,7 +10,7 @@ namespace GizmoFort.Connector.ERPNext.PublicTypes
         public DocType ObjectType { get; private set; }
         private ExpandoObject data;
 
-        public ERPObject(DocType objectType) 
+        public ERPObject(DocType objectType)
             : this(objectType, new ExpandoObject()) { }
 
         public ERPObject(DocType objectType, ExpandoObject data)

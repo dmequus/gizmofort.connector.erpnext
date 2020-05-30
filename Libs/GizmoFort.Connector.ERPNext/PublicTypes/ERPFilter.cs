@@ -30,7 +30,8 @@ namespace GizmoFort.Connector.ERPNext.PublicTypes
 
     internal class OperatorFilterUtils
     {
-        internal static string ToString(OperatorFilter opFilter) {
+        internal static string ToString(OperatorFilter opFilter)
+        {
             switch (opFilter)
             {
                 case OperatorFilter.Equals:

@@ -29,7 +29,8 @@ namespace GizmoFort.Connector.ERPNext.WrapperTypes
 
         protected static T parseEnum<T>(string enumString)
         {
-            if (!typeof(T).IsEnum) {
+            if (!typeof(T).IsEnum)
+            {
                 throw new ArgumentException("T must be an enum");
             }
 

@@ -9,7 +9,8 @@ namespace GizmoFort.Connector.ERPNext.Utils
         {
             ExpandoObject target = new ExpandoObject();
             var target_iface = (IDictionary<string, object>)target;
-            foreach (var kvp in (IDictionary<string, object>)source) {
+            foreach (var kvp in (IDictionary<string, object>)source)
+            {
                 target_iface.Add(kvp);
             }
 

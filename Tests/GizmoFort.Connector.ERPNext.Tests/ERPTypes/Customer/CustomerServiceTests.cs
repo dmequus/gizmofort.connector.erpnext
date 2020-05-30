@@ -24,7 +24,7 @@ namespace GizmoFort.Connector.ERPNext.PublicInterfaces.SubServices.Tests
             string test_name = Guid.NewGuid().ToString();
             string test_customer_website = Guid.NewGuid().ToString();
 
-            ERPCustomer initial_data = ERPCustomer.Create(test_name, CustomerType.Individual, "Individual", "Australia");
+            ERPCustomer initial_data = ERPCustomer.Create(test_name, Customertype.Individual, "Individual", "Australia");
             initial_data.website = test_customer_website;
 
             #region Test - Insert

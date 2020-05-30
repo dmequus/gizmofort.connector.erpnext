@@ -6,9 +6,8 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
 {
     public class ItemService : SubServiceBase<ERPItem>
     {
-        public ItemService(ERPNextClient client) : base(DocType.Item, client)
-        {
-        }
+        public ItemService(ERPNextClient client)
+            : base(DocType.Item, client) { }
 
         protected override ERPItem fromERPObject(ERPObject obj)
         {
