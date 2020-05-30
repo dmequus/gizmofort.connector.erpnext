@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract
             set { data.contract_terms = value; }
         }
 
-        private int _is_signed = 0;
-        public int is_signed
+        public long is_signed
         {
-            get { return data._is_signed; }
-            set { data._is_signed = value; }
+            get { return data.is_signed; }
+            set { data.is_signed = value; }
         }
 
         public string party_user
@@ -97,11 +96,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract
             set { data.contract_template = value; }
         }
 
-        private int _requires_fulfilment = 0;
-        public int requires_fulfilment
+        public long requires_fulfilment
         {
-            get { return data._requires_fulfilment; }
-            set { data._requires_fulfilment = value; }
+            get { return data.requires_fulfilment; }
+            set { data.requires_fulfilment = value; }
         }
 
         public string fulfilment_deadline

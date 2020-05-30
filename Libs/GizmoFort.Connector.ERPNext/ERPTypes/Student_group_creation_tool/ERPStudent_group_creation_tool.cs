@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group_creation_tool
         public ERPStudent_group_creation_tool() : this(new ERPObject(DocType.Student_group_creation_tool)) { }
         public ERPStudent_group_creation_tool(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_group_creation_tool Create(string academicyear, string academicterm, string program, int separategroups, string courses)
+        public static ERPStudent_group_creation_tool Create(string academicyear, string academicterm, string program, long separategroups, string courses)
 
         {
             ERPStudent_group_creation_tool obj = new ERPStudent_group_creation_tool();
@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group_creation_tool
             set { data.program = value; }
         }
 
-        private int _separate_groups = 0;
-        public int separate_groups
+        public long separate_groups
         {
-            get { return data._separate_groups; }
-            set { data._separate_groups = value; }
+            get { return data.separate_groups; }
+            set { data.separate_groups = value; }
         }
 
         public string courses

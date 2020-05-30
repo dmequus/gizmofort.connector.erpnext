@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gocardless_settings
         public ERPGocardless_settings() : this(new ERPObject(DocType.Gocardless_settings)) { }
         public ERPGocardless_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPGocardless_settings Create(string gatewayname, string accesstoken, string webhookssecret, int usesandbox)
+        public static ERPGocardless_settings Create(string gatewayname, string accesstoken, string webhookssecret, long usesandbox)
 
         {
             ERPGocardless_settings obj = new ERPGocardless_settings();
@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gocardless_settings
             set { data.webhooks_secret = value; }
         }
 
-        private int _use_sandbox = 0;
-        public int use_sandbox
+        public long use_sandbox
         {
-            get { return data._use_sandbox; }
-            set { data._use_sandbox = value; }
+            get { return data.use_sandbox; }
+            set { data.use_sandbox = value; }
         }
 
 

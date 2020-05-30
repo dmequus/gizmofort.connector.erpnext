@@ -50,18 +50,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle_log
             set { data.date = value; }
         }
 
-        private int _odometer = 0;
         public int odometer
         {
-            get { return data._odometer; }
-            set { data._odometer = value; }
+            get { return data.odometer; }
+            set { data.odometer = value; }
         }
 
-        private int _last_odometer = 0;
         public int last_odometer
         {
-            get { return data._last_odometer; }
-            set { data._last_odometer = value; }
+            get { return data.last_odometer; }
+            set { data.last_odometer = value; }
         }
 
         public string model
@@ -76,18 +74,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle_log
             set { data.make = value; }
         }
 
-        private double _fuel_qty = 0.0;
         public double fuel_qty
         {
-            get { return data._fuel_qty; }
-            set { data._fuel_qty = value; }
+            get { return data.fuel_qty; }
+            set { data.fuel_qty = value; }
         }
 
-        private double _price = 0.0;
         public double price
         {
-            get { return data._price; }
-            set { data._price = value; }
+            get { return data.price; }
+            set { data.price = value; }
         }
 
         public string supplier

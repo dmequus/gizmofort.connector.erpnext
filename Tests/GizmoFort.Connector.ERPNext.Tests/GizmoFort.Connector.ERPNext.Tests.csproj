@@ -65,6 +65,7 @@
     <Compile Include="TestCases\AddressTests.cs" />
     <Compile Include="TestCases\AutoLoginTests.cs" />
     <Compile Include="TestCases\CustomerTests.cs" />
+    <Compile Include="TestCases\ItemGroupTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libs\GizmoFort.Connector.ERPNext\GizmoFort.Connector.ERPNext.csproj">

@@ -60,67 +60,58 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.variant_of = value; }
         }
 
-        private int _is_item_from_hub = 0;
-        public int is_item_from_hub
+        public long is_item_from_hub
         {
-            get { return data._is_item_from_hub; }
-            set { data._is_item_from_hub = value; }
+            get { return data.is_item_from_hub; }
+            set { data.is_item_from_hub = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private int _allow_alternative_item = 0;
-        public int allow_alternative_item
+        public long allow_alternative_item
         {
-            get { return data._allow_alternative_item; }
-            set { data._allow_alternative_item = value; }
+            get { return data.allow_alternative_item; }
+            set { data.allow_alternative_item = value; }
         }
 
-        private int _is_stock_item = 0;
-        public int is_stock_item
+        public long is_stock_item
         {
-            get { return data._is_stock_item; }
-            set { data._is_stock_item = value; }
+            get { return data.is_stock_item; }
+            set { data.is_stock_item = value; }
         }
 
-        private int _include_item_in_manufacturing = 0;
-        public int include_item_in_manufacturing
+        public long include_item_in_manufacturing
         {
-            get { return data._include_item_in_manufacturing; }
-            set { data._include_item_in_manufacturing = value; }
+            get { return data.include_item_in_manufacturing; }
+            set { data.include_item_in_manufacturing = value; }
         }
 
-        private double _opening_stock = 0.0;
         public double opening_stock
         {
-            get { return data._opening_stock; }
-            set { data._opening_stock = value; }
+            get { return data.opening_stock; }
+            set { data.opening_stock = value; }
         }
 
-        private double _valuation_rate = 0.0;
         public double valuation_rate
         {
-            get { return data._valuation_rate; }
-            set { data._valuation_rate = value; }
+            get { return data.valuation_rate; }
+            set { data.valuation_rate = value; }
         }
 
-        private double _standard_rate = 0.0;
         public double standard_rate
         {
-            get { return data._standard_rate; }
-            set { data._standard_rate = value; }
+            get { return data.standard_rate; }
+            set { data.standard_rate = value; }
         }
 
-        private int _is_fixed_asset = 0;
-        public int is_fixed_asset
+        public long is_fixed_asset
         {
-            get { return data._is_fixed_asset; }
-            set { data._is_fixed_asset = value; }
+            get { return data.is_fixed_asset; }
+            set { data.is_fixed_asset = value; }
         }
 
         public string asset_category
@@ -159,11 +150,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.barcodes = value; }
         }
 
-        private int _shelf_life_in_days = 0;
         public int shelf_life_in_days
         {
-            get { return data._shelf_life_in_days; }
-            set { data._shelf_life_in_days = value; }
+            get { return data.shelf_life_in_days; }
+            set { data.shelf_life_in_days = value; }
         }
 
         public string end_of_life
@@ -190,11 +180,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.warranty_period = value; }
         }
 
-        private double _weight_per_unit = 0.0;
         public double weight_per_unit
         {
-            get { return data._weight_per_unit; }
-            set { data._weight_per_unit = value; }
+            get { return data.weight_per_unit; }
+            set { data.weight_per_unit = value; }
         }
 
         public string weight_uom
@@ -215,18 +204,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.uoms = value; }
         }
 
-        private int _has_batch_no = 0;
-        public int has_batch_no
+        public long has_batch_no
         {
-            get { return data._has_batch_no; }
-            set { data._has_batch_no = value; }
+            get { return data.has_batch_no; }
+            set { data.has_batch_no = value; }
         }
 
-        private int _create_new_batch = 0;
-        public int create_new_batch
+        public long create_new_batch
         {
-            get { return data._create_new_batch; }
-            set { data._create_new_batch = value; }
+            get { return data.create_new_batch; }
+            set { data.create_new_batch = value; }
         }
 
         public string batch_number_series
@@ -235,32 +222,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.batch_number_series = value; }
         }
 
-        private int _has_expiry_date = 0;
-        public int has_expiry_date
+        public long has_expiry_date
         {
-            get { return data._has_expiry_date; }
-            set { data._has_expiry_date = value; }
+            get { return data.has_expiry_date; }
+            set { data.has_expiry_date = value; }
         }
 
-        private int _retain_sample = 0;
-        public int retain_sample
+        public long retain_sample
         {
-            get { return data._retain_sample; }
-            set { data._retain_sample = value; }
+            get { return data.retain_sample; }
+            set { data.retain_sample = value; }
         }
 
-        private int _sample_quantity = 0;
         public int sample_quantity
         {
-            get { return data._sample_quantity; }
-            set { data._sample_quantity = value; }
+            get { return data.sample_quantity; }
+            set { data.sample_quantity = value; }
         }
 
-        private int _has_serial_no = 0;
-        public int has_serial_no
+        public long has_serial_no
         {
-            get { return data._has_serial_no; }
-            set { data._has_serial_no = value; }
+            get { return data.has_serial_no; }
+            set { data.has_serial_no = value; }
         }
 
         public string serial_no_series
@@ -269,11 +252,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.serial_no_series = value; }
         }
 
-        private int _has_variants = 0;
-        public int has_variants
+        public long has_variants
         {
-            get { return data._has_variants; }
-            set { data._has_variants = value; }
+            get { return data.has_variants; }
+            set { data.has_variants = value; }
         }
 
         public Variantbasedon variant_based_on
@@ -294,11 +276,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.item_defaults = value; }
         }
 
-        private int _is_purchase_item = 0;
-        public int is_purchase_item
+        public long is_purchase_item
         {
-            get { return data._is_purchase_item; }
-            set { data._is_purchase_item = value; }
+            get { return data.is_purchase_item; }
+            set { data.is_purchase_item = value; }
         }
 
         public string purchase_uom
@@ -307,39 +288,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.purchase_uom = value; }
         }
 
-        private double _min_order_qty = 0.0;
         public double min_order_qty
         {
-            get { return data._min_order_qty; }
-            set { data._min_order_qty = value; }
+            get { return data.min_order_qty; }
+            set { data.min_order_qty = value; }
         }
 
-        private double _safety_stock = 0.0;
         public double safety_stock
         {
-            get { return data._safety_stock; }
-            set { data._safety_stock = value; }
+            get { return data.safety_stock; }
+            set { data.safety_stock = value; }
         }
 
-        private int _lead_time_days = 0;
         public int lead_time_days
         {
-            get { return data._lead_time_days; }
-            set { data._lead_time_days = value; }
+            get { return data.lead_time_days; }
+            set { data.lead_time_days = value; }
         }
 
-        private double _last_purchase_rate = 0.0;
         public double last_purchase_rate
         {
-            get { return data._last_purchase_rate; }
-            set { data._last_purchase_rate = value; }
+            get { return data.last_purchase_rate; }
+            set { data.last_purchase_rate = value; }
         }
 
-        private int _is_customer_provided_item = 0;
-        public int is_customer_provided_item
+        public long is_customer_provided_item
         {
-            get { return data._is_customer_provided_item; }
-            set { data._is_customer_provided_item = value; }
+            get { return data.is_customer_provided_item; }
+            set { data.is_customer_provided_item = value; }
         }
 
         public string customer
@@ -348,11 +324,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.customer = value; }
         }
 
-        private int _delivered_by_supplier = 0;
-        public int delivered_by_supplier
+        public long delivered_by_supplier
         {
-            get { return data._delivered_by_supplier; }
-            set { data._delivered_by_supplier = value; }
+            get { return data.delivered_by_supplier; }
+            set { data.delivered_by_supplier = value; }
         }
 
         public string supplier_items
@@ -379,18 +354,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.sales_uom = value; }
         }
 
-        private int _is_sales_item = 0;
-        public int is_sales_item
+        public long is_sales_item
         {
-            get { return data._is_sales_item; }
-            set { data._is_sales_item = value; }
+            get { return data.is_sales_item; }
+            set { data.is_sales_item = value; }
         }
 
-        private double _max_discount = 0.0;
         public double max_discount
         {
-            get { return data._max_discount; }
-            set { data._max_discount = value; }
+            get { return data.max_discount; }
+            set { data.max_discount = value; }
         }
 
         public string deferred_revenue_account
@@ -399,18 +372,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.deferred_revenue_account = value; }
         }
 
-        private int _enable_deferred_revenue = 0;
-        public int enable_deferred_revenue
+        public long enable_deferred_revenue
         {
-            get { return data._enable_deferred_revenue; }
-            set { data._enable_deferred_revenue = value; }
+            get { return data.enable_deferred_revenue; }
+            set { data.enable_deferred_revenue = value; }
         }
 
-        private int _no_of_months = 0;
         public int no_of_months
         {
-            get { return data._no_of_months; }
-            set { data._no_of_months = value; }
+            get { return data.no_of_months; }
+            set { data.no_of_months = value; }
         }
 
         public string deferred_expense_account
@@ -419,18 +390,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.deferred_expense_account = value; }
         }
 
-        private int _enable_deferred_expense = 0;
-        public int enable_deferred_expense
+        public long enable_deferred_expense
         {
-            get { return data._enable_deferred_expense; }
-            set { data._enable_deferred_expense = value; }
+            get { return data.enable_deferred_expense; }
+            set { data.enable_deferred_expense = value; }
         }
 
-        private int _no_of_months_exp = 0;
         public int no_of_months_exp
         {
-            get { return data._no_of_months_exp; }
-            set { data._no_of_months_exp = value; }
+            get { return data.no_of_months_exp; }
+            set { data.no_of_months_exp = value; }
         }
 
         public string customer_items
@@ -445,18 +414,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.taxes = value; }
         }
 
-        private int _inspection_required_before_purchase = 0;
-        public int inspection_required_before_purchase
+        public long inspection_required_before_purchase
         {
-            get { return data._inspection_required_before_purchase; }
-            set { data._inspection_required_before_purchase = value; }
+            get { return data.inspection_required_before_purchase; }
+            set { data.inspection_required_before_purchase = value; }
         }
 
-        private int _inspection_required_before_delivery = 0;
-        public int inspection_required_before_delivery
+        public long inspection_required_before_delivery
         {
-            get { return data._inspection_required_before_delivery; }
-            set { data._inspection_required_before_delivery = value; }
+            get { return data.inspection_required_before_delivery; }
+            set { data.inspection_required_before_delivery = value; }
         }
 
         public string quality_inspection_template
@@ -471,11 +438,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.default_bom = value; }
         }
 
-        private int _is_sub_contracted_item = 0;
-        public int is_sub_contracted_item
+        public long is_sub_contracted_item
         {
-            get { return data._is_sub_contracted_item; }
-            set { data._is_sub_contracted_item = value; }
+            get { return data.is_sub_contracted_item; }
+            set { data.is_sub_contracted_item = value; }
         }
 
         public string customer_code
@@ -484,18 +450,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.customer_code = value; }
         }
 
-        private int _show_in_website = 0;
-        public int show_in_website
+        public long show_in_website
         {
-            get { return data._show_in_website; }
-            set { data._show_in_website = value; }
+            get { return data.show_in_website; }
+            set { data.show_in_website = value; }
         }
 
-        private int _show_variant_in_website = 0;
-        public int show_variant_in_website
+        public long show_variant_in_website
         {
-            get { return data._show_variant_in_website; }
-            set { data._show_variant_in_website = value; }
+            get { return data.show_variant_in_website; }
+            set { data.show_variant_in_website = value; }
         }
 
         public string route
@@ -504,11 +468,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.route = value; }
         }
 
-        private int _weightage = 0;
         public int weightage
         {
-            get { return data._weightage; }
-            set { data._weightage = value; }
+            get { return data.weightage; }
+            set { data.weightage = value; }
         }
 
         public string slideshow
@@ -559,18 +522,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.website_content = value; }
         }
 
-        private double _total_projected_qty = 0.0;
         public double total_projected_qty
         {
-            get { return data._total_projected_qty; }
-            set { data._total_projected_qty = value; }
+            get { return data.total_projected_qty; }
+            set { data.total_projected_qty = value; }
         }
 
-        private int _publish_in_hub = 0;
-        public int publish_in_hub
+        public long publish_in_hub
         {
-            get { return data._publish_in_hub; }
-            set { data._publish_in_hub = value; }
+            get { return data.publish_in_hub; }
+            set { data.publish_in_hub = value; }
         }
 
         public string hub_category_to_publish
@@ -585,32 +546,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item
             set { data.hub_warehouse = value; }
         }
 
-        private int _synced_with_hub = 0;
-        public int synced_with_hub
+        public long synced_with_hub
         {
-            get { return data._synced_with_hub; }
-            set { data._synced_with_hub = value; }
+            get { return data.synced_with_hub; }
+            set { data.synced_with_hub = value; }
         }
 
-        private double _over_delivery_receipt_allowance = 0.0;
         public double over_delivery_receipt_allowance
         {
-            get { return data._over_delivery_receipt_allowance; }
-            set { data._over_delivery_receipt_allowance = value; }
+            get { return data.over_delivery_receipt_allowance; }
+            set { data.over_delivery_receipt_allowance = value; }
         }
 
-        private double _over_billing_allowance = 0.0;
         public double over_billing_allowance
         {
-            get { return data._over_billing_allowance; }
-            set { data._over_billing_allowance = value; }
+            get { return data.over_billing_allowance; }
+            set { data.over_billing_allowance = value; }
         }
 
-        private int _auto_create_assets = 0;
-        public int auto_create_assets
+        public long auto_create_assets
         {
-            get { return data._auto_create_assets; }
-            set { data._auto_create_assets = value; }
+            get { return data.auto_create_assets; }
+            set { data.auto_create_assets = value; }
         }
 
         public string default_item_manufacturer

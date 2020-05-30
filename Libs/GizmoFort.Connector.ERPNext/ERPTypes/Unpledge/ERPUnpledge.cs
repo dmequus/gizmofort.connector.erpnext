@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Unpledge
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string loan_security_type
@@ -53,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Unpledge
             set { data.uom = value; }
         }
 
-        private double _haircut = 0.0;
         public double haircut
         {
-            get { return data._haircut; }
-            set { data._haircut = value; }
+            get { return data.haircut; }
+            set { data.haircut = value; }
         }
 
 

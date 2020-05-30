@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Request_for_quotation_item
             set { data.description = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string schedule_date
@@ -116,11 +115,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Request_for_quotation_item
             set { data.item_group = value; }
         }
 
-        private int _page_break = 0;
-        public int page_break
+        public long page_break
         {
-            get { return data._page_break; }
-            set { data._page_break = value; }
+            get { return data.page_break; }
+            set { data.page_break = value; }
         }
 
 

@@ -53,11 +53,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_manufacturer
             set { data.description = value; }
         }
 
-        private int _is_default = 0;
-        public int is_default
+        public long is_default
         {
-            get { return data._is_default; }
-            set { data._is_default = value; }
+            get { return data.is_default; }
+            set { data.is_default = value; }
         }
 
 

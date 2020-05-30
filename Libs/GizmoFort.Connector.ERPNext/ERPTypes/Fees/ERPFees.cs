@@ -81,18 +81,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fees
             set { data.fee_schedule = value; }
         }
 
-        private int _include_payment = 0;
-        public int include_payment
+        public long include_payment
         {
-            get { return data._include_payment; }
-            set { data._include_payment = value; }
+            get { return data.include_payment; }
+            set { data.include_payment = value; }
         }
 
-        private int _send_payment_request = 0;
-        public int send_payment_request
+        public long send_payment_request
         {
-            get { return data._send_payment_request; }
-            set { data._send_payment_request = value; }
+            get { return data.send_payment_request; }
+            set { data.send_payment_request = value; }
         }
 
         public string posting_time
@@ -101,11 +99,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fees
             set { data.posting_time = value; }
         }
 
-        private int _seta_posting_time = 0;
-        public int seta_posting_time
+        public long seta_posting_time
         {
-            get { return data._seta_posting_time; }
-            set { data._seta_posting_time = value; }
+            get { return data.seta_posting_time; }
+            set { data.seta_posting_time = value; }
         }
 
         public string program_enrollment
@@ -168,11 +165,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fees
             set { data.amended_from = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
         public string grand_total_in_words
@@ -181,11 +177,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fees
             set { data.grand_total_in_words = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
         public string letter_head

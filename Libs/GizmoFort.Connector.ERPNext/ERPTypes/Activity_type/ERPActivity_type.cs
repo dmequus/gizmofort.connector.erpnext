@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Activity_type
         public ERPActivity_type() : this(new ERPObject(DocType.Activity_type)) { }
         public ERPActivity_type(ERPObject obj) : base(obj) { }
 
-        public static ERPActivity_type Create(string activitytype, double costingrate, double billingrate, int disabled)
+        public static ERPActivity_type Create(string activitytype, double costingrate, double billingrate, long disabled)
 
         {
             ERPActivity_type obj = new ERPActivity_type();
@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Activity_type
 
         }
 
-        private double _costing_rate = 0.0;
         public double costing_rate
         {
-            get { return data._costing_rate; }
-            set { data._costing_rate = value; }
+            get { return data.costing_rate; }
+            set { data.costing_rate = value; }
         }
 
-        private double _billing_rate = 0.0;
         public double billing_rate
         {
-            get { return data._billing_rate; }
-            set { data._billing_rate = value; }
+            get { return data.billing_rate; }
+            set { data.billing_rate = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
 

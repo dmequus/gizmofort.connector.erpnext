@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice_payment
         public ERPSales_invoice_payment() : this(new ERPObject(DocType.Sales_invoice_payment)) { }
         public ERPSales_invoice_payment(ERPObject obj) : base(obj) { }
 
-        public static ERPSales_invoice_payment Create(int keyDELdefault, string modeofpayment, double amount, string account, string type, double baseamount, string clearancedate)
+        public static ERPSales_invoice_payment Create(long keyDELdefault, string modeofpayment, double amount, string account, string type, double baseamount, string clearancedate)
 
         {
             ERPSales_invoice_payment obj = new ERPSales_invoice_payment();
@@ -22,11 +22,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice_payment
             return obj;
         }
 
-        private int _keyDELdefault = 0;
-        public int keyDELdefault
+        public long keyDELdefault
         {
-            get { return data._keyDELdefault; }
-            set { data._keyDELdefault = value; }
+            get { return data.keyDELdefault; }
+            set { data.keyDELdefault = value; }
         }
 
         public string mode_of_payment
@@ -35,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice_payment
             set { data.mode_of_payment = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string account
@@ -54,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice_payment
             set { data.type = value; }
         }
 
-        private double _base_amount = 0.0;
         public double base_amount
         {
-            get { return data._base_amount; }
-            set { data._base_amount = value; }
+            get { return data.base_amount; }
+            set { data.base_amount = value; }
         }
 
         public string clearance_date

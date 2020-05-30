@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Blanket_order_item
 
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
         public string item_name
@@ -41,18 +40,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Blanket_order_item
             set { data.item_name = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _ordered_qty = 0.0;
         public double ordered_qty
         {
-            get { return data._ordered_qty; }
-            set { data._ordered_qty = value; }
+            get { return data.ordered_qty; }
+            set { data.ordered_qty = value; }
         }
 
         public string terms_and_conditions

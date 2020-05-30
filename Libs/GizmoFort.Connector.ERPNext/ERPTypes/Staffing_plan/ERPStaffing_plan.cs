@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Staffing_plan
             set { data.staffing_details = value; }
         }
 
-        private double _total_estimated_budget = 0.0;
         public double total_estimated_budget
         {
-            get { return data._total_estimated_budget; }
-            set { data._total_estimated_budget = value; }
+            get { return data.total_estimated_budget; }
+            set { data.total_estimated_budget = value; }
         }
 
         public string amended_from

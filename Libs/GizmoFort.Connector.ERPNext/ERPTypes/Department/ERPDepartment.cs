@@ -40,18 +40,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Department
             set { data.parent_department = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string leave_block_list
@@ -72,18 +70,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Department
             set { data.expense_approvers = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

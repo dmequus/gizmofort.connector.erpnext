@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Workstation
 
         }
 
-        private int _production_capacity = 0;
         public int production_capacity
         {
-            get { return data._production_capacity; }
-            set { data._production_capacity = value; }
+            get { return data.production_capacity; }
+            set { data.production_capacity = value; }
         }
 
         public string description
@@ -41,39 +40,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Workstation
             set { data.description = value; }
         }
 
-        private double _hour_rate_electricity = 0.0;
         public double hour_rate_electricity
         {
-            get { return data._hour_rate_electricity; }
-            set { data._hour_rate_electricity = value; }
+            get { return data.hour_rate_electricity; }
+            set { data.hour_rate_electricity = value; }
         }
 
-        private double _hour_rate_consumable = 0.0;
         public double hour_rate_consumable
         {
-            get { return data._hour_rate_consumable; }
-            set { data._hour_rate_consumable = value; }
+            get { return data.hour_rate_consumable; }
+            set { data.hour_rate_consumable = value; }
         }
 
-        private double _hour_rate_rent = 0.0;
         public double hour_rate_rent
         {
-            get { return data._hour_rate_rent; }
-            set { data._hour_rate_rent = value; }
+            get { return data.hour_rate_rent; }
+            set { data.hour_rate_rent = value; }
         }
 
-        private double _hour_rate_labour = 0.0;
         public double hour_rate_labour
         {
-            get { return data._hour_rate_labour; }
-            set { data._hour_rate_labour = value; }
+            get { return data.hour_rate_labour; }
+            set { data.hour_rate_labour = value; }
         }
 
-        private double _hour_rate = 0.0;
         public double hour_rate
         {
-            get { return data._hour_rate; }
-            set { data._hour_rate = value; }
+            get { return data.hour_rate; }
+            set { data.hour_rate = value; }
         }
 
         public string working_hours

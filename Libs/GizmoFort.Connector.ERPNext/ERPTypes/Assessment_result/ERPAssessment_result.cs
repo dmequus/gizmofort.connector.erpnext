@@ -102,18 +102,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Assessment_result
             set { data.details = value; }
         }
 
-        private double _maximum_score = 0.0;
         public double maximum_score
         {
-            get { return data._maximum_score; }
-            set { data._maximum_score = value; }
+            get { return data.maximum_score; }
+            set { data.maximum_score = value; }
         }
 
-        private double _total_score = 0.0;
         public double total_score
         {
-            get { return data._total_score; }
-            set { data._total_score = value; }
+            get { return data.total_score; }
+            set { data.total_score = value; }
         }
 
         public string grade

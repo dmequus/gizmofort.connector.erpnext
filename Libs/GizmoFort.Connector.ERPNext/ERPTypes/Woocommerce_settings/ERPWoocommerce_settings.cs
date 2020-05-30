@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Woocommerce_settings
             set { data.company = value; }
         }
 
-        private int _enable_sync = 0;
-        public int enable_sync
+        public long enable_sync
         {
-            get { return data._enable_sync; }
-            set { data._enable_sync = value; }
+            get { return data.enable_sync; }
+            set { data.enable_sync = value; }
         }
 
         public string woocommerce_server_url
@@ -103,11 +102,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Woocommerce_settings
             set { data.endpoint = value; }
         }
 
-        private int _delivery_after_days = 0;
         public int delivery_after_days
         {
-            get { return data._delivery_after_days; }
-            set { data._delivery_after_days = value; }
+            get { return data.delivery_after_days; }
+            set { data.delivery_after_days = value; }
         }
 
 

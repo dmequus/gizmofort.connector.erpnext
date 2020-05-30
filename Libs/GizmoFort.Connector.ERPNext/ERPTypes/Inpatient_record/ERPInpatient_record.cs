@@ -118,11 +118,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Inpatient_record
             set { data.admitted_datetime = value; }
         }
 
-        private int _expected_length_of_stay = 0;
         public int expected_length_of_stay
         {
-            get { return data._expected_length_of_stay; }
-            set { data._expected_length_of_stay = value; }
+            get { return data.expected_length_of_stay; }
+            set { data.expected_length_of_stay = value; }
         }
 
         public string expected_discharge

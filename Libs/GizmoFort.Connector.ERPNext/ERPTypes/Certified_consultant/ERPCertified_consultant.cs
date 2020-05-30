@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Certified_consultant
         public ERPCertified_consultant() : this(new ERPObject(DocType.Certified_consultant)) { }
         public ERPCertified_consultant(ERPObject obj) : base(obj) { }
 
-        public static ERPCertified_consultant Create(string nameofconsultant, string country, string email, string phone, string websiteurl, string address, string image, string certificationapplication, string fromdate, string todate, string introduction, string details, string discussid, string githubid, int showinwebsite)
+        public static ERPCertified_consultant Create(string nameofconsultant, string country, string email, string phone, string websiteurl, string address, string image, string certificationapplication, string fromdate, string todate, string introduction, string details, string discussid, string githubid, long showinwebsite)
 
         {
             ERPCertified_consultant obj = new ERPCertified_consultant();
@@ -119,11 +119,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Certified_consultant
             set { data.github_id = value; }
         }
 
-        private int _show_in_website = 0;
-        public int show_in_website
+        public long show_in_website
         {
-            get { return data._show_in_website; }
-            set { data._show_in_website = value; }
+            get { return data.show_in_website; }
+            set { data.show_in_website = value; }
         }
 
 

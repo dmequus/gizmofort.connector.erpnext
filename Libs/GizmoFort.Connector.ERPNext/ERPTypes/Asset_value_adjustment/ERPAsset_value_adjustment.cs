@@ -36,18 +36,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_value_adjustment
             set { data.date = value; }
         }
 
-        private double _current_asset_value = 0.0;
         public double current_asset_value
         {
-            get { return data._current_asset_value; }
-            set { data._current_asset_value = value; }
+            get { return data.current_asset_value; }
+            set { data.current_asset_value = value; }
         }
 
-        private double _new_asset_value = 0.0;
         public double new_asset_value
         {
-            get { return data._new_asset_value; }
-            set { data._new_asset_value = value; }
+            get { return data.new_asset_value; }
+            set { data.new_asset_value = value; }
         }
 
         public string company
@@ -74,11 +72,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_value_adjustment
             set { data.journal_entry = value; }
         }
 
-        private double _difference_amount = 0.0;
         public double difference_amount
         {
-            get { return data._difference_amount; }
-            set { data._difference_amount = value; }
+            get { return data.difference_amount; }
+            set { data.difference_amount = value; }
         }
 
         public string cost_center

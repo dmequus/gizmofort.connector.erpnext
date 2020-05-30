@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Accounts_settings
             return obj;
         }
 
-        private int _auto_accounting_for_stock = 0;
-        public int auto_accounting_for_stock
+        public long auto_accounting_for_stock
         {
-            get { return data._auto_accounting_for_stock; }
-            set { data._auto_accounting_for_stock = value; }
+            get { return data.auto_accounting_for_stock; }
+            set { data.auto_accounting_for_stock = value; }
         }
 
         public string acc_frozen_upto
@@ -46,109 +45,94 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Accounts_settings
             set { data.credit_controller = value; }
         }
 
-        private int _check_supplier_invoice_uniqueness = 0;
-        public int check_supplier_invoice_uniqueness
+        public long check_supplier_invoice_uniqueness
         {
-            get { return data._check_supplier_invoice_uniqueness; }
-            set { data._check_supplier_invoice_uniqueness = value; }
+            get { return data.check_supplier_invoice_uniqueness; }
+            set { data.check_supplier_invoice_uniqueness = value; }
         }
 
-        private int _make_payment_via_journal_entry = 0;
-        public int make_payment_via_journal_entry
+        public long make_payment_via_journal_entry
         {
-            get { return data._make_payment_via_journal_entry; }
-            set { data._make_payment_via_journal_entry = value; }
+            get { return data.make_payment_via_journal_entry; }
+            set { data.make_payment_via_journal_entry = value; }
         }
 
-        private int _unlink_payment_on_cancellation_of_invoice = 0;
-        public int unlink_payment_on_cancellation_of_invoice
+        public long unlink_payment_on_cancellation_of_invoice
         {
-            get { return data._unlink_payment_on_cancellation_of_invoice; }
-            set { data._unlink_payment_on_cancellation_of_invoice = value; }
+            get { return data.unlink_payment_on_cancellation_of_invoice; }
+            set { data.unlink_payment_on_cancellation_of_invoice = value; }
         }
 
-        private int _unlink_advance_payment_on_cancelation_of_order = 0;
-        public int unlink_advance_payment_on_cancelation_of_order
+        public long unlink_advance_payment_on_cancelation_of_order
         {
-            get { return data._unlink_advance_payment_on_cancelation_of_order; }
-            set { data._unlink_advance_payment_on_cancelation_of_order = value; }
+            get { return data.unlink_advance_payment_on_cancelation_of_order; }
+            set { data.unlink_advance_payment_on_cancelation_of_order = value; }
         }
 
-        private int _book_asset_depreciation_entry_automatically = 0;
-        public int book_asset_depreciation_entry_automatically
+        public long book_asset_depreciation_entry_automatically
         {
-            get { return data._book_asset_depreciation_entry_automatically; }
-            set { data._book_asset_depreciation_entry_automatically = value; }
+            get { return data.book_asset_depreciation_entry_automatically; }
+            set { data.book_asset_depreciation_entry_automatically = value; }
         }
 
-        private int _allow_cost_center_in_entry_of_bs_account = 0;
-        public int allow_cost_center_in_entry_of_bs_account
+        public long allow_cost_center_in_entry_of_bs_account
         {
-            get { return data._allow_cost_center_in_entry_of_bs_account; }
-            set { data._allow_cost_center_in_entry_of_bs_account = value; }
+            get { return data.allow_cost_center_in_entry_of_bs_account; }
+            set { data.allow_cost_center_in_entry_of_bs_account = value; }
         }
 
-        private int _add_taxes_from_item_tax_template = 0;
-        public int add_taxes_from_item_tax_template
+        public long add_taxes_from_item_tax_template
         {
-            get { return data._add_taxes_from_item_tax_template; }
-            set { data._add_taxes_from_item_tax_template = value; }
+            get { return data.add_taxes_from_item_tax_template; }
+            set { data.add_taxes_from_item_tax_template = value; }
         }
 
-        private int _show_inclusive_tax_in_print = 0;
-        public int show_inclusive_tax_in_print
+        public long show_inclusive_tax_in_print
         {
-            get { return data._show_inclusive_tax_in_print; }
-            set { data._show_inclusive_tax_in_print = value; }
+            get { return data.show_inclusive_tax_in_print; }
+            set { data.show_inclusive_tax_in_print = value; }
         }
 
-        private int _show_payment_schedule_in_print = 0;
-        public int show_payment_schedule_in_print
+        public long show_payment_schedule_in_print
         {
-            get { return data._show_payment_schedule_in_print; }
-            set { data._show_payment_schedule_in_print = value; }
+            get { return data.show_payment_schedule_in_print; }
+            set { data.show_payment_schedule_in_print = value; }
         }
 
-        private int _allow_stale = 0;
-        public int allow_stale
+        public long allow_stale
         {
-            get { return data._allow_stale; }
-            set { data._allow_stale = value; }
+            get { return data.allow_stale; }
+            set { data.allow_stale = value; }
         }
 
-        private int _stale_days = 0;
         public int stale_days
         {
-            get { return data._stale_days; }
-            set { data._stale_days = value; }
+            get { return data.stale_days; }
+            set { data.stale_days = value; }
         }
 
-        private int _use_custom_cash_flow = 0;
-        public int use_custom_cash_flow
+        public long use_custom_cash_flow
         {
-            get { return data._use_custom_cash_flow; }
-            set { data._use_custom_cash_flow = value; }
+            get { return data.use_custom_cash_flow; }
+            set { data.use_custom_cash_flow = value; }
         }
 
-        private int _automatically_fetch_payment_terms = 0;
-        public int automatically_fetch_payment_terms
+        public long automatically_fetch_payment_terms
         {
-            get { return data._automatically_fetch_payment_terms; }
-            set { data._automatically_fetch_payment_terms = value; }
+            get { return data.automatically_fetch_payment_terms; }
+            set { data.automatically_fetch_payment_terms = value; }
         }
 
-        private double _over_billing_allowance = 0.0;
         public double over_billing_allowance
         {
-            get { return data._over_billing_allowance; }
-            set { data._over_billing_allowance = value; }
+            get { return data.over_billing_allowance; }
+            set { data.over_billing_allowance = value; }
         }
 
-        private int _automatically_process_deferred_accounting_entry = 0;
-        public int automatically_process_deferred_accounting_entry
+        public long automatically_process_deferred_accounting_entry
         {
-            get { return data._automatically_process_deferred_accounting_entry; }
-            set { data._automatically_process_deferred_accounting_entry = value; }
+            get { return data.automatically_process_deferred_accounting_entry; }
+            set { data.automatically_process_deferred_accounting_entry = value; }
         }
 
 

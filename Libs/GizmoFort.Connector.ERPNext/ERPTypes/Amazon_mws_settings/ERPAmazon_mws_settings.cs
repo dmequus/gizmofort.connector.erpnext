@@ -132,32 +132,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Amazon_mws_settings
             set { data.after_date = value; }
         }
 
-        private int _enable_amazon = 0;
-        public int enable_amazon
+        public long enable_amazon
         {
-            get { return data._enable_amazon; }
-            set { data._enable_amazon = value; }
+            get { return data.enable_amazon; }
+            set { data.enable_amazon = value; }
         }
 
-        private int _taxes_charges = 0;
-        public int taxes_charges
+        public long taxes_charges
         {
-            get { return data._taxes_charges; }
-            set { data._taxes_charges = value; }
+            get { return data.taxes_charges; }
+            set { data.taxes_charges = value; }
         }
 
-        private int _max_retry_limit = 0;
         public int max_retry_limit
         {
-            get { return data._max_retry_limit; }
-            set { data._max_retry_limit = value; }
+            get { return data.max_retry_limit; }
+            set { data.max_retry_limit = value; }
         }
 
-        private int _enable_sync = 0;
-        public int enable_sync
+        public long enable_sync
         {
-            get { return data._enable_sync; }
-            set { data._enable_sync = value; }
+            get { return data.enable_sync; }
+            set { data.enable_sync = value; }
         }
 
 

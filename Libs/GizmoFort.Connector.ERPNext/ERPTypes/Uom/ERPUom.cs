@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Uom
         public ERPUom() : this(new ERPObject(DocType.Uom)) { }
         public ERPUom(ERPObject obj) : base(obj) { }
 
-        public static ERPUom Create(string uomname, int mustbewholenumber)
+        public static ERPUom Create(string uomname, long mustbewholenumber)
 
         {
             ERPUom obj = new ERPUom();
@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Uom
 
         }
 
-        private int _must_be_whole_number = 0;
-        public int must_be_whole_number
+        public long must_be_whole_number
         {
-            get { return data._must_be_whole_number; }
-            set { data._must_be_whole_number = value; }
+            get { return data.must_be_whole_number; }
+            set { data.must_be_whole_number = value; }
         }
 
 

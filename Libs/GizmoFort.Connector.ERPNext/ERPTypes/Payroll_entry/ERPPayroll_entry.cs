@@ -80,11 +80,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payroll_entry
             set { data.designation = value; }
         }
 
-        private int _number_of_employees = 0;
         public int number_of_employees
         {
-            get { return data._number_of_employees; }
-            set { data._number_of_employees = value; }
+            get { return data.number_of_employees; }
+            set { data.number_of_employees = value; }
         }
 
         public string employees
@@ -93,11 +92,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payroll_entry
             set { data.employees = value; }
         }
 
-        private int _validate_attendance = 0;
-        public int validate_attendance
+        public long validate_attendance
         {
-            get { return data._validate_attendance; }
-            set { data._validate_attendance = value; }
+            get { return data.validate_attendance; }
+            set { data.validate_attendance = value; }
         }
 
         public string attendance_detail_html
@@ -106,25 +104,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payroll_entry
             set { data.attendance_detail_html = value; }
         }
 
-        private int _salary_slip_based_on_timesheet = 0;
-        public int salary_slip_based_on_timesheet
+        public long salary_slip_based_on_timesheet
         {
-            get { return data._salary_slip_based_on_timesheet; }
-            set { data._salary_slip_based_on_timesheet = value; }
+            get { return data.salary_slip_based_on_timesheet; }
+            set { data.salary_slip_based_on_timesheet = value; }
         }
 
-        private int _deduct_tax_for_unclaimed_employee_benefits = 0;
-        public int deduct_tax_for_unclaimed_employee_benefits
+        public long deduct_tax_for_unclaimed_employee_benefits
         {
-            get { return data._deduct_tax_for_unclaimed_employee_benefits; }
-            set { data._deduct_tax_for_unclaimed_employee_benefits = value; }
+            get { return data.deduct_tax_for_unclaimed_employee_benefits; }
+            set { data.deduct_tax_for_unclaimed_employee_benefits = value; }
         }
 
-        private int _deduct_tax_for_unsubmitted_tax_exemption_proof = 0;
-        public int deduct_tax_for_unsubmitted_tax_exemption_proof
+        public long deduct_tax_for_unsubmitted_tax_exemption_proof
         {
-            get { return data._deduct_tax_for_unsubmitted_tax_exemption_proof; }
-            set { data._deduct_tax_for_unsubmitted_tax_exemption_proof = value; }
+            get { return data.deduct_tax_for_unsubmitted_tax_exemption_proof; }
+            set { data.deduct_tax_for_unsubmitted_tax_exemption_proof = value; }
         }
 
         public string project
@@ -145,18 +140,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payroll_entry
             set { data.amended_from = value; }
         }
 
-        private int _salary_slips_created = 0;
-        public int salary_slips_created
+        public long salary_slips_created
         {
-            get { return data._salary_slips_created; }
-            set { data._salary_slips_created = value; }
+            get { return data.salary_slips_created; }
+            set { data.salary_slips_created = value; }
         }
 
-        private int _salary_slips_submitted = 0;
-        public int salary_slips_submitted
+        public long salary_slips_submitted
         {
-            get { return data._salary_slips_submitted; }
-            set { data._salary_slips_submitted = value; }
+            get { return data.salary_slips_submitted; }
+            set { data.salary_slips_submitted = value; }
         }
 
         public string bank_account

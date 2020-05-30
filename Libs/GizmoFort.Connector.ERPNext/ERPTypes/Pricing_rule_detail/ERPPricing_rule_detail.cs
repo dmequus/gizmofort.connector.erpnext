@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule_detail
         public ERPPricing_rule_detail() : this(new ERPObject(DocType.Pricing_rule_detail)) { }
         public ERPPricing_rule_detail(ERPObject obj) : base(obj) { }
 
-        public static ERPPricing_rule_detail Create(string pricingrule, string itemcode, string margintype, string rateordiscount, string childdocname, int ruleapplied)
+        public static ERPPricing_rule_detail Create(string pricingrule, string itemcode, string margintype, string rateordiscount, string childdocname, long ruleapplied)
 
         {
             ERPPricing_rule_detail obj = new ERPPricing_rule_detail();
@@ -56,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule_detail
             set { data.child_docname = value; }
         }
 
-        private int _rule_applied = 0;
-        public int rule_applied
+        public long rule_applied
         {
-            get { return data._rule_applied; }
-            set { data._rule_applied = value; }
+            get { return data.rule_applied; }
+            set { data.rule_applied = value; }
         }
 
 

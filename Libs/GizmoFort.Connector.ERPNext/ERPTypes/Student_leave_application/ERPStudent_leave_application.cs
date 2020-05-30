@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_leave_application
         public ERPStudent_leave_application() : this(new ERPObject(DocType.Student_leave_application)) { }
         public ERPStudent_leave_application(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_leave_application Create(string studentname, string student, string fromdate, string todate, int markaspresent, string reason, string amendedfrom)
+        public static ERPStudent_leave_application Create(string studentname, string student, string fromdate, string todate, long markaspresent, string reason, string amendedfrom)
 
         {
             ERPStudent_leave_application obj = new ERPStudent_leave_application();
@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_leave_application
             set { data.to_date = value; }
         }
 
-        private int _mark_as_present = 0;
-        public int mark_as_present
+        public long mark_as_present
         {
-            get { return data._mark_as_present; }
-            set { data._mark_as_present = value; }
+            get { return data.mark_as_present; }
+            set { data.mark_as_present = value; }
         }
 
         public string reason

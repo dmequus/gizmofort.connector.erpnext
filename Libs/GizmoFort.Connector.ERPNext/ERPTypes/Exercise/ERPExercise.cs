@@ -33,18 +33,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Exercise
             set { data.difficulty_level = value; }
         }
 
-        private int _counts_target = 0;
         public int counts_target
         {
-            get { return data._counts_target; }
-            set { data._counts_target = value; }
+            get { return data.counts_target; }
+            set { data.counts_target = value; }
         }
 
-        private int _counts_completed = 0;
         public int counts_completed
         {
-            get { return data._counts_completed; }
-            set { data._counts_completed = value; }
+            get { return data.counts_completed; }
+            set { data.counts_completed = value; }
         }
 
         public Assistancelevel assistance_level

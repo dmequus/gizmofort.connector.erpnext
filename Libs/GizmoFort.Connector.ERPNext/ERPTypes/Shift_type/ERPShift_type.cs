@@ -52,67 +52,58 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shift_type
             set { data.working_hours_calculation_based_on = value.ToString(); }
         }
 
-        private double _working_hours_threshold_for_half_day = 0.0;
         public double working_hours_threshold_for_half_day
         {
-            get { return data._working_hours_threshold_for_half_day; }
-            set { data._working_hours_threshold_for_half_day = value; }
+            get { return data.working_hours_threshold_for_half_day; }
+            set { data.working_hours_threshold_for_half_day = value; }
         }
 
-        private double _working_hours_threshold_for_absent = 0.0;
         public double working_hours_threshold_for_absent
         {
-            get { return data._working_hours_threshold_for_absent; }
-            set { data._working_hours_threshold_for_absent = value; }
+            get { return data.working_hours_threshold_for_absent; }
+            set { data.working_hours_threshold_for_absent = value; }
         }
 
-        private int _begin_check_in_before_shift_start_time = 0;
         public int begin_check_in_before_shift_start_time
         {
-            get { return data._begin_check_in_before_shift_start_time; }
-            set { data._begin_check_in_before_shift_start_time = value; }
+            get { return data.begin_check_in_before_shift_start_time; }
+            set { data.begin_check_in_before_shift_start_time = value; }
         }
 
-        private int _enable_entry_grace_period = 0;
-        public int enable_entry_grace_period
+        public long enable_entry_grace_period
         {
-            get { return data._enable_entry_grace_period; }
-            set { data._enable_entry_grace_period = value; }
+            get { return data.enable_entry_grace_period; }
+            set { data.enable_entry_grace_period = value; }
         }
 
-        private int _late_entry_grace_period = 0;
         public int late_entry_grace_period
         {
-            get { return data._late_entry_grace_period; }
-            set { data._late_entry_grace_period = value; }
+            get { return data.late_entry_grace_period; }
+            set { data.late_entry_grace_period = value; }
         }
 
-        private int _enable_exit_grace_period = 0;
-        public int enable_exit_grace_period
+        public long enable_exit_grace_period
         {
-            get { return data._enable_exit_grace_period; }
-            set { data._enable_exit_grace_period = value; }
+            get { return data.enable_exit_grace_period; }
+            set { data.enable_exit_grace_period = value; }
         }
 
-        private int _early_exit_grace_period = 0;
         public int early_exit_grace_period
         {
-            get { return data._early_exit_grace_period; }
-            set { data._early_exit_grace_period = value; }
+            get { return data.early_exit_grace_period; }
+            set { data.early_exit_grace_period = value; }
         }
 
-        private int _allow_check_out_after_shift_end_time = 0;
         public int allow_check_out_after_shift_end_time
         {
-            get { return data._allow_check_out_after_shift_end_time; }
-            set { data._allow_check_out_after_shift_end_time = value; }
+            get { return data.allow_check_out_after_shift_end_time; }
+            set { data.allow_check_out_after_shift_end_time = value; }
         }
 
-        private int _enable_auto_attendance = 0;
-        public int enable_auto_attendance
+        public long enable_auto_attendance
         {
-            get { return data._enable_auto_attendance; }
-            set { data._enable_auto_attendance = value; }
+            get { return data.enable_auto_attendance; }
+            set { data.enable_auto_attendance = value; }
         }
 
         public string process_attendance_after

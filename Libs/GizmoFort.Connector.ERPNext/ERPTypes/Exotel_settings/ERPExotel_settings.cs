@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Exotel_settings
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string account_sid

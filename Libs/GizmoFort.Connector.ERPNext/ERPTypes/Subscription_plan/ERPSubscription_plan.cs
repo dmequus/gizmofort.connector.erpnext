@@ -49,11 +49,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription_plan
             set { data.billing_interval = value.ToString(); }
         }
 
-        private int _billing_interval_count = 0;
         public int billing_interval_count
         {
-            get { return data._billing_interval_count; }
-            set { data._billing_interval_count = value; }
+            get { return data.billing_interval_count; }
+            set { data.billing_interval_count = value; }
         }
 
         public string currency
@@ -62,11 +61,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription_plan
             set { data.currency = value; }
         }
 
-        private double _cost = 0.0;
         public double cost
         {
-            get { return data._cost; }
-            set { data._cost = value; }
+            get { return data.cost; }
+            set { data.cost = value; }
         }
 
         public string price_list

@@ -93,25 +93,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim
             set { data.approval_status = value.ToString(); }
         }
 
-        private double _total_claimed_amount = 0.0;
         public double total_claimed_amount
         {
-            get { return data._total_claimed_amount; }
-            set { data._total_claimed_amount = value; }
+            get { return data.total_claimed_amount; }
+            set { data.total_claimed_amount = value; }
         }
 
-        private double _total_sanctioned_amount = 0.0;
         public double total_sanctioned_amount
         {
-            get { return data._total_sanctioned_amount; }
-            set { data._total_sanctioned_amount = value; }
+            get { return data.total_sanctioned_amount; }
+            set { data.total_sanctioned_amount = value; }
         }
 
-        private int _is_paid = 0;
-        public int is_paid
+        public long is_paid
         {
-            get { return data._is_paid; }
-            set { data._is_paid = value; }
+            get { return data.is_paid; }
+            set { data.is_paid = value; }
         }
 
         public string vehicle_log
@@ -132,11 +129,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim
             set { data.task = value; }
         }
 
-        private double _total_amount_reimbursed = 0.0;
         public double total_amount_reimbursed
         {
-            get { return data._total_amount_reimbursed; }
-            set { data._total_amount_reimbursed = value; }
+            get { return data.total_amount_reimbursed; }
+            set { data.total_amount_reimbursed = value; }
         }
 
         public string remark
@@ -187,11 +183,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim
             set { data.advances = value; }
         }
 
-        private double _total_advance_amount = 0.0;
         public double total_advance_amount
         {
-            get { return data._total_advance_amount; }
-            set { data._total_advance_amount = value; }
+            get { return data.total_advance_amount; }
+            set { data.total_advance_amount = value; }
         }
 
         public string taxes
@@ -200,18 +195,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim
             set { data.taxes = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
-        private double _total_taxes_and_charges = 0.0;
         public double total_taxes_and_charges
         {
-            get { return data._total_taxes_and_charges; }
-            set { data._total_taxes_and_charges = value; }
+            get { return data.total_taxes_and_charges; }
+            set { data.total_taxes_and_charges = value; }
         }
 
 

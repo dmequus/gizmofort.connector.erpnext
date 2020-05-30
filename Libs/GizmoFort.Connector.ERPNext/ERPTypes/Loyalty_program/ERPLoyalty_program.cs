@@ -65,25 +65,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loyalty_program
             set { data.customer_territory = value; }
         }
 
-        private int _auto_opt_in = 0;
-        public int auto_opt_in
+        public long auto_opt_in
         {
-            get { return data._auto_opt_in; }
-            set { data._auto_opt_in = value; }
+            get { return data.auto_opt_in; }
+            set { data.auto_opt_in = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private int _expiry_duration = 0;
         public int expiry_duration
         {
-            get { return data._expiry_duration; }
-            set { data._expiry_duration = value; }
+            get { return data.expiry_duration; }
+            set { data.expiry_duration = value; }
         }
 
         public string expense_account

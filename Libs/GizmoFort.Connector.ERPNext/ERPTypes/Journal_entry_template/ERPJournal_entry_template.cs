@@ -60,11 +60,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry_template
             set { data.accounts = value; }
         }
 
-        private int _multi_currency = 0;
-        public int multi_currency
+        public long multi_currency
         {
-            get { return data._multi_currency; }
-            set { data._multi_currency = value; }
+            get { return data.multi_currency; }
+            set { data.multi_currency = value; }
         }
 
 

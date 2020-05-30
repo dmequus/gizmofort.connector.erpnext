@@ -27,11 +27,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Terms_and_conditions
 
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string terms
@@ -46,25 +45,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Terms_and_conditions
             set { data.terms_and_conditions_help = value; }
         }
 
-        private int _selling = 0;
-        public int selling
+        public long selling
         {
-            get { return data._selling; }
-            set { data._selling = value; }
+            get { return data.selling; }
+            set { data.selling = value; }
         }
 
-        private int _buying = 0;
-        public int buying
+        public long buying
         {
-            get { return data._buying; }
-            set { data._buying = value; }
+            get { return data.buying; }
+            set { data.buying = value; }
         }
 
-        private int _hr = 0;
-        public int hr
+        public long hr
         {
-            get { return data._hr; }
-            set { data._hr = value; }
+            get { return data.hr; }
+            set { data.hr = value; }
         }
 
 

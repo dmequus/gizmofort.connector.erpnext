@@ -63,25 +63,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Program
             set { data.hero_image = value; }
         }
 
-        private int _is_published = 0;
-        public int is_published
+        public long is_published
         {
-            get { return data._is_published; }
-            set { data._is_published = value; }
+            get { return data.is_published; }
+            set { data.is_published = value; }
         }
 
-        private int _is_featured = 0;
-        public int is_featured
+        public long is_featured
         {
-            get { return data._is_featured; }
-            set { data._is_featured = value; }
+            get { return data.is_featured; }
+            set { data.is_featured = value; }
         }
 
-        private int _allow_self_enroll = 0;
-        public int allow_self_enroll
+        public long allow_self_enroll
         {
-            get { return data._allow_self_enroll; }
-            set { data._allow_self_enroll = value; }
+            get { return data.allow_self_enroll; }
+            set { data.allow_self_enroll = value; }
         }
 
 

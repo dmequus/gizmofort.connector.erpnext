@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student
         public ERPStudent() : this(new ERPObject(DocType.Student)) { }
         public ERPStudent(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent Create(string title, int enabled, string firstname, string middlename, string lastname, string user, string namingseries, string studentemailid, string studentmobilenumber, string joiningdate, string image, string dateofbirth, Bloodgroup bloodgroup, Gender gender, string nationality, string studentapplicant, string addressline1, string addressline2, string pincode, string city, string state, string guardians, string siblings, string dateofleaving, string leavingcertificatenumber, string reasonforleaving)
+        public static ERPStudent Create(string title, long enabled, string firstname, string middlename, string lastname, string user, string namingseries, string studentemailid, string studentmobilenumber, string joiningdate, string image, string dateofbirth, Bloodgroup bloodgroup, Gender gender, string nationality, string studentapplicant, string addressline1, string addressline2, string pincode, string city, string state, string guardians, string siblings, string dateofleaving, string leavingcertificatenumber, string reasonforleaving)
 
         {
             ERPStudent obj = new ERPStudent();
@@ -52,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student
 
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string first_name

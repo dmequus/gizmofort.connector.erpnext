@@ -38,18 +38,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_team
             set { data.contact_no = value; }
         }
 
-        private double _allocated_percentage = 0.0;
         public double allocated_percentage
         {
-            get { return data._allocated_percentage; }
-            set { data._allocated_percentage = value; }
+            get { return data.allocated_percentage; }
+            set { data.allocated_percentage = value; }
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
         public string commission_rate
@@ -58,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_team
             set { data.commission_rate = value; }
         }
 
-        private double _incentives = 0.0;
         public double incentives
         {
-            get { return data._incentives; }
-            set { data._incentives = value; }
+            get { return data.incentives; }
+            set { data.incentives = value; }
         }
 
 

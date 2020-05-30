@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
         public ERPCheque_print_template() : this(new ERPObject(DocType.Cheque_print_template)) { }
         public ERPCheque_print_template(ERPObject obj) : base(obj) { }
 
-        public static ERPCheque_print_template Create(Settings settings, int hasprintformat, string bankname, Chequesize chequesize, double startingpositionfromtopedge, double chequewidth, double chequeheight, string scannedcheque, int isaccountpayable, double accpaydistfromtopedge, double accpaydistfromleftedge, string messagetoshow, string datesettings, double datedistfromtopedge, double datedistfromleftedge, double payernamefromtopedge, double payernamefromleftedge, string html19, double amtinwordsfromtopedge, double amtinwordsfromleftedge, double amtinwordwidth, double amtinwordslinespacing, double amtinfiguresfromtopedge, double amtinfiguresfromleftedge, string accountnosettings, double accnodistfromtopedge, double accnodistfromleftedge, double signatoryfromtopedge, double signatoryfromleftedge, string chequeprintpreview)
+        public static ERPCheque_print_template Create(Settings settings, long hasprintformat, string bankname, Chequesize chequesize, double startingpositionfromtopedge, double chequewidth, double chequeheight, string scannedcheque, long isaccountpayable, double accpaydistfromtopedge, double accpaydistfromleftedge, string messagetoshow, string datesettings, double datedistfromtopedge, double datedistfromleftedge, double payernamefromtopedge, double payernamefromleftedge, string html19, double amtinwordsfromtopedge, double amtinwordsfromleftedge, double amtinwordwidth, double amtinwordslinespacing, double amtinfiguresfromtopedge, double amtinfiguresfromleftedge, string accountnosettings, double accnodistfromtopedge, double accnodistfromleftedge, double signatoryfromtopedge, double signatoryfromleftedge, string chequeprintpreview)
 
         {
             ERPCheque_print_template obj = new ERPCheque_print_template();
@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.settings = value.ToString(); }
         }
 
-        private int _has_print_format = 0;
-        public int has_print_format
+        public long has_print_format
         {
-            get { return data._has_print_format; }
-            set { data._has_print_format = value; }
+            get { return data.has_print_format; }
+            set { data.has_print_format = value; }
         }
 
         public string bank_name
@@ -70,25 +69,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.cheque_size = value.ToString(); }
         }
 
-        private double _starting_position_from_top_edge = 0.0;
         public double starting_position_from_top_edge
         {
-            get { return data._starting_position_from_top_edge; }
-            set { data._starting_position_from_top_edge = value; }
+            get { return data.starting_position_from_top_edge; }
+            set { data.starting_position_from_top_edge = value; }
         }
 
-        private double _cheque_width = 0.0;
         public double cheque_width
         {
-            get { return data._cheque_width; }
-            set { data._cheque_width = value; }
+            get { return data.cheque_width; }
+            set { data.cheque_width = value; }
         }
 
-        private double _cheque_height = 0.0;
         public double cheque_height
         {
-            get { return data._cheque_height; }
-            set { data._cheque_height = value; }
+            get { return data.cheque_height; }
+            set { data.cheque_height = value; }
         }
 
         public string scanned_cheque
@@ -97,25 +93,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.scanned_cheque = value; }
         }
 
-        private int _is_account_payable = 0;
-        public int is_account_payable
+        public long is_account_payable
         {
-            get { return data._is_account_payable; }
-            set { data._is_account_payable = value; }
+            get { return data.is_account_payable; }
+            set { data.is_account_payable = value; }
         }
 
-        private double _acc_pay_dist_from_top_edge = 0.0;
         public double acc_pay_dist_from_top_edge
         {
-            get { return data._acc_pay_dist_from_top_edge; }
-            set { data._acc_pay_dist_from_top_edge = value; }
+            get { return data.acc_pay_dist_from_top_edge; }
+            set { data.acc_pay_dist_from_top_edge = value; }
         }
 
-        private double _acc_pay_dist_from_left_edge = 0.0;
         public double acc_pay_dist_from_left_edge
         {
-            get { return data._acc_pay_dist_from_left_edge; }
-            set { data._acc_pay_dist_from_left_edge = value; }
+            get { return data.acc_pay_dist_from_left_edge; }
+            set { data.acc_pay_dist_from_left_edge = value; }
         }
 
         public string message_to_show
@@ -130,32 +123,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.date_settings = value; }
         }
 
-        private double _date_dist_from_top_edge = 0.0;
         public double date_dist_from_top_edge
         {
-            get { return data._date_dist_from_top_edge; }
-            set { data._date_dist_from_top_edge = value; }
+            get { return data.date_dist_from_top_edge; }
+            set { data.date_dist_from_top_edge = value; }
         }
 
-        private double _date_dist_from_left_edge = 0.0;
         public double date_dist_from_left_edge
         {
-            get { return data._date_dist_from_left_edge; }
-            set { data._date_dist_from_left_edge = value; }
+            get { return data.date_dist_from_left_edge; }
+            set { data.date_dist_from_left_edge = value; }
         }
 
-        private double _payer_name_from_top_edge = 0.0;
         public double payer_name_from_top_edge
         {
-            get { return data._payer_name_from_top_edge; }
-            set { data._payer_name_from_top_edge = value; }
+            get { return data.payer_name_from_top_edge; }
+            set { data.payer_name_from_top_edge = value; }
         }
 
-        private double _payer_name_from_left_edge = 0.0;
         public double payer_name_from_left_edge
         {
-            get { return data._payer_name_from_left_edge; }
-            set { data._payer_name_from_left_edge = value; }
+            get { return data.payer_name_from_left_edge; }
+            set { data.payer_name_from_left_edge = value; }
         }
 
         public string html_19
@@ -164,46 +153,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.html_19 = value; }
         }
 
-        private double _amt_in_words_from_top_edge = 0.0;
         public double amt_in_words_from_top_edge
         {
-            get { return data._amt_in_words_from_top_edge; }
-            set { data._amt_in_words_from_top_edge = value; }
+            get { return data.amt_in_words_from_top_edge; }
+            set { data.amt_in_words_from_top_edge = value; }
         }
 
-        private double _amt_in_words_from_left_edge = 0.0;
         public double amt_in_words_from_left_edge
         {
-            get { return data._amt_in_words_from_left_edge; }
-            set { data._amt_in_words_from_left_edge = value; }
+            get { return data.amt_in_words_from_left_edge; }
+            set { data.amt_in_words_from_left_edge = value; }
         }
 
-        private double _amt_in_word_width = 0.0;
         public double amt_in_word_width
         {
-            get { return data._amt_in_word_width; }
-            set { data._amt_in_word_width = value; }
+            get { return data.amt_in_word_width; }
+            set { data.amt_in_word_width = value; }
         }
 
-        private double _amt_in_words_line_spacing = 0.0;
         public double amt_in_words_line_spacing
         {
-            get { return data._amt_in_words_line_spacing; }
-            set { data._amt_in_words_line_spacing = value; }
+            get { return data.amt_in_words_line_spacing; }
+            set { data.amt_in_words_line_spacing = value; }
         }
 
-        private double _amt_in_figures_from_top_edge = 0.0;
         public double amt_in_figures_from_top_edge
         {
-            get { return data._amt_in_figures_from_top_edge; }
-            set { data._amt_in_figures_from_top_edge = value; }
+            get { return data.amt_in_figures_from_top_edge; }
+            set { data.amt_in_figures_from_top_edge = value; }
         }
 
-        private double _amt_in_figures_from_left_edge = 0.0;
         public double amt_in_figures_from_left_edge
         {
-            get { return data._amt_in_figures_from_left_edge; }
-            set { data._amt_in_figures_from_left_edge = value; }
+            get { return data.amt_in_figures_from_left_edge; }
+            set { data.amt_in_figures_from_left_edge = value; }
         }
 
         public string account_no_settings
@@ -212,32 +195,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
             set { data.account_no_settings = value; }
         }
 
-        private double _acc_no_dist_from_top_edge = 0.0;
         public double acc_no_dist_from_top_edge
         {
-            get { return data._acc_no_dist_from_top_edge; }
-            set { data._acc_no_dist_from_top_edge = value; }
+            get { return data.acc_no_dist_from_top_edge; }
+            set { data.acc_no_dist_from_top_edge = value; }
         }
 
-        private double _acc_no_dist_from_left_edge = 0.0;
         public double acc_no_dist_from_left_edge
         {
-            get { return data._acc_no_dist_from_left_edge; }
-            set { data._acc_no_dist_from_left_edge = value; }
+            get { return data.acc_no_dist_from_left_edge; }
+            set { data.acc_no_dist_from_left_edge = value; }
         }
 
-        private double _signatory_from_top_edge = 0.0;
         public double signatory_from_top_edge
         {
-            get { return data._signatory_from_top_edge; }
-            set { data._signatory_from_top_edge = value; }
+            get { return data.signatory_from_top_edge; }
+            set { data.signatory_from_top_edge = value; }
         }
 
-        private double _signatory_from_left_edge = 0.0;
         public double signatory_from_left_edge
         {
-            get { return data._signatory_from_left_edge; }
-            set { data._signatory_from_left_edge = value; }
+            get { return data.signatory_from_left_edge; }
+            set { data.signatory_from_left_edge = value; }
         }
 
         public string cheque_print_preview
@@ -257,7 +236,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cheque_print_template
         [Description("<h3> All dimensions in centimeter only </h3>")]
         Alldimensionsincentimeteronly,
         [Description("</div>")]
-        Closediv,
+        closediv,
     }
 
     public enum Chequesize

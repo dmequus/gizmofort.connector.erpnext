@@ -57,18 +57,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Activity_cost
             set { data.department = value; }
         }
 
-        private double _billing_rate = 0.0;
         public double billing_rate
         {
-            get { return data._billing_rate; }
-            set { data._billing_rate = value; }
+            get { return data.billing_rate; }
+            set { data.billing_rate = value; }
         }
 
-        private double _costing_rate = 0.0;
         public double costing_rate
         {
-            get { return data._costing_rate; }
-            set { data._costing_rate = value; }
+            get { return data.costing_rate; }
+            set { data.costing_rate = value; }
         }
 
 

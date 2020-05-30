@@ -18,25 +18,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shipping_rule_condition
             return obj;
         }
 
-        private double _from_value = 0.0;
         public double from_value
         {
-            get { return data._from_value; }
-            set { data._from_value = value; }
+            get { return data.from_value; }
+            set { data.from_value = value; }
         }
 
-        private double _to_value = 0.0;
         public double to_value
         {
-            get { return data._to_value; }
-            set { data._to_value = value; }
+            get { return data.to_value; }
+            set { data.to_value = value; }
         }
 
-        private double _shipping_amount = 0.0;
         public double shipping_amount
         {
-            get { return data._shipping_amount; }
-            set { data._shipping_amount = value; }
+            get { return data.shipping_amount; }
+            set { data.shipping_amount = value; }
         }
 
 

@@ -74,25 +74,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_reconciliation
             set { data.to_date = value; }
         }
 
-        private double _minimum_amount = 0.0;
         public double minimum_amount
         {
-            get { return data._minimum_amount; }
-            set { data._minimum_amount = value; }
+            get { return data.minimum_amount; }
+            set { data.minimum_amount = value; }
         }
 
-        private double _maximum_amount = 0.0;
         public double maximum_amount
         {
-            get { return data._maximum_amount; }
-            set { data._maximum_amount = value; }
+            get { return data.maximum_amount; }
+            set { data.maximum_amount = value; }
         }
 
-        private int _limit = 0;
         public int limit
         {
-            get { return data._limit; }
-            set { data._limit = value; }
+            get { return data.limit; }
+            set { data.limit = value; }
         }
 
         public string payments

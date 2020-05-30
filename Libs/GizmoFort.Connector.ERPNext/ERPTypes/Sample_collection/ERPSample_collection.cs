@@ -47,11 +47,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sample_collection
             set { data.inpatient_record = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string patient_age
@@ -90,11 +89,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sample_collection
             set { data.collected_time = value; }
         }
 
-        private int _num_print = 0;
         public int num_print
         {
-            get { return data._num_print; }
-            set { data._num_print = value; }
+            get { return data.num_print; }
+            set { data.num_print = value; }
         }
 
         public string amended_from
@@ -103,11 +101,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sample_collection
             set { data.amended_from = value; }
         }
 
-        private double _sample_qty = 0.0;
         public double sample_qty
         {
-            get { return data._sample_qty; }
-            set { data._sample_qty = value; }
+            get { return data.sample_qty; }
+            set { data.sample_qty = value; }
         }
 
         public string sample_details

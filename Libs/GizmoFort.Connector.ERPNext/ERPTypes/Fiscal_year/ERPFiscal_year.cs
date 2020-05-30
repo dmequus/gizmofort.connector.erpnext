@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fiscal_year
         public ERPFiscal_year() : this(new ERPObject(DocType.Fiscal_year)) { }
         public ERPFiscal_year(ERPObject obj) : base(obj) { }
 
-        public static ERPFiscal_year Create(string year, int disabled, string yearstartdate, string yearenddate, string companies, int autocreated)
+        public static ERPFiscal_year Create(string year, long disabled, string yearstartdate, string yearenddate, string companies, long autocreated)
 
         {
             ERPFiscal_year obj = new ERPFiscal_year();
@@ -32,11 +32,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fiscal_year
 
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string year_start_date
@@ -57,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fiscal_year
             set { data.companies = value; }
         }
 
-        private int _auto_created = 0;
-        public int auto_created
+        public long auto_created
         {
-            get { return data._auto_created; }
-            set { data._auto_created = value; }
+            get { return data.auto_created; }
+            set { data.auto_created = value; }
         }
 
 

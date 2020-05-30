@@ -27,32 +27,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit_type
 
         }
 
-        private int _allow_appointments = 0;
-        public int allow_appointments
+        public long allow_appointments
         {
-            get { return data._allow_appointments; }
-            set { data._allow_appointments = value; }
+            get { return data.allow_appointments; }
+            set { data.allow_appointments = value; }
         }
 
-        private int _overlap_appointments = 0;
-        public int overlap_appointments
+        public long overlap_appointments
         {
-            get { return data._overlap_appointments; }
-            set { data._overlap_appointments = value; }
+            get { return data.overlap_appointments; }
+            set { data.overlap_appointments = value; }
         }
 
-        private int _inpatient_occupancy = 0;
-        public int inpatient_occupancy
+        public long inpatient_occupancy
         {
-            get { return data._inpatient_occupancy; }
-            set { data._inpatient_occupancy = value; }
+            get { return data.inpatient_occupancy; }
+            set { data.inpatient_occupancy = value; }
         }
 
-        private int _is_billable = 0;
-        public int is_billable
+        public long is_billable
         {
-            get { return data._is_billable; }
-            set { data._is_billable = value; }
+            get { return data.is_billable; }
+            set { data.is_billable = value; }
         }
 
         public string item
@@ -79,25 +75,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit_type
             set { data.uom = value; }
         }
 
-        private int _no_of_hours = 0;
         public int no_of_hours
         {
-            get { return data._no_of_hours; }
-            set { data._no_of_hours = value; }
+            get { return data.no_of_hours; }
+            set { data.no_of_hours = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string description
@@ -106,11 +99,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit_type
             set { data.description = value; }
         }
 
-        private int _change_in_item = 0;
-        public int change_in_item
+        public long change_in_item
         {
-            get { return data._change_in_item; }
-            set { data._change_in_item = value; }
+            get { return data.change_in_item; }
+            set { data.change_in_item = value; }
         }
 
 

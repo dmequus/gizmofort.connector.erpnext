@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_policy_detail
 
         }
 
-        private double _annual_allocation = 0.0;
         public double annual_allocation
         {
-            get { return data._annual_allocation; }
-            set { data._annual_allocation = value; }
+            get { return data.annual_allocation; }
+            set { data.annual_allocation = value; }
         }
 
 

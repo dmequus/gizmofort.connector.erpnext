@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Disease
             set { data.treatment_task = value; }
         }
 
-        private int _treatment_period = 0;
         public int treatment_period
         {
-            get { return data._treatment_period; }
-            set { data._treatment_period = value; }
+            get { return data.treatment_period; }
+            set { data.treatment_period = value; }
         }
 
         public string description

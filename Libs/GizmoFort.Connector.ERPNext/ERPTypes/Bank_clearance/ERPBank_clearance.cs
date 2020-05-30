@@ -53,18 +53,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_clearance
             set { data.bank_account = value; }
         }
 
-        private int _include_reconciled_entries = 0;
-        public int include_reconciled_entries
+        public long include_reconciled_entries
         {
-            get { return data._include_reconciled_entries; }
-            set { data._include_reconciled_entries = value; }
+            get { return data.include_reconciled_entries; }
+            set { data.include_reconciled_entries = value; }
         }
 
-        private int _include_pos_transactions = 0;
-        public int include_pos_transactions
+        public long include_pos_transactions
         {
-            get { return data._include_pos_transactions; }
-            set { data._include_pos_transactions = value; }
+            get { return data.include_pos_transactions; }
+            set { data.include_pos_transactions = value; }
         }
 
         public string payment_entries
@@ -73,11 +71,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_clearance
             set { data.payment_entries = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
 

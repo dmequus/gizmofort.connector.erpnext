@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Options
         public ERPOptions() : this(new ERPObject(DocType.Options)) { }
         public ERPOptions(ERPObject obj) : base(obj) { }
 
-        public static ERPOptions Create(string option, int iscorrect)
+        public static ERPOptions Create(string option, long iscorrect)
 
         {
             ERPOptions obj = new ERPOptions();
@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Options
 
         }
 
-        private int _is_correct = 0;
-        public int is_correct
+        public long is_correct
         {
-            get { return data._is_correct; }
-            set { data._is_correct = value; }
+            get { return data.is_correct; }
+            set { data.is_correct = value; }
         }
 
 

@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry_account
             set { data.account_type = value; }
         }
 
-        private double _balance = 0.0;
         public double balance
         {
-            get { return data._balance; }
-            set { data._balance = value; }
+            get { return data.balance; }
+            set { data.balance = value; }
         }
 
         public string cost_center
@@ -58,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry_account
             set { data.party = value; }
         }
 
-        private double _party_balance = 0.0;
         public double party_balance
         {
-            get { return data._party_balance; }
-            set { data._party_balance = value; }
+            get { return data.party_balance; }
+            set { data.party_balance = value; }
         }
 
         public string account_currency
@@ -71,39 +69,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry_account
             set { data.account_currency = value; }
         }
 
-        private double _exchange_rate = 0.0;
         public double exchange_rate
         {
-            get { return data._exchange_rate; }
-            set { data._exchange_rate = value; }
+            get { return data.exchange_rate; }
+            set { data.exchange_rate = value; }
         }
 
-        private double _debit_in_account_currency = 0.0;
         public double debit_in_account_currency
         {
-            get { return data._debit_in_account_currency; }
-            set { data._debit_in_account_currency = value; }
+            get { return data.debit_in_account_currency; }
+            set { data.debit_in_account_currency = value; }
         }
 
-        private double _debit = 0.0;
         public double debit
         {
-            get { return data._debit; }
-            set { data._debit = value; }
+            get { return data.debit; }
+            set { data.debit = value; }
         }
 
-        private double _credit_in_account_currency = 0.0;
         public double credit_in_account_currency
         {
-            get { return data._credit_in_account_currency; }
-            set { data._credit_in_account_currency = value; }
+            get { return data.credit_in_account_currency; }
+            set { data.credit_in_account_currency = value; }
         }
 
-        private double _credit = 0.0;
         public double credit
         {
-            get { return data._credit; }
-            set { data._credit = value; }
+            get { return data.credit; }
+            set { data.credit = value; }
         }
 
         public Referencetype reference_type

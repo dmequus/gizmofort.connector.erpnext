@@ -45,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Call_log
             set { data.status = value.ToString(); }
         }
 
-        private int _duration = 0;
         public int duration
         {
-            get { return data._duration; }
-            set { data._duration = value; }
+            get { return data.duration; }
+            set { data.duration = value; }
         }
 
         public string recording_url

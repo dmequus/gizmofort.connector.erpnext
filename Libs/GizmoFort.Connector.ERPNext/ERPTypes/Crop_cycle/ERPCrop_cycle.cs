@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop_cycle
         public ERPCrop_cycle() : this(new ERPObject(DocType.Crop_cycle)) { }
         public ERPCrop_cycle(ERPObject obj) : base(obj) { }
 
-        public static ERPCrop_cycle Create(string title, string crop, string linkedlocation, string project, string startdate, string enddate, int iso8601standard, Cycletype cycletype, double cropspacing, string cropspacinguom, double rowspacing, string rowspacinguom, string detecteddisease, string soiltexture, string soilanalysis, string plantanalysis)
+        public static ERPCrop_cycle Create(string title, string crop, string linkedlocation, string project, string startdate, string enddate, long iso8601standard, Cycletype cycletype, double cropspacing, string cropspacinguom, double rowspacing, string rowspacinguom, string detecteddisease, string soiltexture, string soilanalysis, string plantanalysis)
 
         {
             ERPCrop_cycle obj = new ERPCrop_cycle();
@@ -72,11 +72,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop_cycle
             set { data.end_date = value; }
         }
 
-        private int _iso_8601_standard = 0;
-        public int iso_8601_standard
+        public long iso_8601_standard
         {
-            get { return data._iso_8601_standard; }
-            set { data._iso_8601_standard = value; }
+            get { return data.iso_8601_standard; }
+            set { data.iso_8601_standard = value; }
         }
 
         public Cycletype cycle_type
@@ -85,11 +84,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop_cycle
             set { data.cycle_type = value.ToString(); }
         }
 
-        private double _crop_spacing = 0.0;
         public double crop_spacing
         {
-            get { return data._crop_spacing; }
-            set { data._crop_spacing = value; }
+            get { return data.crop_spacing; }
+            set { data.crop_spacing = value; }
         }
 
         public string crop_spacing_uom
@@ -98,11 +96,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop_cycle
             set { data.crop_spacing_uom = value; }
         }
 
-        private double _row_spacing = 0.0;
         public double row_spacing
         {
-            get { return data._row_spacing; }
-            set { data._row_spacing = value; }
+            get { return data.row_spacing; }
+            set { data.row_spacing = value; }
         }
 
         public string row_spacing_uom

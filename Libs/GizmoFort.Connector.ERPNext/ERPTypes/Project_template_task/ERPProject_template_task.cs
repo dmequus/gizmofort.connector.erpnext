@@ -31,25 +31,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project_template_task
 
         }
 
-        private int _start = 0;
         public int start
         {
-            get { return data._start; }
-            set { data._start = value; }
+            get { return data.start; }
+            set { data.start = value; }
         }
 
-        private int _duration = 0;
         public int duration
         {
-            get { return data._duration; }
-            set { data._duration = value; }
+            get { return data.duration; }
+            set { data.duration = value; }
         }
 
-        private double _task_weight = 0.0;
         public double task_weight
         {
-            get { return data._task_weight; }
-            set { data._task_weight = value; }
+            get { return data.task_weight; }
+            set { data.task_weight = value; }
         }
 
         public string description

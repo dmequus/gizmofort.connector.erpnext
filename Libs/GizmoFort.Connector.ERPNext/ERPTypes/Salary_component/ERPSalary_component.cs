@@ -41,39 +41,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_component
             set { data.type = value.ToString(); }
         }
 
-        private int _is_tax_applicable = 0;
-        public int is_tax_applicable
+        public long is_tax_applicable
         {
-            get { return data._is_tax_applicable; }
-            set { data._is_tax_applicable = value; }
+            get { return data.is_tax_applicable; }
+            set { data.is_tax_applicable = value; }
         }
 
-        private int _depends_on_payment_days = 0;
-        public int depends_on_payment_days
+        public long depends_on_payment_days
         {
-            get { return data._depends_on_payment_days; }
-            set { data._depends_on_payment_days = value; }
+            get { return data.depends_on_payment_days; }
+            set { data.depends_on_payment_days = value; }
         }
 
-        private int _do_not_include_in_total = 0;
-        public int do_not_include_in_total
+        public long do_not_include_in_total
         {
-            get { return data._do_not_include_in_total; }
-            set { data._do_not_include_in_total = value; }
+            get { return data.do_not_include_in_total; }
+            set { data.do_not_include_in_total = value; }
         }
 
-        private int _deduct_full_tax_on_selected_payroll_date = 0;
-        public int deduct_full_tax_on_selected_payroll_date
+        public long deduct_full_tax_on_selected_payroll_date
         {
-            get { return data._deduct_full_tax_on_selected_payroll_date; }
-            set { data._deduct_full_tax_on_selected_payroll_date = value; }
+            get { return data.deduct_full_tax_on_selected_payroll_date; }
+            set { data.deduct_full_tax_on_selected_payroll_date = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string description
@@ -82,53 +77,46 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_component
             set { data.description = value; }
         }
 
-        private int _statistical_component = 0;
-        public int statistical_component
+        public long statistical_component
         {
-            get { return data._statistical_component; }
-            set { data._statistical_component = value; }
+            get { return data.statistical_component; }
+            set { data.statistical_component = value; }
         }
 
-        private int _is_flexible_benefit = 0;
-        public int is_flexible_benefit
+        public long is_flexible_benefit
         {
-            get { return data._is_flexible_benefit; }
-            set { data._is_flexible_benefit = value; }
+            get { return data.is_flexible_benefit; }
+            set { data.is_flexible_benefit = value; }
         }
 
-        private double _max_benefit_amount = 0.0;
         public double max_benefit_amount
         {
-            get { return data._max_benefit_amount; }
-            set { data._max_benefit_amount = value; }
+            get { return data.max_benefit_amount; }
+            set { data.max_benefit_amount = value; }
         }
 
-        private int _pay_against_benefit_claim = 0;
-        public int pay_against_benefit_claim
+        public long pay_against_benefit_claim
         {
-            get { return data._pay_against_benefit_claim; }
-            set { data._pay_against_benefit_claim = value; }
+            get { return data.pay_against_benefit_claim; }
+            set { data.pay_against_benefit_claim = value; }
         }
 
-        private int _only_tax_impact = 0;
-        public int only_tax_impact
+        public long only_tax_impact
         {
-            get { return data._only_tax_impact; }
-            set { data._only_tax_impact = value; }
+            get { return data.only_tax_impact; }
+            set { data.only_tax_impact = value; }
         }
 
-        private int _create_separate_payment_entry_against_benefit_claim = 0;
-        public int create_separate_payment_entry_against_benefit_claim
+        public long create_separate_payment_entry_against_benefit_claim
         {
-            get { return data._create_separate_payment_entry_against_benefit_claim; }
-            set { data._create_separate_payment_entry_against_benefit_claim = value; }
+            get { return data.create_separate_payment_entry_against_benefit_claim; }
+            set { data.create_separate_payment_entry_against_benefit_claim = value; }
         }
 
-        private int _variable_based_on_taxable_salary = 0;
-        public int variable_based_on_taxable_salary
+        public long variable_based_on_taxable_salary
         {
-            get { return data._variable_based_on_taxable_salary; }
-            set { data._variable_based_on_taxable_salary = value; }
+            get { return data.variable_based_on_taxable_salary; }
+            set { data.variable_based_on_taxable_salary = value; }
         }
 
         public string accounts
@@ -143,11 +131,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_component
             set { data.condition = value; }
         }
 
-        private int _amount_based_on_formula = 0;
-        public int amount_based_on_formula
+        public long amount_based_on_formula
         {
-            get { return data._amount_based_on_formula; }
-            set { data._amount_based_on_formula = value; }
+            get { return data.amount_based_on_formula; }
+            set { data.amount_based_on_formula = value; }
         }
 
         public string formula
@@ -156,11 +143,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_component
             set { data.formula = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string help
@@ -169,18 +155,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_component
             set { data.help = value; }
         }
 
-        private int _round_to_the_nearest_integer = 0;
-        public int round_to_the_nearest_integer
+        public long round_to_the_nearest_integer
         {
-            get { return data._round_to_the_nearest_integer; }
-            set { data._round_to_the_nearest_integer = value; }
+            get { return data.round_to_the_nearest_integer; }
+            set { data.round_to_the_nearest_integer = value; }
         }
 
-        private int _exempted_from_income_tax = 0;
-        public int exempted_from_income_tax
+        public long exempted_from_income_tax
         {
-            get { return data._exempted_from_income_tax; }
-            set { data._exempted_from_income_tax = value; }
+            get { return data.exempted_from_income_tax; }
+            set { data.exempted_from_income_tax = value; }
         }
 
 

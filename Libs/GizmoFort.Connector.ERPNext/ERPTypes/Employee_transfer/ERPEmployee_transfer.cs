@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_transfer
         public ERPEmployee_transfer() : this(new ERPObject(DocType.Employee_transfer)) { }
         public ERPEmployee_transfer(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_transfer Create(string employeename, string employee, string transferdate, string company, string newcompany, string department, string transferdetails, int reallocateleaves, int createnewemployeeid, string newemployeeid, string amendedfrom)
+        public static ERPEmployee_transfer Create(string employeename, string employee, string transferdate, string company, string newcompany, string department, string transferdetails, long reallocateleaves, long createnewemployeeid, string newemployeeid, string amendedfrom)
 
         {
             ERPEmployee_transfer obj = new ERPEmployee_transfer();
@@ -73,18 +73,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_transfer
             set { data.transfer_details = value; }
         }
 
-        private int _reallocate_leaves = 0;
-        public int reallocate_leaves
+        public long reallocate_leaves
         {
-            get { return data._reallocate_leaves; }
-            set { data._reallocate_leaves = value; }
+            get { return data.reallocate_leaves; }
+            set { data.reallocate_leaves = value; }
         }
 
-        private int _create_new_employee_id = 0;
-        public int create_new_employee_id
+        public long create_new_employee_id
         {
-            get { return data._create_new_employee_id; }
-            set { data._create_new_employee_id = value; }
+            get { return data.create_new_employee_id; }
+            set { data.create_new_employee_id = value; }
         }
 
         public string new_employee_id

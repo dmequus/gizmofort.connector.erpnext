@@ -89,11 +89,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Invoice_discounting
             set { data.loan_start_date = value; }
         }
 
-        private int _loan_period = 0;
         public int loan_period
         {
-            get { return data._loan_period; }
-            set { data._loan_period = value; }
+            get { return data.loan_period; }
+            set { data.loan_period = value; }
         }
 
         public string loan_end_date
@@ -108,18 +107,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Invoice_discounting
             set { data.status = value.ToString(); }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
-        private double _bank_charges = 0.0;
         public double bank_charges
         {
-            get { return data._bank_charges; }
-            set { data._bank_charges = value; }
+            get { return data.bank_charges; }
+            set { data.bank_charges = value; }
         }
 
         public string amended_from

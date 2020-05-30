@@ -62,18 +62,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop
             set { data.agriculture_task = value; }
         }
 
-        private int _period = 0;
         public int period
         {
-            get { return data._period; }
-            set { data._period = value; }
+            get { return data.period; }
+            set { data.period = value; }
         }
 
-        private double _crop_spacing = 0.0;
         public double crop_spacing
         {
-            get { return data._crop_spacing; }
-            set { data._crop_spacing = value; }
+            get { return data.crop_spacing; }
+            set { data.crop_spacing = value; }
         }
 
         public string crop_spacing_uom
@@ -82,11 +80,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Crop
             set { data.crop_spacing_uom = value; }
         }
 
-        private double _row_spacing = 0.0;
         public double row_spacing
         {
-            get { return data._row_spacing; }
-            set { data._row_spacing = value; }
+            get { return data.row_spacing; }
+            set { data.row_spacing = value; }
         }
 
         public string row_spacing_uom

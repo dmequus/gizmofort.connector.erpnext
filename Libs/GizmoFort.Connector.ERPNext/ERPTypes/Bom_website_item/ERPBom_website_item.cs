@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_website_item
             set { data.description = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string website_image

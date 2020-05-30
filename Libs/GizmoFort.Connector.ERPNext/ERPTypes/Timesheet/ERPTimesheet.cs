@@ -120,53 +120,46 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Timesheet
             set { data.time_logs = value; }
         }
 
-        private double _total_hours = 0.0;
         public double total_hours
         {
-            get { return data._total_hours; }
-            set { data._total_hours = value; }
+            get { return data.total_hours; }
+            set { data.total_hours = value; }
         }
 
-        private double _total_billable_hours = 0.0;
         public double total_billable_hours
         {
-            get { return data._total_billable_hours; }
-            set { data._total_billable_hours = value; }
+            get { return data.total_billable_hours; }
+            set { data.total_billable_hours = value; }
         }
 
-        private double _total_billed_hours = 0.0;
         public double total_billed_hours
         {
-            get { return data._total_billed_hours; }
-            set { data._total_billed_hours = value; }
+            get { return data.total_billed_hours; }
+            set { data.total_billed_hours = value; }
         }
 
-        private double _total_costing_amount = 0.0;
         public double total_costing_amount
         {
-            get { return data._total_costing_amount; }
-            set { data._total_costing_amount = value; }
+            get { return data.total_costing_amount; }
+            set { data.total_costing_amount = value; }
         }
 
-        private double _total_billable_amount = 0.0;
         public double total_billable_amount
         {
-            get { return data._total_billable_amount; }
-            set { data._total_billable_amount = value; }
+            get { return data.total_billable_amount; }
+            set { data.total_billable_amount = value; }
         }
 
-        private double _total_billed_amount = 0.0;
         public double total_billed_amount
         {
-            get { return data._total_billed_amount; }
-            set { data._total_billed_amount = value; }
+            get { return data.total_billed_amount; }
+            set { data.total_billed_amount = value; }
         }
 
-        private double _per_billed = 0.0;
         public double per_billed
         {
-            get { return data._per_billed; }
-            set { data._per_billed = value; }
+            get { return data.per_billed; }
+            set { data.per_billed = value; }
         }
 
         public string note

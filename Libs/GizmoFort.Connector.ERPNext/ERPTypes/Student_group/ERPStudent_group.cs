@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group
             set { data.academic_year = value; }
         }
 
-        private int _max_strength = 0;
         public int max_strength
         {
-            get { return data._max_strength; }
-            set { data._max_strength = value; }
+            get { return data.max_strength; }
+            set { data.max_strength = value; }
         }
 
         public string academic_term
@@ -66,11 +65,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group
             set { data.course = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string students

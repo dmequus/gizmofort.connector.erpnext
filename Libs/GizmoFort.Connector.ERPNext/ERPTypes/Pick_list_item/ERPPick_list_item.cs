@@ -27,18 +27,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pick_list_item
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _picked_qty = 0.0;
         public double picked_qty
         {
-            get { return data._picked_qty; }
-            set { data._picked_qty = value; }
+            get { return data.picked_qty; }
+            set { data.picked_qty = value; }
         }
 
         public string warehouse
@@ -83,18 +81,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pick_list_item
             set { data.uom = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
         public string sales_order

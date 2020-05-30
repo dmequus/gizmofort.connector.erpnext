@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer_credit_limit
             return obj;
         }
 
-        private double _credit_limit = 0.0;
         public double credit_limit
         {
-            get { return data._credit_limit; }
-            set { data._credit_limit = value; }
+            get { return data.credit_limit; }
+            set { data.credit_limit = value; }
         }
 
         public string company
@@ -28,11 +27,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer_credit_limit
             set { data.company = value; }
         }
 
-        private int _bypass_credit_limit_check = 0;
-        public int bypass_credit_limit_check
+        public long bypass_credit_limit_check
         {
-            get { return data._bypass_credit_limit_check; }
-            set { data._bypass_credit_limit_check = value; }
+            get { return data.bypass_credit_limit_check; }
+            set { data.bypass_credit_limit_check = value; }
         }
 
 

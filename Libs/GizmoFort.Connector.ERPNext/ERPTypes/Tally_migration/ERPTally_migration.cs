@@ -112,32 +112,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Tally_migration
             set { data.default_cost_center = value; }
         }
 
-        private int _is_master_data_processed = 0;
-        public int is_master_data_processed
+        public long is_master_data_processed
         {
-            get { return data._is_master_data_processed; }
-            set { data._is_master_data_processed = value; }
+            get { return data.is_master_data_processed; }
+            set { data.is_master_data_processed = value; }
         }
 
-        private int _is_day_book_data_processed = 0;
-        public int is_day_book_data_processed
+        public long is_day_book_data_processed
         {
-            get { return data._is_day_book_data_processed; }
-            set { data._is_day_book_data_processed = value; }
+            get { return data.is_day_book_data_processed; }
+            set { data.is_day_book_data_processed = value; }
         }
 
-        private int _is_day_book_data_imported = 0;
-        public int is_day_book_data_imported
+        public long is_day_book_data_imported
         {
-            get { return data._is_day_book_data_imported; }
-            set { data._is_day_book_data_imported = value; }
+            get { return data.is_day_book_data_imported; }
+            set { data.is_day_book_data_imported = value; }
         }
 
-        private int _is_master_data_imported = 0;
-        public int is_master_data_imported
+        public long is_master_data_imported
         {
-            get { return data._is_master_data_imported; }
-            set { data._is_master_data_imported = value; }
+            get { return data.is_master_data_imported; }
+            set { data.is_master_data_imported = value; }
         }
 
         public string day_book_data

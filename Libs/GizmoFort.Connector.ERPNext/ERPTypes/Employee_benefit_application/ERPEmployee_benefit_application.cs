@@ -43,18 +43,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_application
             set { data.employee = value; }
         }
 
-        private double _max_benefits = 0.0;
         public double max_benefits
         {
-            get { return data._max_benefits; }
-            set { data._max_benefits = value; }
+            get { return data.max_benefits; }
+            set { data.max_benefits = value; }
         }
 
-        private double _remaining_benefit = 0.0;
         public double remaining_benefit
         {
-            get { return data._remaining_benefit; }
-            set { data._remaining_benefit = value; }
+            get { return data.remaining_benefit; }
+            set { data.remaining_benefit = value; }
         }
 
         public string date
@@ -87,18 +85,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_application
             set { data.employee_benefits = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
-        private double _pro_rata_dispensed_amount = 0.0;
         public double pro_rata_dispensed_amount
         {
-            get { return data._pro_rata_dispensed_amount; }
-            set { data._pro_rata_dispensed_amount = value; }
+            get { return data.pro_rata_dispensed_amount; }
+            set { data.pro_rata_dispensed_amount = value; }
         }
 
 

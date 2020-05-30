@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Request_for_quotation_supplier
         public ERPRequest_for_quotation_supplier() : this(new ERPObject(DocType.Request_for_quotation_supplier)) { }
         public ERPRequest_for_quotation_supplier(ERPObject obj) : base(obj) { }
 
-        public static ERPRequest_for_quotation_supplier Create(int sendemail, int emailsent, string supplier, string contact, int noquote, Quotestatus quotestatus, string suppliername, string emailid)
+        public static ERPRequest_for_quotation_supplier Create(long sendemail, long emailsent, string supplier, string contact, long noquote, Quotestatus quotestatus, string suppliername, string emailid)
 
         {
             ERPRequest_for_quotation_supplier obj = new ERPRequest_for_quotation_supplier();
@@ -23,18 +23,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Request_for_quotation_supplier
             return obj;
         }
 
-        private int _send_email = 0;
-        public int send_email
+        public long send_email
         {
-            get { return data._send_email; }
-            set { data._send_email = value; }
+            get { return data.send_email; }
+            set { data.send_email = value; }
         }
 
-        private int _email_sent = 0;
-        public int email_sent
+        public long email_sent
         {
-            get { return data._email_sent; }
-            set { data._email_sent = value; }
+            get { return data.email_sent; }
+            set { data.email_sent = value; }
         }
 
         public string supplier
@@ -49,11 +47,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Request_for_quotation_supplier
             set { data.contact = value; }
         }
 
-        private int _no_quote = 0;
-        public int no_quote
+        public long no_quote
         {
-            get { return data._no_quote; }
-            set { data._no_quote = value; }
+            get { return data.no_quote; }
+            set { data.no_quote = value; }
         }
 
         public Quotestatus quote_status

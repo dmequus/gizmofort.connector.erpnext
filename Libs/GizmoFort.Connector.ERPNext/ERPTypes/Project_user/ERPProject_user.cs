@@ -45,18 +45,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project_user
             set { data.full_name = value; }
         }
 
-        private int _welcome_email_sent = 0;
-        public int welcome_email_sent
+        public long welcome_email_sent
         {
-            get { return data._welcome_email_sent; }
-            set { data._welcome_email_sent = value; }
+            get { return data.welcome_email_sent; }
+            set { data.welcome_email_sent = value; }
         }
 
-        private int _view_attachments = 0;
-        public int view_attachments
+        public long view_attachments
         {
-            get { return data._view_attachments; }
-            set { data._view_attachments = value; }
+            get { return data.view_attachments; }
+            set { data.view_attachments = value; }
         }
 
         public string project_status

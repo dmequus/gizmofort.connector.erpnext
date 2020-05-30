@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_person
         public ERPSales_person() : this(new ERPObject(DocType.Sales_person)) { }
         public ERPSales_person(ERPObject obj) : base(obj) { }
 
-        public static ERPSales_person Create(string salespersonname, int isgroup)
+        public static ERPSales_person Create(string salespersonname, long isgroup)
 
         {
             ERPSales_person obj = new ERPSales_person();
@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_person
 
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public string parent_sales_person
@@ -47,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_person
             set { data.commission_rate = value; }
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string employee
@@ -66,18 +64,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_person
             set { data.department = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

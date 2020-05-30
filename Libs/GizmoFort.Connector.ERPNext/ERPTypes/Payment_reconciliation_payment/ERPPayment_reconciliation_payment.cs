@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_reconciliation_payment
 
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
         public string reference_type
@@ -65,11 +64,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_reconciliation_payment
             set { data.reference_row = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string remark
@@ -84,11 +82,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_reconciliation_payment
             set { data.difference_account = value; }
         }
 
-        private double _difference_amount = 0.0;
         public double difference_amount
         {
-            get { return data._difference_amount; }
-            set { data._difference_amount = value; }
+            get { return data.difference_amount; }
+            set { data.difference_amount = value; }
         }
 
 

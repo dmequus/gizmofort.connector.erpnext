@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Budget_account
 
         }
 
-        private double _budget_amount = 0.0;
         public double budget_amount
         {
-            get { return data._budget_amount; }
-            set { data._budget_amount = value; }
+            get { return data.budget_amount; }
+            set { data.budget_amount = value; }
         }
 
 

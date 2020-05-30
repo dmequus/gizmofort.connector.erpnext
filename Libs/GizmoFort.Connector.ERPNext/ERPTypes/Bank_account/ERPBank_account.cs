@@ -52,18 +52,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_account
             set { data.account_subtype = value; }
         }
 
-        private int _is_default = 0;
-        public int is_default
+        public long is_default
         {
-            get { return data._is_default; }
-            set { data._is_default = value; }
+            get { return data.is_default; }
+            set { data.is_default = value; }
         }
 
-        private int _is_company_account = 0;
-        public int is_company_account
+        public long is_company_account
         {
-            get { return data._is_company_account; }
-            set { data._is_company_account = value; }
+            get { return data.is_company_account; }
+            set { data.is_company_account = value; }
         }
 
         public string company

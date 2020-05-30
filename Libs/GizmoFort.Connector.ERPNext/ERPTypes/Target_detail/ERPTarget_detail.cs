@@ -37,18 +37,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Target_detail
             set { data.fiscal_year = value; }
         }
 
-        private double _target_qty = 0.0;
         public double target_qty
         {
-            get { return data._target_qty; }
-            set { data._target_qty = value; }
+            get { return data.target_qty; }
+            set { data.target_qty = value; }
         }
 
-        private double _target_amount = 0.0;
         public double target_amount
         {
-            get { return data._target_amount; }
-            set { data._target_amount = value; }
+            get { return data.target_amount; }
+            set { data.target_amount = value; }
         }
 
         public string distribution_id

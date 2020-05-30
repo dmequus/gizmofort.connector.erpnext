@@ -20,25 +20,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Taxable_salary_slab
             return obj;
         }
 
-        private double _from_amount = 0.0;
         public double from_amount
         {
-            get { return data._from_amount; }
-            set { data._from_amount = value; }
+            get { return data.from_amount; }
+            set { data.from_amount = value; }
         }
 
-        private double _to_amount = 0.0;
         public double to_amount
         {
-            get { return data._to_amount; }
-            set { data._to_amount = value; }
+            get { return data.to_amount; }
+            set { data.to_amount = value; }
         }
 
-        private double _percent_deduction = 0.0;
         public double percent_deduction
         {
-            get { return data._percent_deduction; }
-            set { data._percent_deduction = value; }
+            get { return data.percent_deduction; }
+            set { data.percent_deduction = value; }
         }
 
         public string condition

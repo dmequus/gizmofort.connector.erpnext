@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_report_generation_tool
         public ERPStudent_report_generation_tool() : this(new ERPObject(DocType.Student_report_generation_tool)) { }
         public ERPStudent_report_generation_tool(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_report_generation_tool Create(string student, string studentname, string program, string studentbatch, int includeallassessment, int showmarks, int addletterhead, string assessmentgroup, string academicyear, string academicterm, string letterhead, string parentsmeeting, string parentsattendance, string terms, string assessmentterms)
+        public static ERPStudent_report_generation_tool Create(string student, string studentname, string program, string studentbatch, long includeallassessment, long showmarks, long addletterhead, string assessmentgroup, string academicyear, string academicterm, string letterhead, string parentsmeeting, string parentsattendance, string terms, string assessmentterms)
 
         {
             ERPStudent_report_generation_tool obj = new ERPStudent_report_generation_tool();
@@ -59,25 +59,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_report_generation_tool
             set { data.student_batch = value; }
         }
 
-        private int _include_all_assessment = 0;
-        public int include_all_assessment
+        public long include_all_assessment
         {
-            get { return data._include_all_assessment; }
-            set { data._include_all_assessment = value; }
+            get { return data.include_all_assessment; }
+            set { data.include_all_assessment = value; }
         }
 
-        private int _show_marks = 0;
-        public int show_marks
+        public long show_marks
         {
-            get { return data._show_marks; }
-            set { data._show_marks = value; }
+            get { return data.show_marks; }
+            set { data.show_marks = value; }
         }
 
-        private int _add_letterhead = 0;
-        public int add_letterhead
+        public long add_letterhead
         {
-            get { return data._add_letterhead; }
-            set { data._add_letterhead = value; }
+            get { return data.add_letterhead; }
+            set { data.add_letterhead = value; }
         }
 
         public string assessment_group

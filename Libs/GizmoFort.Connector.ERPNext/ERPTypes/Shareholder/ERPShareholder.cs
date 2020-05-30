@@ -46,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shareholder
             set { data.folio_no = value; }
         }
 
-        private int _is_company = 0;
-        public int is_company
+        public long is_company
         {
-            get { return data._is_company; }
-            set { data._is_company = value; }
+            get { return data.is_company; }
+            set { data.is_company = value; }
         }
 
         public string address_html

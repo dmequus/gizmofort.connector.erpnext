@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Exchange_rate_revaluation
             set { data.accounts = value; }
         }
 
-        private double _total_gain_loss = 0.0;
         public double total_gain_loss
         {
-            get { return data._total_gain_loss; }
-            set { data._total_gain_loss = value; }
+            get { return data.total_gain_loss; }
+            set { data.total_gain_loss = value; }
         }
 
         public string amended_from

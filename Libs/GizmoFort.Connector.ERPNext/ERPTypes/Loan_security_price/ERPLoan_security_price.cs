@@ -30,11 +30,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security_price
 
         }
 
-        private double _loan_security_price = 0.0;
         public double loan_security_price
         {
-            get { return data._loan_security_price; }
-            set { data._loan_security_price = value; }
+            get { return data.loan_security_price; }
+            set { data.loan_security_price = value; }
         }
 
         public string valid_from

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard
         public ERPSupplier_scorecard() : this(new ERPObject(DocType.Supplier_scorecard)) { }
         public ERPSupplier_scorecard(ERPObject obj) : base(obj) { }
 
-        public static ERPSupplier_scorecard Create(string supplier, string supplierscore, string indicatorcolor, string status, Period period, string weightingfunction, string standings, string criteria, int warnrfqs, int warnpos, int preventrfqs, int preventpos, int notifysupplier, int notifyemployee, string employee)
+        public static ERPSupplier_scorecard Create(string supplier, string supplierscore, string indicatorcolor, string status, Period period, string weightingfunction, string standings, string criteria, long warnrfqs, long warnpos, long preventrfqs, long preventpos, long notifysupplier, long notifyemployee, string employee)
 
         {
             ERPSupplier_scorecard obj = new ERPSupplier_scorecard();
@@ -83,46 +83,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard
             set { data.criteria = value; }
         }
 
-        private int _warn_rfqs = 0;
-        public int warn_rfqs
+        public long warn_rfqs
         {
-            get { return data._warn_rfqs; }
-            set { data._warn_rfqs = value; }
+            get { return data.warn_rfqs; }
+            set { data.warn_rfqs = value; }
         }
 
-        private int _warn_pos = 0;
-        public int warn_pos
+        public long warn_pos
         {
-            get { return data._warn_pos; }
-            set { data._warn_pos = value; }
+            get { return data.warn_pos; }
+            set { data.warn_pos = value; }
         }
 
-        private int _prevent_rfqs = 0;
-        public int prevent_rfqs
+        public long prevent_rfqs
         {
-            get { return data._prevent_rfqs; }
-            set { data._prevent_rfqs = value; }
+            get { return data.prevent_rfqs; }
+            set { data.prevent_rfqs = value; }
         }
 
-        private int _prevent_pos = 0;
-        public int prevent_pos
+        public long prevent_pos
         {
-            get { return data._prevent_pos; }
-            set { data._prevent_pos = value; }
+            get { return data.prevent_pos; }
+            set { data.prevent_pos = value; }
         }
 
-        private int _notify_supplier = 0;
-        public int notify_supplier
+        public long notify_supplier
         {
-            get { return data._notify_supplier; }
-            set { data._notify_supplier = value; }
+            get { return data.notify_supplier; }
+            set { data.notify_supplier = value; }
         }
 
-        private int _notify_employee = 0;
-        public int notify_employee
+        public long notify_employee
         {
-            get { return data._notify_employee; }
-            set { data._notify_employee = value; }
+            get { return data.notify_employee; }
+            set { data.notify_employee = value; }
         }
 
         public string employee

@@ -86,32 +86,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry
             set { data.user_remark = value; }
         }
 
-        private double _total_debit = 0.0;
         public double total_debit
         {
-            get { return data._total_debit; }
-            set { data._total_debit = value; }
+            get { return data.total_debit; }
+            set { data.total_debit = value; }
         }
 
-        private double _total_credit = 0.0;
         public double total_credit
         {
-            get { return data._total_credit; }
-            set { data._total_credit = value; }
+            get { return data.total_credit; }
+            set { data.total_credit = value; }
         }
 
-        private double _difference = 0.0;
         public double difference
         {
-            get { return data._difference; }
-            set { data._difference = value; }
+            get { return data.difference; }
+            set { data.difference = value; }
         }
 
-        private int _multi_currency = 0;
-        public int multi_currency
+        public long multi_currency
         {
-            get { return data._multi_currency; }
-            set { data._multi_currency = value; }
+            get { return data.multi_currency; }
+            set { data.multi_currency = value; }
         }
 
         public string total_amount_currency
@@ -120,11 +116,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry
             set { data.total_amount_currency = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
         public string total_amount_in_words
@@ -181,11 +176,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Journal_entry
             set { data.write_off_based_on = value.ToString(); }
         }
 
-        private double _write_off_amount = 0.0;
         public double write_off_amount
         {
-            get { return data._write_off_amount; }
-            set { data._write_off_amount = value; }
+            get { return data.write_off_amount; }
+            set { data.write_off_amount = value; }
         }
 
         public string pay_to_recd_from

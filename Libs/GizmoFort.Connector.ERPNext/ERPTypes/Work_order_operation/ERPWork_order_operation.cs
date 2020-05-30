@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order_operation
 
         }
 
-        private double _time_in_mins = 0.0;
         public double time_in_mins
         {
-            get { return data._time_in_mins; }
-            set { data._time_in_mins = value; }
+            get { return data.time_in_mins; }
+            set { data.time_in_mins = value; }
         }
 
         public string bom
@@ -47,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order_operation
             set { data.description = value; }
         }
 
-        private double _completed_qty = 0.0;
         public double completed_qty
         {
-            get { return data._completed_qty; }
-            set { data._completed_qty = value; }
+            get { return data.completed_qty; }
+            set { data.completed_qty = value; }
         }
 
         public Status status
@@ -78,18 +76,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order_operation
             set { data.planned_end_time = value; }
         }
 
-        private double _hour_rate = 0.0;
         public double hour_rate
         {
-            get { return data._hour_rate; }
-            set { data._hour_rate = value; }
+            get { return data.hour_rate; }
+            set { data.hour_rate = value; }
         }
 
-        private double _planned_operating_cost = 0.0;
         public double planned_operating_cost
         {
-            get { return data._planned_operating_cost; }
-            set { data._planned_operating_cost = value; }
+            get { return data.planned_operating_cost; }
+            set { data.planned_operating_cost = value; }
         }
 
         public string actual_start_time
@@ -104,25 +100,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order_operation
             set { data.actual_end_time = value; }
         }
 
-        private double _actual_operation_time = 0.0;
         public double actual_operation_time
         {
-            get { return data._actual_operation_time; }
-            set { data._actual_operation_time = value; }
+            get { return data.actual_operation_time; }
+            set { data.actual_operation_time = value; }
         }
 
-        private double _actual_operating_cost = 0.0;
         public double actual_operating_cost
         {
-            get { return data._actual_operating_cost; }
-            set { data._actual_operating_cost = value; }
+            get { return data.actual_operating_cost; }
+            set { data.actual_operating_cost = value; }
         }
 
-        private int _batch_size = 0;
         public int batch_size
         {
-            get { return data._batch_size; }
-            set { data._batch_size = value; }
+            get { return data.batch_size; }
+            set { data.batch_size = value; }
         }
 
 

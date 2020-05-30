@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.country = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public string default_finance_book
@@ -97,18 +96,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.transactions_annual_history = value; }
         }
 
-        private double _monthly_sales_target = 0.0;
         public double monthly_sales_target
         {
-            get { return data._monthly_sales_target; }
-            set { data._monthly_sales_target = value; }
+            get { return data.monthly_sales_target; }
+            set { data.monthly_sales_target = value; }
         }
 
-        private double _total_monthly_sales = 0.0;
         public double total_monthly_sales
         {
-            get { return data._total_monthly_sales; }
-            set { data._total_monthly_sales = value; }
+            get { return data.total_monthly_sales; }
+            set { data.total_monthly_sales = value; }
         }
 
         public string default_letter_head
@@ -123,11 +120,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.default_holiday_list = value; }
         }
 
-        private double _standard_working_hours = 0.0;
         public double standard_working_hours
         {
-            get { return data._standard_working_hours; }
-            set { data._standard_working_hours = value; }
+            get { return data.standard_working_hours; }
+            set { data.standard_working_hours = value; }
         }
 
         public string default_warehouse_for_sales_return
@@ -226,11 +222,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.unrealized_exchange_gain_loss_account = value; }
         }
 
-        private int _allow_account_creation_against_child_company = 0;
-        public int allow_account_creation_against_child_company
+        public long allow_account_creation_against_child_company
         {
-            get { return data._allow_account_creation_against_child_company; }
-            set { data._allow_account_creation_against_child_company = value; }
+            get { return data.allow_account_creation_against_child_company; }
+            set { data.allow_account_creation_against_child_company = value; }
         }
 
         public string default_payable_account
@@ -287,11 +282,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.cost_center = value; }
         }
 
-        private double _credit_limit = 0.0;
         public double credit_limit
         {
-            get { return data._credit_limit; }
-            set { data._credit_limit = value; }
+            get { return data.credit_limit; }
+            set { data.credit_limit = value; }
         }
 
         public string payment_terms
@@ -300,11 +294,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.payment_terms = value; }
         }
 
-        private int _enable_perpetual_inventory = 0;
-        public int enable_perpetual_inventory
+        public long enable_perpetual_inventory
         {
-            get { return data._enable_perpetual_inventory; }
-            set { data._enable_perpetual_inventory = value; }
+            get { return data.enable_perpetual_inventory; }
+            set { data.enable_perpetual_inventory = value; }
         }
 
         public string default_inventory_account
@@ -433,18 +426,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Company
             set { data.registration_details = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

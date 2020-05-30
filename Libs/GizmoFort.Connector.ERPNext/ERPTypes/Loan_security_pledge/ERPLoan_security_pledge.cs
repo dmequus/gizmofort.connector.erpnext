@@ -66,18 +66,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security_pledge
             set { data.loan_application = value; }
         }
 
-        private double _total_security_value = 0.0;
         public double total_security_value
         {
-            get { return data._total_security_value; }
-            set { data._total_security_value = value; }
+            get { return data.total_security_value; }
+            set { data.total_security_value = value; }
         }
 
-        private double _maximum_loan_value = 0.0;
         public double maximum_loan_value
         {
-            get { return data._maximum_loan_value; }
-            set { data._maximum_loan_value = value; }
+            get { return data.maximum_loan_value; }
+            set { data.maximum_loan_value = value; }
         }
 
         public Status status

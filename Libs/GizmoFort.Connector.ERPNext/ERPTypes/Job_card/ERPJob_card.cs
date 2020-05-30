@@ -74,11 +74,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card
             set { data.posting_date = value; }
         }
 
-        private double _for_quantity = 0.0;
         public double for_quantity
         {
-            get { return data._for_quantity; }
-            set { data._for_quantity = value; }
+            get { return data.for_quantity; }
+            set { data.for_quantity = value; }
         }
 
         public string employee
@@ -93,18 +92,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card
             set { data.time_logs = value; }
         }
 
-        private double _total_completed_qty = 0.0;
         public double total_completed_qty
         {
-            get { return data._total_completed_qty; }
-            set { data._total_completed_qty = value; }
+            get { return data.total_completed_qty; }
+            set { data.total_completed_qty = value; }
         }
 
-        private double _total_time_in_mins = 0.0;
         public double total_time_in_mins
         {
-            get { return data._total_time_in_mins; }
-            set { data._total_time_in_mins = value; }
+            get { return data.total_time_in_mins; }
+            set { data.total_time_in_mins = value; }
         }
 
         public string items
@@ -119,18 +116,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card
             set { data.operation_id = value; }
         }
 
-        private double _transferred_qty = 0.0;
         public double transferred_qty
         {
-            get { return data._transferred_qty; }
-            set { data._transferred_qty = value; }
+            get { return data.transferred_qty; }
+            set { data.transferred_qty = value; }
         }
 
-        private double _requested_qty = 0.0;
         public double requested_qty
         {
-            get { return data._requested_qty; }
-            set { data._requested_qty = value; }
+            get { return data.requested_qty; }
+            set { data.requested_qty = value; }
         }
 
         public string project
@@ -151,11 +146,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card
             set { data.status = value.ToString(); }
         }
 
-        private int _job_started = 0;
-        public int job_started
+        public long job_started
         {
-            get { return data._job_started; }
-            set { data._job_started = value; }
+            get { return data.job_started; }
+            set { data.job_started = value; }
         }
 
         public string started_time
@@ -194,11 +188,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card
             set { data.item_name = value; }
         }
 
-        private int _current_time = 0;
         public int current_time
         {
-            get { return data._current_time; }
-            set { data._current_time = value; }
+            get { return data.current_time; }
+            set { data.current_time = value; }
         }
 
 

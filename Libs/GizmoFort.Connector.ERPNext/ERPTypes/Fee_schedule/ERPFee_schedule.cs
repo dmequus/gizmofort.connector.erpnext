@@ -60,11 +60,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fee_schedule
             set { data.fee_creation_status = value.ToString(); }
         }
 
-        private int _send_email = 0;
-        public int send_email
+        public long send_email
         {
-            get { return data._send_email; }
-            set { data._send_email = value; }
+            get { return data.send_email; }
+            set { data.send_email = value; }
         }
 
         public string student_category
@@ -97,18 +96,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fee_schedule
             set { data.components = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
         public string grand_total_in_words

@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Training_result_employee
             set { data.department = value; }
         }
 
-        private double _hours = 0.0;
         public double hours
         {
-            get { return data._hours; }
-            set { data._hours = value; }
+            get { return data.hours; }
+            set { data.hours = value; }
         }
 
         public string grade

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Restaurant_menu
         public ERPRestaurant_menu() : this(new ERPObject(DocType.Restaurant_menu)) { }
         public ERPRestaurant_menu(ERPObject obj) : base(obj) { }
 
-        public static ERPRestaurant_menu Create(string restaurant, int enabled, string pricelist, string items)
+        public static ERPRestaurant_menu Create(string restaurant, long enabled, string pricelist, string items)
 
         {
             ERPRestaurant_menu obj = new ERPRestaurant_menu();
@@ -30,11 +30,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Restaurant_menu
 
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string price_list

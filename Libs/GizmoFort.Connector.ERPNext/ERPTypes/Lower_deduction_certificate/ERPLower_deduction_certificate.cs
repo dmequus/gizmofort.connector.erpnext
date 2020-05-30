@@ -59,18 +59,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lower_deduction_certificate
             set { data.valid_upto = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _certificate_limit = 0.0;
         public double certificate_limit
         {
-            get { return data._certificate_limit; }
-            set { data._certificate_limit = value; }
+            get { return data.certificate_limit; }
+            set { data.certificate_limit = value; }
         }
 
         public string valid_from

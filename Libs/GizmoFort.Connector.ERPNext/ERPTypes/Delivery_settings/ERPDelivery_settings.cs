@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_settings
         public ERPDelivery_settings() : this(new ERPObject(DocType.Delivery_settings)) { }
         public ERPDelivery_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPDelivery_settings Create(string dispatchtemplate, string dispatchattachment, int sendwithattachment, int stopdelay)
+        public static ERPDelivery_settings Create(string dispatchtemplate, string dispatchattachment, long sendwithattachment, int stopdelay)
 
         {
             ERPDelivery_settings obj = new ERPDelivery_settings();
@@ -36,18 +36,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_settings
             set { data.dispatch_attachment = value; }
         }
 
-        private int _send_with_attachment = 0;
-        public int send_with_attachment
+        public long send_with_attachment
         {
-            get { return data._send_with_attachment; }
-            set { data._send_with_attachment = value; }
+            get { return data.send_with_attachment; }
+            set { data.send_with_attachment = value; }
         }
 
-        private int _stop_delay = 0;
         public int stop_delay
         {
-            get { return data._stop_delay; }
-            set { data._stop_delay = value; }
+            get { return data.stop_delay; }
+            set { data.stop_delay = value; }
         }
 
 

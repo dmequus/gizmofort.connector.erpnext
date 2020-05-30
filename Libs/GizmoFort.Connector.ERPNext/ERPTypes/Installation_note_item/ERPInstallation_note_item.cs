@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Installation_note_item
             set { data.serial_no = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string description

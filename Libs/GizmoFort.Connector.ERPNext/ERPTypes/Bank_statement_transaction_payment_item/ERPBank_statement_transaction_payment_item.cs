@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_statement_transaction_paymen
             set { data.description = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public Partytype party_type
@@ -81,11 +80,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_statement_transaction_paymen
             set { data.mode_of_payment = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
         public string reference_name

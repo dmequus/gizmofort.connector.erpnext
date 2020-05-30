@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_closing_voucher_details
 
         }
 
-        private double _collected_amount = 0.0;
         public double collected_amount
         {
-            get { return data._collected_amount; }
-            set { data._collected_amount = value; }
+            get { return data.collected_amount; }
+            set { data.collected_amount = value; }
         }
 
-        private double _expected_amount = 0.0;
         public double expected_amount
         {
-            get { return data._expected_amount; }
-            set { data._expected_amount = value; }
+            get { return data.expected_amount; }
+            set { data.expected_amount = value; }
         }
 
-        private double _difference = 0.0;
         public double difference
         {
-            get { return data._difference; }
-            set { data._difference = value; }
+            get { return data.difference; }
+            set { data.difference = value; }
         }
 
 

@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.currency = value; }
         }
 
-        private int _disable = 0;
-        public int disable
+        public long disable
         {
-            get { return data._disable; }
-            set { data._disable = value; }
+            get { return data.disable; }
+            set { data.disable = value; }
         }
 
         public string warehouse
@@ -79,25 +78,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.brands = value; }
         }
 
-        private int _mixed_conditions = 0;
-        public int mixed_conditions
+        public long mixed_conditions
         {
-            get { return data._mixed_conditions; }
-            set { data._mixed_conditions = value; }
+            get { return data.mixed_conditions; }
+            set { data.mixed_conditions = value; }
         }
 
-        private int _is_cumulative = 0;
-        public int is_cumulative
+        public long is_cumulative
         {
-            get { return data._is_cumulative; }
-            set { data._is_cumulative = value; }
+            get { return data.is_cumulative; }
+            set { data.is_cumulative = value; }
         }
 
-        private int _coupon_code_based = 0;
-        public int coupon_code_based
+        public long coupon_code_based
         {
-            get { return data._coupon_code_based; }
-            set { data._coupon_code_based = value; }
+            get { return data.coupon_code_based; }
+            set { data.coupon_code_based = value; }
         }
 
         public Applyruleonother apply_rule_on_other
@@ -124,18 +120,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.other_brand = value; }
         }
 
-        private int _selling = 0;
-        public int selling
+        public long selling
         {
-            get { return data._selling; }
-            set { data._selling = value; }
+            get { return data.selling; }
+            set { data.selling = value; }
         }
 
-        private int _buying = 0;
-        public int buying
+        public long buying
         {
-            get { return data._buying; }
-            set { data._buying = value; }
+            get { return data.buying; }
+            set { data.buying = value; }
         }
 
         public Applicablefor applicable_for
@@ -186,32 +180,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.supplier_group = value; }
         }
 
-        private double _min_qty = 0.0;
         public double min_qty
         {
-            get { return data._min_qty; }
-            set { data._min_qty = value; }
+            get { return data.min_qty; }
+            set { data.min_qty = value; }
         }
 
-        private double _max_qty = 0.0;
         public double max_qty
         {
-            get { return data._max_qty; }
-            set { data._max_qty = value; }
+            get { return data.max_qty; }
+            set { data.max_qty = value; }
         }
 
-        private double _min_amt = 0.0;
         public double min_amt
         {
-            get { return data._min_amt; }
-            set { data._min_amt = value; }
+            get { return data.min_amt; }
+            set { data.min_amt = value; }
         }
 
-        private double _max_amt = 0.0;
         public double max_amt
         {
-            get { return data._max_amt; }
-            set { data._max_amt = value; }
+            get { return data.max_amt; }
+            set { data.max_amt = value; }
         }
 
         public string valid_from
@@ -238,11 +228,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.margin_type = value.ToString(); }
         }
 
-        private double _margin_rate_or_amount = 0.0;
         public double margin_rate_or_amount
         {
-            get { return data._margin_rate_or_amount; }
-            set { data._margin_rate_or_amount = value; }
+            get { return data.margin_rate_or_amount; }
+            set { data.margin_rate_or_amount = value; }
         }
 
         public Rateordiscount rate_or_discount
@@ -257,25 +246,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.apply_discount_on = value.ToString(); }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _discount_amount = 0.0;
         public double discount_amount
         {
-            get { return data._discount_amount; }
-            set { data._discount_amount = value; }
+            get { return data.discount_amount; }
+            set { data.discount_amount = value; }
         }
 
-        private double _discount_percentage = 0.0;
         public double discount_percentage
         {
-            get { return data._discount_percentage; }
-            set { data._discount_percentage = value; }
+            get { return data.discount_percentage; }
+            set { data.discount_percentage = value; }
         }
 
         public string for_price_list
@@ -284,11 +270,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.for_price_list = value; }
         }
 
-        private int _same_item = 0;
-        public int same_item
+        public long same_item
         {
-            get { return data._same_item; }
-            set { data._same_item = value; }
+            get { return data.same_item; }
+            set { data.same_item = value; }
         }
 
         public string free_item
@@ -297,11 +282,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.free_item = value; }
         }
 
-        private double _free_qty = 0.0;
         public double free_qty
         {
-            get { return data._free_qty; }
-            set { data._free_qty = value; }
+            get { return data.free_qty; }
+            set { data.free_qty = value; }
         }
 
         public string free_item_uom
@@ -310,18 +294,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.free_item_uom = value; }
         }
 
-        private double _free_item_rate = 0.0;
         public double free_item_rate
         {
-            get { return data._free_item_rate; }
-            set { data._free_item_rate = value; }
+            get { return data.free_item_rate; }
+            set { data.free_item_rate = value; }
         }
 
-        private double _threshold_percentage = 0.0;
         public double threshold_percentage
         {
-            get { return data._threshold_percentage; }
-            set { data._threshold_percentage = value; }
+            get { return data.threshold_percentage; }
+            set { data.threshold_percentage = value; }
         }
 
         public Priority priority
@@ -330,25 +312,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pricing_rule
             set { data.priority = value.ToString(); }
         }
 
-        private int _apply_multiple_pricing_rules = 0;
-        public int apply_multiple_pricing_rules
+        public long apply_multiple_pricing_rules
         {
-            get { return data._apply_multiple_pricing_rules; }
-            set { data._apply_multiple_pricing_rules = value; }
+            get { return data.apply_multiple_pricing_rules; }
+            set { data.apply_multiple_pricing_rules = value; }
         }
 
-        private int _apply_discount_on_rate = 0;
-        public int apply_discount_on_rate
+        public long apply_discount_on_rate
         {
-            get { return data._apply_discount_on_rate; }
-            set { data._apply_discount_on_rate = value; }
+            get { return data.apply_discount_on_rate; }
+            set { data.apply_discount_on_rate = value; }
         }
 
-        private int _validate_applied_rule = 0;
-        public int validate_applied_rule
+        public long validate_applied_rule
         {
-            get { return data._validate_applied_rule; }
-            set { data._validate_applied_rule = value; }
+            get { return data.validate_applied_rule; }
+            set { data.validate_applied_rule = value; }
         }
 
         public string rule_description

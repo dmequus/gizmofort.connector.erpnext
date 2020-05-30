@@ -40,25 +40,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_scrap_item
             set { data.item_name = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string stock_uom
@@ -67,18 +64,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_scrap_item
             set { data.stock_uom = value; }
         }
 
-        private double _base_rate = 0.0;
         public double base_rate
         {
-            get { return data._base_rate; }
-            set { data._base_rate = value; }
+            get { return data.base_rate; }
+            set { data.base_rate = value; }
         }
 
-        private double _base_amount = 0.0;
         public double base_amount
         {
-            get { return data._base_amount; }
-            set { data._base_amount = value; }
+            get { return data.base_amount; }
+            set { data.base_amount = value; }
         }
 
 

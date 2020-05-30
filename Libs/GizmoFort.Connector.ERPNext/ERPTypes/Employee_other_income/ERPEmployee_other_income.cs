@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_other_income
             set { data.company = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string source

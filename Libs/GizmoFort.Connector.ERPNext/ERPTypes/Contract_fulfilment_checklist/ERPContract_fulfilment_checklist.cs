@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract_fulfilment_checklist
         public ERPContract_fulfilment_checklist() : this(new ERPObject(DocType.Contract_fulfilment_checklist)) { }
         public ERPContract_fulfilment_checklist(ERPObject obj) : base(obj) { }
 
-        public static ERPContract_fulfilment_checklist Create(int fulfilled, string requirement, string notes, string amendedfrom)
+        public static ERPContract_fulfilment_checklist Create(long fulfilled, string requirement, string notes, string amendedfrom)
 
         {
             ERPContract_fulfilment_checklist obj = new ERPContract_fulfilment_checklist();
@@ -19,11 +19,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract_fulfilment_checklist
             return obj;
         }
 
-        private int _fulfilled = 0;
-        public int fulfilled
+        public long fulfilled
         {
-            get { return data._fulfilled; }
-            set { data._fulfilled = value; }
+            get { return data.fulfilled; }
+            set { data.fulfilled = value; }
         }
 
         public string requirement

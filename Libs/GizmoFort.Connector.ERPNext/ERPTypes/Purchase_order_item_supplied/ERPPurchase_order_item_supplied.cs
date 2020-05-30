@@ -32,25 +32,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_order_item_supplied
             set { data.rm_item_code = value; }
         }
 
-        private double _required_qty = 0.0;
         public double required_qty
         {
-            get { return data._required_qty; }
-            set { data._required_qty = value; }
+            get { return data.required_qty; }
+            set { data.required_qty = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string bom_detail_no
@@ -65,11 +62,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_order_item_supplied
             set { data.reference_name = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
         public string stock_uom
@@ -84,11 +80,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_order_item_supplied
             set { data.reserve_warehouse = value; }
         }
 
-        private double _supplied_qty = 0.0;
         public double supplied_qty
         {
-            get { return data._supplied_qty; }
-            set { data._supplied_qty = value; }
+            get { return data.supplied_qty; }
+            set { data.supplied_qty = value; }
         }
 
 

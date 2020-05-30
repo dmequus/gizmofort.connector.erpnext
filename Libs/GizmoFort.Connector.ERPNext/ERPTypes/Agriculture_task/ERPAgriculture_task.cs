@@ -31,18 +31,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Agriculture_task
 
         }
 
-        private int _start_day = 0;
         public int start_day
         {
-            get { return data._start_day; }
-            set { data._start_day = value; }
+            get { return data.start_day; }
+            set { data.start_day = value; }
         }
 
-        private int _end_day = 0;
         public int end_day
         {
-            get { return data._end_day; }
-            set { data._end_day = value; }
+            get { return data.end_day; }
+            set { data.end_day = value; }
         }
 
         public Holidaymanagement holiday_management

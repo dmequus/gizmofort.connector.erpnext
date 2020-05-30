@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Holiday
             set { data.description = value; }
         }
 
-        private int _weekly_off = 0;
-        public int weekly_off
+        public long weekly_off
         {
-            get { return data._weekly_off; }
-            set { data._weekly_off = value; }
+            get { return data.weekly_off; }
+            set { data.weekly_off = value; }
         }
 
 

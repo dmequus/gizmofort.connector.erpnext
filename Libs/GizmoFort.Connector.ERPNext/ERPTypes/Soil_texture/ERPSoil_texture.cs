@@ -60,25 +60,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Soil_texture
             set { data.soil_type = value.ToString(); }
         }
 
-        private double _clay_composition = 0.0;
         public double clay_composition
         {
-            get { return data._clay_composition; }
-            set { data._clay_composition = value; }
+            get { return data.clay_composition; }
+            set { data.clay_composition = value; }
         }
 
-        private double _sand_composition = 0.0;
         public double sand_composition
         {
-            get { return data._sand_composition; }
-            set { data._sand_composition = value; }
+            get { return data.sand_composition; }
+            set { data.sand_composition = value; }
         }
 
-        private double _silt_composition = 0.0;
         public double silt_composition
         {
-            get { return data._silt_composition; }
-            set { data._silt_composition = value; }
+            get { return data.silt_composition; }
+            set { data.silt_composition = value; }
         }
 
         public string ternary_plot

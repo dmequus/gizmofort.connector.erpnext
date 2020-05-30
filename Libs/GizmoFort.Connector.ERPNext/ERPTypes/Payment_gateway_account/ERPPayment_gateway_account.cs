@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_gateway_account
         public ERPPayment_gateway_account() : this(new ERPObject(DocType.Payment_gateway_account)) { }
         public ERPPayment_gateway_account(ERPObject obj) : base(obj) { }
 
-        public static ERPPayment_gateway_account Create(string paymentgateway, int isdefault, string paymentaccount, string currency, string message, string messageexamples)
+        public static ERPPayment_gateway_account Create(string paymentgateway, long isdefault, string paymentaccount, string currency, string message, string messageexamples)
 
         {
             ERPPayment_gateway_account obj = new ERPPayment_gateway_account();
@@ -32,11 +32,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_gateway_account
 
         }
 
-        private int _is_default = 0;
-        public int is_default
+        public long is_default
         {
-            get { return data._is_default; }
-            set { data._is_default = value; }
+            get { return data.is_default; }
+            set { data.is_default = value; }
         }
 
         public string payment_account

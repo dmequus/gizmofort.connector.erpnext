@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Practitioner_schedule
             set { data.time_slots = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
 

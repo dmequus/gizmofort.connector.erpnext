@@ -50,67 +50,58 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order_item
             set { data.description = value; }
         }
 
-        private double _required_qty = 0.0;
         public double required_qty
         {
-            get { return data._required_qty; }
-            set { data._required_qty = value; }
+            get { return data.required_qty; }
+            set { data.required_qty = value; }
         }
 
-        private double _transferred_qty = 0.0;
         public double transferred_qty
         {
-            get { return data._transferred_qty; }
-            set { data._transferred_qty = value; }
+            get { return data.transferred_qty; }
+            set { data.transferred_qty = value; }
         }
 
-        private int _allow_alternative_item = 0;
-        public int allow_alternative_item
+        public long allow_alternative_item
         {
-            get { return data._allow_alternative_item; }
-            set { data._allow_alternative_item = value; }
+            get { return data.allow_alternative_item; }
+            set { data.allow_alternative_item = value; }
         }
 
-        private int _include_item_in_manufacturing = 0;
-        public int include_item_in_manufacturing
+        public long include_item_in_manufacturing
         {
-            get { return data._include_item_in_manufacturing; }
-            set { data._include_item_in_manufacturing = value; }
+            get { return data.include_item_in_manufacturing; }
+            set { data.include_item_in_manufacturing = value; }
         }
 
-        private double _consumed_qty = 0.0;
         public double consumed_qty
         {
-            get { return data._consumed_qty; }
-            set { data._consumed_qty = value; }
+            get { return data.consumed_qty; }
+            set { data.consumed_qty = value; }
         }
 
-        private double _available_qty_at_source_warehouse = 0.0;
         public double available_qty_at_source_warehouse
         {
-            get { return data._available_qty_at_source_warehouse; }
-            set { data._available_qty_at_source_warehouse = value; }
+            get { return data.available_qty_at_source_warehouse; }
+            set { data.available_qty_at_source_warehouse = value; }
         }
 
-        private double _available_qty_at_wip_warehouse = 0.0;
         public double available_qty_at_wip_warehouse
         {
-            get { return data._available_qty_at_wip_warehouse; }
-            set { data._available_qty_at_wip_warehouse = value; }
+            get { return data.available_qty_at_wip_warehouse; }
+            set { data.available_qty_at_wip_warehouse = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
 

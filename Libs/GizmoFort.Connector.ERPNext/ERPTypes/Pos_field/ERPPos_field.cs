@@ -44,18 +44,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_field
             set { data.options = value; }
         }
 
-        private int _reqd = 0;
-        public int reqd
+        public long reqd
         {
-            get { return data._reqd; }
-            set { data._reqd = value; }
+            get { return data.reqd; }
+            set { data.reqd = value; }
         }
 
-        private int _read_only = 0;
-        public int read_only
+        public long read_only
         {
-            get { return data._read_only; }
-            set { data._read_only = value; }
+            get { return data.read_only; }
+            set { data.read_only = value; }
         }
 
         public string default_value

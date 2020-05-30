@@ -46,25 +46,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation_item
             set { data.item_name = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _valuation_rate = 0.0;
         public double valuation_rate
         {
-            get { return data._valuation_rate; }
-            set { data._valuation_rate = value; }
+            get { return data.valuation_rate; }
+            set { data.valuation_rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string serial_no
@@ -73,11 +70,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation_item
             set { data.serial_no = value; }
         }
 
-        private double _current_qty = 0.0;
         public double current_qty
         {
-            get { return data._current_qty; }
-            set { data._current_qty = value; }
+            get { return data.current_qty; }
+            set { data.current_qty = value; }
         }
 
         public string current_serial_no
@@ -86,18 +82,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation_item
             set { data.current_serial_no = value; }
         }
 
-        private double _current_valuation_rate = 0.0;
         public double current_valuation_rate
         {
-            get { return data._current_valuation_rate; }
-            set { data._current_valuation_rate = value; }
+            get { return data.current_valuation_rate; }
+            set { data.current_valuation_rate = value; }
         }
 
-        private double _current_amount = 0.0;
         public double current_amount
         {
-            get { return data._current_amount; }
-            set { data._current_amount = value; }
+            get { return data.current_amount; }
+            set { data.current_amount = value; }
         }
 
         public string quantity_difference
@@ -106,11 +100,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation_item
             set { data.quantity_difference = value; }
         }
 
-        private double _amount_difference = 0.0;
         public double amount_difference
         {
-            get { return data._amount_difference; }
-            set { data._amount_difference = value; }
+            get { return data.amount_difference; }
+            set { data.amount_difference = value; }
         }
 
         public string batch_no

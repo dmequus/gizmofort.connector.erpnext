@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_maintenance_log
         public ERPAsset_maintenance_log() : this(new ERPObject(DocType.Asset_maintenance_log)) { }
         public ERPAsset_maintenance_log(ERPObject obj) : base(obj) { }
 
-        public static ERPAsset_maintenance_log Create(string assetmaintenance, string namingseries, string assetname, string itemcode, string itemname, string task, string maintenancetype, string periodicity, string assigntoname, string duedate, string completiondate, Maintenancestatus maintenancestatus, int hascertificate, string certificateattachement, string description, string actionsperformed, string amendedfrom)
+        public static ERPAsset_maintenance_log Create(string assetmaintenance, string namingseries, string assetname, string itemcode, string itemname, string task, string maintenancetype, string periodicity, string assigntoname, string duedate, string completiondate, Maintenancestatus maintenancestatus, long hascertificate, string certificateattachement, string description, string actionsperformed, string amendedfrom)
 
         {
             ERPAsset_maintenance_log obj = new ERPAsset_maintenance_log();
@@ -109,11 +109,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_maintenance_log
             set { data.maintenance_status = value.ToString(); }
         }
 
-        private int _has_certificate = 0;
-        public int has_certificate
+        public long has_certificate
         {
-            get { return data._has_certificate; }
-            set { data._has_certificate = value; }
+            get { return data.has_certificate; }
+            set { data.has_certificate = value; }
         }
 
         public string certificate_attachement

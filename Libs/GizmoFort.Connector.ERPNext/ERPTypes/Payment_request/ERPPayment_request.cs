@@ -65,18 +65,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_request
             set { data.reference_name = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
-        private int _is_a_subscription = 0;
-        public int is_a_subscription
+        public long is_a_subscription
         {
-            get { return data._is_a_subscription; }
-            set { data._is_a_subscription = value; }
+            get { return data.is_a_subscription; }
+            set { data.is_a_subscription = value; }
         }
 
         public string currency
@@ -163,11 +161,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_request
             set { data.status = value.ToString(); }
         }
 
-        private int _make_sales_invoice = 0;
-        public int make_sales_invoice
+        public long make_sales_invoice
         {
-            get { return data._make_sales_invoice; }
-            set { data._make_sales_invoice = value; }
+            get { return data.make_sales_invoice; }
+            set { data.make_sales_invoice = value; }
         }
 
         public string message
@@ -182,11 +179,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_request
             set { data.message_examples = value; }
         }
 
-        private int _mute_email = 0;
-        public int mute_email
+        public long mute_email
         {
-            get { return data._mute_email; }
-            set { data._mute_email = value; }
+            get { return data.mute_email; }
+            set { data.mute_email = value; }
         }
 
         public string payment_url

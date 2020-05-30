@@ -34,25 +34,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security_type
             set { data.unit_of_measure = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private double _haircut = 0.0;
         public double haircut
         {
-            get { return data._haircut; }
-            set { data._haircut = value; }
+            get { return data.haircut; }
+            set { data.haircut = value; }
         }
 
-        private double _loan_to_value_ratio = 0.0;
         public double loan_to_value_ratio
         {
-            get { return data._loan_to_value_ratio; }
-            set { data._loan_to_value_ratio = value; }
+            get { return data.loan_to_value_ratio; }
+            set { data.loan_to_value_ratio = value; }
         }
 
 

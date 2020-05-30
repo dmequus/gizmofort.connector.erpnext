@@ -52,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_structure
             set { data.is_default = value.ToString(); }
         }
 
-        private int _salary_slip_based_on_timesheet = 0;
-        public int salary_slip_based_on_timesheet
+        public long salary_slip_based_on_timesheet
         {
-            get { return data._salary_slip_based_on_timesheet; }
-            set { data._salary_slip_based_on_timesheet = value; }
+            get { return data.salary_slip_based_on_timesheet; }
+            set { data.salary_slip_based_on_timesheet = value; }
         }
 
         public string salary_component
@@ -65,25 +64,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_structure
             set { data.salary_component = value; }
         }
 
-        private double _hour_rate = 0.0;
         public double hour_rate
         {
-            get { return data._hour_rate; }
-            set { data._hour_rate = value; }
+            get { return data.hour_rate; }
+            set { data.hour_rate = value; }
         }
 
-        private double _leave_encashment_amount_per_day = 0.0;
         public double leave_encashment_amount_per_day
         {
-            get { return data._leave_encashment_amount_per_day; }
-            set { data._leave_encashment_amount_per_day = value; }
+            get { return data.leave_encashment_amount_per_day; }
+            set { data.leave_encashment_amount_per_day = value; }
         }
 
-        private double _max_benefits = 0.0;
         public double max_benefits
         {
-            get { return data._max_benefits; }
-            set { data._max_benefits = value; }
+            get { return data.max_benefits; }
+            set { data.max_benefits = value; }
         }
 
         public string earnings
@@ -98,25 +94,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_structure
             set { data.deductions = value; }
         }
 
-        private double _total_earning = 0.0;
         public double total_earning
         {
-            get { return data._total_earning; }
-            set { data._total_earning = value; }
+            get { return data.total_earning; }
+            set { data.total_earning = value; }
         }
 
-        private double _total_deduction = 0.0;
         public double total_deduction
         {
-            get { return data._total_deduction; }
-            set { data._total_deduction = value; }
+            get { return data.total_deduction; }
+            set { data.total_deduction = value; }
         }
 
-        private double _net_pay = 0.0;
         public double net_pay
         {
-            get { return data._net_pay; }
-            set { data._net_pay = value; }
+            get { return data.net_pay; }
+            set { data.net_pay = value; }
         }
 
         public string mode_of_payment

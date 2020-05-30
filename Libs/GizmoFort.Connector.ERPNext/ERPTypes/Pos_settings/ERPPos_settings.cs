@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_settings
             return obj;
         }
 
-        private int _use_pos_in_offline_mode = 0;
-        public int use_pos_in_offline_mode
+        public long use_pos_in_offline_mode
         {
-            get { return data._use_pos_in_offline_mode; }
-            set { data._use_pos_in_offline_mode = value; }
+            get { return data.use_pos_in_offline_mode; }
+            set { data.use_pos_in_offline_mode = value; }
         }
 
         public string fields

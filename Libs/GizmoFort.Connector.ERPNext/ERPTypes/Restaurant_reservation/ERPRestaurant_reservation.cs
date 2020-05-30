@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Restaurant_reservation
             set { data.restaurant = value; }
         }
 
-        private int _no_of_people = 0;
         public int no_of_people
         {
-            get { return data._no_of_people; }
-            set { data._no_of_people = value; }
+            get { return data.no_of_people; }
+            set { data.no_of_people = value; }
         }
 
         public string reservation_time

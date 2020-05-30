@@ -27,18 +27,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appointment_type
 
         }
 
-        private int _ip = 0;
-        public int ip
+        public long ip
         {
-            get { return data._ip; }
-            set { data._ip = value; }
+            get { return data.ip; }
+            set { data.ip = value; }
         }
 
-        private int _default_duration = 0;
         public int default_duration
         {
-            get { return data._default_duration; }
-            set { data._default_duration = value; }
+            get { return data.default_duration; }
+            set { data.default_duration = value; }
         }
 
         public string color

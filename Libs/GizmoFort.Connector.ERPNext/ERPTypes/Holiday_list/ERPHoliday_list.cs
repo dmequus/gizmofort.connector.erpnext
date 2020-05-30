@@ -45,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Holiday_list
             set { data.to_date = value; }
         }
 
-        private int _total_holidays = 0;
         public int total_holidays
         {
-            get { return data._total_holidays; }
-            set { data._total_holidays = value; }
+            get { return data.total_holidays; }
+            set { data.total_holidays = value; }
         }
 
         public Weeklyoff weekly_off

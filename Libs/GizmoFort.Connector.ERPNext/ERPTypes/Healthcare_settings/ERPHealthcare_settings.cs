@@ -26,25 +26,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
 
         }
 
-        private int _collect_registration_fee = 0;
-        public int collect_registration_fee
+        public long collect_registration_fee
         {
-            get { return data._collect_registration_fee; }
-            set { data._collect_registration_fee = value; }
+            get { return data.collect_registration_fee; }
+            set { data.collect_registration_fee = value; }
         }
 
-        private double _registration_fee = 0.0;
         public double registration_fee
         {
-            get { return data._registration_fee; }
-            set { data._registration_fee = value; }
+            get { return data.registration_fee; }
+            set { data.registration_fee = value; }
         }
 
-        private int _valid_days = 0;
         public int valid_days
         {
-            get { return data._valid_days; }
-            set { data._valid_days = value; }
+            get { return data.valid_days; }
+            set { data.valid_days = value; }
         }
 
         public string inpatient_visit_charge_item
@@ -77,11 +74,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.receivable_account = value; }
         }
 
-        private int _employee_name_and_designation_in_print = 0;
-        public int employee_name_and_designation_in_print
+        public long employee_name_and_designation_in_print
         {
-            get { return data._employee_name_and_designation_in_print; }
-            set { data._employee_name_and_designation_in_print = value; }
+            get { return data.employee_name_and_designation_in_print; }
+            set { data.employee_name_and_designation_in_print = value; }
         }
 
         public string custom_signature_in_print
@@ -102,32 +98,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.sms_emailed = value; }
         }
 
-        private int _lab_test_approval_required = 0;
-        public int lab_test_approval_required
+        public long lab_test_approval_required
         {
-            get { return data._lab_test_approval_required; }
-            set { data._lab_test_approval_required = value; }
+            get { return data.lab_test_approval_required; }
+            set { data.lab_test_approval_required = value; }
         }
 
-        private int _link_customer_to_patient = 0;
-        public int link_customer_to_patient
+        public long link_customer_to_patient
         {
-            get { return data._link_customer_to_patient; }
-            set { data._link_customer_to_patient = value; }
+            get { return data.link_customer_to_patient; }
+            set { data.link_customer_to_patient = value; }
         }
 
-        private int _create_lab_test_on_si_submit = 0;
-        public int create_lab_test_on_si_submit
+        public long create_lab_test_on_si_submit
         {
-            get { return data._create_lab_test_on_si_submit; }
-            set { data._create_lab_test_on_si_submit = value; }
+            get { return data.create_lab_test_on_si_submit; }
+            set { data.create_lab_test_on_si_submit = value; }
         }
 
-        private int _create_sample_collection_for_lab_test = 0;
-        public int create_sample_collection_for_lab_test
+        public long create_sample_collection_for_lab_test
         {
-            get { return data._create_sample_collection_for_lab_test; }
-            set { data._create_sample_collection_for_lab_test = value; }
+            get { return data.create_sample_collection_for_lab_test; }
+            set { data.create_sample_collection_for_lab_test = value; }
         }
 
         public Patientnameby patient_name_by
@@ -136,18 +128,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.patient_name_by = value.ToString(); }
         }
 
-        private int _automate_appointment_invoicing = 0;
-        public int automate_appointment_invoicing
+        public long automate_appointment_invoicing
         {
-            get { return data._automate_appointment_invoicing; }
-            set { data._automate_appointment_invoicing = value; }
+            get { return data.automate_appointment_invoicing; }
+            set { data.automate_appointment_invoicing = value; }
         }
 
-        private int _send_registration_msg = 0;
-        public int send_registration_msg
+        public long send_registration_msg
         {
-            get { return data._send_registration_msg; }
-            set { data._send_registration_msg = value; }
+            get { return data.send_registration_msg; }
+            set { data.send_registration_msg = value; }
         }
 
         public string registration_msg
@@ -156,11 +146,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.registration_msg = value; }
         }
 
-        private int _send_appointment_confirmation = 0;
-        public int send_appointment_confirmation
+        public long send_appointment_confirmation
         {
-            get { return data._send_appointment_confirmation; }
-            set { data._send_appointment_confirmation = value; }
+            get { return data.send_appointment_confirmation; }
+            set { data.send_appointment_confirmation = value; }
         }
 
         public string appointment_confirmation_msg
@@ -169,18 +158,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.appointment_confirmation_msg = value; }
         }
 
-        private int _avoid_confirmation = 0;
-        public int avoid_confirmation
+        public long avoid_confirmation
         {
-            get { return data._avoid_confirmation; }
-            set { data._avoid_confirmation = value; }
+            get { return data.avoid_confirmation; }
+            set { data.avoid_confirmation = value; }
         }
 
-        private int _send_appointment_reminder = 0;
-        public int send_appointment_reminder
+        public long send_appointment_reminder
         {
-            get { return data._send_appointment_reminder; }
-            set { data._send_appointment_reminder = value; }
+            get { return data.send_appointment_reminder; }
+            set { data.send_appointment_reminder = value; }
         }
 
         public string appointment_reminder_msg
@@ -195,18 +182,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_settings
             set { data.remind_before = value; }
         }
 
-        private int _max_visits = 0;
         public int max_visits
         {
-            get { return data._max_visits; }
-            set { data._max_visits = value; }
+            get { return data.max_visits; }
+            set { data.max_visits = value; }
         }
 
-        private int _enable_free_follow_ups = 0;
-        public int enable_free_follow_ups
+        public long enable_free_follow_ups
         {
-            get { return data._enable_free_follow_ups; }
-            set { data._enable_free_follow_ups = value; }
+            get { return data.enable_free_follow_ups; }
+            set { data.enable_free_follow_ups = value; }
         }
 
 

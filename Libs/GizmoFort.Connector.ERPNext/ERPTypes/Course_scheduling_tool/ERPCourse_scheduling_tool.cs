@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Course_scheduling_tool
         public ERPCourse_scheduling_tool() : this(new ERPObject(DocType.Course_scheduling_tool)) { }
         public ERPCourse_scheduling_tool(ERPObject obj) : base(obj) { }
 
-        public static ERPCourse_scheduling_tool Create(string studentgroup, string course, string program, string academicyear, string academicterm, string instructor, string instructorname, string room, string fromtime, string coursestartdate, Day day, int reschedule, string totime, string courseenddate)
+        public static ERPCourse_scheduling_tool Create(string studentgroup, string course, string program, string academicyear, string academicterm, string instructor, string instructorname, string room, string fromtime, string coursestartdate, Day day, long reschedule, string totime, string courseenddate)
 
         {
             ERPCourse_scheduling_tool obj = new ERPCourse_scheduling_tool();
@@ -100,11 +100,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Course_scheduling_tool
             set { data.day = value.ToString(); }
         }
 
-        private int _reschedule = 0;
-        public int reschedule
+        public long reschedule
         {
-            get { return data._reschedule; }
-            set { data._reschedule = value; }
+            get { return data.reschedule; }
+            set { data.reschedule = value; }
         }
 
         public string to_time

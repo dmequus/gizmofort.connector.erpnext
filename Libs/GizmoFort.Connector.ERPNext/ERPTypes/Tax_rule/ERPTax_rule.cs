@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Tax_rule
         public ERPTax_rule() : this(new ERPObject(DocType.Tax_rule)) { }
         public ERPTax_rule(ERPObject obj) : base(obj) { }
 
-        public static ERPTax_rule Create(Taxtype taxtype, int useforshoppingcart, string salestaxtemplate, string purchasetaxtemplate, string customer, string supplier, string item, string billingcity, string billingcounty, string billingstate, string billingzipcode, string billingcountry, string taxcategory, string customergroup, string suppliergroup, string itemgroup, string shippingcity, string shippingcounty, string shippingstate, string shippingzipcode, string shippingcountry, string fromdate, string todate, int priority, string company)
+        public static ERPTax_rule Create(Taxtype taxtype, long useforshoppingcart, string salestaxtemplate, string purchasetaxtemplate, string customer, string supplier, string item, string billingcity, string billingcounty, string billingstate, string billingzipcode, string billingcountry, string taxcategory, string customergroup, string suppliergroup, string itemgroup, string shippingcity, string shippingcounty, string shippingstate, string shippingzipcode, string shippingcountry, string fromdate, string todate, int priority, string company)
 
         {
             ERPTax_rule obj = new ERPTax_rule();
@@ -46,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Tax_rule
             set { data.tax_type = value.ToString(); }
         }
 
-        private int _use_for_shopping_cart = 0;
-        public int use_for_shopping_cart
+        public long use_for_shopping_cart
         {
-            get { return data._use_for_shopping_cart; }
-            set { data._use_for_shopping_cart = value; }
+            get { return data.use_for_shopping_cart; }
+            set { data.use_for_shopping_cart = value; }
         }
 
         public string sales_tax_template
@@ -179,11 +178,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Tax_rule
             set { data.to_date = value; }
         }
 
-        private int _priority = 0;
         public int priority
         {
-            get { return data._priority; }
-            set { data._priority = value; }
+            get { return data.priority; }
+            set { data.priority = value; }
         }
 
         public string company

@@ -15,32 +15,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Proposed_pledge
             return obj;
         }
 
-        private double _loan_security_price = 0.0;
         public double loan_security_price
         {
-            get { return data._loan_security_price; }
-            set { data._loan_security_price = value; }
+            get { return data.loan_security_price; }
+            set { data.loan_security_price = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _haircut = 0.0;
         public double haircut
         {
-            get { return data._haircut; }
-            set { data._haircut = value; }
+            get { return data.haircut; }
+            set { data.haircut = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string loan_security
@@ -49,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Proposed_pledge
             set { data.loan_security = value; }
         }
 
-        private double _post_haircut_amount = 0.0;
         public double post_haircut_amount
         {
-            get { return data._post_haircut_amount; }
-            set { data._post_haircut_amount = value; }
+            get { return data.post_haircut_amount; }
+            set { data.post_haircut_amount = value; }
         }
 
 

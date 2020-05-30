@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opportunity_item
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string item_group
@@ -85,11 +84,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opportunity_item
             set { data.image_view = value; }
         }
 
-        private double _basic_rate = 0.0;
         public double basic_rate
         {
-            get { return data._basic_rate; }
-            set { data._basic_rate = value; }
+            get { return data.basic_rate; }
+            set { data.basic_rate = value; }
         }
 
 

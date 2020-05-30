@@ -60,11 +60,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_checkin
             set { data.device_id = value; }
         }
 
-        private int _skip_auto_attendance = 0;
-        public int skip_auto_attendance
+        public long skip_auto_attendance
         {
-            get { return data._skip_auto_attendance; }
-            set { data._skip_auto_attendance = value; }
+            get { return data.skip_auto_attendance; }
+            set { data.skip_auto_attendance = value; }
         }
 
         public string attendance

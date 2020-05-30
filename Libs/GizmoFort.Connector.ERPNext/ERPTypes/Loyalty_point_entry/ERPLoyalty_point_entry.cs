@@ -60,18 +60,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loyalty_point_entry
             set { data.redeem_against = value; }
         }
 
-        private int _loyalty_points = 0;
         public int loyalty_points
         {
-            get { return data._loyalty_points; }
-            set { data._loyalty_points = value; }
+            get { return data.loyalty_points; }
+            set { data.loyalty_points = value; }
         }
 
-        private double _purchase_amount = 0.0;
         public double purchase_amount
         {
-            get { return data._purchase_amount; }
-            set { data._purchase_amount = value; }
+            get { return data.purchase_amount; }
+            set { data.purchase_amount = value; }
         }
 
         public string expiry_date

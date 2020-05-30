@@ -26,25 +26,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security_shortfall
 
         }
 
-        private double _loan_amount = 0.0;
         public double loan_amount
         {
-            get { return data._loan_amount; }
-            set { data._loan_amount = value; }
+            get { return data.loan_amount; }
+            set { data.loan_amount = value; }
         }
 
-        private double _security_value = 0.0;
         public double security_value
         {
-            get { return data._security_value; }
-            set { data._security_value = value; }
+            get { return data.security_value; }
+            set { data.security_value = value; }
         }
 
-        private double _shortfall_amount = 0.0;
         public double shortfall_amount
         {
-            get { return data._shortfall_amount; }
-            set { data._shortfall_amount = value; }
+            get { return data.shortfall_amount; }
+            set { data.shortfall_amount = value; }
         }
 
         public string shortfall_time

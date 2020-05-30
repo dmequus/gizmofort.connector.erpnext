@@ -30,11 +30,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard_criteria
 
         }
 
-        private double _max_score = 0.0;
         public double max_score
         {
-            get { return data._max_score; }
-            set { data._max_score = value; }
+            get { return data.max_score; }
+            set { data.max_score = value; }
         }
 
         public string formula
@@ -43,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard_criteria
             set { data.formula = value; }
         }
 
-        private double _weight = 0.0;
         public double weight
         {
-            get { return data._weight; }
-            set { data._weight = value; }
+            get { return data.weight; }
+            set { data.weight = value; }
         }
 
 

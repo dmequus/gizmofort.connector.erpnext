@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_opening
         public ERPJob_opening() : this(new ERPObject(DocType.Job_opening)) { }
         public ERPJob_opening(ERPObject obj) : base(obj) { }
 
-        public static ERPJob_opening Create(string jobtitle, string company, Status status, string designation, string department, string staffingplan, int plannedvacancies, int publish, string route, string description)
+        public static ERPJob_opening Create(string jobtitle, string company, Status status, string designation, string department, string staffingplan, int plannedvacancies, long publish, string route, string description)
 
         {
             ERPJob_opening obj = new ERPJob_opening();
@@ -66,18 +66,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_opening
             set { data.staffing_plan = value; }
         }
 
-        private int _planned_vacancies = 0;
         public int planned_vacancies
         {
-            get { return data._planned_vacancies; }
-            set { data._planned_vacancies = value; }
+            get { return data.planned_vacancies; }
+            set { data.planned_vacancies = value; }
         }
 
-        private int _publish = 0;
-        public int publish
+        public long publish
         {
-            get { return data._publish; }
-            set { data._publish = value; }
+            get { return data.publish; }
+            set { data.publish = value; }
         }
 
         public string route

@@ -21,18 +21,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Membership_settings
             set { data.billing_cycle = value.ToString(); }
         }
 
-        private int _enable_razorpay = 0;
-        public int enable_razorpay
+        public long enable_razorpay
         {
-            get { return data._enable_razorpay; }
-            set { data._enable_razorpay = value; }
+            get { return data.enable_razorpay; }
+            set { data.enable_razorpay = value; }
         }
 
-        private int _billing_frequency = 0;
         public int billing_frequency
         {
-            get { return data._billing_frequency; }
-            set { data._billing_frequency = value; }
+            get { return data.billing_frequency; }
+            set { data.billing_frequency = value; }
         }
 
 

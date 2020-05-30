@@ -31,25 +31,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Travel_request_costing
 
         }
 
-        private double _sponsored_amount = 0.0;
         public double sponsored_amount
         {
-            get { return data._sponsored_amount; }
-            set { data._sponsored_amount = value; }
+            get { return data.sponsored_amount; }
+            set { data.sponsored_amount = value; }
         }
 
-        private double _funded_amount = 0.0;
         public double funded_amount
         {
-            get { return data._funded_amount; }
-            set { data._funded_amount = value; }
+            get { return data.funded_amount; }
+            set { data.funded_amount = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
         public string comments

@@ -80,11 +80,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_guarantee
             set { data.project = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string start_date
@@ -93,11 +92,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_guarantee
             set { data.start_date = value; }
         }
 
-        private int _validity = 0;
         public int validity
         {
-            get { return data._validity; }
-            set { data._validity = value; }
+            get { return data.validity; }
+            set { data.validity = value; }
         }
 
         public string end_date
@@ -166,18 +164,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_guarantee
             set { data.name_of_beneficiary = value; }
         }
 
-        private double _margin_money = 0.0;
         public double margin_money
         {
-            get { return data._margin_money; }
-            set { data._margin_money = value; }
+            get { return data.margin_money; }
+            set { data.margin_money = value; }
         }
 
-        private double _charges = 0.0;
         public double charges
         {
-            get { return data._charges; }
-            set { data._charges = value; }
+            get { return data.charges; }
+            set { data.charges = value; }
         }
 
         public string fixed_deposit_number

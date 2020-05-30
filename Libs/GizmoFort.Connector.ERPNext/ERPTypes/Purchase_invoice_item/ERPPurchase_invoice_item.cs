@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string uom
@@ -48,46 +47,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.uom = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _base_rate = 0.0;
         public double base_rate
         {
-            get { return data._base_rate; }
-            set { data._base_rate = value; }
+            get { return data.base_rate; }
+            set { data.base_rate = value; }
         }
 
-        private double _base_amount = 0.0;
         public double base_amount
         {
-            get { return data._base_amount; }
-            set { data._base_amount = value; }
+            get { return data.base_amount; }
+            set { data.base_amount = value; }
         }
 
         public string item_code
@@ -114,18 +107,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.image_view = value; }
         }
 
-        private double _received_qty = 0.0;
         public double received_qty
         {
-            get { return data._received_qty; }
-            set { data._received_qty = value; }
+            get { return data.received_qty; }
+            set { data.received_qty = value; }
         }
 
-        private double _rejected_qty = 0.0;
         public double rejected_qty
         {
-            get { return data._rejected_qty; }
-            set { data._rejected_qty = value; }
+            get { return data.rejected_qty; }
+            set { data.rejected_qty = value; }
         }
 
         public string stock_uom
@@ -134,32 +125,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.stock_uom = value; }
         }
 
-        private double _price_list_rate = 0.0;
         public double price_list_rate
         {
-            get { return data._price_list_rate; }
-            set { data._price_list_rate = value; }
+            get { return data.price_list_rate; }
+            set { data.price_list_rate = value; }
         }
 
-        private double _discount_percentage = 0.0;
         public double discount_percentage
         {
-            get { return data._discount_percentage; }
-            set { data._discount_percentage = value; }
+            get { return data.discount_percentage; }
+            set { data.discount_percentage = value; }
         }
 
-        private double _discount_amount = 0.0;
         public double discount_amount
         {
-            get { return data._discount_amount; }
-            set { data._discount_amount = value; }
+            get { return data.discount_amount; }
+            set { data.discount_amount = value; }
         }
 
-        private double _base_price_list_rate = 0.0;
         public double base_price_list_rate
         {
-            get { return data._base_price_list_rate; }
-            set { data._base_price_list_rate = value; }
+            get { return data.base_price_list_rate; }
+            set { data.base_price_list_rate = value; }
         }
 
         public string pricing_rules
@@ -168,53 +155,46 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.pricing_rules = value; }
         }
 
-        private int _is_free_item = 0;
-        public int is_free_item
+        public long is_free_item
         {
-            get { return data._is_free_item; }
-            set { data._is_free_item = value; }
+            get { return data.is_free_item; }
+            set { data.is_free_item = value; }
         }
 
-        private double _net_rate = 0.0;
         public double net_rate
         {
-            get { return data._net_rate; }
-            set { data._net_rate = value; }
+            get { return data.net_rate; }
+            set { data.net_rate = value; }
         }
 
-        private double _net_amount = 0.0;
         public double net_amount
         {
-            get { return data._net_amount; }
-            set { data._net_amount = value; }
+            get { return data.net_amount; }
+            set { data.net_amount = value; }
         }
 
-        private double _base_net_rate = 0.0;
         public double base_net_rate
         {
-            get { return data._base_net_rate; }
-            set { data._base_net_rate = value; }
+            get { return data.base_net_rate; }
+            set { data.base_net_rate = value; }
         }
 
-        private double _base_net_amount = 0.0;
         public double base_net_amount
         {
-            get { return data._base_net_amount; }
-            set { data._base_net_amount = value; }
+            get { return data.base_net_amount; }
+            set { data.base_net_amount = value; }
         }
 
-        private double _weight_per_unit = 0.0;
         public double weight_per_unit
         {
-            get { return data._weight_per_unit; }
-            set { data._weight_per_unit = value; }
+            get { return data.weight_per_unit; }
+            set { data.weight_per_unit = value; }
         }
 
-        private double _total_weight = 0.0;
         public double total_weight
         {
-            get { return data._total_weight; }
-            set { data._total_weight = value; }
+            get { return data.total_weight; }
+            set { data.total_weight = value; }
         }
 
         public string weight_uom
@@ -295,11 +275,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.service_stop_date = value; }
         }
 
-        private int _enable_deferred_expense = 0;
-        public int enable_deferred_expense
+        public long enable_deferred_expense
         {
-            get { return data._enable_deferred_expense; }
-            set { data._enable_deferred_expense = value; }
+            get { return data.enable_deferred_expense; }
+            set { data.enable_deferred_expense = value; }
         }
 
         public string service_start_date
@@ -314,11 +293,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.service_end_date = value; }
         }
 
-        private int _allow_zero_valuation_rate = 0;
-        public int allow_zero_valuation_rate
+        public long allow_zero_valuation_rate
         {
-            get { return data._allow_zero_valuation_rate; }
-            set { data._allow_zero_valuation_rate = value; }
+            get { return data.allow_zero_valuation_rate; }
+            set { data.allow_zero_valuation_rate = value; }
         }
 
         public string brand
@@ -339,11 +317,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.item_tax_rate = value; }
         }
 
-        private double _item_tax_amount = 0.0;
         public double item_tax_amount
         {
-            get { return data._item_tax_amount; }
-            set { data._item_tax_amount = value; }
+            get { return data.item_tax_amount; }
+            set { data.item_tax_amount = value; }
         }
 
         public string purchase_order
@@ -358,18 +335,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.bom = value; }
         }
 
-        private int _include_exploded_items = 0;
-        public int include_exploded_items
+        public long include_exploded_items
         {
-            get { return data._include_exploded_items; }
-            set { data._include_exploded_items = value; }
+            get { return data.include_exploded_items; }
+            set { data.include_exploded_items = value; }
         }
 
-        private int _is_fixed_asset = 0;
-        public int is_fixed_asset
+        public long is_fixed_asset
         {
-            get { return data._is_fixed_asset; }
-            set { data._is_fixed_asset = value; }
+            get { return data.is_fixed_asset; }
+            set { data.is_fixed_asset = value; }
         }
 
         public string asset_location
@@ -390,11 +365,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.purchase_receipt = value; }
         }
 
-        private int _page_break = 0;
-        public int page_break
+        public long page_break
         {
-            get { return data._page_break; }
-            set { data._page_break = value; }
+            get { return data.page_break; }
+            set { data.page_break = value; }
         }
 
         public string pr_detail
@@ -403,25 +377,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_item
             set { data.pr_detail = value; }
         }
 
-        private double _valuation_rate = 0.0;
         public double valuation_rate
         {
-            get { return data._valuation_rate; }
-            set { data._valuation_rate = value; }
+            get { return data.valuation_rate; }
+            set { data.valuation_rate = value; }
         }
 
-        private double _rm_supp_cost = 0.0;
         public double rm_supp_cost
         {
-            get { return data._rm_supp_cost; }
-            set { data._rm_supp_cost = value; }
+            get { return data.rm_supp_cost; }
+            set { data.rm_supp_cost = value; }
         }
 
-        private double _landed_cost_voucher_amount = 0.0;
         public double landed_cost_voucher_amount
         {
-            get { return data._landed_cost_voucher_amount; }
-            set { data._landed_cost_voucher_amount = value; }
+            get { return data.landed_cost_voucher_amount; }
+            set { data.landed_cost_voucher_amount = value; }
         }
 
         public string manufacturer

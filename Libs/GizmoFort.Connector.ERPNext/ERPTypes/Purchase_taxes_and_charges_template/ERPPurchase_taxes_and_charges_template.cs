@@ -34,18 +34,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_taxes_and_charges_templa
             set { data.company = value; }
         }
 
-        private int _is_default = 0;
-        public int is_default
+        public long is_default
         {
-            get { return data._is_default; }
-            set { data._is_default = value; }
+            get { return data.is_default; }
+            set { data.is_default = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string taxes

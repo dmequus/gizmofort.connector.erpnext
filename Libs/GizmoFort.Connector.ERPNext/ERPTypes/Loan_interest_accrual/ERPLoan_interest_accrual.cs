@@ -32,18 +32,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_interest_accrual
             set { data.posting_date = value; }
         }
 
-        private double _pending_principal_amount = 0.0;
         public double pending_principal_amount
         {
-            get { return data._pending_principal_amount; }
-            set { data._pending_principal_amount = value; }
+            get { return data.pending_principal_amount; }
+            set { data.pending_principal_amount = value; }
         }
 
-        private double _interest_amount = 0.0;
         public double interest_amount
         {
-            get { return data._interest_amount; }
-            set { data._interest_amount = value; }
+            get { return data.interest_amount; }
+            set { data.interest_amount = value; }
         }
 
         public string amended_from
@@ -82,18 +80,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_interest_accrual
             set { data.company = value; }
         }
 
-        private int _is_term_loan = 0;
-        public int is_term_loan
+        public long is_term_loan
         {
-            get { return data._is_term_loan; }
-            set { data._is_term_loan = value; }
+            get { return data.is_term_loan; }
+            set { data.is_term_loan = value; }
         }
 
-        private double _payable_principal_amount = 0.0;
         public double payable_principal_amount
         {
-            get { return data._payable_principal_amount; }
-            set { data._payable_principal_amount = value; }
+            get { return data.payable_principal_amount; }
+            set { data.payable_principal_amount = value; }
         }
 
         public string process_loan_interest_accrual
@@ -108,18 +104,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_interest_accrual
             set { data.repayment_schedule_name = value; }
         }
 
-        private double _paid_principal_amount = 0.0;
         public double paid_principal_amount
         {
-            get { return data._paid_principal_amount; }
-            set { data._paid_principal_amount = value; }
+            get { return data.paid_principal_amount; }
+            set { data.paid_principal_amount = value; }
         }
 
-        private double _paid_interest_amount = 0.0;
         public double paid_interest_amount
         {
-            get { return data._paid_interest_amount; }
-            set { data._paid_interest_amount = value; }
+            get { return data.paid_interest_amount; }
+            set { data.paid_interest_amount = value; }
         }
 
 

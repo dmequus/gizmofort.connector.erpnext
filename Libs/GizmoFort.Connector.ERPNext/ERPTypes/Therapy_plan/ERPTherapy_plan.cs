@@ -59,18 +59,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_plan
             set { data.title = value; }
         }
 
-        private int _total_sessions = 0;
         public int total_sessions
         {
-            get { return data._total_sessions; }
-            set { data._total_sessions = value; }
+            get { return data.total_sessions; }
+            set { data.total_sessions = value; }
         }
 
-        private int _total_sessions_completed = 0;
         public int total_sessions_completed
         {
-            get { return data._total_sessions_completed; }
-            set { data._total_sessions_completed = value; }
+            get { return data.total_sessions_completed; }
+            set { data.total_sessions_completed = value; }
         }
 
         public Status status

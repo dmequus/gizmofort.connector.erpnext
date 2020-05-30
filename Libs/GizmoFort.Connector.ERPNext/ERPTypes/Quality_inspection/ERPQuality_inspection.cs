@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Quality_inspection
             set { data.item_code = value; }
         }
 
-        private double _sample_size = 0.0;
         public double sample_size
         {
-            get { return data._sample_size; }
-            set { data._sample_size = value; }
+            get { return data.sample_size; }
+            set { data.sample_size = value; }
         }
 
         public string inspected_by

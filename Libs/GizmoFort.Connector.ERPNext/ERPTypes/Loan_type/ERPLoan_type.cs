@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_type
 
         }
 
-        private double _rate_of_interest = 0.0;
         public double rate_of_interest
         {
-            get { return data._rate_of_interest; }
-            set { data._rate_of_interest = value; }
+            get { return data.rate_of_interest; }
+            set { data.rate_of_interest = value; }
         }
 
         public string mode_of_payment
@@ -77,18 +76,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_type
             set { data.company = value; }
         }
 
-        private double _maximum_loan_amount = 0.0;
         public double maximum_loan_amount
         {
-            get { return data._maximum_loan_amount; }
-            set { data._maximum_loan_amount = value; }
+            get { return data.maximum_loan_amount; }
+            set { data.maximum_loan_amount = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string description
@@ -97,25 +94,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_type
             set { data.description = value; }
         }
 
-        private int _is_term_loan = 0;
-        public int is_term_loan
+        public long is_term_loan
         {
-            get { return data._is_term_loan; }
-            set { data._is_term_loan = value; }
+            get { return data.is_term_loan; }
+            set { data.is_term_loan = value; }
         }
 
-        private double _penalty_interest_rate = 0.0;
         public double penalty_interest_rate
         {
-            get { return data._penalty_interest_rate; }
-            set { data._penalty_interest_rate = value; }
+            get { return data.penalty_interest_rate; }
+            set { data.penalty_interest_rate = value; }
         }
 
-        private int _grace_period_in_days = 0;
         public int grace_period_in_days
         {
-            get { return data._grace_period_in_days; }
-            set { data._grace_period_in_days = value; }
+            get { return data.grace_period_in_days; }
+            set { data.grace_period_in_days = value; }
         }
 
         public string amended_from

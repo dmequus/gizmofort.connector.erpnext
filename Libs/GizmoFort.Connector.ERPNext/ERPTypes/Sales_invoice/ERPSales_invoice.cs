@@ -64,11 +64,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.currency = value; }
         }
 
-        private double _conversion_rate = 0.0;
         public double conversion_rate
         {
-            get { return data._conversion_rate; }
-            set { data._conversion_rate = value; }
+            get { return data.conversion_rate; }
+            set { data.conversion_rate = value; }
         }
 
         public string selling_price_list
@@ -83,11 +82,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.price_list_currency = value; }
         }
 
-        private double _plc_conversion_rate = 0.0;
         public double plc_conversion_rate
         {
-            get { return data._plc_conversion_rate; }
-            set { data._plc_conversion_rate = value; }
+            get { return data.plc_conversion_rate; }
+            set { data.plc_conversion_rate = value; }
         }
 
         public string items
@@ -96,25 +94,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.items = value; }
         }
 
-        private double _base_net_total = 0.0;
         public double base_net_total
         {
-            get { return data._base_net_total; }
-            set { data._base_net_total = value; }
+            get { return data.base_net_total; }
+            set { data.base_net_total = value; }
         }
 
-        private double _base_grand_total = 0.0;
         public double base_grand_total
         {
-            get { return data._base_grand_total; }
-            set { data._base_grand_total = value; }
+            get { return data.base_grand_total; }
+            set { data.base_grand_total = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
         public string debit_to
@@ -147,11 +142,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.project = value; }
         }
 
-        private int _is_pos = 0;
-        public int is_pos
+        public long is_pos
         {
-            get { return data._is_pos; }
-            set { data._is_pos = value; }
+            get { return data.is_pos; }
+            set { data.is_pos = value; }
         }
 
         public string pos_profile
@@ -166,11 +160,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.offline_pos_name = value; }
         }
 
-        private int _is_return = 0;
-        public int is_return
+        public long is_return
         {
-            get { return data._is_return; }
-            set { data._is_return = value; }
+            get { return data.is_return; }
+            set { data.is_return = value; }
         }
 
         public string cost_center
@@ -185,11 +178,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.posting_time = value; }
         }
 
-        private int _seta_posting_time = 0;
-        public int seta_posting_time
+        public long seta_posting_time
         {
-            get { return data._seta_posting_time; }
-            set { data._seta_posting_time = value; }
+            get { return data.seta_posting_time; }
+            set { data.seta_posting_time = value; }
         }
 
         public string due_date
@@ -210,11 +202,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.return_against = value; }
         }
 
-        private int _update_billed_amount_in_sales_order = 0;
-        public int update_billed_amount_in_sales_order
+        public long update_billed_amount_in_sales_order
         {
-            get { return data._update_billed_amount_in_sales_order; }
-            set { data._update_billed_amount_in_sales_order = value; }
+            get { return data.update_billed_amount_in_sales_order; }
+            set { data.update_billed_amount_in_sales_order = value; }
         }
 
         public string po_no
@@ -295,11 +286,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.company_address_display = value; }
         }
 
-        private int _ignore_pricing_rule = 0;
-        public int ignore_pricing_rule
+        public long ignore_pricing_rule
         {
-            get { return data._ignore_pricing_rule; }
-            set { data._ignore_pricing_rule = value; }
+            get { return data.ignore_pricing_rule; }
+            set { data.ignore_pricing_rule = value; }
         }
 
         public string set_warehouse
@@ -308,11 +298,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.set_warehouse = value; }
         }
 
-        private int _update_stock = 0;
-        public int update_stock
+        public long update_stock
         {
-            get { return data._update_stock; }
-            set { data._update_stock = value; }
+            get { return data.update_stock; }
+            set { data.update_stock = value; }
         }
 
         public string scan_barcode
@@ -345,46 +334,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.timesheets = value; }
         }
 
-        private double _total_billing_amount = 0.0;
         public double total_billing_amount
         {
-            get { return data._total_billing_amount; }
-            set { data._total_billing_amount = value; }
+            get { return data.total_billing_amount; }
+            set { data.total_billing_amount = value; }
         }
 
-        private double _total_qty = 0.0;
         public double total_qty
         {
-            get { return data._total_qty; }
-            set { data._total_qty = value; }
+            get { return data.total_qty; }
+            set { data.total_qty = value; }
         }
 
-        private double _base_total = 0.0;
         public double base_total
         {
-            get { return data._base_total; }
-            set { data._base_total = value; }
+            get { return data.base_total; }
+            set { data.base_total = value; }
         }
 
-        private double _total = 0.0;
         public double total
         {
-            get { return data._total; }
-            set { data._total = value; }
+            get { return data.total; }
+            set { data.total = value; }
         }
 
-        private double _net_total = 0.0;
         public double net_total
         {
-            get { return data._net_total; }
-            set { data._net_total = value; }
+            get { return data.net_total; }
+            set { data.net_total = value; }
         }
 
-        private double _total_net_weight = 0.0;
         public double total_net_weight
         {
-            get { return data._total_net_weight; }
-            set { data._total_net_weight = value; }
+            get { return data.total_net_weight; }
+            set { data.total_net_weight = value; }
         }
 
         public string taxes_and_charges
@@ -417,39 +400,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.other_charges_calculation = value; }
         }
 
-        private double _base_total_taxes_and_charges = 0.0;
         public double base_total_taxes_and_charges
         {
-            get { return data._base_total_taxes_and_charges; }
-            set { data._base_total_taxes_and_charges = value; }
+            get { return data.base_total_taxes_and_charges; }
+            set { data.base_total_taxes_and_charges = value; }
         }
 
-        private double _total_taxes_and_charges = 0.0;
         public double total_taxes_and_charges
         {
-            get { return data._total_taxes_and_charges; }
-            set { data._total_taxes_and_charges = value; }
+            get { return data.total_taxes_and_charges; }
+            set { data.total_taxes_and_charges = value; }
         }
 
-        private int _loyalty_points = 0;
         public int loyalty_points
         {
-            get { return data._loyalty_points; }
-            set { data._loyalty_points = value; }
+            get { return data.loyalty_points; }
+            set { data.loyalty_points = value; }
         }
 
-        private double _loyalty_amount = 0.0;
         public double loyalty_amount
         {
-            get { return data._loyalty_amount; }
-            set { data._loyalty_amount = value; }
+            get { return data.loyalty_amount; }
+            set { data.loyalty_amount = value; }
         }
 
-        private int _redeem_loyalty_points = 0;
-        public int redeem_loyalty_points
+        public long redeem_loyalty_points
         {
-            get { return data._redeem_loyalty_points; }
-            set { data._redeem_loyalty_points = value; }
+            get { return data.redeem_loyalty_points; }
+            set { data.redeem_loyalty_points = value; }
         }
 
         public string loyalty_program
@@ -476,39 +454,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.apply_discount_on = value.ToString(); }
         }
 
-        private double _base_discount_amount = 0.0;
         public double base_discount_amount
         {
-            get { return data._base_discount_amount; }
-            set { data._base_discount_amount = value; }
+            get { return data.base_discount_amount; }
+            set { data.base_discount_amount = value; }
         }
 
-        private double _additional_discount_percentage = 0.0;
         public double additional_discount_percentage
         {
-            get { return data._additional_discount_percentage; }
-            set { data._additional_discount_percentage = value; }
+            get { return data.additional_discount_percentage; }
+            set { data.additional_discount_percentage = value; }
         }
 
-        private double _discount_amount = 0.0;
         public double discount_amount
         {
-            get { return data._discount_amount; }
-            set { data._discount_amount = value; }
+            get { return data.discount_amount; }
+            set { data.discount_amount = value; }
         }
 
-        private double _base_rounding_adjustment = 0.0;
         public double base_rounding_adjustment
         {
-            get { return data._base_rounding_adjustment; }
-            set { data._base_rounding_adjustment = value; }
+            get { return data.base_rounding_adjustment; }
+            set { data.base_rounding_adjustment = value; }
         }
 
-        private double _base_rounded_total = 0.0;
         public double base_rounded_total
         {
-            get { return data._base_rounded_total; }
-            set { data._base_rounded_total = value; }
+            get { return data.base_rounded_total; }
+            set { data.base_rounded_total = value; }
         }
 
         public string base_in_words
@@ -517,18 +490,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.base_in_words = value; }
         }
 
-        private double _rounding_adjustment = 0.0;
         public double rounding_adjustment
         {
-            get { return data._rounding_adjustment; }
-            set { data._rounding_adjustment = value; }
+            get { return data.rounding_adjustment; }
+            set { data.rounding_adjustment = value; }
         }
 
-        private double _rounded_total = 0.0;
         public double rounded_total
         {
-            get { return data._rounded_total; }
-            set { data._rounded_total = value; }
+            get { return data.rounded_total; }
+            set { data.rounded_total = value; }
         }
 
         public string in_words
@@ -537,25 +508,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.in_words = value; }
         }
 
-        private double _total_advance = 0.0;
         public double total_advance
         {
-            get { return data._total_advance; }
-            set { data._total_advance = value; }
+            get { return data.total_advance; }
+            set { data.total_advance = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
-        private int _allocate_advances_automatically = 0;
-        public int allocate_advances_automatically
+        public long allocate_advances_automatically
         {
-            get { return data._allocate_advances_automatically; }
-            set { data._allocate_advances_automatically = value; }
+            get { return data.allocate_advances_automatically; }
+            set { data.allocate_advances_automatically = value; }
         }
 
         public string advances
@@ -588,32 +556,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.payments = value; }
         }
 
-        private double _base_paid_amount = 0.0;
         public double base_paid_amount
         {
-            get { return data._base_paid_amount; }
-            set { data._base_paid_amount = value; }
+            get { return data.base_paid_amount; }
+            set { data.base_paid_amount = value; }
         }
 
-        private double _paid_amount = 0.0;
         public double paid_amount
         {
-            get { return data._paid_amount; }
-            set { data._paid_amount = value; }
+            get { return data.paid_amount; }
+            set { data.paid_amount = value; }
         }
 
-        private double _base_change_amount = 0.0;
         public double base_change_amount
         {
-            get { return data._base_change_amount; }
-            set { data._base_change_amount = value; }
+            get { return data.base_change_amount; }
+            set { data.base_change_amount = value; }
         }
 
-        private double _change_amount = 0.0;
         public double change_amount
         {
-            get { return data._change_amount; }
-            set { data._change_amount = value; }
+            get { return data.change_amount; }
+            set { data.change_amount = value; }
         }
 
         public string account_for_change_amount
@@ -622,25 +586,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.account_for_change_amount = value; }
         }
 
-        private double _write_off_amount = 0.0;
         public double write_off_amount
         {
-            get { return data._write_off_amount; }
-            set { data._write_off_amount = value; }
+            get { return data.write_off_amount; }
+            set { data.write_off_amount = value; }
         }
 
-        private double _base_write_off_amount = 0.0;
         public double base_write_off_amount
         {
-            get { return data._base_write_off_amount; }
-            set { data._base_write_off_amount = value; }
+            get { return data.base_write_off_amount; }
+            set { data.base_write_off_amount = value; }
         }
 
-        private int _write_off_outstanding_amount_automatically = 0;
-        public int write_off_outstanding_amount_automatically
+        public long write_off_outstanding_amount_automatically
         {
-            get { return data._write_off_outstanding_amount_automatically; }
-            set { data._write_off_outstanding_amount_automatically = value; }
+            get { return data.write_off_outstanding_amount_automatically; }
+            set { data.write_off_outstanding_amount_automatically = value; }
         }
 
         public string write_off_account
@@ -673,11 +634,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.letter_head = value; }
         }
 
-        private int _group_same_items = 0;
-        public int group_same_items
+        public long group_same_items
         {
-            get { return data._group_same_items; }
-            set { data._group_same_items = value; }
+            get { return data.group_same_items; }
+            set { data.group_same_items = value; }
         }
 
         public string language
@@ -710,11 +670,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.campaign = value; }
         }
 
-        private int _is_discounted = 0;
-        public int is_discounted
+        public long is_discounted
         {
-            get { return data._is_discounted; }
-            set { data._is_discounted = value; }
+            get { return data.is_discounted; }
+            set { data.is_discounted = value; }
         }
 
         public Status status
@@ -765,18 +724,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.sales_partner = value; }
         }
 
-        private double _commission_rate = 0.0;
         public double commission_rate
         {
-            get { return data._commission_rate; }
-            set { data._commission_rate = value; }
+            get { return data.commission_rate; }
+            set { data.commission_rate = value; }
         }
 
-        private double _total_commission = 0.0;
         public double total_commission
         {
-            get { return data._total_commission; }
-            set { data._total_commission = value; }
+            get { return data.total_commission; }
+            set { data.total_commission = value; }
         }
 
         public string sales_team
@@ -809,18 +766,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice
             set { data.against_income_account = value; }
         }
 
-        private double _pos_total_qty = 0.0;
         public double pos_total_qty
         {
-            get { return data._pos_total_qty; }
-            set { data._pos_total_qty = value; }
+            get { return data.pos_total_qty; }
+            set { data.pos_total_qty = value; }
         }
 
-        private int _is_internal_customer = 0;
-        public int is_internal_customer
+        public long is_internal_customer
         {
-            get { return data._is_internal_customer; }
-            set { data._is_internal_customer = value; }
+            get { return data.is_internal_customer; }
+            set { data.is_internal_customer = value; }
         }
 
 

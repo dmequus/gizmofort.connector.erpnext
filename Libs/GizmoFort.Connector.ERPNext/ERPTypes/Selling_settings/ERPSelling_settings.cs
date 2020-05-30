@@ -52,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Selling_settings
             set { data.selling_price_list = value; }
         }
 
-        private int _close_opportunity_after_days = 0;
         public int close_opportunity_after_days
         {
-            get { return data._close_opportunity_after_days; }
-            set { data._close_opportunity_after_days = value; }
+            get { return data.close_opportunity_after_days; }
+            set { data.close_opportunity_after_days = value; }
         }
 
         public string default_valid_till
@@ -77,46 +76,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Selling_settings
             set { data.dn_required = value.ToString(); }
         }
 
-        private int _maintain_same_sales_rate = 0;
-        public int maintain_same_sales_rate
+        public long maintain_same_sales_rate
         {
-            get { return data._maintain_same_sales_rate; }
-            set { data._maintain_same_sales_rate = value; }
+            get { return data.maintain_same_sales_rate; }
+            set { data.maintain_same_sales_rate = value; }
         }
 
-        private int _editable_price_list_rate = 0;
-        public int editable_price_list_rate
+        public long editable_price_list_rate
         {
-            get { return data._editable_price_list_rate; }
-            set { data._editable_price_list_rate = value; }
+            get { return data.editable_price_list_rate; }
+            set { data.editable_price_list_rate = value; }
         }
 
-        private int _allow_multiple_items = 0;
-        public int allow_multiple_items
+        public long allow_multiple_items
         {
-            get { return data._allow_multiple_items; }
-            set { data._allow_multiple_items = value; }
+            get { return data.allow_multiple_items; }
+            set { data.allow_multiple_items = value; }
         }
 
-        private int _allow_against_multiple_purchase_orders = 0;
-        public int allow_against_multiple_purchase_orders
+        public long allow_against_multiple_purchase_orders
         {
-            get { return data._allow_against_multiple_purchase_orders; }
-            set { data._allow_against_multiple_purchase_orders = value; }
+            get { return data.allow_against_multiple_purchase_orders; }
+            set { data.allow_against_multiple_purchase_orders = value; }
         }
 
-        private int _validate_selling_price = 0;
-        public int validate_selling_price
+        public long validate_selling_price
         {
-            get { return data._validate_selling_price; }
-            set { data._validate_selling_price = value; }
+            get { return data.validate_selling_price; }
+            set { data.validate_selling_price = value; }
         }
 
-        private int _hide_tax_id = 0;
-        public int hide_tax_id
+        public long hide_tax_id
         {
-            get { return data._hide_tax_id; }
-            set { data._hide_tax_id = value; }
+            get { return data.hide_tax_id; }
+            set { data.hide_tax_id = value; }
         }
 
 

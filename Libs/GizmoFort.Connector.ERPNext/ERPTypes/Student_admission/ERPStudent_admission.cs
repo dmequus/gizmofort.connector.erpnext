@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_admission
         public ERPStudent_admission() : this(new ERPObject(DocType.Student_admission)) { }
         public ERPStudent_admission(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_admission Create(string title, string route, string applicationformroute, string academicyear, string admissionstartdate, string admissionenddate, int published, string programdetails, string introduction)
+        public static ERPStudent_admission Create(string title, string route, string applicationformroute, string academicyear, string admissionstartdate, string admissionenddate, long published, string programdetails, string introduction)
 
         {
             ERPStudent_admission obj = new ERPStudent_admission();
@@ -65,11 +65,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_admission
             set { data.admission_end_date = value; }
         }
 
-        private int _published = 0;
-        public int published
+        public long published
         {
-            get { return data._published; }
-            set { data._published = value; }
+            get { return data.published; }
+            set { data.published = value; }
         }
 
         public string program_details

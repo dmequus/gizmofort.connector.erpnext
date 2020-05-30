@@ -54,11 +54,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test
             set { data.inpatient_record = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string patient_name
@@ -205,46 +204,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test
             set { data.custom_result = value; }
         }
 
-        private int _email_sent = 0;
-        public int email_sent
+        public long email_sent
         {
-            get { return data._email_sent; }
-            set { data._email_sent = value; }
+            get { return data.email_sent; }
+            set { data.email_sent = value; }
         }
 
-        private int _sms_sent = 0;
-        public int sms_sent
+        public long sms_sent
         {
-            get { return data._sms_sent; }
-            set { data._sms_sent = value; }
+            get { return data.sms_sent; }
+            set { data.sms_sent = value; }
         }
 
-        private int _printed = 0;
-        public int printed
+        public long printed
         {
-            get { return data._printed; }
-            set { data._printed = value; }
+            get { return data.printed; }
+            set { data.printed = value; }
         }
 
-        private int _normal_toggle = 0;
-        public int normal_toggle
+        public long normal_toggle
         {
-            get { return data._normal_toggle; }
-            set { data._normal_toggle = value; }
+            get { return data.normal_toggle; }
+            set { data.normal_toggle = value; }
         }
 
-        private int _special_toggle = 0;
-        public int special_toggle
+        public long special_toggle
         {
-            get { return data._special_toggle; }
-            set { data._special_toggle = value; }
+            get { return data.special_toggle; }
+            set { data.special_toggle = value; }
         }
 
-        private int _sensitivity_toggle = 0;
-        public int sensitivity_toggle
+        public long sensitivity_toggle
         {
-            get { return data._sensitivity_toggle; }
-            set { data._sensitivity_toggle = value; }
+            get { return data.sensitivity_toggle; }
+            set { data.sensitivity_toggle = value; }
         }
 
         public string amended_from

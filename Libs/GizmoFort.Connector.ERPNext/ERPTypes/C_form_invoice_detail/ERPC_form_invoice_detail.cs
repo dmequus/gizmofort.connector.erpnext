@@ -43,18 +43,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.C_form_invoice_detail
             set { data.territory = value; }
         }
 
-        private double _net_total = 0.0;
         public double net_total
         {
-            get { return data._net_total; }
-            set { data._net_total = value; }
+            get { return data.net_total; }
+            set { data.net_total = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
 

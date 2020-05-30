@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_terms_template
             set { data.template_name = value; }
         }
 
-        private int _allocate_payment_based_on_payment_terms = 0;
-        public int allocate_payment_based_on_payment_terms
+        public long allocate_payment_based_on_payment_terms
         {
-            get { return data._allocate_payment_based_on_payment_terms; }
-            set { data._allocate_payment_based_on_payment_terms = value; }
+            get { return data.allocate_payment_based_on_payment_terms; }
+            set { data.allocate_payment_based_on_payment_terms = value; }
         }
 
 

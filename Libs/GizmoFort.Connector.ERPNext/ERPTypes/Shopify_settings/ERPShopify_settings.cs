@@ -40,11 +40,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopify_settings
             set { data.status_html = value; }
         }
 
-        private int _enable_shopify = 0;
-        public int enable_shopify
+        public long enable_shopify
         {
-            get { return data._enable_shopify; }
-            set { data._enable_shopify = value; }
+            get { return data.enable_shopify; }
+            set { data.enable_shopify = value; }
         }
 
         public string last_sync_datetime
@@ -119,11 +118,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopify_settings
             set { data.price_list = value; }
         }
 
-        private int _update_price_in_erpnext_price_list = 0;
-        public int update_price_in_erpnext_price_list
+        public long update_price_in_erpnext_price_list
         {
-            get { return data._update_price_in_erpnext_price_list; }
-            set { data._update_price_in_erpnext_price_list = value; }
+            get { return data.update_price_in_erpnext_price_list; }
+            set { data.update_price_in_erpnext_price_list = value; }
         }
 
         public string warehouse
@@ -138,11 +136,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopify_settings
             set { data.sales_order_series = value; }
         }
 
-        private int _sync_delivery_note = 0;
-        public int sync_delivery_note
+        public long sync_delivery_note
         {
-            get { return data._sync_delivery_note; }
-            set { data._sync_delivery_note = value; }
+            get { return data.sync_delivery_note; }
+            set { data.sync_delivery_note = value; }
         }
 
         public string delivery_note_series
@@ -151,11 +148,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopify_settings
             set { data.delivery_note_series = value; }
         }
 
-        private int _sync_sales_invoice = 0;
-        public int sync_sales_invoice
+        public long sync_sales_invoice
         {
-            get { return data._sync_sales_invoice; }
-            set { data._sync_sales_invoice = value; }
+            get { return data.sync_sales_invoice; }
+            set { data.sync_sales_invoice = value; }
         }
 
         public string sales_invoice_series

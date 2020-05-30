@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip_timesheet
 
         }
 
-        private double _working_hours = 0.0;
         public double working_hours
         {
-            get { return data._working_hours; }
-            set { data._working_hours = value; }
+            get { return data.working_hours; }
+            set { data.working_hours = value; }
         }
 
 

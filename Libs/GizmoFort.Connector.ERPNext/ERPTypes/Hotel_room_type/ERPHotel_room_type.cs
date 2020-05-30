@@ -18,18 +18,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_type
             return obj;
         }
 
-        private int _capacity = 0;
         public int capacity
         {
-            get { return data._capacity; }
-            set { data._capacity = value; }
+            get { return data.capacity; }
+            set { data.capacity = value; }
         }
 
-        private int _extra_bed_capacity = 0;
         public int extra_bed_capacity
         {
-            get { return data._extra_bed_capacity; }
-            set { data._extra_bed_capacity = value; }
+            get { return data.extra_bed_capacity; }
+            set { data.extra_bed_capacity = value; }
         }
 
         public string amenities

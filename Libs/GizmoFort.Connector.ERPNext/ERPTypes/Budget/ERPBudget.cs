@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Budget
         public ERPBudget() : this(new ERPObject(DocType.Budget)) { }
         public ERPBudget(ERPObject obj) : base(obj) { }
 
-        public static ERPBudget Create(Budgetagainst budgetagainst, string company, string costcenter, string project, string fiscalyear, string monthlydistribution, string amendedfrom, int applicableonmaterialrequest, Actionifannualbudgetexceededonmr actionifannualbudgetexceededonmr, Actionifaccumulatedmonthlybudgetexceededonmr actionifaccumulatedmonthlybudgetexceededonmr, int applicableonpurchaseorder, Actionifannualbudgetexceededonpo actionifannualbudgetexceededonpo, Actionifaccumulatedmonthlybudgetexceededonpo actionifaccumulatedmonthlybudgetexceededonpo, int applicableonbookingactualexpenses, Actionifannualbudgetexceeded actionifannualbudgetexceeded, Actionifaccumulatedmonthlybudgetexceeded actionifaccumulatedmonthlybudgetexceeded, string accounts)
+        public static ERPBudget Create(Budgetagainst budgetagainst, string company, string costcenter, string project, string fiscalyear, string monthlydistribution, string amendedfrom, long applicableonmaterialrequest, Actionifannualbudgetexceededonmr actionifannualbudgetexceededonmr, Actionifaccumulatedmonthlybudgetexceededonmr actionifaccumulatedmonthlybudgetexceededonmr, long applicableonpurchaseorder, Actionifannualbudgetexceededonpo actionifannualbudgetexceededonpo, Actionifaccumulatedmonthlybudgetexceededonpo actionifaccumulatedmonthlybudgetexceededonpo, long applicableonbookingactualexpenses, Actionifannualbudgetexceeded actionifannualbudgetexceeded, Actionifaccumulatedmonthlybudgetexceeded actionifaccumulatedmonthlybudgetexceeded, string accounts)
 
         {
             ERPBudget obj = new ERPBudget();
@@ -74,11 +74,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Budget
             set { data.amended_from = value; }
         }
 
-        private int _applicable_on_material_request = 0;
-        public int applicable_on_material_request
+        public long applicable_on_material_request
         {
-            get { return data._applicable_on_material_request; }
-            set { data._applicable_on_material_request = value; }
+            get { return data.applicable_on_material_request; }
+            set { data.applicable_on_material_request = value; }
         }
 
         public Actionifannualbudgetexceededonmr action_if_annual_budget_exceeded_on_mr
@@ -93,11 +92,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Budget
             set { data.action_if_accumulated_monthly_budget_exceeded_on_mr = value.ToString(); }
         }
 
-        private int _applicable_on_purchase_order = 0;
-        public int applicable_on_purchase_order
+        public long applicable_on_purchase_order
         {
-            get { return data._applicable_on_purchase_order; }
-            set { data._applicable_on_purchase_order = value; }
+            get { return data.applicable_on_purchase_order; }
+            set { data.applicable_on_purchase_order = value; }
         }
 
         public Actionifannualbudgetexceededonpo action_if_annual_budget_exceeded_on_po
@@ -112,11 +110,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Budget
             set { data.action_if_accumulated_monthly_budget_exceeded_on_po = value.ToString(); }
         }
 
-        private int _applicable_on_booking_actual_expenses = 0;
-        public int applicable_on_booking_actual_expenses
+        public long applicable_on_booking_actual_expenses
         {
-            get { return data._applicable_on_booking_actual_expenses; }
-            set { data._applicable_on_booking_actual_expenses = value; }
+            get { return data.applicable_on_booking_actual_expenses; }
+            set { data.applicable_on_booking_actual_expenses = value; }
         }
 
         public Actionifannualbudgetexceeded action_if_annual_budget_exceeded

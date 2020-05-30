@@ -27,18 +27,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_plan_detail
 
         }
 
-        private int _no_of_sessions = 0;
         public int no_of_sessions
         {
-            get { return data._no_of_sessions; }
-            set { data._no_of_sessions = value; }
+            get { return data.no_of_sessions; }
+            set { data.no_of_sessions = value; }
         }
 
-        private int _sessions_completed = 0;
         public int sessions_completed
         {
-            get { return data._sessions_completed; }
-            set { data._sessions_completed = value; }
+            get { return data.sessions_completed; }
+            set { data.sessions_completed = value; }
         }
 
 

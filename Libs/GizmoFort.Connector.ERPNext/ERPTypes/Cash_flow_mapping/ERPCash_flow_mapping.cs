@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cash_flow_mapping
         public ERPCash_flow_mapping() : this(new ERPObject(DocType.Cash_flow_mapping)) { }
         public ERPCash_flow_mapping(ERPObject obj) : base(obj) { }
 
-        public static ERPCash_flow_mapping Create(string mappingname, string label, string accounts, int isfinancecost, int isworkingcapital, int isfinancecostadjustment, int isincometaxliability, int isincometaxexpense)
+        public static ERPCash_flow_mapping Create(string mappingname, string label, string accounts, long isfinancecost, long isworkingcapital, long isfinancecostadjustment, long isincometaxliability, long isincometaxexpense)
 
         {
             ERPCash_flow_mapping obj = new ERPCash_flow_mapping();
@@ -46,39 +46,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cash_flow_mapping
             set { data.accounts = value; }
         }
 
-        private int _is_finance_cost = 0;
-        public int is_finance_cost
+        public long is_finance_cost
         {
-            get { return data._is_finance_cost; }
-            set { data._is_finance_cost = value; }
+            get { return data.is_finance_cost; }
+            set { data.is_finance_cost = value; }
         }
 
-        private int _is_working_capital = 0;
-        public int is_working_capital
+        public long is_working_capital
         {
-            get { return data._is_working_capital; }
-            set { data._is_working_capital = value; }
+            get { return data.is_working_capital; }
+            set { data.is_working_capital = value; }
         }
 
-        private int _is_finance_cost_adjustment = 0;
-        public int is_finance_cost_adjustment
+        public long is_finance_cost_adjustment
         {
-            get { return data._is_finance_cost_adjustment; }
-            set { data._is_finance_cost_adjustment = value; }
+            get { return data.is_finance_cost_adjustment; }
+            set { data.is_finance_cost_adjustment = value; }
         }
 
-        private int _is_income_tax_liability = 0;
-        public int is_income_tax_liability
+        public long is_income_tax_liability
         {
-            get { return data._is_income_tax_liability; }
-            set { data._is_income_tax_liability = value; }
+            get { return data.is_income_tax_liability; }
+            set { data.is_income_tax_liability = value; }
         }
 
-        private int _is_income_tax_expense = 0;
-        public int is_income_tax_expense
+        public long is_income_tax_expense
         {
-            get { return data._is_income_tax_expense; }
-            set { data._is_income_tax_expense = value; }
+            get { return data.is_income_tax_expense; }
+            set { data.is_income_tax_expense = value; }
         }
 
 

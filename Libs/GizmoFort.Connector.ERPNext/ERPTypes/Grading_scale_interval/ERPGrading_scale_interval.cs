@@ -29,11 +29,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Grading_scale_interval
 
         }
 
-        private double _threshold = 0.0;
         public double threshold
         {
-            get { return data._threshold; }
-            set { data._threshold = value; }
+            get { return data.threshold; }
+            set { data.threshold = value; }
         }
 
         public string grade_description

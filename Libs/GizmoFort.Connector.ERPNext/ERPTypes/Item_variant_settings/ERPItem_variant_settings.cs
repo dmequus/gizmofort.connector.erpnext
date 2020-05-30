@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_variant_settings
         public ERPItem_variant_settings() : this(new ERPObject(DocType.Item_variant_settings)) { }
         public ERPItem_variant_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPItem_variant_settings Create(int donotupdatevariants, int allowrenameattributevalue, string fields)
+        public static ERPItem_variant_settings Create(long donotupdatevariants, long allowrenameattributevalue, string fields)
 
         {
             ERPItem_variant_settings obj = new ERPItem_variant_settings();
@@ -18,18 +18,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_variant_settings
             return obj;
         }
 
-        private int _do_not_update_variants = 0;
-        public int do_not_update_variants
+        public long do_not_update_variants
         {
-            get { return data._do_not_update_variants; }
-            set { data._do_not_update_variants = value; }
+            get { return data.do_not_update_variants; }
+            set { data.do_not_update_variants = value; }
         }
 
-        private int _allow_rename_attribute_value = 0;
-        public int allow_rename_attribute_value
+        public long allow_rename_attribute_value
         {
-            get { return data._allow_rename_attribute_value; }
-            set { data._allow_rename_attribute_value = value; }
+            get { return data.allow_rename_attribute_value; }
+            set { data.allow_rename_attribute_value = value; }
         }
 
         public string fields

@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_pricing_package
             set { data.hotel_room_package = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
 

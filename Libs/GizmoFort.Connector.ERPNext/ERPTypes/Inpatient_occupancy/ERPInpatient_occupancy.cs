@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Inpatient_occupancy
         public ERPInpatient_occupancy() : this(new ERPObject(DocType.Inpatient_occupancy)) { }
         public ERPInpatient_occupancy(ERPObject obj) : base(obj) { }
 
-        public static ERPInpatient_occupancy Create(string serviceunit, string checkin, int left, string checkout, int invoiced)
+        public static ERPInpatient_occupancy Create(string serviceunit, string checkin, long left, string checkout, long invoiced)
 
         {
             ERPInpatient_occupancy obj = new ERPInpatient_occupancy();
@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Inpatient_occupancy
             set { data.check_in = value; }
         }
 
-        private int _left = 0;
-        public int left
+        public long left
         {
-            get { return data._left; }
-            set { data._left = value; }
+            get { return data.left; }
+            set { data.left = value; }
         }
 
         public string check_out
@@ -50,11 +49,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Inpatient_occupancy
             set { data.check_out = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
 

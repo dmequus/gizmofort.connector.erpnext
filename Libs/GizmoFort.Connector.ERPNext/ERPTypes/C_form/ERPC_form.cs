@@ -67,11 +67,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.C_form
             set { data.quarter = value.ToString(); }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
         public string state
@@ -86,11 +85,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.C_form
             set { data.invoices = value; }
         }
 
-        private double _total_invoiced_amount = 0.0;
         public double total_invoiced_amount
         {
-            get { return data._total_invoiced_amount; }
-            set { data._total_invoiced_amount = value; }
+            get { return data.total_invoiced_amount; }
+            set { data.total_invoiced_amount = value; }
         }
 
         public string amended_from

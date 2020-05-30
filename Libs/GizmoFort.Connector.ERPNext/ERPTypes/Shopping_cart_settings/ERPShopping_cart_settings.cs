@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopping_cart_settings
         public ERPShopping_cart_settings() : this(new ERPObject(DocType.Shopping_cart_settings)) { }
         public ERPShopping_cart_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPShopping_cart_settings Create(int enabled, int showattachments, int showprice, int showstockavailability, int showconfigurebutton, int showcontactusbutton, int showquantityinwebsite, int showapplycouponcodeinwebsite, int allowitemsnotinstock, string company, string pricelist, string defaultcustomergroup, string quotationseries, int enablecheckout, Paymentsuccessurl paymentsuccessurl, string paymentgatewayaccount)
+        public static ERPShopping_cart_settings Create(long enabled, long showattachments, long showprice, long showstockavailability, long showconfigurebutton, long showcontactusbutton, long showquantityinwebsite, long showapplycouponcodeinwebsite, long allowitemsnotinstock, string company, string pricelist, string defaultcustomergroup, string quotationseries, long enablecheckout, Paymentsuccessurl paymentsuccessurl, string paymentgatewayaccount)
 
         {
             ERPShopping_cart_settings obj = new ERPShopping_cart_settings();
@@ -31,67 +31,58 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopping_cart_settings
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
-        private int _show_attachments = 0;
-        public int show_attachments
+        public long show_attachments
         {
-            get { return data._show_attachments; }
-            set { data._show_attachments = value; }
+            get { return data.show_attachments; }
+            set { data.show_attachments = value; }
         }
 
-        private int _show_price = 0;
-        public int show_price
+        public long show_price
         {
-            get { return data._show_price; }
-            set { data._show_price = value; }
+            get { return data.show_price; }
+            set { data.show_price = value; }
         }
 
-        private int _show_stock_availability = 0;
-        public int show_stock_availability
+        public long show_stock_availability
         {
-            get { return data._show_stock_availability; }
-            set { data._show_stock_availability = value; }
+            get { return data.show_stock_availability; }
+            set { data.show_stock_availability = value; }
         }
 
-        private int _show_configure_button = 0;
-        public int show_configure_button
+        public long show_configure_button
         {
-            get { return data._show_configure_button; }
-            set { data._show_configure_button = value; }
+            get { return data.show_configure_button; }
+            set { data.show_configure_button = value; }
         }
 
-        private int _show_contact_us_button = 0;
-        public int show_contact_us_button
+        public long show_contact_us_button
         {
-            get { return data._show_contact_us_button; }
-            set { data._show_contact_us_button = value; }
+            get { return data.show_contact_us_button; }
+            set { data.show_contact_us_button = value; }
         }
 
-        private int _show_quantity_in_website = 0;
-        public int show_quantity_in_website
+        public long show_quantity_in_website
         {
-            get { return data._show_quantity_in_website; }
-            set { data._show_quantity_in_website = value; }
+            get { return data.show_quantity_in_website; }
+            set { data.show_quantity_in_website = value; }
         }
 
-        private int _show_apply_coupon_code_in_website = 0;
-        public int show_apply_coupon_code_in_website
+        public long show_apply_coupon_code_in_website
         {
-            get { return data._show_apply_coupon_code_in_website; }
-            set { data._show_apply_coupon_code_in_website = value; }
+            get { return data.show_apply_coupon_code_in_website; }
+            set { data.show_apply_coupon_code_in_website = value; }
         }
 
-        private int _allow_items_not_in_stock = 0;
-        public int allow_items_not_in_stock
+        public long allow_items_not_in_stock
         {
-            get { return data._allow_items_not_in_stock; }
-            set { data._allow_items_not_in_stock = value; }
+            get { return data.allow_items_not_in_stock; }
+            set { data.allow_items_not_in_stock = value; }
         }
 
         public string company
@@ -118,11 +109,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shopping_cart_settings
             set { data.quotation_series = value; }
         }
 
-        private int _enable_checkout = 0;
-        public int enable_checkout
+        public long enable_checkout
         {
-            get { return data._enable_checkout; }
-            set { data._enable_checkout = value; }
+            get { return data.enable_checkout; }
+            set { data.enable_checkout = value; }
         }
 
         public Paymentsuccessurl payment_success_url

@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Additional_salary
             set { data.salary_component = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string company
@@ -56,18 +55,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Additional_salary
             set { data.company = value; }
         }
 
-        private int _overwrite_salary_structure_amount = 0;
-        public int overwrite_salary_structure_amount
+        public long overwrite_salary_structure_amount
         {
-            get { return data._overwrite_salary_structure_amount; }
-            set { data._overwrite_salary_structure_amount = value; }
+            get { return data.overwrite_salary_structure_amount; }
+            set { data.overwrite_salary_structure_amount = value; }
         }
 
-        private int _deduct_full_tax_on_selected_payroll_date = 0;
-        public int deduct_full_tax_on_selected_payroll_date
+        public long deduct_full_tax_on_selected_payroll_date
         {
-            get { return data._deduct_full_tax_on_selected_payroll_date; }
-            set { data._deduct_full_tax_on_selected_payroll_date = value; }
+            get { return data.deduct_full_tax_on_selected_payroll_date; }
+            set { data.deduct_full_tax_on_selected_payroll_date = value; }
         }
 
         public string payroll_date
@@ -100,11 +97,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Additional_salary
             set { data.amended_from = value; }
         }
 
-        private int _is_recurring = 0;
-        public int is_recurring
+        public long is_recurring
         {
-            get { return data._is_recurring; }
-            set { data._is_recurring = value; }
+            get { return data.is_recurring; }
+            set { data.is_recurring = value; }
         }
 
         public string from_date

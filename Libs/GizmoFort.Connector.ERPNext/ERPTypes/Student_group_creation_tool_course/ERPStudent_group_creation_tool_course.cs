@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group_creation_tool_cours
             set { data.course_code = value; }
         }
 
-        private int _max_strength = 0;
         public int max_strength
         {
-            get { return data._max_strength; }
-            set { data._max_strength = value; }
+            get { return data.max_strength; }
+            set { data.max_strength = value; }
         }
 
 

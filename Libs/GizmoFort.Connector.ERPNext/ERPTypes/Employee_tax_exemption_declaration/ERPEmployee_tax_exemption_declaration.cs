@@ -64,18 +64,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_tax_exemption_declaratio
             set { data.declarations = value; }
         }
 
-        private double _total_declared_amount = 0.0;
         public double total_declared_amount
         {
-            get { return data._total_declared_amount; }
-            set { data._total_declared_amount = value; }
+            get { return data.total_declared_amount; }
+            set { data.total_declared_amount = value; }
         }
 
-        private double _total_exemption_amount = 0.0;
         public double total_exemption_amount
         {
-            get { return data._total_exemption_amount; }
-            set { data._total_exemption_amount = value; }
+            get { return data.total_exemption_amount; }
+            set { data.total_exemption_amount = value; }
         }
 
 

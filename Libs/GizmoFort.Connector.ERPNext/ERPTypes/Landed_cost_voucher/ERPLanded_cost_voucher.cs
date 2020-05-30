@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_voucher
             set { data.taxes = value; }
         }
 
-        private double _total_taxes_and_charges = 0.0;
         public double total_taxes_and_charges
         {
-            get { return data._total_taxes_and_charges; }
-            set { data._total_taxes_and_charges = value; }
+            get { return data.total_taxes_and_charges; }
+            set { data.total_taxes_and_charges = value; }
         }
 
         public Distributechargesbasedon distribute_charges_based_on

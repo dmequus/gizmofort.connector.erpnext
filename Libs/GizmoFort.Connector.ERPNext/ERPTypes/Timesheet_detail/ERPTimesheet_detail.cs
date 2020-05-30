@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Timesheet_detail
         public ERPTimesheet_detail() : this(new ERPObject(DocType.Timesheet_detail)) { }
         public ERPTimesheet_detail(ERPObject obj) : base(obj) { }
 
-        public static ERPTimesheet_detail Create(string activitytype, string fromtime, double expectedhours, double hours, string totime, int completed, double completedqty, string workstation, string operation, string operationid, string project, string task, int billable, double billinghours, double billingrate, double billingamount, double costingrate, double costingamount, string salesinvoice)
+        public static ERPTimesheet_detail Create(string activitytype, string fromtime, double expectedhours, double hours, string totime, long completed, double completedqty, string workstation, string operation, string operationid, string project, string task, long billable, double billinghours, double billingrate, double billingamount, double costingrate, double costingamount, string salesinvoice)
 
         {
             ERPTimesheet_detail obj = new ERPTimesheet_detail();
@@ -51,18 +51,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Timesheet_detail
             set { data.from_time = value; }
         }
 
-        private double _expected_hours = 0.0;
         public double expected_hours
         {
-            get { return data._expected_hours; }
-            set { data._expected_hours = value; }
+            get { return data.expected_hours; }
+            set { data.expected_hours = value; }
         }
 
-        private double _hours = 0.0;
         public double hours
         {
-            get { return data._hours; }
-            set { data._hours = value; }
+            get { return data.hours; }
+            set { data.hours = value; }
         }
 
         public string to_time
@@ -71,18 +69,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Timesheet_detail
             set { data.to_time = value; }
         }
 
-        private int _completed = 0;
-        public int completed
+        public long completed
         {
-            get { return data._completed; }
-            set { data._completed = value; }
+            get { return data.completed; }
+            set { data.completed = value; }
         }
 
-        private double _completed_qty = 0.0;
         public double completed_qty
         {
-            get { return data._completed_qty; }
-            set { data._completed_qty = value; }
+            get { return data.completed_qty; }
+            set { data.completed_qty = value; }
         }
 
         public string workstation
@@ -115,46 +111,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Timesheet_detail
             set { data.task = value; }
         }
 
-        private int _billable = 0;
-        public int billable
+        public long billable
         {
-            get { return data._billable; }
-            set { data._billable = value; }
+            get { return data.billable; }
+            set { data.billable = value; }
         }
 
-        private double _billing_hours = 0.0;
         public double billing_hours
         {
-            get { return data._billing_hours; }
-            set { data._billing_hours = value; }
+            get { return data.billing_hours; }
+            set { data.billing_hours = value; }
         }
 
-        private double _billing_rate = 0.0;
         public double billing_rate
         {
-            get { return data._billing_rate; }
-            set { data._billing_rate = value; }
+            get { return data.billing_rate; }
+            set { data.billing_rate = value; }
         }
 
-        private double _billing_amount = 0.0;
         public double billing_amount
         {
-            get { return data._billing_amount; }
-            set { data._billing_amount = value; }
+            get { return data.billing_amount; }
+            set { data.billing_amount = value; }
         }
 
-        private double _costing_rate = 0.0;
         public double costing_rate
         {
-            get { return data._costing_rate; }
-            set { data._costing_rate = value; }
+            get { return data.costing_rate; }
+            set { data.costing_rate = value; }
         }
 
-        private double _costing_amount = 0.0;
         public double costing_amount
         {
-            get { return data._costing_amount; }
-            set { data._costing_amount = value; }
+            get { return data.costing_amount; }
+            set { data.costing_amount = value; }
         }
 
         public string sales_invoice

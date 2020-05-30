@@ -58,32 +58,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_assessment
             set { data.assessment_sheet = value; }
         }
 
-        private int _total_score = 0;
         public int total_score
         {
-            get { return data._total_score; }
-            set { data._total_score = value; }
+            get { return data.total_score; }
+            set { data.total_score = value; }
         }
 
-        private int _total_score_obtained = 0;
         public int total_score_obtained
         {
-            get { return data._total_score_obtained; }
-            set { data._total_score_obtained = value; }
+            get { return data.total_score_obtained; }
+            set { data.total_score_obtained = value; }
         }
 
-        private int _scale_min = 0;
         public int scale_min
         {
-            get { return data._scale_min; }
-            set { data._scale_min = value; }
+            get { return data.scale_min; }
+            set { data.scale_min = value; }
         }
 
-        private int _scale_max = 0;
         public int scale_max
         {
-            get { return data._scale_max; }
-            set { data._scale_max = value; }
+            get { return data.scale_max; }
+            set { data.scale_max = value; }
         }
 
         public string naming_series

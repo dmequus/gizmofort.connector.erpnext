@@ -40,25 +40,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_taxes_and_charges
             set { data.cost_center = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _tax_amount = 0.0;
         public double tax_amount
         {
-            get { return data._tax_amount; }
-            set { data._tax_amount = value; }
+            get { return data.tax_amount; }
+            set { data.tax_amount = value; }
         }
 
-        private double _total = 0.0;
         public double total
         {
-            get { return data._total; }
-            set { data._total = value; }
+            get { return data.total; }
+            set { data.total = value; }
         }
 
 

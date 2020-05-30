@@ -28,25 +28,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Income_tax_slab_other_charges
 
         }
 
-        private double _percent = 0.0;
         public double percent
         {
-            get { return data._percent; }
-            set { data._percent = value; }
+            get { return data.percent; }
+            set { data.percent = value; }
         }
 
-        private double _min_taxable_income = 0.0;
         public double min_taxable_income
         {
-            get { return data._min_taxable_income; }
-            set { data._min_taxable_income = value; }
+            get { return data.min_taxable_income; }
+            set { data.min_taxable_income = value; }
         }
 
-        private double _max_taxable_income = 0.0;
         public double max_taxable_income
         {
-            get { return data._max_taxable_income; }
-            set { data._max_taxable_income = value; }
+            get { return data.max_taxable_income; }
+            set { data.max_taxable_income = value; }
         }
 
 

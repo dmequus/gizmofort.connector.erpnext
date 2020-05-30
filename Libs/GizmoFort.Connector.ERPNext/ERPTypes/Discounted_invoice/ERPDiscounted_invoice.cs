@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Discounted_invoice
             set { data.posting_date = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
         public string debit_to

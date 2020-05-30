@@ -29,18 +29,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loyalty_program_collection
 
         }
 
-        private double _min_spent = 0.0;
         public double min_spent
         {
-            get { return data._min_spent; }
-            set { data._min_spent = value; }
+            get { return data.min_spent; }
+            set { data.min_spent = value; }
         }
 
-        private double _collection_factor = 0.0;
         public double collection_factor
         {
-            get { return data._collection_factor; }
-            set { data._collection_factor = value; }
+            get { return data.collection_factor; }
+            set { data.collection_factor = value; }
         }
 
 

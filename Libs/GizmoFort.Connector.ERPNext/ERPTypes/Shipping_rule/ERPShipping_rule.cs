@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shipping_rule
             set { data.cost_center = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public Shippingruletype shipping_rule_type
@@ -67,11 +66,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Shipping_rule
             set { data.calculate_based_on = value.ToString(); }
         }
 
-        private double _shipping_amount = 0.0;
         public double shipping_amount
         {
-            get { return data._shipping_amount; }
-            set { data._shipping_amount = value; }
+            get { return data.shipping_amount; }
+            set { data.shipping_amount = value; }
         }
 
         public string conditions

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Detected_disease
         public ERPDetected_disease() : this(new ERPObject(DocType.Detected_disease)) { }
         public ERPDetected_disease(ERPObject obj) : base(obj) { }
 
-        public static ERPDetected_disease Create(string disease, string startdate, int taskscreated)
+        public static ERPDetected_disease Create(string disease, string startdate, long taskscreated)
 
         {
             ERPDetected_disease obj = new ERPDetected_disease();
@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Detected_disease
             set { data.start_date = value; }
         }
 
-        private int _tasks_created = 0;
-        public int tasks_created
+        public long tasks_created
         {
-            get { return data._tasks_created; }
-            set { data._tasks_created = value; }
+            get { return data.tasks_created; }
+            set { data.tasks_created = value; }
         }
 
 

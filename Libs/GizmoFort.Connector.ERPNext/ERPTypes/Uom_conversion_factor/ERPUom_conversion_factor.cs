@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Uom_conversion_factor
             set { data.to_uom = value; }
         }
 
-        private double _value = 0.0;
         public double value
         {
-            get { return data._value; }
-            set { data._value = value; }
+            get { return data.value; }
+            set { data.value = value; }
         }
 
 

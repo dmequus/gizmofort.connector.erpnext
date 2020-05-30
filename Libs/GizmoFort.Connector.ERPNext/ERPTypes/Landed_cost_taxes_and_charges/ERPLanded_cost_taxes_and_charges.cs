@@ -29,11 +29,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_taxes_and_charges
 
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string expense_account

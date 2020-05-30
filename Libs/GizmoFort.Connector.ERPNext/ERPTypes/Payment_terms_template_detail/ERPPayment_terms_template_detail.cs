@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_terms_template_detail
             set { data.description = value; }
         }
 
-        private double _invoice_portion = 0.0;
         public double invoice_portion
         {
-            get { return data._invoice_portion; }
-            set { data._invoice_portion = value; }
+            get { return data.invoice_portion; }
+            set { data.invoice_portion = value; }
         }
 
         public Duedatebasedon due_date_based_on
@@ -52,18 +51,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_terms_template_detail
             set { data.due_date_based_on = value.ToString(); }
         }
 
-        private int _credit_days = 0;
         public int credit_days
         {
-            get { return data._credit_days; }
-            set { data._credit_days = value; }
+            get { return data.credit_days; }
+            set { data.credit_days = value; }
         }
 
-        private int _credit_months = 0;
         public int credit_months
         {
-            get { return data._credit_months; }
-            set { data._credit_months = value; }
+            get { return data.credit_months; }
+            set { data.credit_months = value; }
         }
 
         public string mode_of_payment

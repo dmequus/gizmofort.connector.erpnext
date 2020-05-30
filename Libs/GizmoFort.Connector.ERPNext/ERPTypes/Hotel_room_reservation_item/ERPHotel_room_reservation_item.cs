@@ -31,11 +31,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_reservation_item
 
         }
 
-        private int _qty = 0;
         public int qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string currency
@@ -44,18 +43,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_reservation_item
             set { data.currency = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
 

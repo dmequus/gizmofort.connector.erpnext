@@ -41,11 +41,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security
             set { data.unit_of_measure = value; }
         }
 
-        private double _haircut = 0.0;
         public double haircut
         {
-            get { return data._haircut; }
-            set { data._haircut = value; }
+            get { return data.haircut; }
+            set { data.haircut = value; }
         }
 
         public string loan_security_code
@@ -54,11 +53,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_security
             set { data.loan_security_code = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
 

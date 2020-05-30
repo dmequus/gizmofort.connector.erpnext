@@ -63,11 +63,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cash_flow_mapper
             set { data.accounts = value; }
         }
 
-        private int _position = 0;
         public int position
         {
-            get { return data._position; }
-            set { data._position = value; }
+            get { return data.position; }
+            set { data.position = value; }
         }
 
 

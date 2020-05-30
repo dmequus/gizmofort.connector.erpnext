@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_purchase_receipt
             set { data.posting_date = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
 

@@ -66,18 +66,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_tax_exemption_proof_subm
             set { data.tax_exemption_proofs = value; }
         }
 
-        private double _total_actual_amount = 0.0;
         public double total_actual_amount
         {
-            get { return data._total_actual_amount; }
-            set { data._total_actual_amount = value; }
+            get { return data.total_actual_amount; }
+            set { data.total_actual_amount = value; }
         }
 
-        private double _exemption_amount = 0.0;
         public double exemption_amount
         {
-            get { return data._exemption_amount; }
-            set { data._exemption_amount = value; }
+            get { return data.exemption_amount; }
+            set { data.exemption_amount = value; }
         }
 
         public string attachments

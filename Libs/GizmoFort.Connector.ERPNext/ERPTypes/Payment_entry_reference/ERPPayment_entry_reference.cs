@@ -46,32 +46,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_entry_reference
             set { data.bill_no = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
-        private double _exchange_rate = 0.0;
         public double exchange_rate
         {
-            get { return data._exchange_rate; }
-            set { data._exchange_rate = value; }
+            get { return data.exchange_rate; }
+            set { data.exchange_rate = value; }
         }
 
         public string payment_term

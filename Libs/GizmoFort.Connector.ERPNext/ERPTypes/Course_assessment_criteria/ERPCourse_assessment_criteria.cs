@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Course_assessment_criteria
 
         }
 
-        private double _weightage = 0.0;
         public double weightage
         {
-            get { return data._weightage; }
-            set { data._weightage = value; }
+            get { return data.weightage; }
+            set { data.weightage = value; }
         }
 
 

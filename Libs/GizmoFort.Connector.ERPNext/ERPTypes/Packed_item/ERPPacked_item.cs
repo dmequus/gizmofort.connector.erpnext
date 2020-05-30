@@ -56,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packed_item
             set { data.target_warehouse = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string serial_no
@@ -75,18 +74,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packed_item
             set { data.batch_no = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
-        private double _projected_qty = 0.0;
         public double projected_qty
         {
-            get { return data._projected_qty; }
-            set { data._projected_qty = value; }
+            get { return data.projected_qty; }
+            set { data.projected_qty = value; }
         }
 
         public string uom
@@ -95,11 +92,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packed_item
             set { data.uom = value; }
         }
 
-        private int _page_break = 0;
-        public int page_break
+        public long page_break
         {
-            get { return data._page_break; }
-            set { data._page_break = value; }
+            get { return data.page_break; }
+            set { data.page_break = value; }
         }
 
         public string prevdoc_doctype
@@ -114,11 +110,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packed_item
             set { data.parent_detail_docname = value; }
         }
 
-        private double _actual_batch_qty = 0.0;
         public double actual_batch_qty
         {
-            get { return data._actual_batch_qty; }
-            set { data._actual_batch_qty = value; }
+            get { return data.actual_batch_qty; }
+            set { data.actual_batch_qty = value; }
         }
 
 

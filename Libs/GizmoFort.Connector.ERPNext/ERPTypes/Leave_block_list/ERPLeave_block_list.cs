@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_block_list
         public ERPLeave_block_list() : this(new ERPObject(DocType.Leave_block_list)) { }
         public ERPLeave_block_list(ERPObject obj) : base(obj) { }
 
-        public static ERPLeave_block_list Create(string leaveblocklistname, string company, int appliestoalldepartments, string leaveblocklistdates, string leaveblocklistallowed)
+        public static ERPLeave_block_list Create(string leaveblocklistname, string company, long appliestoalldepartments, string leaveblocklistdates, string leaveblocklistallowed)
 
         {
             ERPLeave_block_list obj = new ERPLeave_block_list();
@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_block_list
             set { data.company = value; }
         }
 
-        private int _applies_to_all_departments = 0;
-        public int applies_to_all_departments
+        public long applies_to_all_departments
         {
-            get { return data._applies_to_all_departments; }
-            set { data._applies_to_all_departments = value; }
+            get { return data.applies_to_all_departments; }
+            set { data.applies_to_all_departments = value; }
         }
 
         public string leave_block_list_dates

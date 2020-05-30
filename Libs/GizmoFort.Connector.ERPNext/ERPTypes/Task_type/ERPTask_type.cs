@@ -17,11 +17,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task_type
             return obj;
         }
 
-        private double _weight = 0.0;
         public double weight
         {
-            get { return data._weight; }
-            set { data._weight = value; }
+            get { return data.weight; }
+            set { data.weight = value; }
         }
 
         public string description

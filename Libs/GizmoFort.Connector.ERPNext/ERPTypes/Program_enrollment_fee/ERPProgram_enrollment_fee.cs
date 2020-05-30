@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Program_enrollment_fee
             set { data.due_date = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
 

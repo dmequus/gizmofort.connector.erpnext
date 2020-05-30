@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_variant_attribute
         public ERPItem_variant_attribute() : this(new ERPObject(DocType.Item_variant_attribute)) { }
         public ERPItem_variant_attribute(ERPObject obj) : base(obj) { }
 
-        public static ERPItem_variant_attribute Create(string variantof, string attribute, string attributevalue, int numericvalues, double fromrange, double increment, double torange)
+        public static ERPItem_variant_attribute Create(string variantof, string attribute, string attributevalue, long numericvalues, double fromrange, double increment, double torange)
 
         {
             ERPItem_variant_attribute obj = new ERPItem_variant_attribute();
@@ -45,32 +45,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_variant_attribute
             set { data.attribute_value = value; }
         }
 
-        private int _numeric_values = 0;
-        public int numeric_values
+        public long numeric_values
         {
-            get { return data._numeric_values; }
-            set { data._numeric_values = value; }
+            get { return data.numeric_values; }
+            set { data.numeric_values = value; }
         }
 
-        private double _from_range = 0.0;
         public double from_range
         {
-            get { return data._from_range; }
-            set { data._from_range = value; }
+            get { return data.from_range; }
+            set { data.from_range = value; }
         }
 
-        private double _increment = 0.0;
         public double increment
         {
-            get { return data._increment; }
-            set { data._increment = value; }
+            get { return data.increment; }
+            set { data.increment = value; }
         }
 
-        private double _to_range = 0.0;
         public double to_range
         {
-            get { return data._to_range; }
-            set { data._to_range = value; }
+            get { return data.to_range; }
+            set { data.to_range = value; }
         }
 
 

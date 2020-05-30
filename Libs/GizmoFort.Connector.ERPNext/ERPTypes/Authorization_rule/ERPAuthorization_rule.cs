@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Authorization_rule
             set { data.company = value; }
         }
 
-        private double _value = 0.0;
         public double value
         {
-            get { return data._value; }
-            set { data._value = value; }
+            get { return data.value; }
+            set { data.value = value; }
         }
 
         public string system_role

@@ -39,25 +39,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip_loan
             set { data.interest_income_account = value; }
         }
 
-        private double _principal_amount = 0.0;
         public double principal_amount
         {
-            get { return data._principal_amount; }
-            set { data._principal_amount = value; }
+            get { return data.principal_amount; }
+            set { data.principal_amount = value; }
         }
 
-        private double _interest_amount = 0.0;
         public double interest_amount
         {
-            get { return data._interest_amount; }
-            set { data._interest_amount = value; }
+            get { return data.interest_amount; }
+            set { data.interest_amount = value; }
         }
 
-        private double _total_payment = 0.0;
         public double total_payment
         {
-            get { return data._total_payment; }
-            set { data._total_payment = value; }
+            get { return data.total_payment; }
+            set { data.total_payment = value; }
         }
 
         public string loan_repayment_entry

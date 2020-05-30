@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_application_deta
         public ERPEmployee_benefit_application_detail() : this(new ERPObject(DocType.Employee_benefit_application_detail)) { }
         public ERPEmployee_benefit_application_detail(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_benefit_application_detail Create(string earningcomponent, int payagainstbenefitclaim, double maxbenefitamount, double amount)
+        public static ERPEmployee_benefit_application_detail Create(string earningcomponent, long payagainstbenefitclaim, double maxbenefitamount, double amount)
 
         {
             ERPEmployee_benefit_application_detail obj = new ERPEmployee_benefit_application_detail();
@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_application_deta
 
         }
 
-        private int _pay_against_benefit_claim = 0;
-        public int pay_against_benefit_claim
+        public long pay_against_benefit_claim
         {
-            get { return data._pay_against_benefit_claim; }
-            set { data._pay_against_benefit_claim = value; }
+            get { return data.pay_against_benefit_claim; }
+            set { data.pay_against_benefit_claim = value; }
         }
 
-        private double _max_benefit_amount = 0.0;
         public double max_benefit_amount
         {
-            get { return data._max_benefit_amount; }
-            set { data._max_benefit_amount = value; }
+            get { return data.max_benefit_amount; }
+            set { data.max_benefit_amount = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
 

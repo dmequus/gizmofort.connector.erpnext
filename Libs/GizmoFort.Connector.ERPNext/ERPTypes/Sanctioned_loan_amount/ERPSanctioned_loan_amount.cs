@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sanctioned_loan_amount
             set { data.company = value; }
         }
 
-        private double _sanctioned_amount_limit = 0.0;
         public double sanctioned_amount_limit
         {
-            get { return data._sanctioned_amount_limit; }
-            set { data._sanctioned_amount_limit = value; }
+            get { return data.sanctioned_amount_limit; }
+            set { data.sanctioned_amount_limit = value; }
         }
 
 

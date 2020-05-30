@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Routing
         public ERPRouting() : this(new ERPObject(DocType.Routing)) { }
         public ERPRouting(ERPObject obj) : base(obj) { }
 
-        public static ERPRouting Create(string routingname, int disabled, string operations)
+        public static ERPRouting Create(string routingname, long disabled, string operations)
 
         {
             ERPRouting obj = new ERPRouting();
@@ -29,11 +29,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Routing
 
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string operations

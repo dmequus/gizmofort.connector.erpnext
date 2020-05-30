@@ -42,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_price
             set { data.price_list = value; }
         }
 
-        private double _price_list_rate = 0.0;
         public double price_list_rate
         {
-            get { return data._price_list_rate; }
-            set { data._price_list_rate = value; }
+            get { return data.price_list_rate; }
+            set { data.price_list_rate = value; }
         }
 
         public string uom
@@ -55,11 +54,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_price
             set { data.uom = value; }
         }
 
-        private int _packing_unit = 0;
         public int packing_unit
         {
-            get { return data._packing_unit; }
-            set { data._packing_unit = value; }
+            get { return data.packing_unit; }
+            set { data.packing_unit = value; }
         }
 
         public string brand
@@ -86,18 +84,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_price
             set { data.supplier = value; }
         }
 
-        private int _buying = 0;
-        public int buying
+        public long buying
         {
-            get { return data._buying; }
-            set { data._buying = value; }
+            get { return data.buying; }
+            set { data.buying = value; }
         }
 
-        private int _selling = 0;
-        public int selling
+        public long selling
         {
-            get { return data._selling; }
-            set { data._selling = value; }
+            get { return data.selling; }
+            set { data.selling = value; }
         }
 
         public string currency
@@ -112,11 +108,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_price
             set { data.valid_from = value; }
         }
 
-        private int _lead_time_days = 0;
         public int lead_time_days
         {
-            get { return data._lead_time_days; }
-            set { data._lead_time_days = value; }
+            get { return data.lead_time_days; }
+            set { data.lead_time_days = value; }
         }
 
         public string valid_upto

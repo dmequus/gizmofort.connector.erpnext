@@ -97,11 +97,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_encounter
             set { data.company = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string symptoms
@@ -110,11 +109,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_encounter
             set { data.symptoms = value; }
         }
 
-        private int _symptoms_in_print = 0;
-        public int symptoms_in_print
+        public long symptoms_in_print
         {
-            get { return data._symptoms_in_print; }
-            set { data._symptoms_in_print = value; }
+            get { return data.symptoms_in_print; }
+            set { data.symptoms_in_print = value; }
         }
 
         public string diagnosis
@@ -123,11 +121,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_encounter
             set { data.diagnosis = value; }
         }
 
-        private int _diagnosis_in_print = 0;
-        public int diagnosis_in_print
+        public long diagnosis_in_print
         {
-            get { return data._diagnosis_in_print; }
-            set { data._diagnosis_in_print = value; }
+            get { return data.diagnosis_in_print; }
+            set { data.diagnosis_in_print = value; }
         }
 
         public string codification_table

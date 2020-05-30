@@ -73,18 +73,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sms_center
             set { data.message = value; }
         }
 
-        private int _total_characters = 0;
         public int total_characters
         {
-            get { return data._total_characters; }
-            set { data._total_characters = value; }
+            get { return data.total_characters; }
+            set { data.total_characters = value; }
         }
 
-        private int _total_messages = 0;
         public int total_messages
         {
-            get { return data._total_messages; }
-            set { data._total_messages = value; }
+            get { return data.total_messages; }
+            set { data.total_messages = value; }
         }
 
 

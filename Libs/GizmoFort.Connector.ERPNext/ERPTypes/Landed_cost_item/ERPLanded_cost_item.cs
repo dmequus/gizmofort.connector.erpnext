@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_item
             set { data.description = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public Receiptdocumenttype receipt_document_type
@@ -54,25 +53,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_item
             set { data.receipt_document = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _applicable_charges = 0.0;
         public double applicable_charges
         {
-            get { return data._applicable_charges; }
-            set { data._applicable_charges = value; }
+            get { return data.applicable_charges; }
+            set { data.applicable_charges = value; }
         }
 
         public string purchase_receipt_item
@@ -87,11 +83,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Landed_cost_item
             set { data.cost_center = value; }
         }
 
-        private int _is_fixed_asset = 0;
-        public int is_fixed_asset
+        public long is_fixed_asset
         {
-            get { return data._is_fixed_asset; }
-            set { data._is_fixed_asset = value; }
+            get { return data.is_fixed_asset; }
+            set { data.is_fixed_asset = value; }
         }
 
 

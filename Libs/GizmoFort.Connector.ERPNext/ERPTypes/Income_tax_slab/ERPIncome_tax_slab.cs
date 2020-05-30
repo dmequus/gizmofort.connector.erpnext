@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Income_tax_slab
             set { data.slabs = value; }
         }
 
-        private int _allow_tax_exemption = 0;
-        public int allow_tax_exemption
+        public long allow_tax_exemption
         {
-            get { return data._allow_tax_exemption; }
-            set { data._allow_tax_exemption = value; }
+            get { return data.allow_tax_exemption; }
+            set { data.allow_tax_exemption = value; }
         }
 
         public string amended_from
@@ -47,18 +46,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Income_tax_slab
             set { data.amended_from = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private double _standard_tax_exemption_amount = 0.0;
         public double standard_tax_exemption_amount
         {
-            get { return data._standard_tax_exemption_amount; }
-            set { data._standard_tax_exemption_amount = value; }
+            get { return data.standard_tax_exemption_amount; }
+            set { data.standard_tax_exemption_amount = value; }
         }
 
         public string company

@@ -27,11 +27,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Service_level_agreement
 
         }
 
-        private int _default_service_level_agreement = 0;
-        public int default_service_level_agreement
+        public long default_service_level_agreement
         {
-            get { return data._default_service_level_agreement; }
-            set { data._default_service_level_agreement = value; }
+            get { return data.default_service_level_agreement; }
+            set { data.default_service_level_agreement = value; }
         }
 
         public string holiday_list
@@ -76,11 +75,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Service_level_agreement
             set { data.default_priority = value; }
         }
 
-        private int _active = 0;
-        public int active
+        public long active
         {
-            get { return data._active; }
-            set { data._active = value; }
+            get { return data.active; }
+            set { data.active = value; }
         }
 
         public string entity
@@ -95,11 +93,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Service_level_agreement
             set { data.entity_type = value.ToString(); }
         }
 
-        private int _enable = 0;
-        public int enable
+        public long enable
         {
-            get { return data._enable; }
-            set { data._enable = value; }
+            get { return data.enable; }
+            set { data.enable = value; }
         }
 
 

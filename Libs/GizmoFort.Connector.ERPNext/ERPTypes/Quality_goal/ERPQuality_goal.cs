@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Quality_goal
             set { data.date = value.ToString(); }
         }
 
-        private int _revision = 0;
         public int revision
         {
-            get { return data._revision; }
-            set { data._revision = value; }
+            get { return data.revision; }
+            set { data.revision = value; }
         }
 
         public string revised_on

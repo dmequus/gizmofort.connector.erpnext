@@ -89,18 +89,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_application
             set { data.department = value; }
         }
 
-        private double _leave_balance = 0.0;
         public double leave_balance
         {
-            get { return data._leave_balance; }
-            set { data._leave_balance = value; }
+            get { return data.leave_balance; }
+            set { data.leave_balance = value; }
         }
 
-        private int _half_day = 0;
-        public int half_day
+        public long half_day
         {
-            get { return data._half_day; }
-            set { data._half_day = value; }
+            get { return data.half_day; }
+            set { data.half_day = value; }
         }
 
         public string half_day_date
@@ -109,11 +107,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_application
             set { data.half_day_date = value; }
         }
 
-        private double _total_leave_days = 0.0;
         public double total_leave_days
         {
-            get { return data._total_leave_days; }
-            set { data._total_leave_days = value; }
+            get { return data.total_leave_days; }
+            set { data.total_leave_days = value; }
         }
 
         public string description
@@ -134,11 +131,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_application
             set { data.leave_approver_name = value; }
         }
 
-        private int _follow_via_email = 0;
-        public int follow_via_email
+        public long follow_via_email
         {
-            get { return data._follow_via_email; }
-            set { data._follow_via_email = value; }
+            get { return data.follow_via_email; }
+            set { data.follow_via_email = value; }
         }
 
         public string salary_slip

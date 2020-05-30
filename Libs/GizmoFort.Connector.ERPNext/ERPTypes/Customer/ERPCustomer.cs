@@ -102,18 +102,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer
             set { data.tax_category = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private int _is_internal_customer = 0;
-        public int is_internal_customer
+        public long is_internal_customer
         {
-            get { return data._is_internal_customer; }
-            set { data._is_internal_customer = value; }
+            get { return data.is_internal_customer; }
+            set { data.is_internal_customer = value; }
         }
 
         public string represents_company
@@ -224,11 +222,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer
             set { data.industry = value; }
         }
 
-        private int _is_frozen = 0;
-        public int is_frozen
+        public long is_frozen
         {
-            get { return data._is_frozen; }
-            set { data._is_frozen = value; }
+            get { return data.is_frozen; }
+            set { data.is_frozen = value; }
         }
 
         public string loyalty_program
@@ -249,11 +246,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer
             set { data.default_sales_partner = value; }
         }
 
-        private double _default_commission_rate = 0.0;
         public double default_commission_rate
         {
-            get { return data._default_commission_rate; }
-            set { data._default_commission_rate = value; }
+            get { return data.default_commission_rate; }
+            set { data.default_commission_rate = value; }
         }
 
         public string sales_team
@@ -274,18 +270,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Customer
             set { data.credit_limits = value; }
         }
 
-        private int _so_required = 0;
-        public int so_required
+        public long so_required
         {
-            get { return data._so_required; }
-            set { data._so_required = value; }
+            get { return data.so_required; }
+            set { data.so_required = value; }
         }
 
-        private int _dn_required = 0;
-        public int dn_required
+        public long dn_required
         {
-            get { return data._dn_required; }
-            set { data._dn_required = value; }
+            get { return data.dn_required; }
+            set { data.dn_required = value; }
         }
 
 

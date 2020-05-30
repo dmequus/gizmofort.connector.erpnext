@@ -62,11 +62,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation
             set { data.items = value; }
         }
 
-        private int _seta_posting_time = 0;
-        public int seta_posting_time
+        public long seta_posting_time
         {
-            get { return data._seta_posting_time; }
-            set { data._seta_posting_time = value; }
+            get { return data.seta_posting_time; }
+            set { data.seta_posting_time = value; }
         }
 
         public string expense_account
@@ -87,11 +86,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_reconciliation
             set { data.reconciliation_json = value; }
         }
 
-        private double _difference_amount = 0.0;
         public double difference_amount
         {
-            get { return data._difference_amount; }
-            set { data._difference_amount = value; }
+            get { return data.difference_amount; }
+            set { data.difference_amount = value; }
         }
 
         public string amended_from

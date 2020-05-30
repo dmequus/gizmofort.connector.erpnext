@@ -66,11 +66,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_application
             set { data.status = value.ToString(); }
         }
 
-        private double _loan_amount = 0.0;
         public double loan_amount
         {
-            get { return data._loan_amount; }
-            set { data._loan_amount = value; }
+            get { return data.loan_amount; }
+            set { data.loan_amount = value; }
         }
 
         public string description
@@ -85,39 +84,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_application
             set { data.repayment_method = value.ToString(); }
         }
 
-        private double _rate_of_interest = 0.0;
         public double rate_of_interest
         {
-            get { return data._rate_of_interest; }
-            set { data._rate_of_interest = value; }
+            get { return data.rate_of_interest; }
+            set { data.rate_of_interest = value; }
         }
 
-        private double _total_payable_interest = 0.0;
         public double total_payable_interest
         {
-            get { return data._total_payable_interest; }
-            set { data._total_payable_interest = value; }
+            get { return data.total_payable_interest; }
+            set { data.total_payable_interest = value; }
         }
 
-        private double _repayment_amount = 0.0;
         public double repayment_amount
         {
-            get { return data._repayment_amount; }
-            set { data._repayment_amount = value; }
+            get { return data.repayment_amount; }
+            set { data.repayment_amount = value; }
         }
 
-        private int _repayment_periods = 0;
         public int repayment_periods
         {
-            get { return data._repayment_periods; }
-            set { data._repayment_periods = value; }
+            get { return data.repayment_periods; }
+            set { data.repayment_periods = value; }
         }
 
-        private double _total_payable_amount = 0.0;
         public double total_payable_amount
         {
-            get { return data._total_payable_amount; }
-            set { data._total_payable_amount = value; }
+            get { return data.total_payable_amount; }
+            set { data.total_payable_amount = value; }
         }
 
         public string amended_from
@@ -126,11 +120,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_application
             set { data.amended_from = value; }
         }
 
-        private int _is_secured_loan = 0;
-        public int is_secured_loan
+        public long is_secured_loan
         {
-            get { return data._is_secured_loan; }
-            set { data._is_secured_loan = value; }
+            get { return data.is_secured_loan; }
+            set { data.is_secured_loan = value; }
         }
 
         public string proposed_pledges
@@ -139,18 +132,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_application
             set { data.proposed_pledges = value; }
         }
 
-        private double _maximum_loan_amount = 0.0;
         public double maximum_loan_amount
         {
-            get { return data._maximum_loan_amount; }
-            set { data._maximum_loan_amount = value; }
+            get { return data.maximum_loan_amount; }
+            set { data.maximum_loan_amount = value; }
         }
 
-        private int _is_term_loan = 0;
-        public int is_term_loan
+        public long is_term_loan
         {
-            get { return data._is_term_loan; }
-            set { data._is_term_loan = value; }
+            get { return data.is_term_loan; }
+            set { data.is_term_loan = value; }
         }
 
 

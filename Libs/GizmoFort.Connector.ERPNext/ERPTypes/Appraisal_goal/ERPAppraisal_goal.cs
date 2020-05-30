@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appraisal_goal
 
         }
 
-        private double _per_weightage = 0.0;
         public double per_weightage
         {
-            get { return data._per_weightage; }
-            set { data._per_weightage = value; }
+            get { return data.per_weightage; }
+            set { data.per_weightage = value; }
         }
 
-        private double _score = 0.0;
         public double score
         {
-            get { return data._score; }
-            set { data._score = value; }
+            get { return data.score; }
+            set { data.score = value; }
         }
 
-        private double _score_earned = 0.0;
         public double score_earned
         {
-            get { return data._score_earned; }
-            set { data._score_earned = value; }
+            get { return data.score_earned; }
+            set { data.score_earned = value; }
         }
 
 

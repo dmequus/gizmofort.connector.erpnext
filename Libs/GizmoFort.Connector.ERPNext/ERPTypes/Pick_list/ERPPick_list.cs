@@ -58,11 +58,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pick_list
             set { data.locations = value; }
         }
 
-        private double _for_qty = 0.0;
         public double for_qty
         {
-            get { return data._for_qty; }
-            set { data._for_qty = value; }
+            get { return data.for_qty; }
+            set { data.for_qty = value; }
         }
 
         public string amended_from

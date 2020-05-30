@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
         public ERPPromotional_scheme_price_discount() : this(new ERPObject(DocType.Promotional_scheme_price_discount)) { }
         public ERPPromotional_scheme_price_discount(ERPObject obj) : base(obj) { }
 
-        public static ERPPromotional_scheme_price_discount Create(int disable, string ruledescription, double minqty, double maxqty, double minamount, double maxamount, Rateordiscount rateordiscount, double rate, double discountamount, double discountpercentage, string warehouse, double thresholdpercentage, int validateappliedrule, Priority priority, int applymultiplepricingrules, int applydiscountonrate)
+        public static ERPPromotional_scheme_price_discount Create(long disable, string ruledescription, double minqty, double maxqty, double minamount, double maxamount, Rateordiscount rateordiscount, double rate, double discountamount, double discountpercentage, string warehouse, double thresholdpercentage, long validateappliedrule, Priority priority, long applymultiplepricingrules, long applydiscountonrate)
 
         {
             ERPPromotional_scheme_price_discount obj = new ERPPromotional_scheme_price_discount();
@@ -31,11 +31,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
             return obj;
         }
 
-        private int _disable = 0;
-        public int disable
+        public long disable
         {
-            get { return data._disable; }
-            set { data._disable = value; }
+            get { return data.disable; }
+            set { data.disable = value; }
         }
 
         public string rule_description
@@ -44,32 +43,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
             set { data.rule_description = value; }
         }
 
-        private double _min_qty = 0.0;
         public double min_qty
         {
-            get { return data._min_qty; }
-            set { data._min_qty = value; }
+            get { return data.min_qty; }
+            set { data.min_qty = value; }
         }
 
-        private double _max_qty = 0.0;
         public double max_qty
         {
-            get { return data._max_qty; }
-            set { data._max_qty = value; }
+            get { return data.max_qty; }
+            set { data.max_qty = value; }
         }
 
-        private double _min_amount = 0.0;
         public double min_amount
         {
-            get { return data._min_amount; }
-            set { data._min_amount = value; }
+            get { return data.min_amount; }
+            set { data.min_amount = value; }
         }
 
-        private double _max_amount = 0.0;
         public double max_amount
         {
-            get { return data._max_amount; }
-            set { data._max_amount = value; }
+            get { return data.max_amount; }
+            set { data.max_amount = value; }
         }
 
         public Rateordiscount rate_or_discount
@@ -78,25 +73,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
             set { data.rate_or_discount = value.ToString(); }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _discount_amount = 0.0;
         public double discount_amount
         {
-            get { return data._discount_amount; }
-            set { data._discount_amount = value; }
+            get { return data.discount_amount; }
+            set { data.discount_amount = value; }
         }
 
-        private double _discount_percentage = 0.0;
         public double discount_percentage
         {
-            get { return data._discount_percentage; }
-            set { data._discount_percentage = value; }
+            get { return data.discount_percentage; }
+            set { data.discount_percentage = value; }
         }
 
         public string warehouse
@@ -105,18 +97,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
             set { data.warehouse = value; }
         }
 
-        private double _threshold_percentage = 0.0;
         public double threshold_percentage
         {
-            get { return data._threshold_percentage; }
-            set { data._threshold_percentage = value; }
+            get { return data.threshold_percentage; }
+            set { data.threshold_percentage = value; }
         }
 
-        private int _validate_applied_rule = 0;
-        public int validate_applied_rule
+        public long validate_applied_rule
         {
-            get { return data._validate_applied_rule; }
-            set { data._validate_applied_rule = value; }
+            get { return data.validate_applied_rule; }
+            set { data.validate_applied_rule = value; }
         }
 
         public Priority priority
@@ -125,18 +115,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_price_discount
             set { data.priority = value.ToString(); }
         }
 
-        private int _apply_multiple_pricing_rules = 0;
-        public int apply_multiple_pricing_rules
+        public long apply_multiple_pricing_rules
         {
-            get { return data._apply_multiple_pricing_rules; }
-            set { data._apply_multiple_pricing_rules = value; }
+            get { return data.apply_multiple_pricing_rules; }
+            set { data.apply_multiple_pricing_rules = value; }
         }
 
-        private int _apply_discount_on_rate = 0;
-        public int apply_discount_on_rate
+        public long apply_discount_on_rate
         {
-            get { return data._apply_discount_on_rate; }
-            set { data._apply_discount_on_rate = value; }
+            get { return data.apply_discount_on_rate; }
+            set { data.apply_discount_on_rate = value; }
         }
 
 

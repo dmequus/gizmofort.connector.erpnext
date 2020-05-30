@@ -30,11 +30,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_item
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string uom
@@ -43,11 +42,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_item
             set { data.uom = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
         public string item_name
@@ -92,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_item
             set { data.image_view = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
         public string stock_uom
@@ -105,60 +102,52 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_item
             set { data.stock_uom = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private double _base_rate = 0.0;
         public double base_rate
         {
-            get { return data._base_rate; }
-            set { data._base_rate = value; }
+            get { return data.base_rate; }
+            set { data.base_rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _base_amount = 0.0;
         public double base_amount
         {
-            get { return data._base_amount; }
-            set { data._base_amount = value; }
+            get { return data.base_amount; }
+            set { data.base_amount = value; }
         }
 
-        private double _scrap = 0.0;
         public double scrap
         {
-            get { return data._scrap; }
-            set { data._scrap = value; }
+            get { return data.scrap; }
+            set { data.scrap = value; }
         }
 
-        private double _qty_consumed_per_unit = 0.0;
         public double qty_consumed_per_unit
         {
-            get { return data._qty_consumed_per_unit; }
-            set { data._qty_consumed_per_unit = value; }
+            get { return data.qty_consumed_per_unit; }
+            set { data.qty_consumed_per_unit = value; }
         }
 
-        private int _allow_alternative_item = 0;
-        public int allow_alternative_item
+        public long allow_alternative_item
         {
-            get { return data._allow_alternative_item; }
-            set { data._allow_alternative_item = value; }
+            get { return data.allow_alternative_item; }
+            set { data.allow_alternative_item = value; }
         }
 
-        private int _include_item_in_manufacturing = 0;
-        public int include_item_in_manufacturing
+        public long include_item_in_manufacturing
         {
-            get { return data._include_item_in_manufacturing; }
-            set { data._include_item_in_manufacturing = value; }
+            get { return data.include_item_in_manufacturing; }
+            set { data.include_item_in_manufacturing = value; }
         }
 
         public string original_item
@@ -167,11 +156,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_item
             set { data.original_item = value; }
         }
 
-        private int _has_variants = 0;
-        public int has_variants
+        public long has_variants
         {
-            get { return data._has_variants; }
-            set { data._has_variants = value; }
+            get { return data.has_variants; }
+            set { data.has_variants = value; }
         }
 
 

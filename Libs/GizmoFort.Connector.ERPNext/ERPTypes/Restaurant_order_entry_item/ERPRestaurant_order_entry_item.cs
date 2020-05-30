@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Restaurant_order_entry_item
 
         }
 
-        private int _qty = 0;
         public int qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private int _served = 0;
         public int served
         {
-            get { return data._served; }
-            set { data._served = value; }
+            get { return data.served; }
+            set { data.served = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
 

@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim_type
             set { data.accounts = value; }
         }
 
-        private int _deferred_expense_account = 0;
-        public int deferred_expense_account
+        public long deferred_expense_account
         {
-            get { return data._deferred_expense_account; }
-            set { data._deferred_expense_account = value; }
+            get { return data.deferred_expense_account; }
+            set { data.deferred_expense_account = value; }
         }
 
 

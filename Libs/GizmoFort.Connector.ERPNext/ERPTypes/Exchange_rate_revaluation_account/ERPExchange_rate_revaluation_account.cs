@@ -54,46 +54,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Exchange_rate_revaluation_account
             set { data.account_currency = value; }
         }
 
-        private double _balance_in_account_currency = 0.0;
         public double balance_in_account_currency
         {
-            get { return data._balance_in_account_currency; }
-            set { data._balance_in_account_currency = value; }
+            get { return data.balance_in_account_currency; }
+            set { data.balance_in_account_currency = value; }
         }
 
-        private double _current_exchange_rate = 0.0;
         public double current_exchange_rate
         {
-            get { return data._current_exchange_rate; }
-            set { data._current_exchange_rate = value; }
+            get { return data.current_exchange_rate; }
+            set { data.current_exchange_rate = value; }
         }
 
-        private double _balance_in_base_currency = 0.0;
         public double balance_in_base_currency
         {
-            get { return data._balance_in_base_currency; }
-            set { data._balance_in_base_currency = value; }
+            get { return data.balance_in_base_currency; }
+            set { data.balance_in_base_currency = value; }
         }
 
-        private double _new_exchange_rate = 0.0;
         public double new_exchange_rate
         {
-            get { return data._new_exchange_rate; }
-            set { data._new_exchange_rate = value; }
+            get { return data.new_exchange_rate; }
+            set { data.new_exchange_rate = value; }
         }
 
-        private double _new_balance_in_base_currency = 0.0;
         public double new_balance_in_base_currency
         {
-            get { return data._new_balance_in_base_currency; }
-            set { data._new_balance_in_base_currency = value; }
+            get { return data.new_balance_in_base_currency; }
+            set { data.new_balance_in_base_currency = value; }
         }
 
-        private double _gain_loss = 0.0;
         public double gain_loss
         {
-            get { return data._gain_loss; }
-            set { data._gain_loss = value; }
+            get { return data.gain_loss; }
+            set { data.gain_loss = value; }
         }
 
 

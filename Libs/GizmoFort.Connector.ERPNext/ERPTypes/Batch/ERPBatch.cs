@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Batch
             set { data.item = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string image
@@ -95,11 +94,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Batch
             set { data.item_name = value; }
         }
 
-        private double _batch_qty = 0.0;
         public double batch_qty
         {
-            get { return data._batch_qty; }
-            set { data._batch_qty = value; }
+            get { return data.batch_qty; }
+            set { data.batch_qty = value; }
         }
 
         public string stock_uom

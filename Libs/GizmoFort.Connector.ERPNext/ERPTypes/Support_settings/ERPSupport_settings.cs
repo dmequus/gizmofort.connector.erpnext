@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Support_settings
             return obj;
         }
 
-        private int _close_issue_after_days = 0;
         public int close_issue_after_days
         {
-            get { return data._close_issue_after_days; }
-            set { data._close_issue_after_days = value; }
+            get { return data.close_issue_after_days; }
+            set { data.close_issue_after_days = value; }
         }
 
         public string get_started_sections
@@ -28,11 +27,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Support_settings
             set { data.get_started_sections = value; }
         }
 
-        private int _show_latest_forum_posts = 0;
-        public int show_latest_forum_posts
+        public long show_latest_forum_posts
         {
-            get { return data._show_latest_forum_posts; }
-            set { data._show_latest_forum_posts = value; }
+            get { return data.show_latest_forum_posts; }
+            set { data.show_latest_forum_posts = value; }
         }
 
         public string forum_url
@@ -83,18 +81,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Support_settings
             set { data.search_apis = value; }
         }
 
-        private int _track_service_level_agreement = 0;
-        public int track_service_level_agreement
+        public long track_service_level_agreement
         {
-            get { return data._track_service_level_agreement; }
-            set { data._track_service_level_agreement = value; }
+            get { return data.track_service_level_agreement; }
+            set { data.track_service_level_agreement = value; }
         }
 
-        private int _allow_resetting_service_level_agreement = 0;
-        public int allow_resetting_service_level_agreement
+        public long allow_resetting_service_level_agreement
         {
-            get { return data._allow_resetting_service_level_agreement; }
-            set { data._allow_resetting_service_level_agreement = value; }
+            get { return data.allow_resetting_service_level_agreement; }
+            set { data.allow_resetting_service_level_agreement = value; }
         }
 
 

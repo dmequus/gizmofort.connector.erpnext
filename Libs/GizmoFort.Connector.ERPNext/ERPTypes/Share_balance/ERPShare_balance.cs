@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Share_balance
         public ERPShare_balance() : this(new ERPObject(DocType.Share_balance)) { }
         public ERPShare_balance(ERPObject obj) : base(obj) { }
 
-        public static ERPShare_balance Create(string sharetype, int fromno, int rate, int noofshares, int tono, int amount, int iscompany, Currentstate currentstate)
+        public static ERPShare_balance Create(string sharetype, int fromno, int rate, int noofshares, int tono, int amount, long iscompany, Currentstate currentstate)
 
         {
             ERPShare_balance obj = new ERPShare_balance();
@@ -34,46 +34,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Share_balance
 
         }
 
-        private int _from_no = 0;
         public int from_no
         {
-            get { return data._from_no; }
-            set { data._from_no = value; }
+            get { return data.from_no; }
+            set { data.from_no = value; }
         }
 
-        private int _rate = 0;
         public int rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private int _no_of_shares = 0;
         public int no_of_shares
         {
-            get { return data._no_of_shares; }
-            set { data._no_of_shares = value; }
+            get { return data.no_of_shares; }
+            set { data.no_of_shares = value; }
         }
 
-        private int _to_no = 0;
         public int to_no
         {
-            get { return data._to_no; }
-            set { data._to_no = value; }
+            get { return data.to_no; }
+            set { data.to_no = value; }
         }
 
-        private int _amount = 0;
         public int amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private int _is_company = 0;
-        public int is_company
+        public long is_company
         {
-            get { return data._is_company; }
-            set { data._is_company = value; }
+            get { return data.is_company; }
+            set { data.is_company = value; }
         }
 
         public Currentstate current_state

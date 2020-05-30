@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lead
             set { data.status = value.ToString(); }
         }
 
-        private int _organization_lead = 0;
-        public int organization_lead
+        public long organization_lead
         {
-            get { return data._organization_lead; }
-            set { data._organization_lead = value; }
+            get { return data.organization_lead; }
+            set { data.organization_lead = value; }
         }
 
         public string naming_series
@@ -251,18 +250,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lead
             set { data.territory = value; }
         }
 
-        private int _unsubscribed = 0;
-        public int unsubscribed
+        public long unsubscribed
         {
-            get { return data._unsubscribed; }
-            set { data._unsubscribed = value; }
+            get { return data.unsubscribed; }
+            set { data.unsubscribed = value; }
         }
 
-        private int _blog_subscriber = 0;
-        public int blog_subscriber
+        public long blog_subscriber
         {
-            get { return data._blog_subscriber; }
-            set { data._blog_subscriber = value; }
+            get { return data.blog_subscriber; }
+            set { data.blog_subscriber = value; }
         }
 
         public string designation

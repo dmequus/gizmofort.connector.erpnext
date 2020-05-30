@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Closed_document
         public ERPClosed_document() : this(new ERPObject(DocType.Closed_document)) { }
         public ERPClosed_document(ERPObject obj) : base(obj) { }
 
-        public static ERPClosed_document Create(string documenttype, int closed)
+        public static ERPClosed_document Create(string documenttype, long closed)
 
         {
             ERPClosed_document obj = new ERPClosed_document();
@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Closed_document
 
         }
 
-        private int _closed = 0;
-        public int closed
+        public long closed
         {
-            get { return data._closed; }
-            set { data._closed = value; }
+            get { return data.closed; }
+            set { data.closed = value; }
         }
 
 

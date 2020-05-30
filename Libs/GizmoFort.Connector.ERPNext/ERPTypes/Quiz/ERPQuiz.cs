@@ -36,18 +36,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Quiz
             set { data.question = value; }
         }
 
-        private double _passing_score = 0.0;
         public double passing_score
         {
-            get { return data._passing_score; }
-            set { data._passing_score = value; }
+            get { return data.passing_score; }
+            set { data.passing_score = value; }
         }
 
-        private int _max_attempts = 0;
         public int max_attempts
         {
-            get { return data._max_attempts; }
-            set { data._max_attempts = value; }
+            get { return data.max_attempts; }
+            set { data.max_attempts = value; }
         }
 
         public Gradingbasis grading_basis

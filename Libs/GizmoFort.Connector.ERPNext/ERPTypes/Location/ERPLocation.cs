@@ -33,39 +33,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Location
             set { data.parent_location = value; }
         }
 
-        private int _is_container = 0;
-        public int is_container
+        public long is_container
         {
-            get { return data._is_container; }
-            set { data._is_container = value; }
+            get { return data.is_container; }
+            set { data.is_container = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
-        private double _latitude = 0.0;
         public double latitude
         {
-            get { return data._latitude; }
-            set { data._latitude = value; }
+            get { return data.latitude; }
+            set { data.latitude = value; }
         }
 
-        private double _longitude = 0.0;
         public double longitude
         {
-            get { return data._longitude; }
-            set { data._longitude = value; }
+            get { return data.longitude; }
+            set { data.longitude = value; }
         }
 
-        private double _area = 0.0;
         public double area
         {
-            get { return data._area; }
-            set { data._area = value; }
+            get { return data.area; }
+            set { data.area = value; }
         }
 
         public string area_uom
@@ -80,18 +75,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Location
             set { data.location = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

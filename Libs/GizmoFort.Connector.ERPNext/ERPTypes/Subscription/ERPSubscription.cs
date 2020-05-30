@@ -76,25 +76,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription
             set { data.current_invoice_end = value; }
         }
 
-        private int _days_until_due = 0;
         public int days_until_due
         {
-            get { return data._days_until_due; }
-            set { data._days_until_due = value; }
+            get { return data.days_until_due; }
+            set { data.days_until_due = value; }
         }
 
-        private int _cancel_at_period_end = 0;
-        public int cancel_at_period_end
+        public long cancel_at_period_end
         {
-            get { return data._cancel_at_period_end; }
-            set { data._cancel_at_period_end = value; }
+            get { return data.cancel_at_period_end; }
+            set { data.cancel_at_period_end = value; }
         }
 
-        private int _generate_invoice_at_period_start = 0;
-        public int generate_invoice_at_period_start
+        public long generate_invoice_at_period_start
         {
-            get { return data._generate_invoice_at_period_start; }
-            set { data._generate_invoice_at_period_start = value; }
+            get { return data.generate_invoice_at_period_start; }
+            set { data.generate_invoice_at_period_start = value; }
         }
 
         public string tax_template
@@ -109,18 +106,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription
             set { data.apply_additional_discount = value.ToString(); }
         }
 
-        private double _additional_discount_percentage = 0.0;
         public double additional_discount_percentage
         {
-            get { return data._additional_discount_percentage; }
-            set { data._additional_discount_percentage = value; }
+            get { return data.additional_discount_percentage; }
+            set { data.additional_discount_percentage = value; }
         }
 
-        private double _additional_discount_amount = 0.0;
         public double additional_discount_amount
         {
-            get { return data._additional_discount_amount; }
-            set { data._additional_discount_amount = value; }
+            get { return data.additional_discount_amount; }
+            set { data.additional_discount_amount = value; }
         }
 
         public string invoices

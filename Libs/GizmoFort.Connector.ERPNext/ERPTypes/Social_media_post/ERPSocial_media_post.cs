@@ -32,18 +32,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Social_media_post
             set { data.image = value; }
         }
 
-        private int _twitter = 0;
-        public int twitter
+        public long twitter
         {
-            get { return data._twitter; }
-            set { data._twitter = value; }
+            get { return data.twitter; }
+            set { data.twitter = value; }
         }
 
-        private int _linkedin = 0;
-        public int linkedin
+        public long linkedin
         {
-            get { return data._linkedin; }
-            set { data._linkedin = value; }
+            get { return data.linkedin; }
+            set { data.linkedin = value; }
         }
 
         public string amended_from

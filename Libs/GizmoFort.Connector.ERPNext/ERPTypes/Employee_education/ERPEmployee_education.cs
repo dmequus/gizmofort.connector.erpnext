@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_education
             set { data.level = value.ToString(); }
         }
 
-        private int _year_of_passing = 0;
         public int year_of_passing
         {
-            get { return data._year_of_passing; }
-            set { data._year_of_passing = value; }
+            get { return data.year_of_passing; }
+            set { data.year_of_passing = value; }
         }
 
         public string class_per

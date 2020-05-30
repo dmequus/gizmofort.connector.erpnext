@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_onboarding
         public ERPEmployee_onboarding() : this(new ERPObject(DocType.Employee_onboarding)) { }
         public ERPEmployee_onboarding(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_onboarding Create(string employeename, string jobapplicant, string joboffer, string employee, string dateofjoining, Boardingstatus boardingstatus, int notifyusersbyemail, string employeeonboardingtemplate, string company, string department, string designation, string employeegrade, string project, string activities, string amendedfrom)
+        public static ERPEmployee_onboarding Create(string employeename, string jobapplicant, string joboffer, string employee, string dateofjoining, Boardingstatus boardingstatus, long notifyusersbyemail, string employeeonboardingtemplate, string company, string department, string designation, string employeegrade, string project, string activities, string amendedfrom)
 
         {
             ERPEmployee_onboarding obj = new ERPEmployee_onboarding();
@@ -71,11 +71,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_onboarding
             set { data.boarding_status = value.ToString(); }
         }
 
-        private int _notify_users_by_email = 0;
-        public int notify_users_by_email
+        public long notify_users_by_email
         {
-            get { return data._notify_users_by_email; }
-            set { data._notify_users_by_email = value; }
+            get { return data.notify_users_by_email; }
+            set { data.notify_users_by_email = value; }
         }
 
         public string employee_onboarding_template

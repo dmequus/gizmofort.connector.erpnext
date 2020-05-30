@@ -58,11 +58,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle
             set { data.model = value; }
         }
 
-        private int _last_odometer = 0;
         public int last_odometer
         {
-            get { return data._last_odometer; }
-            set { data._last_odometer = value; }
+            get { return data.last_odometer; }
+            set { data.last_odometer = value; }
         }
 
         public string acquisition_date
@@ -83,11 +82,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle
             set { data.chassis_no = value; }
         }
 
-        private double _vehicle_value = 0.0;
         public double vehicle_value
         {
-            get { return data._vehicle_value; }
-            set { data._vehicle_value = value; }
+            get { return data.vehicle_value; }
+            set { data.vehicle_value = value; }
         }
 
         public string employee
@@ -144,18 +142,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle
             set { data.color = value; }
         }
 
-        private int _wheels = 0;
         public int wheels
         {
-            get { return data._wheels; }
-            set { data._wheels = value; }
+            get { return data.wheels; }
+            set { data.wheels = value; }
         }
 
-        private int _doors = 0;
         public int doors
         {
-            get { return data._doors; }
-            set { data._doors = value; }
+            get { return data.doors; }
+            set { data.doors = value; }
         }
 
         public string amended_from

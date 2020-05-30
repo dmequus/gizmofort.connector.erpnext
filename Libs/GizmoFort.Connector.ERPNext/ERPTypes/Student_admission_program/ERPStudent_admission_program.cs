@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_admission_program
             set { data.maximum_age = value; }
         }
 
-        private double _application_fee = 0.0;
         public double application_fee
         {
-            get { return data._application_fee; }
-            set { data._application_fee = value; }
+            get { return data.application_fee; }
+            set { data.application_fee = value; }
         }
 
         public string applicant_naming_series

@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Mode_of_payment
             set { data.accounts = value; }
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
 

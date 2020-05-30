@@ -107,11 +107,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Serial_no
             set { data.purchase_time = value; }
         }
 
-        private double _purchase_rate = 0.0;
         public double purchase_rate
         {
-            get { return data._purchase_rate; }
-            set { data._purchase_rate = value; }
+            get { return data.purchase_rate; }
+            set { data.purchase_rate = value; }
         }
 
         public string supplier
@@ -198,11 +197,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Serial_no
             set { data.maintenance_status = value.ToString(); }
         }
 
-        private int _warranty_period = 0;
         public int warranty_period
         {
-            get { return data._warranty_period; }
-            set { data._warranty_period = value; }
+            get { return data.warranty_period; }
+            set { data.warranty_period = value; }
         }
 
         public string warranty_expiry_date

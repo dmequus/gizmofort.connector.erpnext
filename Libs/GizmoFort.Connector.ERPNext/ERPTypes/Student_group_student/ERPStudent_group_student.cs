@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group_student
         public ERPStudent_group_student() : this(new ERPObject(DocType.Student_group_student)) { }
         public ERPStudent_group_student(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_group_student Create(string student, string studentname, int grouprollnumber, int active)
+        public static ERPStudent_group_student Create(string student, string studentname, int grouprollnumber, long active)
 
         {
             ERPStudent_group_student obj = new ERPStudent_group_student();
@@ -36,18 +36,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_group_student
             set { data.student_name = value; }
         }
 
-        private int _group_roll_number = 0;
         public int group_roll_number
         {
-            get { return data._group_roll_number; }
-            set { data._group_roll_number = value; }
+            get { return data.group_roll_number; }
+            set { data.group_roll_number = value; }
         }
 
-        private int _active = 0;
-        public int active
+        public long active
         {
-            get { return data._active; }
-            set { data._active = value; }
+            get { return data.active; }
+            set { data.active = value; }
         }
 
 

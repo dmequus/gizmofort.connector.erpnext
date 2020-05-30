@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gocardless_mandate
         public ERPGocardless_mandate() : this(new ERPObject(DocType.Gocardless_mandate)) { }
         public ERPGocardless_mandate(ERPObject obj) : base(obj) { }
 
-        public static ERPGocardless_mandate Create(int disabled, string customer, string mandate, string gocardlesscustomer)
+        public static ERPGocardless_mandate Create(long disabled, string customer, string mandate, string gocardlesscustomer)
 
         {
             ERPGocardless_mandate obj = new ERPGocardless_mandate();
@@ -19,11 +19,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gocardless_mandate
             return obj;
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string customer

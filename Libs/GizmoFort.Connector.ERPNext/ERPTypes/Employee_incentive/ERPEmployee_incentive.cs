@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_incentive
             set { data.employee = value; }
         }
 
-        private double _incentive_amount = 0.0;
         public double incentive_amount
         {
-            get { return data._incentive_amount; }
-            set { data._incentive_amount = value; }
+            get { return data.incentive_amount; }
+            set { data.incentive_amount = value; }
         }
 
         public string payroll_date

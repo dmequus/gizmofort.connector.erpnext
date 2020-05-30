@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Chapter
         public ERPChapter() : this(new ERPObject(DocType.Chapter)) { }
         public ERPChapter(ERPObject obj) : base(obj) { }
 
-        public static ERPChapter Create(string chapterhead, string region, string introduction, string meetupembedhtml, string address, string route, int published, string members)
+        public static ERPChapter Create(string chapterhead, string region, string introduction, string meetupembedhtml, string address, string route, long published, string members)
 
         {
             ERPChapter obj = new ERPChapter();
@@ -64,11 +64,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Chapter
             set { data.route = value; }
         }
 
-        private int _published = 0;
-        public int published
+        public long published
         {
-            get { return data._published; }
-            set { data._published = value; }
+            get { return data.published; }
+            set { data.published = value; }
         }
 
         public string members

@@ -48,18 +48,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_type
             set { data.item_name = value; }
         }
 
-        private int _is_billable = 0;
-        public int is_billable
+        public long is_billable
         {
-            get { return data._is_billable; }
-            set { data._is_billable = value; }
+            get { return data.is_billable; }
+            set { data.is_billable = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
         public string exercises
@@ -68,18 +66,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_type
             set { data.exercises = value; }
         }
 
-        private int _default_duration = 0;
         public int default_duration
         {
-            get { return data._default_duration; }
-            set { data._default_duration = value; }
+            get { return data.default_duration; }
+            set { data.default_duration = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string item
@@ -100,11 +96,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_type
             set { data.medical_department = value; }
         }
 
-        private int _change_in_item = 0;
-        public int change_in_item
+        public long change_in_item
         {
-            get { return data._change_in_item; }
-            set { data._change_in_item = value; }
+            get { return data.change_in_item; }
+            set { data.change_in_item = value; }
         }
 
         public string therapy_for

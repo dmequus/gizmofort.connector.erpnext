@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Travel_itinerary
         public ERPTravel_itinerary() : this(new ERPObject(DocType.Travel_itinerary)) { }
         public ERPTravel_itinerary(ERPObject obj) : base(obj) { }
 
-        public static ERPTravel_itinerary Create(string travelfrom, string travelto, Modeoftravel modeoftravel, Mealpreference mealpreference, int traveladvancerequired, string advanceamount, string departuredate, string arrivaldate, int lodgingrequired, string preferredareaforlodging, string checkindate, string checkoutdate, string otherdetails)
+        public static ERPTravel_itinerary Create(string travelfrom, string travelto, Modeoftravel modeoftravel, Mealpreference mealpreference, long traveladvancerequired, string advanceamount, string departuredate, string arrivaldate, long lodgingrequired, string preferredareaforlodging, string checkindate, string checkoutdate, string otherdetails)
 
         {
             ERPTravel_itinerary obj = new ERPTravel_itinerary();
@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Travel_itinerary
             set { data.meal_preference = value.ToString(); }
         }
 
-        private int _travel_advance_required = 0;
-        public int travel_advance_required
+        public long travel_advance_required
         {
-            get { return data._travel_advance_required; }
-            set { data._travel_advance_required = value; }
+            get { return data.travel_advance_required; }
+            set { data.travel_advance_required = value; }
         }
 
         public string advance_amount
@@ -82,11 +81,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Travel_itinerary
             set { data.arrival_date = value; }
         }
 
-        private int _lodging_required = 0;
-        public int lodging_required
+        public long lodging_required
         {
-            get { return data._lodging_required; }
-            set { data._lodging_required = value; }
+            get { return data.lodging_required; }
+            set { data.lodging_required = value; }
         }
 
         public string preferred_area_for_lodging

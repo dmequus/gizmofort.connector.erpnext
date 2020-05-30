@@ -32,11 +32,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string uom
@@ -45,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.uom = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
         public string stock_uom
@@ -58,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.stock_uom = value; }
         }
 
-        private double _transfer_qty = 0.0;
         public double transfer_qty
         {
-            get { return data._transfer_qty; }
-            set { data._transfer_qty = value; }
+            get { return data.transfer_qty; }
+            set { data.transfer_qty = value; }
         }
 
         public string barcode
@@ -107,53 +104,46 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.image_view = value; }
         }
 
-        private double _basic_rate = 0.0;
         public double basic_rate
         {
-            get { return data._basic_rate; }
-            set { data._basic_rate = value; }
+            get { return data.basic_rate; }
+            set { data.basic_rate = value; }
         }
 
-        private double _basic_amount = 0.0;
         public double basic_amount
         {
-            get { return data._basic_amount; }
-            set { data._basic_amount = value; }
+            get { return data.basic_amount; }
+            set { data.basic_amount = value; }
         }
 
-        private double _additional_cost = 0.0;
         public double additional_cost
         {
-            get { return data._additional_cost; }
-            set { data._additional_cost = value; }
+            get { return data.additional_cost; }
+            set { data.additional_cost = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _valuation_rate = 0.0;
         public double valuation_rate
         {
-            get { return data._valuation_rate; }
-            set { data._valuation_rate = value; }
+            get { return data.valuation_rate; }
+            set { data.valuation_rate = value; }
         }
 
-        private int _retain_sample = 0;
-        public int retain_sample
+        public long retain_sample
         {
-            get { return data._retain_sample; }
-            set { data._retain_sample = value; }
+            get { return data.retain_sample; }
+            set { data.retain_sample = value; }
         }
 
-        private int _sample_quantity = 0;
         public int sample_quantity
         {
-            get { return data._sample_quantity; }
-            set { data._sample_quantity = value; }
+            get { return data.sample_quantity; }
+            set { data.sample_quantity = value; }
         }
 
         public string serial_no
@@ -186,18 +176,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.cost_center = value; }
         }
 
-        private int _allow_zero_valuation_rate = 0;
-        public int allow_zero_valuation_rate
+        public long allow_zero_valuation_rate
         {
-            get { return data._allow_zero_valuation_rate; }
-            set { data._allow_zero_valuation_rate = value; }
+            get { return data.allow_zero_valuation_rate; }
+            set { data.allow_zero_valuation_rate = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
         public string bom_no
@@ -206,11 +194,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.bom_no = value; }
         }
 
-        private int _allow_alternative_item = 0;
-        public int allow_alternative_item
+        public long allow_alternative_item
         {
-            get { return data._allow_alternative_item; }
-            set { data._allow_alternative_item = value; }
+            get { return data.allow_alternative_item; }
+            set { data.allow_alternative_item = value; }
         }
 
         public string material_request
@@ -249,11 +236,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry_detail
             set { data.ste_detail = value; }
         }
 
-        private double _transferred_qty = 0.0;
         public double transferred_qty
         {
-            get { return data._transferred_qty; }
-            set { data._transferred_qty = value; }
+            get { return data.transferred_qty; }
+            set { data.transferred_qty = value; }
         }
 
         public string item_group

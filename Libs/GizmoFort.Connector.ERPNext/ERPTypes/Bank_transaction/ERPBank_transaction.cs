@@ -65,18 +65,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_transaction
             set { data.company = value; }
         }
 
-        private double _debit = 0.0;
         public double debit
         {
-            get { return data._debit; }
-            set { data._debit = value; }
+            get { return data.debit; }
+            set { data.debit = value; }
         }
 
-        private double _credit = 0.0;
         public double credit
         {
-            get { return data._credit; }
-            set { data._credit = value; }
+            get { return data.credit; }
+            set { data.credit = value; }
         }
 
         public string currency
@@ -109,11 +107,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_transaction
             set { data.payment_entries = value; }
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
         public string amended_from
@@ -122,11 +119,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_transaction
             set { data.amended_from = value; }
         }
 
-        private double _unallocated_amount = 0.0;
         public double unallocated_amount
         {
-            get { return data._unallocated_amount; }
-            set { data._unallocated_amount = value; }
+            get { return data.unallocated_amount; }
+            set { data.unallocated_amount = value; }
         }
 
 

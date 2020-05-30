@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_applicant
         public ERPStudent_applicant() : this(new ERPObject(DocType.Student_applicant)) { }
         public ERPStudent_applicant(ERPObject obj) : base(obj) { }
 
-        public static ERPStudent_applicant Create(string title, string firstname, string middlename, string lastname, string program, int lmsonly, int paid, string namingseries, Applicationstatus applicationstatus, string applicationdate, string academicyear, string academicterm, string studentadmission, string image, string dateofbirth, Gender gender, Bloodgroup bloodgroup, string studentemailid, string studentmobilenumber, string nationality, string addressline1, string addressline2, string pincode, string city, string state, string guardians, string siblings, string amendedfrom)
+        public static ERPStudent_applicant Create(string title, string firstname, string middlename, string lastname, string program, long lmsonly, long paid, string namingseries, Applicationstatus applicationstatus, string applicationdate, string academicyear, string academicterm, string studentadmission, string image, string dateofbirth, Gender gender, Bloodgroup bloodgroup, string studentemailid, string studentmobilenumber, string nationality, string addressline1, string addressline2, string pincode, string city, string state, string guardians, string siblings, string amendedfrom)
 
         {
             ERPStudent_applicant obj = new ERPStudent_applicant();
@@ -78,18 +78,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Student_applicant
             set { data.program = value; }
         }
 
-        private int _lms_only = 0;
-        public int lms_only
+        public long lms_only
         {
-            get { return data._lms_only; }
-            set { data._lms_only = value; }
+            get { return data.lms_only; }
+            set { data.lms_only = value; }
         }
 
-        private int _paid = 0;
-        public int paid
+        public long paid
         {
-            get { return data._paid; }
-            set { data._paid = value; }
+            get { return data.paid; }
+            set { data.paid = value; }
         }
 
         public string naming_series

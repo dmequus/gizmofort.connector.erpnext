@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_control_panel
             set { data.to_date = value; }
         }
 
-        private double _no_of_days = 0.0;
         public double no_of_days
         {
-            get { return data._no_of_days; }
-            set { data._no_of_days = value; }
+            get { return data.no_of_days; }
+            set { data.no_of_days = value; }
         }
 
         public string company
@@ -96,11 +95,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_control_panel
             set { data.leave_type = value; }
         }
 
-        private int _carry_forward = 0;
-        public int carry_forward
+        public long carry_forward
         {
-            get { return data._carry_forward; }
-            set { data._carry_forward = value; }
+            get { return data.carry_forward; }
+            set { data.carry_forward = value; }
         }
 
 

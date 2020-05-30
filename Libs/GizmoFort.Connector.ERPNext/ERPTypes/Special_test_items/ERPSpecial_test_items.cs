@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Special_test_items
         public ERPSpecial_test_items() : this(new ERPObject(DocType.Special_test_items)) { }
         public ERPSpecial_test_items(ERPObject obj) : base(obj) { }
 
-        public static ERPSpecial_test_items Create(string labtestparticulars, string resultvalue, int requireresultvalue, string template)
+        public static ERPSpecial_test_items Create(string labtestparticulars, string resultvalue, long requireresultvalue, string template)
 
         {
             ERPSpecial_test_items obj = new ERPSpecial_test_items();
@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Special_test_items
             set { data.result_value = value; }
         }
 
-        private int _require_result_value = 0;
-        public int require_result_value
+        public long require_result_value
         {
-            get { return data._require_result_value; }
-            set { data._require_result_value = value; }
+            get { return data.require_result_value; }
+            set { data.require_result_value = value; }
         }
 
         public string template

@@ -56,18 +56,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gl_entry
             set { data.cost_center = value; }
         }
 
-        private double _debit = 0.0;
         public double debit
         {
-            get { return data._debit; }
-            set { data._debit = value; }
+            get { return data.debit; }
+            set { data.debit = value; }
         }
 
-        private double _credit = 0.0;
         public double credit
         {
-            get { return data._credit; }
-            set { data._credit = value; }
+            get { return data.credit; }
+            set { data.credit = value; }
         }
 
         public string account_currency
@@ -76,18 +74,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gl_entry
             set { data.account_currency = value; }
         }
 
-        private double _debit_in_account_currency = 0.0;
         public double debit_in_account_currency
         {
-            get { return data._debit_in_account_currency; }
-            set { data._debit_in_account_currency = value; }
+            get { return data.debit_in_account_currency; }
+            set { data.debit_in_account_currency = value; }
         }
 
-        private double _credit_in_account_currency = 0.0;
         public double credit_in_account_currency
         {
-            get { return data._credit_in_account_currency; }
-            set { data._credit_in_account_currency = value; }
+            get { return data.credit_in_account_currency; }
+            set { data.credit_in_account_currency = value; }
         }
 
         public string against
@@ -168,11 +164,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gl_entry
             set { data.finance_book = value; }
         }
 
-        private int _to_rename = 0;
-        public int to_rename
+        public long to_rename
         {
-            get { return data._to_rename; }
-            set { data._to_rename = value; }
+            get { return data.to_rename; }
+            set { data.to_rename = value; }
         }
 
         public string due_date
@@ -181,11 +176,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Gl_entry
             set { data.due_date = value; }
         }
 
-        private int _is_cancelled = 0;
-        public int is_cancelled
+        public long is_cancelled
         {
-            get { return data._is_cancelled; }
-            set { data._is_cancelled = value; }
+            get { return data.is_cancelled; }
+            set { data.is_cancelled = value; }
         }
 
 

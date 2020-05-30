@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
         public ERPDelivery_stop() : this(new ERPObject(DocType.Delivery_stop)) { }
         public ERPDelivery_stop(ERPObject obj) : base(obj) { }
 
-        public static ERPDelivery_stop Create(string customer, string address, int keyDELlock, string customeraddress, int visited, string deliverynote, double grandtotal, string contact, string emailsentto, string customercontact, double distance, string estimatedarrival, double lat, string uom, double lng, string details)
+        public static ERPDelivery_stop Create(string customer, string address, long keyDELlock, string customeraddress, long visited, string deliverynote, double grandtotal, string contact, string emailsentto, string customercontact, double distance, string estimatedarrival, double lat, string uom, double lng, string details)
 
         {
             ERPDelivery_stop obj = new ERPDelivery_stop();
@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.address = value; }
         }
 
-        private int _keyDELlock = 0;
-        public int keyDELlock
+        public long keyDELlock
         {
-            get { return data._keyDELlock; }
-            set { data._keyDELlock = value; }
+            get { return data.keyDELlock; }
+            set { data.keyDELlock = value; }
         }
 
         public string customer_address
@@ -61,11 +60,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.customer_address = value; }
         }
 
-        private int _visited = 0;
-        public int visited
+        public long visited
         {
-            get { return data._visited; }
-            set { data._visited = value; }
+            get { return data.visited; }
+            set { data.visited = value; }
         }
 
         public string delivery_note
@@ -74,11 +72,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.delivery_note = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
         public string contact
@@ -99,11 +96,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.customer_contact = value; }
         }
 
-        private double _distance = 0.0;
         public double distance
         {
-            get { return data._distance; }
-            set { data._distance = value; }
+            get { return data.distance; }
+            set { data.distance = value; }
         }
 
         public string estimated_arrival
@@ -112,11 +108,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.estimated_arrival = value; }
         }
 
-        private double _lat = 0.0;
         public double lat
         {
-            get { return data._lat; }
-            set { data._lat = value; }
+            get { return data.lat; }
+            set { data.lat = value; }
         }
 
         public string uom
@@ -125,11 +120,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_stop
             set { data.uom = value; }
         }
 
-        private double _lng = 0.0;
         public double lng
         {
-            get { return data._lng; }
-            set { data._lng = value; }
+            get { return data.lng; }
+            set { data.lng = value; }
         }
 
         public string details

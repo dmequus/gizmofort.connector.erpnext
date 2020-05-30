@@ -40,11 +40,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_category
             set { data.finance_books = value; }
         }
 
-        private int _enable_cwip_accounting = 0;
-        public int enable_cwip_accounting
+        public long enable_cwip_accounting
         {
-            get { return data._enable_cwip_accounting; }
-            set { data._enable_cwip_accounting = value; }
+            get { return data.enable_cwip_accounting; }
+            set { data.enable_cwip_accounting = value; }
         }
 
 

@@ -69,11 +69,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_profile
             set { data.write_off_cost_center = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string customer
@@ -106,53 +105,46 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_profile
             set { data.company_address = value; }
         }
 
-        private int _update_stock = 0;
-        public int update_stock
+        public long update_stock
         {
-            get { return data._update_stock; }
-            set { data._update_stock = value; }
+            get { return data.update_stock; }
+            set { data.update_stock = value; }
         }
 
-        private int _ignore_pricing_rule = 0;
-        public int ignore_pricing_rule
+        public long ignore_pricing_rule
         {
-            get { return data._ignore_pricing_rule; }
-            set { data._ignore_pricing_rule = value; }
+            get { return data.ignore_pricing_rule; }
+            set { data.ignore_pricing_rule = value; }
         }
 
-        private int _allow_delete = 0;
-        public int allow_delete
+        public long allow_delete
         {
-            get { return data._allow_delete; }
-            set { data._allow_delete = value; }
+            get { return data.allow_delete; }
+            set { data.allow_delete = value; }
         }
 
-        private int _allow_user_to_edit_rate = 0;
-        public int allow_user_to_edit_rate
+        public long allow_user_to_edit_rate
         {
-            get { return data._allow_user_to_edit_rate; }
-            set { data._allow_user_to_edit_rate = value; }
+            get { return data.allow_user_to_edit_rate; }
+            set { data.allow_user_to_edit_rate = value; }
         }
 
-        private int _allow_user_to_edit_discount = 0;
-        public int allow_user_to_edit_discount
+        public long allow_user_to_edit_discount
         {
-            get { return data._allow_user_to_edit_discount; }
-            set { data._allow_user_to_edit_discount = value; }
+            get { return data.allow_user_to_edit_discount; }
+            set { data.allow_user_to_edit_discount = value; }
         }
 
-        private int _allow_print_before_pay = 0;
-        public int allow_print_before_pay
+        public long allow_print_before_pay
         {
-            get { return data._allow_print_before_pay; }
-            set { data._allow_print_before_pay = value; }
+            get { return data.allow_print_before_pay; }
+            set { data.allow_print_before_pay = value; }
         }
 
-        private int _display_items_in_stock = 0;
-        public int display_items_in_stock
+        public long display_items_in_stock
         {
-            get { return data._display_items_in_stock; }
-            set { data._display_items_in_stock = value; }
+            get { return data.display_items_in_stock; }
+            set { data.display_items_in_stock = value; }
         }
 
         public string applicable_for_users

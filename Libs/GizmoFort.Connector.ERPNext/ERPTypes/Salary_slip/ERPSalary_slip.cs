@@ -50,18 +50,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.company = value; }
         }
 
-        private double _total_working_days = 0.0;
         public double total_working_days
         {
-            get { return data._total_working_days; }
-            set { data._total_working_days = value; }
+            get { return data.total_working_days; }
+            set { data.total_working_days = value; }
         }
 
-        private double _payment_days = 0.0;
         public double payment_days
         {
-            get { return data._payment_days; }
-            set { data._payment_days = value; }
+            get { return data.payment_days; }
+            set { data.payment_days = value; }
         }
 
         public string department
@@ -106,11 +104,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.letter_head = value; }
         }
 
-        private int _salary_slip_based_on_timesheet = 0;
-        public int salary_slip_based_on_timesheet
+        public long salary_slip_based_on_timesheet
         {
-            get { return data._salary_slip_based_on_timesheet; }
-            set { data._salary_slip_based_on_timesheet = value; }
+            get { return data.salary_slip_based_on_timesheet; }
+            set { data.salary_slip_based_on_timesheet = value; }
         }
 
         public string start_date
@@ -137,11 +134,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.payroll_frequency = value.ToString(); }
         }
 
-        private double _leave_without_pay = 0.0;
         public double leave_without_pay
         {
-            get { return data._leave_without_pay; }
-            set { data._leave_without_pay = value; }
+            get { return data.leave_without_pay; }
+            set { data.leave_without_pay = value; }
         }
 
         public string timesheets
@@ -150,18 +146,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.timesheets = value; }
         }
 
-        private double _total_working_hours = 0.0;
         public double total_working_hours
         {
-            get { return data._total_working_hours; }
-            set { data._total_working_hours = value; }
+            get { return data.total_working_hours; }
+            set { data.total_working_hours = value; }
         }
 
-        private double _hour_rate = 0.0;
         public double hour_rate
         {
-            get { return data._hour_rate; }
-            set { data._hour_rate = value; }
+            get { return data.hour_rate; }
+            set { data.hour_rate = value; }
         }
 
         public string bank_name
@@ -176,18 +170,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.bank_account_no = value; }
         }
 
-        private int _deduct_tax_for_unclaimed_employee_benefits = 0;
-        public int deduct_tax_for_unclaimed_employee_benefits
+        public long deduct_tax_for_unclaimed_employee_benefits
         {
-            get { return data._deduct_tax_for_unclaimed_employee_benefits; }
-            set { data._deduct_tax_for_unclaimed_employee_benefits = value; }
+            get { return data.deduct_tax_for_unclaimed_employee_benefits; }
+            set { data.deduct_tax_for_unclaimed_employee_benefits = value; }
         }
 
-        private int _deduct_tax_for_unsubmitted_tax_exemption_proof = 0;
-        public int deduct_tax_for_unsubmitted_tax_exemption_proof
+        public long deduct_tax_for_unsubmitted_tax_exemption_proof
         {
-            get { return data._deduct_tax_for_unsubmitted_tax_exemption_proof; }
-            set { data._deduct_tax_for_unsubmitted_tax_exemption_proof = value; }
+            get { return data.deduct_tax_for_unsubmitted_tax_exemption_proof; }
+            set { data.deduct_tax_for_unsubmitted_tax_exemption_proof = value; }
         }
 
         public string earnings
@@ -202,18 +194,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.deductions = value; }
         }
 
-        private double _gross_pay = 0.0;
         public double gross_pay
         {
-            get { return data._gross_pay; }
-            set { data._gross_pay = value; }
+            get { return data.gross_pay; }
+            set { data.gross_pay = value; }
         }
 
-        private double _total_deduction = 0.0;
         public double total_deduction
         {
-            get { return data._total_deduction; }
-            set { data._total_deduction = value; }
+            get { return data.total_deduction; }
+            set { data.total_deduction = value; }
         }
 
         public string loans
@@ -222,39 +212,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_slip
             set { data.loans = value; }
         }
 
-        private double _total_principal_amount = 0.0;
         public double total_principal_amount
         {
-            get { return data._total_principal_amount; }
-            set { data._total_principal_amount = value; }
+            get { return data.total_principal_amount; }
+            set { data.total_principal_amount = value; }
         }
 
-        private double _total_interest_amount = 0.0;
         public double total_interest_amount
         {
-            get { return data._total_interest_amount; }
-            set { data._total_interest_amount = value; }
+            get { return data.total_interest_amount; }
+            set { data.total_interest_amount = value; }
         }
 
-        private double _total_loan_repayment = 0.0;
         public double total_loan_repayment
         {
-            get { return data._total_loan_repayment; }
-            set { data._total_loan_repayment = value; }
+            get { return data.total_loan_repayment; }
+            set { data.total_loan_repayment = value; }
         }
 
-        private double _net_pay = 0.0;
         public double net_pay
         {
-            get { return data._net_pay; }
-            set { data._net_pay = value; }
+            get { return data.net_pay; }
+            set { data.net_pay = value; }
         }
 
-        private double _rounded_total = 0.0;
         public double rounded_total
         {
-            get { return data._rounded_total; }
-            set { data._rounded_total = value; }
+            get { return data.rounded_total; }
+            set { data.rounded_total = value; }
         }
 
         public string total_in_words

@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Program_course
             set { data.course_name = value; }
         }
 
-        private int _required = 0;
-        public int required
+        public long required
         {
-            get { return data._required; }
-            set { data._required = value; }
+            get { return data.required; }
+            set { data.required = value; }
         }
 
 

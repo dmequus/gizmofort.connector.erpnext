@@ -37,18 +37,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_reorder
             set { data.warehouse = value; }
         }
 
-        private double _warehouse_reorder_level = 0.0;
         public double warehouse_reorder_level
         {
-            get { return data._warehouse_reorder_level; }
-            set { data._warehouse_reorder_level = value; }
+            get { return data.warehouse_reorder_level; }
+            set { data.warehouse_reorder_level = value; }
         }
 
-        private double _warehouse_reorder_qty = 0.0;
         public double warehouse_reorder_qty
         {
-            get { return data._warehouse_reorder_qty; }
-            set { data._warehouse_reorder_qty = value; }
+            get { return data.warehouse_reorder_qty; }
+            set { data.warehouse_reorder_qty = value; }
         }
 
         public Materialrequesttype material_request_type

@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim_detail
 
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string expense_date
@@ -53,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim_detail
             set { data.description = value; }
         }
 
-        private double _sanctioned_amount = 0.0;
         public double sanctioned_amount
         {
-            get { return data._sanctioned_amount; }
-            set { data._sanctioned_amount = value; }
+            get { return data.sanctioned_amount; }
+            set { data.sanctioned_amount = value; }
         }
 
         public string cost_center

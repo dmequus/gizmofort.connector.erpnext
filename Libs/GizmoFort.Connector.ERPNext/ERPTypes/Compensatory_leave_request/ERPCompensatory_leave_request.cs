@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Compensatory_leave_request
         public ERPCompensatory_leave_request() : this(new ERPObject(DocType.Compensatory_leave_request)) { }
         public ERPCompensatory_leave_request(ERPObject obj) : base(obj) { }
 
-        public static ERPCompensatory_leave_request Create(string employeename, string employee, string department, string leavetype, string leaveallocation, string workfromdate, string workenddate, int halfday, string halfdaydate, string reason, string amendedfrom)
+        public static ERPCompensatory_leave_request Create(string employeename, string employee, string department, string leavetype, string leaveallocation, string workfromdate, string workenddate, long halfday, string halfdaydate, string reason, string amendedfrom)
 
         {
             ERPCompensatory_leave_request obj = new ERPCompensatory_leave_request();
@@ -73,11 +73,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Compensatory_leave_request
             set { data.work_end_date = value; }
         }
 
-        private int _half_day = 0;
-        public int half_day
+        public long half_day
         {
-            get { return data._half_day; }
-            set { data._half_day = value; }
+            get { return data.half_day; }
+            set { data.half_day = value; }
         }
 
         public string half_day_date

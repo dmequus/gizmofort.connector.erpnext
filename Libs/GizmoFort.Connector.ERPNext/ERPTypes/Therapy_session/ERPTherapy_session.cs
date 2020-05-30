@@ -78,11 +78,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_session
             set { data.department = value; }
         }
 
-        private int _duration = 0;
         public int duration
         {
-            get { return data._duration; }
-            set { data._duration = value; }
+            get { return data.duration; }
+            set { data.duration = value; }
         }
 
         public Location location
@@ -91,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_session
             set { data.location = value.ToString(); }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
         public string exercises
@@ -128,11 +126,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_session
             set { data.start_time = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string patient_age
@@ -141,18 +138,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Therapy_session
             set { data.patient_age = value; }
         }
 
-        private int _total_counts_targeted = 0;
         public int total_counts_targeted
         {
-            get { return data._total_counts_targeted; }
-            set { data._total_counts_targeted = value; }
+            get { return data.total_counts_targeted; }
+            set { data.total_counts_targeted = value; }
         }
 
-        private int _total_counts_completed = 0;
         public int total_counts_completed
         {
-            get { return data._total_counts_completed; }
-            set { data._total_counts_completed = value; }
+            get { return data.total_counts_completed; }
+            set { data.total_counts_completed = value; }
         }
 
         public string patient_name

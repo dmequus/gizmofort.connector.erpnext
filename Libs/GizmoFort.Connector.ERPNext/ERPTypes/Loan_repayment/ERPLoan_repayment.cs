@@ -49,25 +49,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_repayment
             set { data.payment_type = value.ToString(); }
         }
 
-        private double _amount_paid = 0.0;
         public double amount_paid
         {
-            get { return data._amount_paid; }
-            set { data._amount_paid = value; }
+            get { return data.amount_paid; }
+            set { data.amount_paid = value; }
         }
 
-        private double _penalty_amount = 0.0;
         public double penalty_amount
         {
-            get { return data._penalty_amount; }
-            set { data._penalty_amount = value; }
+            get { return data.penalty_amount; }
+            set { data.penalty_amount = value; }
         }
 
-        private double _interest_payable = 0.0;
         public double interest_payable
         {
-            get { return data._interest_payable; }
-            set { data._interest_payable = value; }
+            get { return data.interest_payable; }
+            set { data.interest_payable = value; }
         }
 
         public string loan_type
@@ -76,11 +73,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_repayment
             set { data.loan_type = value; }
         }
 
-        private double _payable_amount = 0.0;
         public double payable_amount
         {
-            get { return data._payable_amount; }
-            set { data._payable_amount = value; }
+            get { return data.payable_amount; }
+            set { data.payable_amount = value; }
         }
 
         public string amended_from
@@ -101,25 +97,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_repayment
             set { data.company = value; }
         }
 
-        private double _pending_principal_amount = 0.0;
         public double pending_principal_amount
         {
-            get { return data._pending_principal_amount; }
-            set { data._pending_principal_amount = value; }
+            get { return data.pending_principal_amount; }
+            set { data.pending_principal_amount = value; }
         }
 
-        private int _is_term_loan = 0;
-        public int is_term_loan
+        public long is_term_loan
         {
-            get { return data._is_term_loan; }
-            set { data._is_term_loan = value; }
+            get { return data.is_term_loan; }
+            set { data.is_term_loan = value; }
         }
 
-        private double _payable_principal_amount = 0.0;
         public double payable_principal_amount
         {
-            get { return data._payable_principal_amount; }
-            set { data._payable_principal_amount = value; }
+            get { return data.payable_principal_amount; }
+            set { data.payable_principal_amount = value; }
         }
 
         public string reference_number
@@ -134,11 +127,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_repayment
             set { data.reference_date = value; }
         }
 
-        private double _principal_amount_paid = 0.0;
         public double principal_amount_paid
         {
-            get { return data._principal_amount_paid; }
-            set { data._principal_amount_paid = value; }
+            get { return data.principal_amount_paid; }
+            set { data.principal_amount_paid = value; }
         }
 
         public Applicanttype applicant_type

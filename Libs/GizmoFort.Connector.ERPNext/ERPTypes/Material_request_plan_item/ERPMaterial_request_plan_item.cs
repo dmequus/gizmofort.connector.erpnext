@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_plan_item
             set { data.warehouse = value; }
         }
 
-        private double _quantity = 0.0;
         public double quantity
         {
-            get { return data._quantity; }
-            set { data._quantity = value; }
+            get { return data.quantity; }
+            set { data.quantity = value; }
         }
 
         public string item_name
@@ -54,25 +53,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_plan_item
             set { data.material_request_type = value.ToString(); }
         }
 
-        private double _projected_qty = 0.0;
         public double projected_qty
         {
-            get { return data._projected_qty; }
-            set { data._projected_qty = value; }
+            get { return data.projected_qty; }
+            set { data.projected_qty = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
-        private double _min_order_qty = 0.0;
         public double min_order_qty
         {
-            get { return data._min_order_qty; }
-            set { data._min_order_qty = value; }
+            get { return data.min_order_qty; }
+            set { data.min_order_qty = value; }
         }
 
         public string sales_order
@@ -81,11 +77,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_plan_item
             set { data.sales_order = value; }
         }
 
-        private double _requested_qty = 0.0;
         public double requested_qty
         {
-            get { return data._requested_qty; }
-            set { data._requested_qty = value; }
+            get { return data.requested_qty; }
+            set { data.requested_qty = value; }
         }
 
         public string description

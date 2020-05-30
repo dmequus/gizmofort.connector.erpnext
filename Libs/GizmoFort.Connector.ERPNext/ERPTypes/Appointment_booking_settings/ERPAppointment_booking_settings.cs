@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appointment_booking_settings
         public ERPAppointment_booking_settings() : this(new ERPObject(DocType.Appointment_booking_settings)) { }
         public ERPAppointment_booking_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPAppointment_booking_settings Create(string availabilityofslots, int numberofagents, string holidaylist, int appointmentduration, int advancebookingdays, string agentlist, int enablescheduling)
+        public static ERPAppointment_booking_settings Create(string availabilityofslots, int numberofagents, string holidaylist, int appointmentduration, int advancebookingdays, string agentlist, long enablescheduling)
 
         {
             ERPAppointment_booking_settings obj = new ERPAppointment_booking_settings();
@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appointment_booking_settings
 
         }
 
-        private int _number_of_agents = 0;
         public int number_of_agents
         {
-            get { return data._number_of_agents; }
-            set { data._number_of_agents = value; }
+            get { return data.number_of_agents; }
+            set { data.number_of_agents = value; }
         }
 
         public string holiday_list
@@ -46,18 +45,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appointment_booking_settings
             set { data.holiday_list = value; }
         }
 
-        private int _appointment_duration = 0;
         public int appointment_duration
         {
-            get { return data._appointment_duration; }
-            set { data._appointment_duration = value; }
+            get { return data.appointment_duration; }
+            set { data.appointment_duration = value; }
         }
 
-        private int _advance_booking_days = 0;
         public int advance_booking_days
         {
-            get { return data._advance_booking_days; }
-            set { data._advance_booking_days = value; }
+            get { return data.advance_booking_days; }
+            set { data.advance_booking_days = value; }
         }
 
         public string agent_list
@@ -66,18 +63,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appointment_booking_settings
             set { data.agent_list = value; }
         }
 
-        private int _enable_scheduling = 0;
-        public int enable_scheduling
+        public long enable_scheduling
         {
-            get { return data._enable_scheduling; }
-            set { data._enable_scheduling = value; }
+            get { return data.enable_scheduling; }
+            set { data.enable_scheduling = value; }
         }
 
-        private int _email_reminders = 0;
-        public int email_reminders
+        public long email_reminders
         {
-            get { return data._email_reminders; }
-            set { data._email_reminders = value; }
+            get { return data.email_reminders; }
+            set { data.email_reminders = value; }
         }
 
         public string success_redirect_url

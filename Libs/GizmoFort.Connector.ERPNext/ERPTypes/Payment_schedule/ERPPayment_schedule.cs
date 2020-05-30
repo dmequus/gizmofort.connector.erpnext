@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_schedule
 
         }
 
-        private double _payment_amount = 0.0;
         public double payment_amount
         {
-            get { return data._payment_amount; }
-            set { data._payment_amount = value; }
+            get { return data.payment_amount; }
+            set { data.payment_amount = value; }
         }
 
         public string payment_term
@@ -47,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_schedule
             set { data.description = value; }
         }
 
-        private double _invoice_portion = 0.0;
         public double invoice_portion
         {
-            get { return data._invoice_portion; }
-            set { data._invoice_portion = value; }
+            get { return data.invoice_portion; }
+            set { data.invoice_portion = value; }
         }
 
         public string mode_of_payment
@@ -60,11 +58,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_schedule
             set { data.mode_of_payment = value; }
         }
 
-        private double _paid_amount = 0.0;
         public double paid_amount
         {
-            get { return data._paid_amount; }
-            set { data._paid_amount = value; }
+            get { return data.paid_amount; }
+            set { data.paid_amount = value; }
         }
 
 

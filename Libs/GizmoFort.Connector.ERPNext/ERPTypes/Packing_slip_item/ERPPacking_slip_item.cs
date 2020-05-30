@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip_item
         public ERPPacking_slip_item() : this(new ERPObject(DocType.Packing_slip_item)) { }
         public ERPPacking_slip_item(ERPObject obj) : base(obj) { }
 
-        public static ERPPacking_slip_item Create(string itemcode, string itemname, string batchno, string description, double qty, double netweight, string stockuom, string weightuom, int pagebreak, string dndetail)
+        public static ERPPacking_slip_item Create(string itemcode, string itemname, string batchno, string description, double qty, double netweight, string stockuom, string weightuom, long pagebreak, string dndetail)
 
         {
             ERPPacking_slip_item obj = new ERPPacking_slip_item();
@@ -54,18 +54,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip_item
             set { data.description = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _net_weight = 0.0;
         public double net_weight
         {
-            get { return data._net_weight; }
-            set { data._net_weight = value; }
+            get { return data.net_weight; }
+            set { data.net_weight = value; }
         }
 
         public string stock_uom
@@ -80,11 +78,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip_item
             set { data.weight_uom = value; }
         }
 
-        private int _page_break = 0;
-        public int page_break
+        public long page_break
         {
-            get { return data._page_break; }
-            set { data._page_break = value; }
+            get { return data.page_break; }
+            set { data.page_break = value; }
         }
 
         public string dn_detail

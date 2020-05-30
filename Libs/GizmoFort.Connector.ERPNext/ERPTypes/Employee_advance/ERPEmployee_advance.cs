@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_advance
             set { data.purpose = value; }
         }
 
-        private double _advance_amount = 0.0;
         public double advance_amount
         {
-            get { return data._advance_amount; }
-            set { data._advance_amount = value; }
+            get { return data.advance_amount; }
+            set { data.advance_amount = value; }
         }
 
         public string company
@@ -81,25 +80,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_advance
             set { data.department = value; }
         }
 
-        private double _paid_amount = 0.0;
         public double paid_amount
         {
-            get { return data._paid_amount; }
-            set { data._paid_amount = value; }
+            get { return data.paid_amount; }
+            set { data.paid_amount = value; }
         }
 
-        private double _due_advance_amount = 0.0;
         public double due_advance_amount
         {
-            get { return data._due_advance_amount; }
-            set { data._due_advance_amount = value; }
+            get { return data.due_advance_amount; }
+            set { data.due_advance_amount = value; }
         }
 
-        private double _claimed_amount = 0.0;
         public double claimed_amount
         {
-            get { return data._claimed_amount; }
-            set { data._claimed_amount = value; }
+            get { return data.claimed_amount; }
+            set { data.claimed_amount = value; }
         }
 
         public Status status
@@ -120,18 +116,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_advance
             set { data.mode_of_payment = value; }
         }
 
-        private double _return_amount = 0.0;
         public double return_amount
         {
-            get { return data._return_amount; }
-            set { data._return_amount = value; }
+            get { return data.return_amount; }
+            set { data.return_amount = value; }
         }
 
-        private int _repay_unclaimed_amount_from_salary = 0;
-        public int repay_unclaimed_amount_from_salary
+        public long repay_unclaimed_amount_from_salary
         {
-            get { return data._repay_unclaimed_amount_from_salary; }
-            set { data._repay_unclaimed_amount_from_salary = value; }
+            get { return data.repay_unclaimed_amount_from_salary; }
+            set { data.repay_unclaimed_amount_from_salary = value; }
         }
 
 

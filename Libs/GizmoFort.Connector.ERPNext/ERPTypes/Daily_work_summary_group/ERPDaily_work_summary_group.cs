@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Daily_work_summary_group
         public ERPDaily_work_summary_group() : this(new ERPObject(DocType.Daily_work_summary_group)) { }
         public ERPDaily_work_summary_group(ERPObject obj) : base(obj) { }
 
-        public static ERPDaily_work_summary_group Create(int enabled, string users, Sendemailsat sendemailsat, string holidaylist, string subject, string message)
+        public static ERPDaily_work_summary_group Create(long enabled, string users, Sendemailsat sendemailsat, string holidaylist, string subject, string message)
 
         {
             ERPDaily_work_summary_group obj = new ERPDaily_work_summary_group();
@@ -21,11 +21,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Daily_work_summary_group
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string users

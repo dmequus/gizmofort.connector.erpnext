@@ -45,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sms_log
             set { data.message = value; }
         }
 
-        private int _no_of_requested_sms = 0;
         public int no_of_requested_sms
         {
-            get { return data._no_of_requested_sms; }
-            set { data._no_of_requested_sms = value; }
+            get { return data.no_of_requested_sms; }
+            set { data.no_of_requested_sms = value; }
         }
 
         public string requested_numbers
@@ -58,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sms_log
             set { data.requested_numbers = value; }
         }
 
-        private int _no_of_sent_sms = 0;
         public int no_of_sent_sms
         {
-            get { return data._no_of_sent_sms; }
-            set { data._no_of_sent_sms = value; }
+            get { return data.no_of_sent_sms; }
+            set { data.no_of_sent_sms = value; }
         }
 
         public string sent_to

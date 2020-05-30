@@ -58,11 +58,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.company = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string fg_warehouse
@@ -89,39 +88,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.image = value; }
         }
 
-        private int _allow_alternative_item = 0;
-        public int allow_alternative_item
+        public long allow_alternative_item
         {
-            get { return data._allow_alternative_item; }
-            set { data._allow_alternative_item = value; }
+            get { return data.allow_alternative_item; }
+            set { data.allow_alternative_item = value; }
         }
 
-        private int _use_multi_level_bom = 0;
-        public int use_multi_level_bom
+        public long use_multi_level_bom
         {
-            get { return data._use_multi_level_bom; }
-            set { data._use_multi_level_bom = value; }
+            get { return data.use_multi_level_bom; }
+            set { data.use_multi_level_bom = value; }
         }
 
-        private int _skip_transfer = 0;
-        public int skip_transfer
+        public long skip_transfer
         {
-            get { return data._skip_transfer; }
-            set { data._skip_transfer = value; }
+            get { return data.skip_transfer; }
+            set { data.skip_transfer = value; }
         }
 
-        private double _material_transferred_for_manufacturing = 0.0;
         public double material_transferred_for_manufacturing
         {
-            get { return data._material_transferred_for_manufacturing; }
-            set { data._material_transferred_for_manufacturing = value; }
+            get { return data.material_transferred_for_manufacturing; }
+            set { data.material_transferred_for_manufacturing = value; }
         }
 
-        private double _produced_qty = 0.0;
         public double produced_qty
         {
-            get { return data._produced_qty; }
-            set { data._produced_qty = value; }
+            get { return data.produced_qty; }
+            set { data.produced_qty = value; }
         }
 
         public string sales_order
@@ -136,11 +130,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.project = value; }
         }
 
-        private int _from_wip_warehouse = 0;
-        public int from_wip_warehouse
+        public long from_wip_warehouse
         {
-            get { return data._from_wip_warehouse; }
-            set { data._from_wip_warehouse = value; }
+            get { return data.from_wip_warehouse; }
+            set { data.from_wip_warehouse = value; }
         }
 
         public string wip_warehouse
@@ -197,32 +190,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.operations = value; }
         }
 
-        private double _planned_operating_cost = 0.0;
         public double planned_operating_cost
         {
-            get { return data._planned_operating_cost; }
-            set { data._planned_operating_cost = value; }
+            get { return data.planned_operating_cost; }
+            set { data.planned_operating_cost = value; }
         }
 
-        private double _actual_operating_cost = 0.0;
         public double actual_operating_cost
         {
-            get { return data._actual_operating_cost; }
-            set { data._actual_operating_cost = value; }
+            get { return data.actual_operating_cost; }
+            set { data.actual_operating_cost = value; }
         }
 
-        private double _additional_operating_cost = 0.0;
         public double additional_operating_cost
         {
-            get { return data._additional_operating_cost; }
-            set { data._additional_operating_cost = value; }
+            get { return data.additional_operating_cost; }
+            set { data.additional_operating_cost = value; }
         }
 
-        private double _total_operating_cost = 0.0;
         public double total_operating_cost
         {
-            get { return data._total_operating_cost; }
-            set { data._total_operating_cost = value; }
+            get { return data.total_operating_cost; }
+            set { data.total_operating_cost = value; }
         }
 
         public string description
@@ -279,11 +268,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.amended_from = value; }
         }
 
-        private int _update_consumed_material_cost_in_project = 0;
-        public int update_consumed_material_cost_in_project
+        public long update_consumed_material_cost_in_project
         {
-            get { return data._update_consumed_material_cost_in_project; }
-            set { data._update_consumed_material_cost_in_project = value; }
+            get { return data.update_consumed_material_cost_in_project; }
+            set { data.update_consumed_material_cost_in_project = value; }
         }
 
         public string source_warehouse
@@ -292,11 +280,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Work_order
             set { data.source_warehouse = value; }
         }
 
-        private double _lead_time = 0.0;
         public double lead_time
         {
-            get { return data._lead_time; }
-            set { data._lead_time = value; }
+            get { return data.lead_time; }
+            set { data.lead_time = value; }
         }
 
 

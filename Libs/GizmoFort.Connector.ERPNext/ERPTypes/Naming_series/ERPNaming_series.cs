@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Naming_series
         public ERPNaming_series() : this(new ERPObject(DocType.Naming_series)) { }
         public ERPNaming_series(ERPObject obj) : base(obj) { }
 
-        public static ERPNaming_series Create(string selectdocforseries, string helphtml, string setoptions, int usermustalwaysselect, string prefix, int currentvalue)
+        public static ERPNaming_series Create(string selectdocforseries, string helphtml, string setoptions, long usermustalwaysselect, string prefix, int currentvalue)
 
         {
             ERPNaming_series obj = new ERPNaming_series();
@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Naming_series
             set { data.set_options = value; }
         }
 
-        private int _user_must_always_select = 0;
-        public int user_must_always_select
+        public long user_must_always_select
         {
-            get { return data._user_must_always_select; }
-            set { data._user_must_always_select = value; }
+            get { return data.user_must_always_select; }
+            set { data.user_must_always_select = value; }
         }
 
         public string prefix
@@ -57,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Naming_series
             set { data.prefix = value; }
         }
 
-        private int _current_value = 0;
         public int current_value
         {
-            get { return data._current_value; }
-            set { data._current_value = value; }
+            get { return data.current_value; }
+            set { data.current_value = value; }
         }
 
 

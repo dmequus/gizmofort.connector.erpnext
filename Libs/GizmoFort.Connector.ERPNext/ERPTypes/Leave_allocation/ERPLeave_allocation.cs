@@ -56,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_allocation
             set { data.to_date = value; }
         }
 
-        private double _total_leaves_allocated = 0.0;
         public double total_leaves_allocated
         {
-            get { return data._total_leaves_allocated; }
-            set { data._total_leaves_allocated = value; }
+            get { return data.total_leaves_allocated; }
+            set { data.total_leaves_allocated = value; }
         }
 
         public string employee_name
@@ -75,32 +74,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_allocation
             set { data.department = value; }
         }
 
-        private double _new_leaves_allocated = 0.0;
         public double new_leaves_allocated
         {
-            get { return data._new_leaves_allocated; }
-            set { data._new_leaves_allocated = value; }
+            get { return data.new_leaves_allocated; }
+            set { data.new_leaves_allocated = value; }
         }
 
-        private int _carry_forward = 0;
-        public int carry_forward
+        public long carry_forward
         {
-            get { return data._carry_forward; }
-            set { data._carry_forward = value; }
+            get { return data.carry_forward; }
+            set { data.carry_forward = value; }
         }
 
-        private double _unused_leaves = 0.0;
         public double unused_leaves
         {
-            get { return data._unused_leaves; }
-            set { data._unused_leaves = value; }
+            get { return data.unused_leaves; }
+            set { data.unused_leaves = value; }
         }
 
-        private double _total_leaves_encashed = 0.0;
         public double total_leaves_encashed
         {
-            get { return data._total_leaves_encashed; }
-            set { data._total_leaves_encashed = value; }
+            get { return data.total_leaves_encashed; }
+            set { data.total_leaves_encashed = value; }
         }
 
         public string compensatory_request
@@ -121,11 +116,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_allocation
             set { data.leave_policy = value; }
         }
 
-        private int _expired = 0;
-        public int expired
+        public long expired
         {
-            get { return data._expired; }
-            set { data._expired = value; }
+            get { return data.expired; }
+            set { data.expired = value; }
         }
 
         public string amended_from
@@ -140,11 +134,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_allocation
             set { data.description = value; }
         }
 
-        private double _carry_forwarded_leaves_count = 0.0;
         public double carry_forwarded_leaves_count
         {
-            get { return data._carry_forwarded_leaves_count; }
-            set { data._carry_forwarded_leaves_count = value; }
+            get { return data.carry_forwarded_leaves_count; }
+            set { data.carry_forwarded_leaves_count = value; }
         }
 
 

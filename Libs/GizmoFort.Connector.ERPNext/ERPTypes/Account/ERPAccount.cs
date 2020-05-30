@@ -47,11 +47,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Account
             set { data.account_number = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public Roottype root_type
@@ -72,11 +71,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Account
             set { data.account_currency = value; }
         }
 
-        private int _inter_company_account = 0;
-        public int inter_company_account
+        public long inter_company_account
         {
-            get { return data._inter_company_account; }
-            set { data._inter_company_account = value; }
+            get { return data.inter_company_account; }
+            set { data.inter_company_account = value; }
         }
 
         public Accounttype account_type
@@ -85,11 +83,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Account
             set { data.account_type = value.ToString(); }
         }
 
-        private double _tax_rate = 0.0;
         public double tax_rate
         {
-            get { return data._tax_rate; }
-            set { data._tax_rate = value; }
+            get { return data.tax_rate; }
+            set { data.tax_rate = value; }
         }
 
         public Freezeaccount freeze_account
@@ -104,18 +101,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Account
             set { data.balance_must_be = value.ToString(); }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent
@@ -124,18 +119,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Account
             set { data.old_parent = value; }
         }
 
-        private int _include_in_gross = 0;
-        public int include_in_gross
+        public long include_in_gross
         {
-            get { return data._include_in_gross; }
-            set { data._include_in_gross = value; }
+            get { return data.include_in_gross; }
+            set { data.include_in_gross = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
 

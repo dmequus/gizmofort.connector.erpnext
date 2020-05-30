@@ -87,11 +87,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opportunity
             set { data.order_lost_reason = value; }
         }
 
-        private double _mins_to_first_response = 0.0;
         public double mins_to_first_response
         {
-            get { return data._mins_to_first_response; }
-            set { data._mins_to_first_response = value; }
+            get { return data.mins_to_first_response; }
+            set { data.mins_to_first_response = value; }
         }
 
         public string expected_closing
@@ -124,18 +123,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opportunity
             set { data.currency = value; }
         }
 
-        private double _opportunity_amount = 0.0;
         public double opportunity_amount
         {
-            get { return data._opportunity_amount; }
-            set { data._opportunity_amount = value; }
+            get { return data.opportunity_amount; }
+            set { data.opportunity_amount = value; }
         }
 
-        private int _with_items = 0;
-        public int with_items
+        public long with_items
         {
-            get { return data._with_items; }
-            set { data._with_items = value; }
+            get { return data.with_items; }
+            set { data.with_items = value; }
         }
 
         public string sales_stage
@@ -144,11 +141,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opportunity
             set { data.sales_stage = value; }
         }
 
-        private double _probability = 0.0;
         public double probability
         {
-            get { return data._probability; }
-            set { data._probability = value; }
+            get { return data.probability; }
+            set { data.probability = value; }
         }
 
         public string items

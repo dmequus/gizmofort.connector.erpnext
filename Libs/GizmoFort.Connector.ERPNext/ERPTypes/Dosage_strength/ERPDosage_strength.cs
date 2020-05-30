@@ -17,11 +17,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Dosage_strength
             return obj;
         }
 
-        private double _strength = 0.0;
         public double strength
         {
-            get { return data._strength; }
-            set { data._strength = value; }
+            get { return data.strength; }
+            set { data.strength = value; }
         }
 
         public string strength_time

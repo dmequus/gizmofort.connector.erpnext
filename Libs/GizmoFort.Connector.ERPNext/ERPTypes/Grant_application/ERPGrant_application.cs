@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Grant_application
         public ERPGrant_application() : this(new ERPObject(DocType.Grant_application)) { }
         public ERPGrant_application(ERPObject obj) : base(obj) { }
 
-        public static ERPGrant_application Create(string applicantname, Applicanttype applicanttype, string contactperson, string email, Status status, string websiteurl, string company, string addresshtml, string contacthtml, string grantdescription, double amount, int hasanypastgrantrecord, string route, int published, double assessmentmark, string note, string assessmentmanager, int emailnotificationsent)
+        public static ERPGrant_application Create(string applicantname, Applicanttype applicanttype, string contactperson, string email, Status status, string websiteurl, string company, string addresshtml, string contacthtml, string grantdescription, double amount, long hasanypastgrantrecord, string route, long published, double assessmentmark, string note, string assessmentmanager, long emailnotificationsent)
 
         {
             ERPGrant_application obj = new ERPGrant_application();
@@ -98,18 +98,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Grant_application
             set { data.grant_description = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private int _has_any_past_grant_record = 0;
-        public int has_any_past_grant_record
+        public long has_any_past_grant_record
         {
-            get { return data._has_any_past_grant_record; }
-            set { data._has_any_past_grant_record = value; }
+            get { return data.has_any_past_grant_record; }
+            set { data.has_any_past_grant_record = value; }
         }
 
         public string route
@@ -118,18 +116,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Grant_application
             set { data.route = value; }
         }
 
-        private int _published = 0;
-        public int published
+        public long published
         {
-            get { return data._published; }
-            set { data._published = value; }
+            get { return data.published; }
+            set { data.published = value; }
         }
 
-        private double _assessment_mark = 0.0;
         public double assessment_mark
         {
-            get { return data._assessment_mark; }
-            set { data._assessment_mark = value; }
+            get { return data.assessment_mark; }
+            set { data.assessment_mark = value; }
         }
 
         public string note
@@ -144,11 +140,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Grant_application
             set { data.assessment_manager = value; }
         }
 
-        private int _email_notification_sent = 0;
-        public int email_notification_sent
+        public long email_notification_sent
         {
-            get { return data._email_notification_sent; }
-            set { data._email_notification_sent = value; }
+            get { return data.email_notification_sent; }
+            set { data.email_notification_sent = value; }
         }
 
 

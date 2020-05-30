@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_prescription
             set { data.lab_test_name = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string lab_test_comment
@@ -46,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_prescription
             set { data.lab_test_comment = value; }
         }
 
-        private int _lab_test_created = 0;
-        public int lab_test_created
+        public long lab_test_created
         {
-            get { return data._lab_test_created; }
-            set { data._lab_test_created = value; }
+            get { return data.lab_test_created; }
+            set { data.lab_test_created = value; }
         }
 
 

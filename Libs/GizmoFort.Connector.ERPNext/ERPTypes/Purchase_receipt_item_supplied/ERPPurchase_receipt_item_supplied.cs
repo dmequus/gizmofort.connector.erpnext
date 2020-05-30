@@ -16,11 +16,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_receipt_item_supplied
             return obj;
         }
 
-        private double _consumed_qty = 0.0;
         public double consumed_qty
         {
-            get { return data._consumed_qty; }
-            set { data._consumed_qty = value; }
+            get { return data.consumed_qty; }
+            set { data.consumed_qty = value; }
         }
 
         public string main_item_code
@@ -53,11 +52,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_receipt_item_supplied
             set { data.serial_no = value; }
         }
 
-        private double _required_qty = 0.0;
         public double required_qty
         {
-            get { return data._required_qty; }
-            set { data._required_qty = value; }
+            get { return data.required_qty; }
+            set { data.required_qty = value; }
         }
 
         public string stock_uom
@@ -66,32 +64,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_receipt_item_supplied
             set { data.stock_uom = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private double _current_stock = 0.0;
         public double current_stock
         {
-            get { return data._current_stock; }
-            set { data._current_stock = value; }
+            get { return data.current_stock; }
+            set { data.current_stock = value; }
         }
 
         public string reference_name

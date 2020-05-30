@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_onboarding_activity
         public ERPEmployee_onboarding_activity() : this(new ERPObject(DocType.Employee_onboarding_activity)) { }
         public ERPEmployee_onboarding_activity(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_onboarding_activity Create(string activityname, string user, string role, int completed, int requiredforemployeecreation, string description)
+        public static ERPEmployee_onboarding_activity Create(string activityname, string user, string role, long completed, long requiredforemployeecreation, string description)
 
         {
             ERPEmployee_onboarding_activity obj = new ERPEmployee_onboarding_activity();
@@ -44,18 +44,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_onboarding_activity
             set { data.role = value; }
         }
 
-        private int _completed = 0;
-        public int completed
+        public long completed
         {
-            get { return data._completed; }
-            set { data._completed = value; }
+            get { return data.completed; }
+            set { data.completed = value; }
         }
 
-        private int _required_for_employee_creation = 0;
-        public int required_for_employee_creation
+        public long required_for_employee_creation
         {
-            get { return data._required_for_employee_creation; }
-            set { data._required_for_employee_creation = value; }
+            get { return data.required_for_employee_creation; }
+            set { data.required_for_employee_creation = value; }
         }
 
         public string description

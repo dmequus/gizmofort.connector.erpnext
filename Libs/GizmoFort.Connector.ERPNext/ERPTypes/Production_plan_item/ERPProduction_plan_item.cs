@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan_item
         public ERPProduction_plan_item() : this(new ERPObject(DocType.Production_plan_item)) { }
         public ERPProduction_plan_item(ERPObject obj) : base(obj) { }
 
-        public static ERPProduction_plan_item Create(int includeexplodeditems, string itemcode, string bomno, double plannedqty, int makeworkorderforsubassemblyitems, string warehouse, string plannedstartdate, double pendingqty, double orderedqty, double producedqty, string description, string stockuom, string salesorder, string salesorderitem, string materialrequest, string materialrequestitem, string productbundleitem)
+        public static ERPProduction_plan_item Create(long includeexplodeditems, string itemcode, string bomno, double plannedqty, long makeworkorderforsubassemblyitems, string warehouse, string plannedstartdate, double pendingqty, double orderedqty, double producedqty, string description, string stockuom, string salesorder, string salesorderitem, string materialrequest, string materialrequestitem, string productbundleitem)
 
         {
             ERPProduction_plan_item obj = new ERPProduction_plan_item();
@@ -32,11 +32,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan_item
             return obj;
         }
 
-        private int _include_exploded_items = 0;
-        public int include_exploded_items
+        public long include_exploded_items
         {
-            get { return data._include_exploded_items; }
-            set { data._include_exploded_items = value; }
+            get { return data.include_exploded_items; }
+            set { data.include_exploded_items = value; }
         }
 
         public string item_code
@@ -51,18 +50,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan_item
             set { data.bom_no = value; }
         }
 
-        private double _planned_qty = 0.0;
         public double planned_qty
         {
-            get { return data._planned_qty; }
-            set { data._planned_qty = value; }
+            get { return data.planned_qty; }
+            set { data.planned_qty = value; }
         }
 
-        private int _make_work_order_for_sub_assembly_items = 0;
-        public int make_work_order_for_sub_assembly_items
+        public long make_work_order_for_sub_assembly_items
         {
-            get { return data._make_work_order_for_sub_assembly_items; }
-            set { data._make_work_order_for_sub_assembly_items = value; }
+            get { return data.make_work_order_for_sub_assembly_items; }
+            set { data.make_work_order_for_sub_assembly_items = value; }
         }
 
         public string warehouse
@@ -77,25 +74,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan_item
             set { data.planned_start_date = value; }
         }
 
-        private double _pending_qty = 0.0;
         public double pending_qty
         {
-            get { return data._pending_qty; }
-            set { data._pending_qty = value; }
+            get { return data.pending_qty; }
+            set { data.pending_qty = value; }
         }
 
-        private double _ordered_qty = 0.0;
         public double ordered_qty
         {
-            get { return data._ordered_qty; }
-            set { data._ordered_qty = value; }
+            get { return data.ordered_qty; }
+            set { data.ordered_qty = value; }
         }
 
-        private double _produced_qty = 0.0;
         public double produced_qty
         {
-            get { return data._produced_qty; }
-            set { data._produced_qty = value; }
+            get { return data.produced_qty; }
+            set { data.produced_qty = value; }
         }
 
         public string description

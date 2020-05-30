@@ -44,11 +44,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Homepage_section
             set { data.section_html = value; }
         }
 
-        private int _section_order = 0;
         public int section_order
         {
-            get { return data._section_order; }
-            set { data._section_order = value; }
+            get { return data.section_order; }
+            set { data.section_order = value; }
         }
 
 

@@ -89,46 +89,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_entry
             set { data.paid_to_account_currency = value; }
         }
 
-        private double _paid_amount = 0.0;
         public double paid_amount
         {
-            get { return data._paid_amount; }
-            set { data._paid_amount = value; }
+            get { return data.paid_amount; }
+            set { data.paid_amount = value; }
         }
 
-        private double _source_exchange_rate = 0.0;
         public double source_exchange_rate
         {
-            get { return data._source_exchange_rate; }
-            set { data._source_exchange_rate = value; }
+            get { return data.source_exchange_rate; }
+            set { data.source_exchange_rate = value; }
         }
 
-        private double _base_paid_amount = 0.0;
         public double base_paid_amount
         {
-            get { return data._base_paid_amount; }
-            set { data._base_paid_amount = value; }
+            get { return data.base_paid_amount; }
+            set { data.base_paid_amount = value; }
         }
 
-        private double _received_amount = 0.0;
         public double received_amount
         {
-            get { return data._received_amount; }
-            set { data._received_amount = value; }
+            get { return data.received_amount; }
+            set { data.received_amount = value; }
         }
 
-        private double _target_exchange_rate = 0.0;
         public double target_exchange_rate
         {
-            get { return data._target_exchange_rate; }
-            set { data._target_exchange_rate = value; }
+            get { return data.target_exchange_rate; }
+            set { data.target_exchange_rate = value; }
         }
 
-        private double _base_received_amount = 0.0;
         public double base_received_amount
         {
-            get { return data._base_received_amount; }
-            set { data._base_received_amount = value; }
+            get { return data.base_received_amount; }
+            set { data.base_received_amount = value; }
         }
 
         public string cost_center
@@ -173,25 +167,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_entry
             set { data.contact_email = value; }
         }
 
-        private double _party_balance = 0.0;
         public double party_balance
         {
-            get { return data._party_balance; }
-            set { data._party_balance = value; }
+            get { return data.party_balance; }
+            set { data.party_balance = value; }
         }
 
-        private double _paid_from_account_balance = 0.0;
         public double paid_from_account_balance
         {
-            get { return data._paid_from_account_balance; }
-            set { data._paid_from_account_balance = value; }
+            get { return data.paid_from_account_balance; }
+            set { data.paid_from_account_balance = value; }
         }
 
-        private double _paid_to_account_balance = 0.0;
         public double paid_to_account_balance
         {
-            get { return data._paid_to_account_balance; }
-            set { data._paid_to_account_balance = value; }
+            get { return data.paid_to_account_balance; }
+            set { data.paid_to_account_balance = value; }
         }
 
         public string references
@@ -200,32 +191,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_entry
             set { data.references = value; }
         }
 
-        private double _total_allocated_amount = 0.0;
         public double total_allocated_amount
         {
-            get { return data._total_allocated_amount; }
-            set { data._total_allocated_amount = value; }
+            get { return data.total_allocated_amount; }
+            set { data.total_allocated_amount = value; }
         }
 
-        private double _base_total_allocated_amount = 0.0;
         public double base_total_allocated_amount
         {
-            get { return data._base_total_allocated_amount; }
-            set { data._base_total_allocated_amount = value; }
+            get { return data.base_total_allocated_amount; }
+            set { data.base_total_allocated_amount = value; }
         }
 
-        private double _unallocated_amount = 0.0;
         public double unallocated_amount
         {
-            get { return data._unallocated_amount; }
-            set { data._unallocated_amount = value; }
+            get { return data.unallocated_amount; }
+            set { data.unallocated_amount = value; }
         }
 
-        private double _difference_amount = 0.0;
         public double difference_amount
         {
-            get { return data._difference_amount; }
-            set { data._difference_amount = value; }
+            get { return data.difference_amount; }
+            set { data.difference_amount = value; }
         }
 
         public string deductions

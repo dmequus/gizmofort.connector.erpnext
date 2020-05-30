@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Normal_test_items
         public ERPNormal_test_items() : this(new ERPObject(DocType.Normal_test_items)) { }
         public ERPNormal_test_items(ERPObject obj) : base(obj) { }
 
-        public static ERPNormal_test_items Create(string labtestname, string labtestevent, string resultvalue, string labtestuom, string normalrange, string labtestcomment, int requireresultvalue, string template)
+        public static ERPNormal_test_items Create(string labtestname, string labtestevent, string resultvalue, string labtestuom, string normalrange, string labtestcomment, long requireresultvalue, string template)
 
         {
             ERPNormal_test_items obj = new ERPNormal_test_items();
@@ -64,11 +64,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Normal_test_items
             set { data.lab_test_comment = value; }
         }
 
-        private int _require_result_value = 0;
-        public int require_result_value
+        public long require_result_value
         {
-            get { return data._require_result_value; }
-            set { data._require_result_value = value; }
+            get { return data.require_result_value; }
+            set { data.require_result_value = value; }
         }
 
         public string template

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Global_defaults
         public ERPGlobal_defaults() : this(new ERPObject(DocType.Global_defaults)) { }
         public ERPGlobal_defaults(ERPObject obj) : base(obj) { }
 
-        public static ERPGlobal_defaults Create(string defaultcompany, string currentfiscalyear, string country, string defaultdistanceunit, string defaultcurrency, Hidecurrencysymbol hidecurrencysymbol, int disableroundedtotal, int disableinwords)
+        public static ERPGlobal_defaults Create(string defaultcompany, string currentfiscalyear, string country, string defaultdistanceunit, string defaultcurrency, Hidecurrencysymbol hidecurrencysymbol, long disableroundedtotal, long disableinwords)
 
         {
             ERPGlobal_defaults obj = new ERPGlobal_defaults();
@@ -64,18 +64,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Global_defaults
             set { data.hide_currency_symbol = value.ToString(); }
         }
 
-        private int _disable_rounded_total = 0;
-        public int disable_rounded_total
+        public long disable_rounded_total
         {
-            get { return data._disable_rounded_total; }
-            set { data._disable_rounded_total = value; }
+            get { return data.disable_rounded_total; }
+            set { data.disable_rounded_total = value; }
         }
 
-        private int _disable_in_words = 0;
-        public int disable_in_words
+        public long disable_in_words
         {
-            get { return data._disable_in_words; }
-            set { data._disable_in_words = value; }
+            get { return data.disable_in_words; }
+            set { data.disable_in_words = value; }
         }
 
 

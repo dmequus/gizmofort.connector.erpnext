@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_period
         public ERPLeave_period() : this(new ERPObject(DocType.Leave_period)) { }
         public ERPLeave_period(ERPObject obj) : base(obj) { }
 
-        public static ERPLeave_period Create(string fromdate, string todate, int isactive, string company, string optionalholidaylist)
+        public static ERPLeave_period Create(string fromdate, string todate, long isactive, string company, string optionalholidaylist)
 
         {
             ERPLeave_period obj = new ERPLeave_period();
@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_period
             set { data.to_date = value; }
         }
 
-        private int _is_active = 0;
-        public int is_active
+        public long is_active
         {
-            get { return data._is_active; }
-            set { data._is_active = value; }
+            get { return data.is_active; }
+            set { data.is_active = value; }
         }
 
         public string company

@@ -65,18 +65,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Coupon_code
             set { data.valid_upto = value; }
         }
 
-        private int _maximum_use = 0;
         public int maximum_use
         {
-            get { return data._maximum_use; }
-            set { data._maximum_use = value; }
+            get { return data.maximum_use; }
+            set { data.maximum_use = value; }
         }
 
-        private int _used = 0;
         public int used
         {
-            get { return data._used; }
-            set { data._used = value; }
+            get { return data.used; }
+            set { data.used = value; }
         }
 
         public string description

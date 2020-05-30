@@ -62,32 +62,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cashier_closing
             set { data.time = value; }
         }
 
-        private double _expense = 0.0;
         public double expense
         {
-            get { return data._expense; }
-            set { data._expense = value; }
+            get { return data.expense; }
+            set { data.expense = value; }
         }
 
-        private double _custody = 0.0;
         public double custody
         {
-            get { return data._custody; }
-            set { data._custody = value; }
+            get { return data.custody; }
+            set { data.custody = value; }
         }
 
-        private double _returns = 0.0;
         public double returns
         {
-            get { return data._returns; }
-            set { data._returns = value; }
+            get { return data.returns; }
+            set { data.returns = value; }
         }
 
-        private double _outstanding_amount = 0.0;
         public double outstanding_amount
         {
-            get { return data._outstanding_amount; }
-            set { data._outstanding_amount = value; }
+            get { return data.outstanding_amount; }
+            set { data.outstanding_amount = value; }
         }
 
         public string payments
@@ -96,11 +92,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Cashier_closing
             set { data.payments = value; }
         }
 
-        private double _net_amount = 0.0;
         public double net_amount
         {
-            get { return data._net_amount; }
-            set { data._net_amount = value; }
+            get { return data.net_amount; }
+            set { data.net_amount = value; }
         }
 
         public string amended_from

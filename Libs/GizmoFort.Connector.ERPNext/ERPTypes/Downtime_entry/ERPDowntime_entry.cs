@@ -55,11 +55,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Downtime_entry
             set { data.stop_reason = value.ToString(); }
         }
 
-        private double _downtime = 0.0;
         public double downtime
         {
-            get { return data._downtime; }
-            set { data._downtime = value; }
+            get { return data.downtime; }
+            set { data.downtime = value; }
         }
 
         public string remarks

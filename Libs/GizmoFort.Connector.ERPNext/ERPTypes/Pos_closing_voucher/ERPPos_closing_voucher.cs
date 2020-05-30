@@ -74,11 +74,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_closing_voucher
             set { data.user = value; }
         }
 
-        private double _expense_amount = 0.0;
         public double expense_amount
         {
-            get { return data._expense_amount; }
-            set { data._expense_amount = value; }
+            get { return data.expense_amount; }
+            set { data.expense_amount = value; }
         }
 
         public string custody_amount
@@ -87,18 +86,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_closing_voucher
             set { data.custody_amount = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
-        private double _difference = 0.0;
         public double difference
         {
-            get { return data._difference; }
-            set { data._difference = value; }
+            get { return data.difference; }
+            set { data.difference = value; }
         }
 
         public string payment_reconciliation_details
@@ -113,25 +110,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_closing_voucher
             set { data.payment_reconciliation = value; }
         }
 
-        private double _grand_total = 0.0;
         public double grand_total
         {
-            get { return data._grand_total; }
-            set { data._grand_total = value; }
+            get { return data.grand_total; }
+            set { data.grand_total = value; }
         }
 
-        private double _net_total = 0.0;
         public double net_total
         {
-            get { return data._net_total; }
-            set { data._net_total = value; }
+            get { return data.net_total; }
+            set { data.net_total = value; }
         }
 
-        private double _total_quantity = 0.0;
         public double total_quantity
         {
-            get { return data._total_quantity; }
-            set { data._total_quantity = value; }
+            get { return data.total_quantity; }
+            set { data.total_quantity = value; }
         }
 
         public string taxes

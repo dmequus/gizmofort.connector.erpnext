@@ -59,18 +59,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_encashment
             set { data.leave_allocation = value; }
         }
 
-        private double _leave_balance = 0.0;
         public double leave_balance
         {
-            get { return data._leave_balance; }
-            set { data._leave_balance = value; }
+            get { return data.leave_balance; }
+            set { data.leave_balance = value; }
         }
 
-        private double _encashable_days = 0.0;
         public double encashable_days
         {
-            get { return data._encashable_days; }
-            set { data._encashable_days = value; }
+            get { return data.encashable_days; }
+            set { data.encashable_days = value; }
         }
 
         public string amended_from
@@ -79,11 +77,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_encashment
             set { data.amended_from = value; }
         }
 
-        private double _encashment_amount = 0.0;
         public double encashment_amount
         {
-            get { return data._encashment_amount; }
-            set { data._encashment_amount = value; }
+            get { return data.encashment_amount; }
+            set { data.encashment_amount = value; }
         }
 
         public string encashment_date

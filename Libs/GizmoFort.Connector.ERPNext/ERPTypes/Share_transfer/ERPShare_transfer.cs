@@ -48,32 +48,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Share_transfer
             set { data.share_type = value; }
         }
 
-        private int _from_no = 0;
         public int from_no
         {
-            get { return data._from_no; }
-            set { data._from_no = value; }
+            get { return data.from_no; }
+            set { data.from_no = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private int _no_of_shares = 0;
         public int no_of_shares
         {
-            get { return data._no_of_shares; }
-            set { data._no_of_shares = value; }
+            get { return data.no_of_shares; }
+            set { data.no_of_shares = value; }
         }
 
-        private int _to_no = 0;
         public int to_no
         {
-            get { return data._to_no; }
-            set { data._to_no = value; }
+            get { return data.to_no; }
+            set { data.to_no = value; }
         }
 
         public string company
@@ -112,11 +108,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Share_transfer
             set { data.to_folio_no = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string remarks

@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project
             set { data.percent_complete_method = value.ToString(); }
         }
 
-        private double _percent_complete = 0.0;
         public double percent_complete
         {
-            get { return data._percent_complete; }
-            set { data._percent_complete = value; }
+            get { return data.percent_complete; }
+            set { data.percent_complete = value; }
         }
 
         public string project_template
@@ -124,11 +123,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project
             set { data.actual_start_date = value; }
         }
 
-        private double _actual_time = 0.0;
         public double actual_time
         {
-            get { return data._actual_time; }
-            set { data._actual_time = value; }
+            get { return data.actual_time; }
+            set { data.actual_time = value; }
         }
 
         public string actual_end_date
@@ -137,32 +135,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project
             set { data.actual_end_date = value; }
         }
 
-        private double _estimated_costing = 0.0;
         public double estimated_costing
         {
-            get { return data._estimated_costing; }
-            set { data._estimated_costing = value; }
+            get { return data.estimated_costing; }
+            set { data.estimated_costing = value; }
         }
 
-        private double _total_costing_amount = 0.0;
         public double total_costing_amount
         {
-            get { return data._total_costing_amount; }
-            set { data._total_costing_amount = value; }
+            get { return data.total_costing_amount; }
+            set { data.total_costing_amount = value; }
         }
 
-        private double _total_expense_claim = 0.0;
         public double total_expense_claim
         {
-            get { return data._total_expense_claim; }
-            set { data._total_expense_claim = value; }
+            get { return data.total_expense_claim; }
+            set { data.total_expense_claim = value; }
         }
 
-        private double _total_purchase_cost = 0.0;
         public double total_purchase_cost
         {
-            get { return data._total_purchase_cost; }
-            set { data._total_purchase_cost = value; }
+            get { return data.total_purchase_cost; }
+            set { data.total_purchase_cost = value; }
         }
 
         public string company
@@ -171,32 +165,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project
             set { data.company = value; }
         }
 
-        private double _total_sales_amount = 0.0;
         public double total_sales_amount
         {
-            get { return data._total_sales_amount; }
-            set { data._total_sales_amount = value; }
+            get { return data.total_sales_amount; }
+            set { data.total_sales_amount = value; }
         }
 
-        private double _total_billable_amount = 0.0;
         public double total_billable_amount
         {
-            get { return data._total_billable_amount; }
-            set { data._total_billable_amount = value; }
+            get { return data.total_billable_amount; }
+            set { data.total_billable_amount = value; }
         }
 
-        private double _total_billed_amount = 0.0;
         public double total_billed_amount
         {
-            get { return data._total_billed_amount; }
-            set { data._total_billed_amount = value; }
+            get { return data.total_billed_amount; }
+            set { data.total_billed_amount = value; }
         }
 
-        private double _total_consumed_material_cost = 0.0;
         public double total_consumed_material_cost
         {
-            get { return data._total_consumed_material_cost; }
-            set { data._total_consumed_material_cost = value; }
+            get { return data.total_consumed_material_cost; }
+            set { data.total_consumed_material_cost = value; }
         }
 
         public string cost_center
@@ -205,25 +195,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project
             set { data.cost_center = value; }
         }
 
-        private double _gross_margin = 0.0;
         public double gross_margin
         {
-            get { return data._gross_margin; }
-            set { data._gross_margin = value; }
+            get { return data.gross_margin; }
+            set { data.gross_margin = value; }
         }
 
-        private double _per_gross_margin = 0.0;
         public double per_gross_margin
         {
-            get { return data._per_gross_margin; }
-            set { data._per_gross_margin = value; }
+            get { return data.per_gross_margin; }
+            set { data.per_gross_margin = value; }
         }
 
-        private int _collect_progress = 0;
-        public int collect_progress
+        public long collect_progress
         {
-            get { return data._collect_progress; }
-            set { data._collect_progress = value; }
+            get { return data.collect_progress; }
+            set { data.collect_progress = value; }
         }
 
         public string holiday_list

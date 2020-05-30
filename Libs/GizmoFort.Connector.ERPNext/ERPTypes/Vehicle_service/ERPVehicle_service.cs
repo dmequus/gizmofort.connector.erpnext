@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vehicle_service
             set { data.frequency = value.ToString(); }
         }
 
-        private double _expense_amount = 0.0;
         public double expense_amount
         {
-            get { return data._expense_amount; }
-            set { data._expense_amount = value; }
+            get { return data.expense_amount; }
+            set { data.expense_amount = value; }
         }
 
 

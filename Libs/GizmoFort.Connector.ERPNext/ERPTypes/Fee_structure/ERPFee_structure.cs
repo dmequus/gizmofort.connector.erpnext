@@ -65,11 +65,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fee_structure
             set { data.academic_year = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
         public string income_account

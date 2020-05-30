@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Currency_exchange
         public ERPCurrency_exchange() : this(new ERPObject(DocType.Currency_exchange)) { }
         public ERPCurrency_exchange(ERPObject obj) : base(obj) { }
 
-        public static ERPCurrency_exchange Create(string date, string fromcurrency, string tocurrency, double exchangerate, int forbuying, int forselling)
+        public static ERPCurrency_exchange Create(string date, string fromcurrency, string tocurrency, double exchangerate, long forbuying, long forselling)
 
         {
             ERPCurrency_exchange obj = new ERPCurrency_exchange();
@@ -44,25 +44,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Currency_exchange
             set { data.to_currency = value; }
         }
 
-        private double _exchange_rate = 0.0;
         public double exchange_rate
         {
-            get { return data._exchange_rate; }
-            set { data._exchange_rate = value; }
+            get { return data.exchange_rate; }
+            set { data.exchange_rate = value; }
         }
 
-        private int _for_buying = 0;
-        public int for_buying
+        public long for_buying
         {
-            get { return data._for_buying; }
-            set { data._for_buying = value; }
+            get { return data.for_buying; }
+            set { data.for_buying = value; }
         }
 
-        private int _for_selling = 0;
-        public int for_selling
+        public long for_selling
         {
-            get { return data._for_selling; }
-            set { data._for_selling = value; }
+            get { return data.for_selling; }
+            set { data.for_selling = value; }
         }
 
 

@@ -30,25 +30,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Tax_withholding_rate
 
         }
 
-        private double _tax_withholding_rate = 0.0;
         public double tax_withholding_rate
         {
-            get { return data._tax_withholding_rate; }
-            set { data._tax_withholding_rate = value; }
+            get { return data.tax_withholding_rate; }
+            set { data.tax_withholding_rate = value; }
         }
 
-        private double _single_threshold = 0.0;
         public double single_threshold
         {
-            get { return data._single_threshold; }
-            set { data._single_threshold = value; }
+            get { return data.single_threshold; }
+            set { data.single_threshold = value; }
         }
 
-        private double _cumulative_threshold = 0.0;
         public double cumulative_threshold
         {
-            get { return data._cumulative_threshold; }
-            set { data._cumulative_threshold = value; }
+            get { return data.cumulative_threshold; }
+            set { data.cumulative_threshold = value; }
         }
 
 

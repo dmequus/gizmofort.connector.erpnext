@@ -66,11 +66,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Maintenance_schedule_item
             set { data.periodicity = value.ToString(); }
         }
 
-        private int _no_of_visits = 0;
         public int no_of_visits
         {
-            get { return data._no_of_visits; }
-            set { data._no_of_visits = value; }
+            get { return data.no_of_visits; }
+            set { data.no_of_visits = value; }
         }
 
         public string sales_person

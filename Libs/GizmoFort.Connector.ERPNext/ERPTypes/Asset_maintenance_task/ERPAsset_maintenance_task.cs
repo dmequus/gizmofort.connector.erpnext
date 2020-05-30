@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_maintenance_task
         public ERPAsset_maintenance_task() : this(new ERPObject(DocType.Asset_maintenance_task)) { }
         public ERPAsset_maintenance_task(ERPObject obj) : base(obj) { }
 
-        public static ERPAsset_maintenance_task Create(string maintenancetask, Maintenancetype maintenancetype, Maintenancestatus maintenancestatus, string startdate, Periodicity periodicity, string enddate, int certificaterequired, string assignto, string assigntoname, string nextduedate, string lastcompletiondate, string description)
+        public static ERPAsset_maintenance_task Create(string maintenancetask, Maintenancetype maintenancetype, Maintenancestatus maintenancestatus, string startdate, Periodicity periodicity, string enddate, long certificaterequired, string assignto, string assigntoname, string nextduedate, string lastcompletiondate, string description)
 
         {
             ERPAsset_maintenance_task obj = new ERPAsset_maintenance_task();
@@ -68,11 +68,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_maintenance_task
             set { data.end_date = value; }
         }
 
-        private int _certificate_required = 0;
-        public int certificate_required
+        public long certificate_required
         {
-            get { return data._certificate_required; }
-            set { data._certificate_required = value; }
+            get { return data.certificate_required; }
+            set { data.certificate_required = value; }
         }
 
         public string assign_to

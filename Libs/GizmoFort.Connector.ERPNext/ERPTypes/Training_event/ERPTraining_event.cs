@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Training_event
         public ERPTraining_event() : this(new ERPObject(DocType.Training_event)) { }
         public ERPTraining_event(ERPObject obj) : base(obj) { }
 
-        public static ERPTraining_event Create(string eventname, string trainingprogram, Eventstatus eventstatus, int hascertificate, Type type, Level level, string company, string trainername, string traineremail, string supplier, string contactnumber, string course, string location, string starttime, string endtime, string introduction, string employees, string amendedfrom, string employeeemails)
+        public static ERPTraining_event Create(string eventname, string trainingprogram, Eventstatus eventstatus, long hascertificate, Type type, Level level, string company, string trainername, string traineremail, string supplier, string contactnumber, string course, string location, string starttime, string endtime, string introduction, string employees, string amendedfrom, string employeeemails)
 
         {
             ERPTraining_event obj = new ERPTraining_event();
@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Training_event
             set { data.event_status = value.ToString(); }
         }
 
-        private int _has_certificate = 0;
-        public int has_certificate
+        public long has_certificate
         {
-            get { return data._has_certificate; }
-            set { data._has_certificate = value; }
+            get { return data.has_certificate; }
+            set { data.has_certificate = value; }
         }
 
         public Type type

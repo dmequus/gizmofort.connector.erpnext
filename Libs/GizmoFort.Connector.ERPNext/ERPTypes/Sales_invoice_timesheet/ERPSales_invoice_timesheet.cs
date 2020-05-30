@@ -30,18 +30,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_invoice_timesheet
 
         }
 
-        private double _billing_hours = 0.0;
         public double billing_hours
         {
-            get { return data._billing_hours; }
-            set { data._billing_hours = value; }
+            get { return data.billing_hours; }
+            set { data.billing_hours = value; }
         }
 
-        private double _billing_amount = 0.0;
         public double billing_amount
         {
-            get { return data._billing_amount; }
-            set { data._billing_amount = value; }
+            get { return data.billing_amount; }
+            set { data.billing_amount = value; }
         }
 
         public string timesheet_detail

@@ -87,11 +87,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Appraisal
             set { data.goals = value; }
         }
 
-        private double _total_score = 0.0;
         public double total_score
         {
-            get { return data._total_score; }
-            set { data._total_score = value; }
+            get { return data.total_score; }
+            set { data.total_score = value; }
         }
 
         public string remarks

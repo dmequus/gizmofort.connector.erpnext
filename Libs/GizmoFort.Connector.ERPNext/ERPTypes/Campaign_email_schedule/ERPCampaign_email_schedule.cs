@@ -17,11 +17,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Campaign_email_schedule
             return obj;
         }
 
-        private int _send_after_days = 0;
         public int send_after_days
         {
-            get { return data._send_after_days; }
-            set { data._send_after_days = value; }
+            get { return data.send_after_days; }
+            set { data.send_after_days = value; }
         }
 
         public string email_template

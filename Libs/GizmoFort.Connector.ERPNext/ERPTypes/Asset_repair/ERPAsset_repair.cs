@@ -106,11 +106,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_repair
             set { data.downtime = value; }
         }
 
-        private double _repair_cost = 0.0;
         public double repair_cost
         {
-            get { return data._repair_cost; }
-            set { data._repair_cost = value; }
+            get { return data.repair_cost; }
+            set { data.repair_cost = value; }
         }
 
         public string amended_from

@@ -68,11 +68,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Attendance_request
             set { data.department = value; }
         }
 
-        private int _half_day = 0;
-        public int half_day
+        public long half_day
         {
-            get { return data._half_day; }
-            set { data._half_day = value; }
+            get { return data.half_day; }
+            set { data.half_day = value; }
         }
 
         public string half_day_date

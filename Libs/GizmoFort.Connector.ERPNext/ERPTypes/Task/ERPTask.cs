@@ -45,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.type = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public Status status
@@ -82,18 +81,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.exp_start_date = value; }
         }
 
-        private double _expected_time = 0.0;
         public double expected_time
         {
-            get { return data._expected_time; }
-            set { data._expected_time = value; }
+            get { return data.expected_time; }
+            set { data.expected_time = value; }
         }
 
-        private double _task_weight = 0.0;
         public double task_weight
         {
-            get { return data._task_weight; }
-            set { data._task_weight = value; }
+            get { return data.task_weight; }
+            set { data.task_weight = value; }
         }
 
         public string exp_end_date
@@ -102,18 +99,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.exp_end_date = value; }
         }
 
-        private double _progress = 0.0;
         public double progress
         {
-            get { return data._progress; }
-            set { data._progress = value; }
+            get { return data.progress; }
+            set { data.progress = value; }
         }
 
-        private int _is_milestone = 0;
-        public int is_milestone
+        public long is_milestone
         {
-            get { return data._is_milestone; }
-            set { data._is_milestone = value; }
+            get { return data.is_milestone; }
+            set { data.is_milestone = value; }
         }
 
         public string description
@@ -140,11 +135,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.act_start_date = value; }
         }
 
-        private double _actual_time = 0.0;
         public double actual_time
         {
-            get { return data._actual_time; }
-            set { data._actual_time = value; }
+            get { return data.actual_time; }
+            set { data.actual_time = value; }
         }
 
         public string act_end_date
@@ -153,25 +147,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.act_end_date = value; }
         }
 
-        private double _total_costing_amount = 0.0;
         public double total_costing_amount
         {
-            get { return data._total_costing_amount; }
-            set { data._total_costing_amount = value; }
+            get { return data.total_costing_amount; }
+            set { data.total_costing_amount = value; }
         }
 
-        private double _total_expense_claim = 0.0;
         public double total_expense_claim
         {
-            get { return data._total_expense_claim; }
-            set { data._total_expense_claim = value; }
+            get { return data.total_expense_claim; }
+            set { data.total_expense_claim = value; }
         }
 
-        private double _total_billing_amount = 0.0;
         public double total_billing_amount
         {
-            get { return data._total_billing_amount; }
-            set { data._total_billing_amount = value; }
+            get { return data.total_billing_amount; }
+            set { data.total_billing_amount = value; }
         }
 
         public string review_date
@@ -198,18 +189,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Task
             set { data.company = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

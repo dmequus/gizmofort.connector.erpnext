@@ -50,18 +50,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Purchase_invoice_advance
             set { data.reference_row = value; }
         }
 
-        private double _advance_amount = 0.0;
         public double advance_amount
         {
-            get { return data._advance_amount; }
-            set { data._advance_amount = value; }
+            get { return data.advance_amount; }
+            set { data.advance_amount = value; }
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
 

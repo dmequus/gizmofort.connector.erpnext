@@ -26,18 +26,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_repayment_detail
 
         }
 
-        private double _paid_principal_amount = 0.0;
         public double paid_principal_amount
         {
-            get { return data._paid_principal_amount; }
-            set { data._paid_principal_amount = value; }
+            get { return data.paid_principal_amount; }
+            set { data.paid_principal_amount = value; }
         }
 
-        private double _paid_interest_amount = 0.0;
         public double paid_interest_amount
         {
-            get { return data._paid_interest_amount; }
-            set { data._paid_interest_amount = value; }
+            get { return data.paid_interest_amount; }
+            set { data.paid_interest_amount = value; }
         }
 
 

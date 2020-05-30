@@ -40,18 +40,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_finance_book
             set { data.depreciation_method = value.ToString(); }
         }
 
-        private int _total_number_of_depreciations = 0;
         public int total_number_of_depreciations
         {
-            get { return data._total_number_of_depreciations; }
-            set { data._total_number_of_depreciations = value; }
+            get { return data.total_number_of_depreciations; }
+            set { data.total_number_of_depreciations = value; }
         }
 
-        private int _frequency_of_depreciation = 0;
         public int frequency_of_depreciation
         {
-            get { return data._frequency_of_depreciation; }
-            set { data._frequency_of_depreciation = value; }
+            get { return data.frequency_of_depreciation; }
+            set { data.frequency_of_depreciation = value; }
         }
 
         public string depreciation_start_date
@@ -60,25 +58,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset_finance_book
             set { data.depreciation_start_date = value; }
         }
 
-        private double _expected_value_after_useful_life = 0.0;
         public double expected_value_after_useful_life
         {
-            get { return data._expected_value_after_useful_life; }
-            set { data._expected_value_after_useful_life = value; }
+            get { return data.expected_value_after_useful_life; }
+            set { data.expected_value_after_useful_life = value; }
         }
 
-        private double _value_after_depreciation = 0.0;
         public double value_after_depreciation
         {
-            get { return data._value_after_depreciation; }
-            set { data._value_after_depreciation = value; }
+            get { return data.value_after_depreciation; }
+            set { data.value_after_depreciation = value; }
         }
 
-        private double _rate_of_depreciation = 0.0;
         public double rate_of_depreciation
         {
-            get { return data._rate_of_depreciation; }
-            set { data._rate_of_depreciation = value; }
+            get { return data.rate_of_depreciation; }
+            set { data.rate_of_depreciation = value; }
         }
 
 

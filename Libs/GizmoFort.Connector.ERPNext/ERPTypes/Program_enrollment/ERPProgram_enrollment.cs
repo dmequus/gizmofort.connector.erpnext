@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Program_enrollment
         public ERPProgram_enrollment() : this(new ERPObject(DocType.Program_enrollment)) { }
         public ERPProgram_enrollment(ERPObject obj) : base(obj) { }
 
-        public static ERPProgram_enrollment Create(string studentname, string student, string studentcategory, string studentbatchname, string schoolhouse, string program, string academicyear, string academicterm, string enrollmentdate, int boardingstudent, Modeoftransportation modeoftransportation, string vehicleno, string courses, string fees, string amendedfrom, string image)
+        public static ERPProgram_enrollment Create(string studentname, string student, string studentcategory, string studentbatchname, string schoolhouse, string program, string academicyear, string academicterm, string enrollmentdate, long boardingstudent, Modeoftransportation modeoftransportation, string vehicleno, string courses, string fees, string amendedfrom, string image)
 
         {
             ERPProgram_enrollment obj = new ERPProgram_enrollment();
@@ -90,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Program_enrollment
             set { data.enrollment_date = value; }
         }
 
-        private int _boarding_student = 0;
-        public int boarding_student
+        public long boarding_student
         {
-            get { return data._boarding_student; }
-            set { data._boarding_student = value; }
+            get { return data.boarding_student; }
+            set { data.boarding_student = value; }
         }
 
         public Modeoftransportation mode_of_transportation

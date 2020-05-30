@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Email_digest
         public ERPEmail_digest() : this(new ERPObject(DocType.Email_digest)) { }
         public ERPEmail_digest(ERPObject obj) : base(obj) { }
 
-        public static ERPEmail_digest Create(int enabled, string company, Frequency frequency, string nextsend, string recipientlist, int income, int expensesbooked, int incomeyeartodate, int expenseyeartodate, int bankbalance, int creditbalance, int invoicedamount, int payables, int salesorderstobill, int purchaseorderstobill, int salesorder, int purchaseorder, int salesorderstodeliver, int purchaseorderstoreceive, int salesinvoice, int purchaseinvoice, int newquotations, int pendingquotations, int issue, int project, int purchaseordersitemsoverdue, int calendarevents, int todolist, int notifications, int addquote)
+        public static ERPEmail_digest Create(long enabled, string company, Frequency frequency, string nextsend, string recipientlist, long income, long expensesbooked, long incomeyeartodate, long expenseyeartodate, long bankbalance, long creditbalance, long invoicedamount, long payables, long salesorderstobill, long purchaseorderstobill, long salesorder, long purchaseorder, long salesorderstodeliver, long purchaseorderstoreceive, long salesinvoice, long purchaseinvoice, long newquotations, long pendingquotations, long issue, long project, long purchaseordersitemsoverdue, long calendarevents, long todolist, long notifications, long addquote)
 
         {
             ERPEmail_digest obj = new ERPEmail_digest();
@@ -45,11 +45,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Email_digest
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string company
@@ -76,179 +75,154 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Email_digest
             set { data.recipient_list = value; }
         }
 
-        private int _income = 0;
-        public int income
+        public long income
         {
-            get { return data._income; }
-            set { data._income = value; }
+            get { return data.income; }
+            set { data.income = value; }
         }
 
-        private int _expenses_booked = 0;
-        public int expenses_booked
+        public long expenses_booked
         {
-            get { return data._expenses_booked; }
-            set { data._expenses_booked = value; }
+            get { return data.expenses_booked; }
+            set { data.expenses_booked = value; }
         }
 
-        private int _income_year_to_date = 0;
-        public int income_year_to_date
+        public long income_year_to_date
         {
-            get { return data._income_year_to_date; }
-            set { data._income_year_to_date = value; }
+            get { return data.income_year_to_date; }
+            set { data.income_year_to_date = value; }
         }
 
-        private int _expense_year_to_date = 0;
-        public int expense_year_to_date
+        public long expense_year_to_date
         {
-            get { return data._expense_year_to_date; }
-            set { data._expense_year_to_date = value; }
+            get { return data.expense_year_to_date; }
+            set { data.expense_year_to_date = value; }
         }
 
-        private int _bank_balance = 0;
-        public int bank_balance
+        public long bank_balance
         {
-            get { return data._bank_balance; }
-            set { data._bank_balance = value; }
+            get { return data.bank_balance; }
+            set { data.bank_balance = value; }
         }
 
-        private int _credit_balance = 0;
-        public int credit_balance
+        public long credit_balance
         {
-            get { return data._credit_balance; }
-            set { data._credit_balance = value; }
+            get { return data.credit_balance; }
+            set { data.credit_balance = value; }
         }
 
-        private int _invoiced_amount = 0;
-        public int invoiced_amount
+        public long invoiced_amount
         {
-            get { return data._invoiced_amount; }
-            set { data._invoiced_amount = value; }
+            get { return data.invoiced_amount; }
+            set { data.invoiced_amount = value; }
         }
 
-        private int _payables = 0;
-        public int payables
+        public long payables
         {
-            get { return data._payables; }
-            set { data._payables = value; }
+            get { return data.payables; }
+            set { data.payables = value; }
         }
 
-        private int _sales_orders_to_bill = 0;
-        public int sales_orders_to_bill
+        public long sales_orders_to_bill
         {
-            get { return data._sales_orders_to_bill; }
-            set { data._sales_orders_to_bill = value; }
+            get { return data.sales_orders_to_bill; }
+            set { data.sales_orders_to_bill = value; }
         }
 
-        private int _purchase_orders_to_bill = 0;
-        public int purchase_orders_to_bill
+        public long purchase_orders_to_bill
         {
-            get { return data._purchase_orders_to_bill; }
-            set { data._purchase_orders_to_bill = value; }
+            get { return data.purchase_orders_to_bill; }
+            set { data.purchase_orders_to_bill = value; }
         }
 
-        private int _sales_order = 0;
-        public int sales_order
+        public long sales_order
         {
-            get { return data._sales_order; }
-            set { data._sales_order = value; }
+            get { return data.sales_order; }
+            set { data.sales_order = value; }
         }
 
-        private int _purchase_order = 0;
-        public int purchase_order
+        public long purchase_order
         {
-            get { return data._purchase_order; }
-            set { data._purchase_order = value; }
+            get { return data.purchase_order; }
+            set { data.purchase_order = value; }
         }
 
-        private int _sales_orders_to_deliver = 0;
-        public int sales_orders_to_deliver
+        public long sales_orders_to_deliver
         {
-            get { return data._sales_orders_to_deliver; }
-            set { data._sales_orders_to_deliver = value; }
+            get { return data.sales_orders_to_deliver; }
+            set { data.sales_orders_to_deliver = value; }
         }
 
-        private int _purchase_orders_to_receive = 0;
-        public int purchase_orders_to_receive
+        public long purchase_orders_to_receive
         {
-            get { return data._purchase_orders_to_receive; }
-            set { data._purchase_orders_to_receive = value; }
+            get { return data.purchase_orders_to_receive; }
+            set { data.purchase_orders_to_receive = value; }
         }
 
-        private int _sales_invoice = 0;
-        public int sales_invoice
+        public long sales_invoice
         {
-            get { return data._sales_invoice; }
-            set { data._sales_invoice = value; }
+            get { return data.sales_invoice; }
+            set { data.sales_invoice = value; }
         }
 
-        private int _purchase_invoice = 0;
-        public int purchase_invoice
+        public long purchase_invoice
         {
-            get { return data._purchase_invoice; }
-            set { data._purchase_invoice = value; }
+            get { return data.purchase_invoice; }
+            set { data.purchase_invoice = value; }
         }
 
-        private int _new_quotations = 0;
-        public int new_quotations
+        public long new_quotations
         {
-            get { return data._new_quotations; }
-            set { data._new_quotations = value; }
+            get { return data.new_quotations; }
+            set { data.new_quotations = value; }
         }
 
-        private int _pending_quotations = 0;
-        public int pending_quotations
+        public long pending_quotations
         {
-            get { return data._pending_quotations; }
-            set { data._pending_quotations = value; }
+            get { return data.pending_quotations; }
+            set { data.pending_quotations = value; }
         }
 
-        private int _issue = 0;
-        public int issue
+        public long issue
         {
-            get { return data._issue; }
-            set { data._issue = value; }
+            get { return data.issue; }
+            set { data.issue = value; }
         }
 
-        private int _project = 0;
-        public int project
+        public long project
         {
-            get { return data._project; }
-            set { data._project = value; }
+            get { return data.project; }
+            set { data.project = value; }
         }
 
-        private int _purchase_orders_items_overdue = 0;
-        public int purchase_orders_items_overdue
+        public long purchase_orders_items_overdue
         {
-            get { return data._purchase_orders_items_overdue; }
-            set { data._purchase_orders_items_overdue = value; }
+            get { return data.purchase_orders_items_overdue; }
+            set { data.purchase_orders_items_overdue = value; }
         }
 
-        private int _calendar_events = 0;
-        public int calendar_events
+        public long calendar_events
         {
-            get { return data._calendar_events; }
-            set { data._calendar_events = value; }
+            get { return data.calendar_events; }
+            set { data.calendar_events = value; }
         }
 
-        private int _todo_list = 0;
-        public int todo_list
+        public long todo_list
         {
-            get { return data._todo_list; }
-            set { data._todo_list = value; }
+            get { return data.todo_list; }
+            set { data.todo_list = value; }
         }
 
-        private int _notifications = 0;
-        public int notifications
+        public long notifications
         {
-            get { return data._notifications; }
-            set { data._notifications = value; }
+            get { return data.notifications; }
+            set { data.notifications = value; }
         }
 
-        private int _add_quote = 0;
-        public int add_quote
+        public long add_quote
         {
-            get { return data._add_quote; }
-            set { data._add_quote = value; }
+            get { return data.add_quote; }
+            set { data.add_quote = value; }
         }
 
 

@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Retention_bonus
             set { data.bonus_payment_date = value; }
         }
 
-        private double _bonus_amount = 0.0;
         public double bonus_amount
         {
-            get { return data._bonus_amount; }
-            set { data._bonus_amount = value; }
+            get { return data.bonus_amount; }
+            set { data.bonus_amount = value; }
         }
 
         public string salary_component

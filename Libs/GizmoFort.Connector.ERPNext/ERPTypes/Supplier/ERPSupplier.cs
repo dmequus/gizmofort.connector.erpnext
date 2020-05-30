@@ -77,18 +77,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier
             set { data.tax_withholding_category = value; }
         }
 
-        private int _is_transporter = 0;
-        public int is_transporter
+        public long is_transporter
         {
-            get { return data._is_transporter; }
-            set { data._is_transporter = value; }
+            get { return data.is_transporter; }
+            set { data.is_transporter = value; }
         }
 
-        private int _is_internal_supplier = 0;
-        public int is_internal_supplier
+        public long is_internal_supplier
         {
-            get { return data._is_internal_supplier; }
-            set { data._is_internal_supplier = value; }
+            get { return data.is_internal_supplier; }
+            set { data.is_internal_supplier = value; }
         }
 
         public string represents_company
@@ -115,39 +113,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier
             set { data.language = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private int _warn_rfqs = 0;
-        public int warn_rfqs
+        public long warn_rfqs
         {
-            get { return data._warn_rfqs; }
-            set { data._warn_rfqs = value; }
+            get { return data.warn_rfqs; }
+            set { data.warn_rfqs = value; }
         }
 
-        private int _warn_pos = 0;
-        public int warn_pos
+        public long warn_pos
         {
-            get { return data._warn_pos; }
-            set { data._warn_pos = value; }
+            get { return data.warn_pos; }
+            set { data.warn_pos = value; }
         }
 
-        private int _prevent_rfqs = 0;
-        public int prevent_rfqs
+        public long prevent_rfqs
         {
-            get { return data._prevent_rfqs; }
-            set { data._prevent_rfqs = value; }
+            get { return data.prevent_rfqs; }
+            set { data.prevent_rfqs = value; }
         }
 
-        private int _prevent_pos = 0;
-        public int prevent_pos
+        public long prevent_pos
         {
-            get { return data._prevent_pos; }
-            set { data._prevent_pos = value; }
+            get { return data.prevent_pos; }
+            set { data.prevent_pos = value; }
         }
 
         public string companies
@@ -174,11 +167,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier
             set { data.payment_terms = value; }
         }
 
-        private int _on_hold = 0;
-        public int on_hold
+        public long on_hold
         {
-            get { return data._on_hold; }
-            set { data._on_hold = value; }
+            get { return data.on_hold; }
+            set { data.on_hold = value; }
         }
 
         public Holdtype hold_type
@@ -223,25 +215,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier
             set { data.supplier_details = value; }
         }
 
-        private int _is_frozen = 0;
-        public int is_frozen
+        public long is_frozen
         {
-            get { return data._is_frozen; }
-            set { data._is_frozen = value; }
+            get { return data.is_frozen; }
+            set { data.is_frozen = value; }
         }
 
-        private int _allow_purchase_invoice_creation_without_purchase_order = 0;
-        public int allow_purchase_invoice_creation_without_purchase_order
+        public long allow_purchase_invoice_creation_without_purchase_order
         {
-            get { return data._allow_purchase_invoice_creation_without_purchase_order; }
-            set { data._allow_purchase_invoice_creation_without_purchase_order = value; }
+            get { return data.allow_purchase_invoice_creation_without_purchase_order; }
+            set { data.allow_purchase_invoice_creation_without_purchase_order = value; }
         }
 
-        private int _allow_purchase_invoice_creation_without_purchase_receipt = 0;
-        public int allow_purchase_invoice_creation_without_purchase_receipt
+        public long allow_purchase_invoice_creation_without_purchase_receipt
         {
-            get { return data._allow_purchase_invoice_creation_without_purchase_receipt; }
-            set { data._allow_purchase_invoice_creation_without_purchase_receipt = value; }
+            get { return data.allow_purchase_invoice_creation_without_purchase_receipt; }
+            set { data.allow_purchase_invoice_creation_without_purchase_receipt = value; }
         }
 
 

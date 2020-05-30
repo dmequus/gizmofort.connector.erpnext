@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hub_tracked_item
         public ERPHub_tracked_item() : this(new ERPObject(DocType.Hub_tracked_item)) { }
         public ERPHub_tracked_item(ERPObject obj) : base(obj) { }
 
-        public static ERPHub_tracked_item Create(string itemcode, string hubcategory, int published, string imagelist)
+        public static ERPHub_tracked_item Create(string itemcode, string hubcategory, long published, string imagelist)
 
         {
             ERPHub_tracked_item obj = new ERPHub_tracked_item();
@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hub_tracked_item
             set { data.hub_category = value; }
         }
 
-        private int _published = 0;
-        public int published
+        public long published
         {
-            get { return data._published; }
-            set { data._published = value; }
+            get { return data.published; }
+            set { data.published = value; }
         }
 
         public string image_list

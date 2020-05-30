@@ -87,11 +87,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Issue
             set { data.resolution_by = value; }
         }
 
-        private double _mins_to_first_response = 0.0;
         public double mins_to_first_response
         {
-            get { return data._mins_to_first_response; }
-            set { data._mins_to_first_response = value; }
+            get { return data.mins_to_first_response; }
+            set { data.mins_to_first_response = value; }
         }
 
         public string first_responded_on
@@ -172,11 +171,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Issue
             set { data.attachment = value; }
         }
 
-        private int _via_customer_portal = 0;
-        public int via_customer_portal
+        public long via_customer_portal
         {
-            get { return data._via_customer_portal; }
-            set { data._via_customer_portal = value; }
+            get { return data.via_customer_portal; }
+            set { data.via_customer_portal = value; }
         }
 
         public Agreementfulfilled agreement_fulfilled
@@ -185,18 +183,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Issue
             set { data.agreement_fulfilled = value.ToString(); }
         }
 
-        private double _response_by_variance = 0.0;
         public double response_by_variance
         {
-            get { return data._response_by_variance; }
-            set { data._response_by_variance = value; }
+            get { return data.response_by_variance; }
+            set { data.response_by_variance = value; }
         }
 
-        private double _resolution_by_variance = 0.0;
         public double resolution_by_variance
         {
-            get { return data._resolution_by_variance; }
-            set { data._resolution_by_variance = value; }
+            get { return data.resolution_by_variance; }
+            set { data.resolution_by_variance = value; }
         }
 
         public string service_level_agreement_creation

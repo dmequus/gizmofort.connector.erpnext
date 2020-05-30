@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Agriculture_analysis_criteria
         public ERPAgriculture_analysis_criteria() : this(new ERPObject(DocType.Agriculture_analysis_criteria)) { }
         public ERPAgriculture_analysis_criteria(ERPObject obj) : base(obj) { }
 
-        public static ERPAgriculture_analysis_criteria Create(string title, int standard, Linkeddoctype linkeddoctype)
+        public static ERPAgriculture_analysis_criteria Create(string title, long standard, Linkeddoctype linkeddoctype)
 
         {
             ERPAgriculture_analysis_criteria obj = new ERPAgriculture_analysis_criteria();
@@ -29,11 +29,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Agriculture_analysis_criteria
 
         }
 
-        private int _standard = 0;
-        public int standard
+        public long standard
         {
-            get { return data._standard; }
-            set { data._standard = value; }
+            get { return data.standard; }
+            set { data.standard = value; }
         }
 
         public Linkeddoctype linked_doctype

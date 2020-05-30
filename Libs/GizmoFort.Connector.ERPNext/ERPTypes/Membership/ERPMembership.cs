@@ -59,11 +59,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Membership
             set { data.member_since_date = value; }
         }
 
-        private int _paid = 0;
-        public int paid
+        public long paid
         {
-            get { return data._paid; }
-            set { data._paid = value; }
+            get { return data.paid; }
+            set { data.paid = value; }
         }
 
         public Currency currency
@@ -72,11 +71,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Membership
             set { data.currency = value.ToString(); }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string subscription_id

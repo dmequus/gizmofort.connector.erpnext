@@ -38,11 +38,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_external_work_history
             set { data.designation = value; }
         }
 
-        private double _salary = 0.0;
         public double salary
         {
-            get { return data._salary; }
-            set { data._salary = value; }
+            get { return data.salary; }
+            set { data.salary = value; }
         }
 
         public string address

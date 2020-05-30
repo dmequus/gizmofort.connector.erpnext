@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Payment_order_reference
             set { data.reference_name = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
         public string bank_account

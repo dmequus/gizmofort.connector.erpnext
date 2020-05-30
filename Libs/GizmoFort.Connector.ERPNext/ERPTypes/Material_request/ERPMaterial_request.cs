@@ -98,18 +98,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request
             set { data.status = value.ToString(); }
         }
 
-        private double _per_ordered = 0.0;
         public double per_ordered
         {
-            get { return data._per_ordered; }
-            set { data._per_ordered = value; }
+            get { return data.per_ordered; }
+            set { data.per_ordered = value; }
         }
 
-        private double _per_received = 0.0;
         public double per_received
         {
-            get { return data._per_received; }
-            set { data._per_received = value; }
+            get { return data.per_received; }
+            set { data.per_received = value; }
         }
 
         public string letter_head

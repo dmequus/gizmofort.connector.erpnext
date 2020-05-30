@@ -15,18 +15,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Plaid_settings
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
-        private int _automatic_sync = 0;
-        public int automatic_sync
+        public long automatic_sync
         {
-            get { return data._automatic_sync; }
-            set { data._automatic_sync = value; }
+            get { return data.automatic_sync; }
+            set { data.automatic_sync = value; }
         }
 
         public string plaid_client_id

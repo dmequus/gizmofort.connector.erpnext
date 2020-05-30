@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_tax_exemption_proof_subm
             set { data.exemption_category = value; }
         }
 
-        private double _max_amount = 0.0;
         public double max_amount
         {
-            get { return data._max_amount; }
-            set { data._max_amount = value; }
+            get { return data.max_amount; }
+            set { data.max_amount = value; }
         }
 
         public string type_of_proof
@@ -50,11 +49,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_tax_exemption_proof_subm
             set { data.type_of_proof = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
 

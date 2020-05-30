@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_tax_template_detail
 
         }
 
-        private double _tax_rate = 0.0;
         public double tax_rate
         {
-            get { return data._tax_rate; }
-            set { data._tax_rate = value; }
+            get { return data.tax_rate; }
+            set { data.tax_rate = value; }
         }
 
 

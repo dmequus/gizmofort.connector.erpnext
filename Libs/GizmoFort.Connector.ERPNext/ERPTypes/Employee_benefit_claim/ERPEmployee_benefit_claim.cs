@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_claim
         public ERPEmployee_benefit_claim() : this(new ERPObject(DocType.Employee_benefit_claim)) { }
         public ERPEmployee_benefit_claim(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_benefit_claim Create(string employeename, string employee, string department, string claimdate, string earningcomponent, double maxamounteligible, int payagainstbenefitclaim, double claimedamount, string salaryslip, string amendedfrom, string attachments)
+        public static ERPEmployee_benefit_claim Create(string employeename, string employee, string department, string claimdate, string earningcomponent, double maxamounteligible, long payagainstbenefitclaim, double claimedamount, string salaryslip, string amendedfrom, string attachments)
 
         {
             ERPEmployee_benefit_claim obj = new ERPEmployee_benefit_claim();
@@ -61,25 +61,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_benefit_claim
             set { data.earning_component = value; }
         }
 
-        private double _max_amount_eligible = 0.0;
         public double max_amount_eligible
         {
-            get { return data._max_amount_eligible; }
-            set { data._max_amount_eligible = value; }
+            get { return data.max_amount_eligible; }
+            set { data.max_amount_eligible = value; }
         }
 
-        private int _pay_against_benefit_claim = 0;
-        public int pay_against_benefit_claim
+        public long pay_against_benefit_claim
         {
-            get { return data._pay_against_benefit_claim; }
-            set { data._pay_against_benefit_claim = value; }
+            get { return data.pay_against_benefit_claim; }
+            set { data.pay_against_benefit_claim = value; }
         }
 
-        private double _claimed_amount = 0.0;
         public double claimed_amount
         {
-            get { return data._claimed_amount; }
-            set { data._claimed_amount = value; }
+            get { return data.claimed_amount; }
+            set { data.claimed_amount = value; }
         }
 
         public string salary_slip

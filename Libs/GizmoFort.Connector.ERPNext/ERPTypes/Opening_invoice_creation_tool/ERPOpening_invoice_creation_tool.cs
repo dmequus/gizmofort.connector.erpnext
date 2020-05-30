@@ -41,11 +41,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Opening_invoice_creation_tool
             set { data.invoices = value; }
         }
 
-        private int _create_missing_party = 0;
-        public int create_missing_party
+        public long create_missing_party
         {
-            get { return data._create_missing_party; }
-            set { data._create_missing_party = value; }
+            get { return data.create_missing_party; }
+            set { data.create_missing_party = value; }
         }
 
         public string cost_center

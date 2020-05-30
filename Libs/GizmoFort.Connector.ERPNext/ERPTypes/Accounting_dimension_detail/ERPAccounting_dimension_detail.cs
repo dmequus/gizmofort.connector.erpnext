@@ -38,18 +38,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Accounting_dimension_detail
             set { data.default_dimension = value; }
         }
 
-        private int _mandatory_for_bs = 0;
-        public int mandatory_for_bs
+        public long mandatory_for_bs
         {
-            get { return data._mandatory_for_bs; }
-            set { data._mandatory_for_bs = value; }
+            get { return data.mandatory_for_bs; }
+            set { data.mandatory_for_bs = value; }
         }
 
-        private int _mandatory_for_pl = 0;
-        public int mandatory_for_pl
+        public long mandatory_for_pl
         {
-            get { return data._mandatory_for_pl; }
-            set { data._mandatory_for_pl = value; }
+            get { return data.mandatory_for_pl; }
+            set { data.mandatory_for_pl = value; }
         }
 
 

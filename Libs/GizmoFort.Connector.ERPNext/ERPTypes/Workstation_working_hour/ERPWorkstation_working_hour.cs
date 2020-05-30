@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Workstation_working_hour
         public ERPWorkstation_working_hour() : this(new ERPObject(DocType.Workstation_working_hour)) { }
         public ERPWorkstation_working_hour(ERPObject obj) : base(obj) { }
 
-        public static ERPWorkstation_working_hour Create(string starttime, string endtime, int enabled)
+        public static ERPWorkstation_working_hour Create(string starttime, string endtime, long enabled)
 
         {
             ERPWorkstation_working_hour obj = new ERPWorkstation_working_hour();
@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Workstation_working_hour
             set { data.end_time = value; }
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
 

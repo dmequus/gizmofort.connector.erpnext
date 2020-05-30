@@ -67,18 +67,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Salary_structure_assignment
             set { data.designation = value; }
         }
 
-        private double _keyDELbase = 0.0;
         public double keyDELbase
         {
-            get { return data._keyDELbase; }
-            set { data._keyDELbase = value; }
+            get { return data.keyDELbase; }
+            set { data.keyDELbase = value; }
         }
 
-        private double _variable = 0.0;
         public double variable
         {
-            get { return data._variable; }
-            set { data._variable = value; }
+            get { return data.variable; }
+            set { data.variable = value; }
         }
 
         public string amended_from

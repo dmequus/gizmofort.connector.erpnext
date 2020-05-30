@@ -57,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_ledger_entry
             set { data.transaction_name = value; }
         }
 
-        private double _leaves = 0.0;
         public double leaves
         {
-            get { return data._leaves; }
-            set { data._leaves = value; }
+            get { return data.leaves; }
+            set { data.leaves = value; }
         }
 
         public string from_date
@@ -76,25 +75,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Leave_ledger_entry
             set { data.to_date = value; }
         }
 
-        private int _is_carry_forward = 0;
-        public int is_carry_forward
+        public long is_carry_forward
         {
-            get { return data._is_carry_forward; }
-            set { data._is_carry_forward = value; }
+            get { return data.is_carry_forward; }
+            set { data.is_carry_forward = value; }
         }
 
-        private int _is_expired = 0;
-        public int is_expired
+        public long is_expired
         {
-            get { return data._is_expired; }
-            set { data._is_expired = value; }
+            get { return data.is_expired; }
+            set { data.is_expired = value; }
         }
 
-        private int _is_lwp = 0;
-        public int is_lwp
+        public long is_lwp
         {
-            get { return data._is_lwp; }
-            set { data._is_lwp = value; }
+            get { return data.is_lwp; }
+            set { data.is_lwp = value; }
         }
 
         public string holiday_list

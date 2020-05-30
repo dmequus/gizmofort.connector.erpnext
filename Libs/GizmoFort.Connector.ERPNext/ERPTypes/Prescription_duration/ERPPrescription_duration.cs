@@ -17,11 +17,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Prescription_duration
             return obj;
         }
 
-        private int _number = 0;
         public int number
         {
-            get { return data._number; }
-            set { data._number = value; }
+            get { return data.number; }
+            set { data.number = value; }
         }
 
         public Period period

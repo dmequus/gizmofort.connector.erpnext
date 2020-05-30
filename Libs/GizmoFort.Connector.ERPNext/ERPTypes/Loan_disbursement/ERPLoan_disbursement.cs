@@ -32,11 +32,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loan_disbursement
             set { data.disbursement_date = value; }
         }
 
-        private double _disbursed_amount = 0.0;
         public double disbursed_amount
         {
-            get { return data._disbursed_amount; }
-            set { data._disbursed_amount = value; }
+            get { return data.disbursed_amount; }
+            set { data.disbursed_amount = value; }
         }
 
         public string amended_from

@@ -51,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_settings
             set { data.valuation_method = value.ToString(); }
         }
 
-        private double _over_delivery_receipt_allowance = 0.0;
         public double over_delivery_receipt_allowance
         {
-            get { return data._over_delivery_receipt_allowance; }
-            set { data._over_delivery_receipt_allowance = value; }
+            get { return data.over_delivery_receipt_allowance; }
+            set { data.over_delivery_receipt_allowance = value; }
         }
 
         public Actionifqualityinspectionisnotsubmitted action_if_quality_inspection_is_not_submitted
@@ -64,60 +63,52 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_settings
             set { data.action_if_quality_inspection_is_not_submitted = value.ToString(); }
         }
 
-        private int _show_barcode_field = 0;
-        public int show_barcode_field
+        public long show_barcode_field
         {
-            get { return data._show_barcode_field; }
-            set { data._show_barcode_field = value; }
+            get { return data.show_barcode_field; }
+            set { data.show_barcode_field = value; }
         }
 
-        private int _clean_description_html = 0;
-        public int clean_description_html
+        public long clean_description_html
         {
-            get { return data._clean_description_html; }
-            set { data._clean_description_html = value; }
+            get { return data.clean_description_html; }
+            set { data.clean_description_html = value; }
         }
 
-        private int _auto_insert_price_list_rate_if_missing = 0;
-        public int auto_insert_price_list_rate_if_missing
+        public long auto_insert_price_list_rate_if_missing
         {
-            get { return data._auto_insert_price_list_rate_if_missing; }
-            set { data._auto_insert_price_list_rate_if_missing = value; }
+            get { return data.auto_insert_price_list_rate_if_missing; }
+            set { data.auto_insert_price_list_rate_if_missing = value; }
         }
 
-        private int _allow_negative_stock = 0;
-        public int allow_negative_stock
+        public long allow_negative_stock
         {
-            get { return data._allow_negative_stock; }
-            set { data._allow_negative_stock = value; }
+            get { return data.allow_negative_stock; }
+            set { data.allow_negative_stock = value; }
         }
 
-        private int _automatically_set_serial_nos_based_on_fifo = 0;
-        public int automatically_set_serial_nos_based_on_fifo
+        public long automatically_set_serial_nos_based_on_fifo
         {
-            get { return data._automatically_set_serial_nos_based_on_fifo; }
-            set { data._automatically_set_serial_nos_based_on_fifo = value; }
+            get { return data.automatically_set_serial_nos_based_on_fifo; }
+            set { data.automatically_set_serial_nos_based_on_fifo = value; }
         }
 
-        private int _seta_qty_in_transactions_based_on_serial_no_input = 0;
-        public int seta_qty_in_transactions_based_on_serial_no_input
+        public long seta_qty_in_transactions_based_on_serial_no_input
         {
-            get { return data._seta_qty_in_transactions_based_on_serial_no_input; }
-            set { data._seta_qty_in_transactions_based_on_serial_no_input = value; }
+            get { return data.seta_qty_in_transactions_based_on_serial_no_input; }
+            set { data.seta_qty_in_transactions_based_on_serial_no_input = value; }
         }
 
-        private int _auto_indent = 0;
-        public int auto_indent
+        public long auto_indent
         {
-            get { return data._auto_indent; }
-            set { data._auto_indent = value; }
+            get { return data.auto_indent; }
+            set { data.auto_indent = value; }
         }
 
-        private int _reorder_email_notify = 0;
-        public int reorder_email_notify
+        public long reorder_email_notify
         {
-            get { return data._reorder_email_notify; }
-            set { data._reorder_email_notify = value; }
+            get { return data.reorder_email_notify; }
+            set { data.reorder_email_notify = value; }
         }
 
         public string stock_frozen_upto
@@ -126,11 +117,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_settings
             set { data.stock_frozen_upto = value; }
         }
 
-        private int _stock_frozen_upto_days = 0;
         public int stock_frozen_upto_days
         {
-            get { return data._stock_frozen_upto_days; }
-            set { data._stock_frozen_upto_days = value; }
+            get { return data.stock_frozen_upto_days; }
+            set { data.stock_frozen_upto_days = value; }
         }
 
         public string stock_auth_role
@@ -139,11 +129,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_settings
             set { data.stock_auth_role = value; }
         }
 
-        private int _use_naming_series = 0;
-        public int use_naming_series
+        public long use_naming_series
         {
-            get { return data._use_naming_series; }
-            set { data._use_naming_series = value; }
+            get { return data.use_naming_series; }
+            set { data.use_naming_series = value; }
         }
 
         public string naming_series_prefix
@@ -152,18 +141,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_settings
             set { data.naming_series_prefix = value; }
         }
 
-        private int _allow_from_dn = 0;
-        public int allow_from_dn
+        public long allow_from_dn
         {
-            get { return data._allow_from_dn; }
-            set { data._allow_from_dn = value; }
+            get { return data.allow_from_dn; }
+            set { data.allow_from_dn = value; }
         }
 
-        private int _allow_from_pr = 0;
-        public int allow_from_pr
+        public long allow_from_pr
         {
-            get { return data._allow_from_pr; }
-            set { data._allow_from_pr = value; }
+            get { return data.allow_from_pr; }
+            set { data.allow_from_pr = value; }
         }
 
 

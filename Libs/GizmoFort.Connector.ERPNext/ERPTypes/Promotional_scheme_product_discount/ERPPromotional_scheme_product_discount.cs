@@ -27,46 +27,40 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_product_discou
 
         }
 
-        private int _disable = 0;
-        public int disable
+        public long disable
         {
-            get { return data._disable; }
-            set { data._disable = value; }
+            get { return data.disable; }
+            set { data.disable = value; }
         }
 
-        private double _min_qty = 0.0;
         public double min_qty
         {
-            get { return data._min_qty; }
-            set { data._min_qty = value; }
+            get { return data.min_qty; }
+            set { data.min_qty = value; }
         }
 
-        private double _max_qty = 0.0;
         public double max_qty
         {
-            get { return data._max_qty; }
-            set { data._max_qty = value; }
+            get { return data.max_qty; }
+            set { data.max_qty = value; }
         }
 
-        private double _min_amount = 0.0;
         public double min_amount
         {
-            get { return data._min_amount; }
-            set { data._min_amount = value; }
+            get { return data.min_amount; }
+            set { data.min_amount = value; }
         }
 
-        private double _max_amount = 0.0;
         public double max_amount
         {
-            get { return data._max_amount; }
-            set { data._max_amount = value; }
+            get { return data.max_amount; }
+            set { data.max_amount = value; }
         }
 
-        private int _same_item = 0;
-        public int same_item
+        public long same_item
         {
-            get { return data._same_item; }
-            set { data._same_item = value; }
+            get { return data.same_item; }
+            set { data.same_item = value; }
         }
 
         public string free_item
@@ -75,11 +69,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_product_discou
             set { data.free_item = value; }
         }
 
-        private double _free_qty = 0.0;
         public double free_qty
         {
-            get { return data._free_qty; }
-            set { data._free_qty = value; }
+            get { return data.free_qty; }
+            set { data.free_qty = value; }
         }
 
         public string free_item_uom
@@ -88,11 +81,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_product_discou
             set { data.free_item_uom = value; }
         }
 
-        private double _free_item_rate = 0.0;
         public double free_item_rate
         {
-            get { return data._free_item_rate; }
-            set { data._free_item_rate = value; }
+            get { return data.free_item_rate; }
+            set { data.free_item_rate = value; }
         }
 
         public string warehouse
@@ -101,11 +93,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_product_discou
             set { data.warehouse = value; }
         }
 
-        private double _threshold_percentage = 0.0;
         public double threshold_percentage
         {
-            get { return data._threshold_percentage; }
-            set { data._threshold_percentage = value; }
+            get { return data.threshold_percentage; }
+            set { data.threshold_percentage = value; }
         }
 
         public Priority priority
@@ -114,11 +105,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme_product_discou
             set { data.priority = value.ToString(); }
         }
 
-        private int _apply_multiple_pricing_rules = 0;
-        public int apply_multiple_pricing_rules
+        public long apply_multiple_pricing_rules
         {
-            get { return data._apply_multiple_pricing_rules; }
-            set { data._apply_multiple_pricing_rules = value; }
+            get { return data.apply_multiple_pricing_rules; }
+            set { data.apply_multiple_pricing_rules = value; }
         }
 
 

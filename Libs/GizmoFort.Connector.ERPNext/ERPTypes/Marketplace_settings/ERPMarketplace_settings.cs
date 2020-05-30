@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Marketplace_settings
         public ERPMarketplace_settings() : this(new ERPObject(DocType.Marketplace_settings)) { }
         public ERPMarketplace_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPMarketplace_settings Create(int disablemarketplace, string marketplaceurl, int registered, int syncinprogress, string company, string hubsellername, string users, string lastsyncdatetime, string customdata)
+        public static ERPMarketplace_settings Create(long disablemarketplace, string marketplaceurl, long registered, long syncinprogress, string company, string hubsellername, string users, string lastsyncdatetime, string customdata)
 
         {
             ERPMarketplace_settings obj = new ERPMarketplace_settings();
@@ -24,11 +24,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Marketplace_settings
             return obj;
         }
 
-        private int _disable_marketplace = 0;
-        public int disable_marketplace
+        public long disable_marketplace
         {
-            get { return data._disable_marketplace; }
-            set { data._disable_marketplace = value; }
+            get { return data.disable_marketplace; }
+            set { data.disable_marketplace = value; }
         }
 
         public string marketplace_url
@@ -37,18 +36,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Marketplace_settings
             set { data.marketplace_url = value; }
         }
 
-        private int _registered = 0;
-        public int registered
+        public long registered
         {
-            get { return data._registered; }
-            set { data._registered = value; }
+            get { return data.registered; }
+            set { data.registered = value; }
         }
 
-        private int _sync_in_progress = 0;
-        public int sync_in_progress
+        public long sync_in_progress
         {
-            get { return data._sync_in_progress; }
-            set { data._sync_in_progress = value; }
+            get { return data.sync_in_progress; }
+            set { data.sync_in_progress = value; }
         }
 
         public string company

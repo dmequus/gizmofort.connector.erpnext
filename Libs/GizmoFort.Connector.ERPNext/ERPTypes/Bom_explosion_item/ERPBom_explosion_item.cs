@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_explosion_item
         public ERPBom_explosion_item() : this(new ERPObject(DocType.Bom_explosion_item)) { }
         public ERPBom_explosion_item(ERPObject obj) : base(obj) { }
 
-        public static ERPBom_explosion_item Create(string itemcode, string itemname, string sourcewarehouse, string operation, string description, string image, string imageview, double stockqty, double rate, double qtyconsumedperunit, string stockuom, double amount, int includeiteminmanufacturing)
+        public static ERPBom_explosion_item Create(string itemcode, string itemname, string sourcewarehouse, string operation, string description, string image, string imageview, double stockqty, double rate, double qtyconsumedperunit, string stockuom, double amount, long includeiteminmanufacturing)
 
         {
             ERPBom_explosion_item obj = new ERPBom_explosion_item();
@@ -75,25 +75,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_explosion_item
             set { data.image_view = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _qty_consumed_per_unit = 0.0;
         public double qty_consumed_per_unit
         {
-            get { return data._qty_consumed_per_unit; }
-            set { data._qty_consumed_per_unit = value; }
+            get { return data.qty_consumed_per_unit; }
+            set { data.qty_consumed_per_unit = value; }
         }
 
         public string stock_uom
@@ -102,18 +99,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_explosion_item
             set { data.stock_uom = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private int _include_item_in_manufacturing = 0;
-        public int include_item_in_manufacturing
+        public long include_item_in_manufacturing
         {
-            get { return data._include_item_in_manufacturing; }
-            set { data._include_item_in_manufacturing = value; }
+            get { return data.include_item_in_manufacturing; }
+            set { data.include_item_in_manufacturing = value; }
         }
 
 

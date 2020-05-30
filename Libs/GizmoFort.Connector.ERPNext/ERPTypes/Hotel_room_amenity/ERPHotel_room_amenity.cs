@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_amenity
         public ERPHotel_room_amenity() : this(new ERPObject(DocType.Hotel_room_amenity)) { }
         public ERPHotel_room_amenity(ERPObject obj) : base(obj) { }
 
-        public static ERPHotel_room_amenity Create(string item, int billable)
+        public static ERPHotel_room_amenity Create(string item, long billable)
 
         {
             ERPHotel_room_amenity obj = new ERPHotel_room_amenity();
@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_amenity
 
         }
 
-        private int _billable = 0;
-        public int billable
+        public long billable
         {
-            get { return data._billable; }
-            set { data._billable = value; }
+            get { return data.billable; }
+            set { data.billable = value; }
         }
 
 

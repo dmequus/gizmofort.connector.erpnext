@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim_advance
 
         }
 
-        private double _unclaimed_amount = 0.0;
         public double unclaimed_amount
         {
-            get { return data._unclaimed_amount; }
-            set { data._unclaimed_amount = value; }
+            get { return data.unclaimed_amount; }
+            set { data.unclaimed_amount = value; }
         }
 
         public string posting_date
@@ -41,18 +40,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Expense_claim_advance
             set { data.posting_date = value; }
         }
 
-        private double _advance_paid = 0.0;
         public double advance_paid
         {
-            get { return data._advance_paid; }
-            set { data._advance_paid = value; }
+            get { return data.advance_paid; }
+            set { data.advance_paid = value; }
         }
 
-        private double _allocated_amount = 0.0;
         public double allocated_amount
         {
-            get { return data._allocated_amount; }
-            set { data._allocated_amount = value; }
+            get { return data.allocated_amount; }
+            set { data.allocated_amount = value; }
         }
 
         public string advance_account

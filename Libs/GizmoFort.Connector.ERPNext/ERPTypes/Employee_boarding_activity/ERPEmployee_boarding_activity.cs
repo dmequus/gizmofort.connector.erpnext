@@ -44,18 +44,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_boarding_activity
             set { data.task = value; }
         }
 
-        private double _task_weight = 0.0;
         public double task_weight
         {
-            get { return data._task_weight; }
-            set { data._task_weight = value; }
+            get { return data.task_weight; }
+            set { data.task_weight = value; }
         }
 
-        private int _required_for_employee_creation = 0;
-        public int required_for_employee_creation
+        public long required_for_employee_creation
         {
-            get { return data._required_for_employee_creation; }
-            set { data._required_for_employee_creation = value; }
+            get { return data.required_for_employee_creation; }
+            set { data.required_for_employee_creation = value; }
         }
 
         public string description

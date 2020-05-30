@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_reservation
         public ERPHotel_room_reservation() : this(new ERPObject(DocType.Hotel_room_reservation)) { }
         public ERPHotel_room_reservation(ERPObject obj) : base(obj) { }
 
-        public static ERPHotel_room_reservation Create(string guestname, string customer, string fromdate, string todate, int latecheckin, Status status, string items, double nettotal, string amendedfrom)
+        public static ERPHotel_room_reservation Create(string guestname, string customer, string fromdate, string todate, long latecheckin, Status status, string items, double nettotal, string amendedfrom)
 
         {
             ERPHotel_room_reservation obj = new ERPHotel_room_reservation();
@@ -53,11 +53,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_reservation
             set { data.to_date = value; }
         }
 
-        private int _late_checkin = 0;
-        public int late_checkin
+        public long late_checkin
         {
-            get { return data._late_checkin; }
-            set { data._late_checkin = value; }
+            get { return data.late_checkin; }
+            set { data.late_checkin = value; }
         }
 
         public Status status
@@ -72,11 +71,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_reservation
             set { data.items = value; }
         }
 
-        private double _net_total = 0.0;
         public double net_total
         {
-            get { return data._net_total; }
-            set { data._net_total = value; }
+            get { return data.net_total; }
+            set { data.net_total = value; }
         }
 
         public string amended_from

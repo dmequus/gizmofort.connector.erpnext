@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip
             set { data.naming_series = value; }
         }
 
-        private int _from_case_no = 0;
         public int from_case_no
         {
-            get { return data._from_case_no; }
-            set { data._from_case_no = value; }
+            get { return data.from_case_no; }
+            set { data.from_case_no = value; }
         }
 
         public string items
@@ -49,18 +48,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip
             set { data.items = value; }
         }
 
-        private int _to_case_no = 0;
         public int to_case_no
         {
-            get { return data._to_case_no; }
-            set { data._to_case_no = value; }
+            get { return data.to_case_no; }
+            set { data.to_case_no = value; }
         }
 
-        private double _net_weight_pkg = 0.0;
         public double net_weight_pkg
         {
-            get { return data._net_weight_pkg; }
-            set { data._net_weight_pkg = value; }
+            get { return data.net_weight_pkg; }
+            set { data.net_weight_pkg = value; }
         }
 
         public string net_weight_uom
@@ -69,11 +66,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Packing_slip
             set { data.net_weight_uom = value; }
         }
 
-        private double _gross_weight_pkg = 0.0;
         public double gross_weight_pkg
         {
-            get { return data._gross_weight_pkg; }
-            set { data._gross_weight_pkg = value; }
+            get { return data.gross_weight_pkg; }
+            set { data.gross_weight_pkg = value; }
         }
 
         public string gross_weight_uom

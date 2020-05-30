@@ -26,18 +26,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Service_level_priority
 
         }
 
-        private int _response_time = 0;
         public int response_time
         {
-            get { return data._response_time; }
-            set { data._response_time = value; }
+            get { return data.response_time; }
+            set { data.response_time = value; }
         }
 
-        private int _resolution_time = 0;
         public int resolution_time
         {
-            get { return data._resolution_time; }
-            set { data._resolution_time = value; }
+            get { return data.resolution_time; }
+            set { data.resolution_time = value; }
         }
 
         public Responsetimeperiod response_time_period
@@ -52,11 +50,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Service_level_priority
             set { data.resolution_time_period = value.ToString(); }
         }
 
-        private int _default_priority = 0;
-        public int default_priority
+        public long default_priority
         {
-            get { return data._default_priority; }
-            set { data._default_priority = value; }
+            get { return data.default_priority; }
+            set { data.default_priority = value; }
         }
 
 

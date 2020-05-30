@@ -15,11 +15,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Pos_profile_user
             return obj;
         }
 
-        private int _keyDELdefault = 0;
-        public int keyDELdefault
+        public long keyDELdefault
         {
-            get { return data._keyDELdefault; }
-            set { data._keyDELdefault = value; }
+            get { return data.keyDELdefault; }
+            set { data.keyDELdefault = value; }
         }
 
         public string user

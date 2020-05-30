@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_partner
         public ERPSales_partner() : this(new ERPObject(DocType.Sales_partner)) { }
         public ERPSales_partner(ERPObject obj) : base(obj) { }
 
-        public static ERPSales_partner Create(string partnername, string partnertype, string territory, double commissionrate, string addressdesc, string addresshtml, string contactdesc, string contacthtml, string targets, int showinwebsite, string referralcode, string route, string logo, string partnerwebsite, string introduction, string description)
+        public static ERPSales_partner Create(string partnername, string partnertype, string territory, double commissionrate, string addressdesc, string addresshtml, string contactdesc, string contacthtml, string targets, long showinwebsite, string referralcode, string route, string logo, string partnerwebsite, string introduction, string description)
 
         {
             ERPSales_partner obj = new ERPSales_partner();
@@ -54,11 +54,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_partner
             set { data.territory = value; }
         }
 
-        private double _commission_rate = 0.0;
         public double commission_rate
         {
-            get { return data._commission_rate; }
-            set { data._commission_rate = value; }
+            get { return data.commission_rate; }
+            set { data.commission_rate = value; }
         }
 
         public string address_desc
@@ -91,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Sales_partner
             set { data.targets = value; }
         }
 
-        private int _show_in_website = 0;
-        public int show_in_website
+        public long show_in_website
         {
-            get { return data._show_in_website; }
-            set { data._show_in_website = value; }
+            get { return data.show_in_website; }
+            set { data.show_in_website = value; }
         }
 
         public string referral_code

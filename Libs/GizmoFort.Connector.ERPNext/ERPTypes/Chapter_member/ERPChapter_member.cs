@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Chapter_member
         public ERPChapter_member() : this(new ERPObject(DocType.Chapter_member)) { }
         public ERPChapter_member(ERPObject obj) : base(obj) { }
 
-        public static ERPChapter_member Create(string user, string introduction, string websiteurl, int enabled, string leavereason)
+        public static ERPChapter_member Create(string user, string introduction, string websiteurl, long enabled, string leavereason)
 
         {
             ERPChapter_member obj = new ERPChapter_member();
@@ -43,11 +43,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Chapter_member
             set { data.website_url = value; }
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string leave_reason

@@ -74,25 +74,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_ledger_entry
             set { data.voucher_detail_no = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
-        private double _incoming_rate = 0.0;
         public double incoming_rate
         {
-            get { return data._incoming_rate; }
-            set { data._incoming_rate = value; }
+            get { return data.incoming_rate; }
+            set { data.incoming_rate = value; }
         }
 
-        private double _outgoing_rate = 0.0;
         public double outgoing_rate
         {
-            get { return data._outgoing_rate; }
-            set { data._outgoing_rate = value; }
+            get { return data.outgoing_rate; }
+            set { data.outgoing_rate = value; }
         }
 
         public string stock_uom
@@ -101,32 +98,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_ledger_entry
             set { data.stock_uom = value; }
         }
 
-        private double _qty_after_transaction = 0.0;
         public double qty_after_transaction
         {
-            get { return data._qty_after_transaction; }
-            set { data._qty_after_transaction = value; }
+            get { return data.qty_after_transaction; }
+            set { data.qty_after_transaction = value; }
         }
 
-        private double _valuation_rate = 0.0;
         public double valuation_rate
         {
-            get { return data._valuation_rate; }
-            set { data._valuation_rate = value; }
+            get { return data.valuation_rate; }
+            set { data.valuation_rate = value; }
         }
 
-        private double _stock_value = 0.0;
         public double stock_value
         {
-            get { return data._stock_value; }
-            set { data._stock_value = value; }
+            get { return data.stock_value; }
+            set { data.stock_value = value; }
         }
 
-        private double _stock_value_difference = 0.0;
         public double stock_value_difference
         {
-            get { return data._stock_value_difference; }
-            set { data._stock_value_difference = value; }
+            get { return data.stock_value_difference; }
+            set { data.stock_value_difference = value; }
         }
 
         public string stock_queue
@@ -153,18 +146,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_ledger_entry
             set { data.fiscal_year = value; }
         }
 
-        private int _is_cancelled = 0;
-        public int is_cancelled
+        public long is_cancelled
         {
-            get { return data._is_cancelled; }
-            set { data._is_cancelled = value; }
+            get { return data.is_cancelled; }
+            set { data.is_cancelled = value; }
         }
 
-        private int _to_rename = 0;
-        public int to_rename
+        public long to_rename
         {
-            get { return data._to_rename; }
-            set { data._to_rename = value; }
+            get { return data.to_rename; }
+            set { data.to_rename = value; }
         }
 
 

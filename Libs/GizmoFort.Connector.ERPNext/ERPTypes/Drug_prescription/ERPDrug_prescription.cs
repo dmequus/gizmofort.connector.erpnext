@@ -57,18 +57,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Drug_prescription
             set { data.comment = value; }
         }
 
-        private int _interval = 0;
         public int interval
         {
-            get { return data._interval; }
-            set { data._interval = value; }
+            get { return data.interval; }
+            set { data.interval = value; }
         }
 
-        private int _update_schedule = 0;
-        public int update_schedule
+        public long update_schedule
         {
-            get { return data._update_schedule; }
-            set { data._update_schedule = value; }
+            get { return data.update_schedule; }
+            set { data.update_schedule = value; }
         }
 
         public Intervaluom interval_uom
@@ -77,11 +75,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Drug_prescription
             set { data.interval_uom = value.ToString(); }
         }
 
-        private int _usage_interval = 0;
-        public int usage_interval
+        public long usage_interval
         {
-            get { return data._usage_interval; }
-            set { data._usage_interval = value; }
+            get { return data.usage_interval; }
+            set { data.usage_interval = value; }
         }
 
 

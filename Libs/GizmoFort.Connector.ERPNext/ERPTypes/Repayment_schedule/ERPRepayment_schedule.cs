@@ -26,39 +26,34 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Repayment_schedule
 
         }
 
-        private double _principal_amount = 0.0;
         public double principal_amount
         {
-            get { return data._principal_amount; }
-            set { data._principal_amount = value; }
+            get { return data.principal_amount; }
+            set { data.principal_amount = value; }
         }
 
-        private double _interest_amount = 0.0;
         public double interest_amount
         {
-            get { return data._interest_amount; }
-            set { data._interest_amount = value; }
+            get { return data.interest_amount; }
+            set { data.interest_amount = value; }
         }
 
-        private double _total_payment = 0.0;
         public double total_payment
         {
-            get { return data._total_payment; }
-            set { data._total_payment = value; }
+            get { return data.total_payment; }
+            set { data.total_payment = value; }
         }
 
-        private double _balance_loan_amount = 0.0;
         public double balance_loan_amount
         {
-            get { return data._balance_loan_amount; }
-            set { data._balance_loan_amount = value; }
+            get { return data.balance_loan_amount; }
+            set { data.balance_loan_amount = value; }
         }
 
-        private int _is_accrued = 0;
-        public int is_accrued
+        public long is_accrued
         {
-            get { return data._is_accrued; }
-            set { data._is_accrued = value; }
+            get { return data.is_accrued; }
+            set { data.is_accrued = value; }
         }
 
 

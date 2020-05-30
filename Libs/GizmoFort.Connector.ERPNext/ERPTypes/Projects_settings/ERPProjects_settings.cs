@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Projects_settings
         public ERPProjects_settings() : this(new ERPObject(DocType.Projects_settings)) { }
         public ERPProjects_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPProjects_settings Create(int ignoreworkstationtimeoverlap, int ignoreusertimeoverlap, int ignoreemployeetimeoverlap)
+        public static ERPProjects_settings Create(long ignoreworkstationtimeoverlap, long ignoreusertimeoverlap, long ignoreemployeetimeoverlap)
 
         {
             ERPProjects_settings obj = new ERPProjects_settings();
@@ -18,25 +18,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Projects_settings
             return obj;
         }
 
-        private int _ignore_workstation_time_overlap = 0;
-        public int ignore_workstation_time_overlap
+        public long ignore_workstation_time_overlap
         {
-            get { return data._ignore_workstation_time_overlap; }
-            set { data._ignore_workstation_time_overlap = value; }
+            get { return data.ignore_workstation_time_overlap; }
+            set { data.ignore_workstation_time_overlap = value; }
         }
 
-        private int _ignore_user_time_overlap = 0;
-        public int ignore_user_time_overlap
+        public long ignore_user_time_overlap
         {
-            get { return data._ignore_user_time_overlap; }
-            set { data._ignore_user_time_overlap = value; }
+            get { return data.ignore_user_time_overlap; }
+            set { data.ignore_user_time_overlap = value; }
         }
 
-        private int _ignore_employee_time_overlap = 0;
-        public int ignore_employee_time_overlap
+        public long ignore_employee_time_overlap
         {
-            get { return data._ignore_employee_time_overlap; }
-            set { data._ignore_employee_time_overlap = value; }
+            get { return data.ignore_employee_time_overlap; }
+            set { data.ignore_employee_time_overlap = value; }
         }
 
 

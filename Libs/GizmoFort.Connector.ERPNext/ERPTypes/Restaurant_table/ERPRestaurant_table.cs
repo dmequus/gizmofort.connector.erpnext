@@ -29,18 +29,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Restaurant_table
 
         }
 
-        private int _no_of_seats = 0;
         public int no_of_seats
         {
-            get { return data._no_of_seats; }
-            set { data._no_of_seats = value; }
+            get { return data.no_of_seats; }
+            set { data.no_of_seats = value; }
         }
 
-        private int _minimum_seating = 0;
         public int minimum_seating
         {
-            get { return data._minimum_seating; }
-            set { data._minimum_seating = value; }
+            get { return data.minimum_seating; }
+            set { data.minimum_seating = value; }
         }
 
 

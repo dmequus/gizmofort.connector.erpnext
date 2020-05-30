@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Price_list
         public ERPPrice_list() : this(new ERPObject(DocType.Price_list)) { }
         public ERPPrice_list(ERPObject obj) : base(obj) { }
 
-        public static ERPPrice_list Create(int enabled, string pricelistname, string currency, int buying, int selling, int pricenotuomdependent, string countries)
+        public static ERPPrice_list Create(long enabled, string pricelistname, string currency, long buying, long selling, long pricenotuomdependent, string countries)
 
         {
             ERPPrice_list obj = new ERPPrice_list();
@@ -22,11 +22,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Price_list
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string price_list_name
@@ -41,25 +40,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Price_list
             set { data.currency = value; }
         }
 
-        private int _buying = 0;
-        public int buying
+        public long buying
         {
-            get { return data._buying; }
-            set { data._buying = value; }
+            get { return data.buying; }
+            set { data.buying = value; }
         }
 
-        private int _selling = 0;
-        public int selling
+        public long selling
         {
-            get { return data._selling; }
-            set { data._selling = value; }
+            get { return data.selling; }
+            set { data.selling = value; }
         }
 
-        private int _price_not_uom_dependent = 0;
-        public int price_not_uom_dependent
+        public long price_not_uom_dependent
         {
-            get { return data._price_not_uom_dependent; }
-            set { data._price_not_uom_dependent = value; }
+            get { return data.price_not_uom_dependent; }
+            set { data.price_not_uom_dependent = value; }
         }
 
         public string countries

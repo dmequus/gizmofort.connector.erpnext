@@ -62,11 +62,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Attendance
             set { data.company = value; }
         }
 
-        private double _working_hours = 0.0;
         public double working_hours
         {
-            get { return data._working_hours; }
-            set { data._working_hours = value; }
+            get { return data.working_hours; }
+            set { data.working_hours = value; }
         }
 
         public string leave_type
@@ -105,18 +104,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Attendance
             set { data.amended_from = value; }
         }
 
-        private int _late_entry = 0;
-        public int late_entry
+        public long late_entry
         {
-            get { return data._late_entry; }
-            set { data._late_entry = value; }
+            get { return data.late_entry; }
+            set { data.late_entry = value; }
         }
 
-        private int _early_exit = 0;
-        public int early_exit
+        public long early_exit
         {
-            get { return data._early_exit; }
-            set { data._early_exit = value; }
+            get { return data.early_exit; }
+            set { data.early_exit = value; }
         }
 
 

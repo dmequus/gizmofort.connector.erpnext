@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Products_settings
         public ERPProducts_settings() : this(new ERPObject(DocType.Products_settings)) { }
         public ERPProducts_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPProducts_settings Create(int homepageisproducts, int showavailabilitystatus, int productsperpage, int enablefieldfilters, string filterfields, int enableattributefilters, string filterattributes, int hidevariants)
+        public static ERPProducts_settings Create(long homepageisproducts, long showavailabilitystatus, int productsperpage, long enablefieldfilters, string filterfields, long enableattributefilters, string filterattributes, long hidevariants)
 
         {
             ERPProducts_settings obj = new ERPProducts_settings();
@@ -23,32 +23,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Products_settings
             return obj;
         }
 
-        private int _home_page_is_products = 0;
-        public int home_page_is_products
+        public long home_page_is_products
         {
-            get { return data._home_page_is_products; }
-            set { data._home_page_is_products = value; }
+            get { return data.home_page_is_products; }
+            set { data.home_page_is_products = value; }
         }
 
-        private int _show_availability_status = 0;
-        public int show_availability_status
+        public long show_availability_status
         {
-            get { return data._show_availability_status; }
-            set { data._show_availability_status = value; }
+            get { return data.show_availability_status; }
+            set { data.show_availability_status = value; }
         }
 
-        private int _products_per_page = 0;
         public int products_per_page
         {
-            get { return data._products_per_page; }
-            set { data._products_per_page = value; }
+            get { return data.products_per_page; }
+            set { data.products_per_page = value; }
         }
 
-        private int _enable_field_filters = 0;
-        public int enable_field_filters
+        public long enable_field_filters
         {
-            get { return data._enable_field_filters; }
-            set { data._enable_field_filters = value; }
+            get { return data.enable_field_filters; }
+            set { data.enable_field_filters = value; }
         }
 
         public string filter_fields
@@ -57,11 +53,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Products_settings
             set { data.filter_fields = value; }
         }
 
-        private int _enable_attribute_filters = 0;
-        public int enable_attribute_filters
+        public long enable_attribute_filters
         {
-            get { return data._enable_attribute_filters; }
-            set { data._enable_attribute_filters = value; }
+            get { return data.enable_attribute_filters; }
+            set { data.enable_attribute_filters = value; }
         }
 
         public string filter_attributes
@@ -70,11 +65,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Products_settings
             set { data.filter_attributes = value; }
         }
 
-        private int _hide_variants = 0;
-        public int hide_variants
+        public long hide_variants
         {
-            get { return data._hide_variants; }
-            set { data._hide_variants = value; }
+            get { return data.hide_variants; }
+            set { data.hide_variants = value; }
         }
 
 

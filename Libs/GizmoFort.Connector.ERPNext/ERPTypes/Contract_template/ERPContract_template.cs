@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract_template
         public ERPContract_template() : this(new ERPObject(DocType.Contract_template)) { }
         public ERPContract_template(ERPObject obj) : base(obj) { }
 
-        public static ERPContract_template Create(string title, string contractterms, int requiresfulfilment, string fulfilmentterms)
+        public static ERPContract_template Create(string title, string contractterms, long requiresfulfilment, string fulfilmentterms)
 
         {
             ERPContract_template obj = new ERPContract_template();
@@ -36,11 +36,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Contract_template
             set { data.contract_terms = value; }
         }
 
-        private int _requires_fulfilment = 0;
-        public int requires_fulfilment
+        public long requires_fulfilment
         {
-            get { return data._requires_fulfilment; }
-            set { data._requires_fulfilment = value; }
+            get { return data.requires_fulfilment; }
+            set { data.requires_fulfilment = value; }
         }
 
         public string fulfilment_terms

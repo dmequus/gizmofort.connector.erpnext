@@ -45,18 +45,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Buying_settings
             set { data.pr_required = value.ToString(); }
         }
 
-        private int _maintain_same_rate = 0;
-        public int maintain_same_rate
+        public long maintain_same_rate
         {
-            get { return data._maintain_same_rate; }
-            set { data._maintain_same_rate = value; }
+            get { return data.maintain_same_rate; }
+            set { data.maintain_same_rate = value; }
         }
 
-        private int _allow_multiple_items = 0;
-        public int allow_multiple_items
+        public long allow_multiple_items
         {
-            get { return data._allow_multiple_items; }
-            set { data._allow_multiple_items = value; }
+            get { return data.allow_multiple_items; }
+            set { data.allow_multiple_items = value; }
         }
 
         public Backflushrawmaterialsofsubcontractbasedon backflush_raw_materials_of_subcontract_based_on
@@ -65,11 +63,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Buying_settings
             set { data.backflush_raw_materials_of_subcontract_based_on = value.ToString(); }
         }
 
-        private double _over_transfer_allowance = 0.0;
         public double over_transfer_allowance
         {
-            get { return data._over_transfer_allowance; }
-            set { data._over_transfer_allowance = value; }
+            get { return data.over_transfer_allowance; }
+            set { data.over_transfer_allowance = value; }
         }
 
 

@@ -59,18 +59,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Quick_stock_balance
             set { data.item_description = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
-        private double _value = 0.0;
         public double value
         {
-            get { return data._value; }
-            set { data._value = value; }
+            get { return data.value; }
+            set { data.value = value; }
         }
 
         public string image

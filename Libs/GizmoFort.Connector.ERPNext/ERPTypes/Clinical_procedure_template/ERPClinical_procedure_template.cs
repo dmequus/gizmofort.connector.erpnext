@@ -54,25 +54,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_template
             set { data.medical_department = value; }
         }
 
-        private int _is_billable = 0;
-        public int is_billable
+        public long is_billable
         {
-            get { return data._is_billable; }
-            set { data._is_billable = value; }
+            get { return data.is_billable; }
+            set { data.is_billable = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private int _consume_stock = 0;
-        public int consume_stock
+        public long consume_stock
         {
-            get { return data._consume_stock; }
-            set { data._consume_stock = value; }
+            get { return data.consume_stock; }
+            set { data.consume_stock = value; }
         }
 
         public string items
@@ -93,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_template
             set { data.sample_uom = value; }
         }
 
-        private double _sample_qty = 0.0;
         public double sample_qty
         {
-            get { return data._sample_qty; }
-            set { data._sample_qty = value; }
+            get { return data.sample_qty; }
+            set { data.sample_qty = value; }
         }
 
         public string sample_details
@@ -106,18 +102,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_template
             set { data.sample_details = value; }
         }
 
-        private int _change_in_item = 0;
-        public int change_in_item
+        public long change_in_item
         {
-            get { return data._change_in_item; }
-            set { data._change_in_item = value; }
+            get { return data.change_in_item; }
+            set { data.change_in_item = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
         public string item

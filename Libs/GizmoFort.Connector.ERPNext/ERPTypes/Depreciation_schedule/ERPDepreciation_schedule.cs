@@ -39,18 +39,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Depreciation_schedule
             set { data.schedule_date = value; }
         }
 
-        private double _depreciation_amount = 0.0;
         public double depreciation_amount
         {
-            get { return data._depreciation_amount; }
-            set { data._depreciation_amount = value; }
+            get { return data.depreciation_amount; }
+            set { data.depreciation_amount = value; }
         }
 
-        private double _accumulated_depreciation_amount = 0.0;
         public double accumulated_depreciation_amount
         {
-            get { return data._accumulated_depreciation_amount; }
-            set { data._accumulated_depreciation_amount = value; }
+            get { return data.accumulated_depreciation_amount; }
+            set { data.accumulated_depreciation_amount = value; }
         }
 
         public string journal_entry

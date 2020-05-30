@@ -33,11 +33,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_group
             set { data.parent_item_group = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public string image
@@ -58,11 +57,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_group
             set { data.taxes = value; }
         }
 
-        private int _show_in_website = 0;
-        public int show_in_website
+        public long show_in_website
         {
-            get { return data._show_in_website; }
-            set { data._show_in_website = value; }
+            get { return data.show_in_website; }
+            set { data.show_in_website = value; }
         }
 
         public string route
@@ -71,11 +69,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_group
             set { data.route = value; }
         }
 
-        private int _weightage = 0;
         public int weightage
         {
-            get { return data._weightage; }
-            set { data._weightage = value; }
+            get { return data.weightage; }
+            set { data.weightage = value; }
         }
 
         public string slideshow
@@ -96,18 +93,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_group
             set { data.website_specifications = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

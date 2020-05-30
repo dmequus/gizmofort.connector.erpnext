@@ -74,11 +74,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_appointment
             set { data.appointment_type = value; }
         }
 
-        private int _duration = 0;
         public int duration
         {
-            get { return data._duration; }
-            set { data._duration = value; }
+            get { return data.duration; }
+            set { data.duration = value; }
         }
 
         public Status status
@@ -141,18 +140,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_appointment
             set { data.mode_of_payment = value; }
         }
 
-        private double _paid_amount = 0.0;
         public double paid_amount
         {
-            get { return data._paid_amount; }
-            set { data._paid_amount = value; }
+            get { return data.paid_amount; }
+            set { data.paid_amount = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string notes
@@ -167,11 +164,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Patient_appointment
             set { data.referring_practitioner = value; }
         }
 
-        private int _reminded = 0;
-        public int reminded
+        public long reminded
         {
-            get { return data._reminded; }
-            set { data._reminded = value; }
+            get { return data.reminded; }
+            set { data.reminded = value; }
         }
 
         public string therapy_type

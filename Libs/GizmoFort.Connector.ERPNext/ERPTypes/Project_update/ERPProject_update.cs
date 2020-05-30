@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project_update
         public ERPProject_update() : this(new ERPObject(DocType.Project_update)) { }
         public ERPProject_update(ERPObject obj) : base(obj) { }
 
-        public static ERPProject_update Create(string namingseries, string project, int sent, string date, string time, string users, string amendedfrom)
+        public static ERPProject_update Create(string namingseries, string project, long sent, string date, string time, string users, string amendedfrom)
 
         {
             ERPProject_update obj = new ERPProject_update();
@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Project_update
             set { data.project = value; }
         }
 
-        private int _sent = 0;
-        public int sent
+        public long sent
         {
-            get { return data._sent; }
-            set { data._sent = value; }
+            get { return data.sent; }
+            set { data.sent = value; }
         }
 
         public string date

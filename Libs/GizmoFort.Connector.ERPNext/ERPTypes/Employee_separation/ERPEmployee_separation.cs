@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_separation
         public ERPEmployee_separation() : this(new ERPObject(DocType.Employee_separation)) { }
         public ERPEmployee_separation(ERPObject obj) : base(obj) { }
 
-        public static ERPEmployee_separation Create(string employeename, string employee, string resignationletterdate, Boardingstatus boardingstatus, int notifyusersbyemail, string employeeseparationtemplate, string company, string project, string department, string designation, string employeegrade, string activities, string exitinterview, string amendedfrom)
+        public static ERPEmployee_separation Create(string employeename, string employee, string resignationletterdate, Boardingstatus boardingstatus, long notifyusersbyemail, string employeeseparationtemplate, string company, string project, string department, string designation, string employeegrade, string activities, string exitinterview, string amendedfrom)
 
         {
             ERPEmployee_separation obj = new ERPEmployee_separation();
@@ -58,11 +58,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Employee_separation
             set { data.boarding_status = value.ToString(); }
         }
 
-        private int _notify_users_by_email = 0;
-        public int notify_users_by_email
+        public long notify_users_by_email
         {
-            get { return data._notify_users_by_email; }
-            set { data._notify_users_by_email = value; }
+            get { return data.notify_users_by_email; }
+            set { data.notify_users_by_email = value; }
         }
 
         public string employee_separation_template

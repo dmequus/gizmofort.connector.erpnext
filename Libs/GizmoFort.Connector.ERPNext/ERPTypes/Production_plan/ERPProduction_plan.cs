@@ -102,25 +102,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan
             set { data.material_requests = value; }
         }
 
-        private int _include_non_stock_items = 0;
-        public int include_non_stock_items
+        public long include_non_stock_items
         {
-            get { return data._include_non_stock_items; }
-            set { data._include_non_stock_items = value; }
+            get { return data.include_non_stock_items; }
+            set { data.include_non_stock_items = value; }
         }
 
-        private int _include_subcontracted_items = 0;
-        public int include_subcontracted_items
+        public long include_subcontracted_items
         {
-            get { return data._include_subcontracted_items; }
-            set { data._include_subcontracted_items = value; }
+            get { return data.include_subcontracted_items; }
+            set { data.include_subcontracted_items = value; }
         }
 
-        private int _ignore_existing_ordered_qty = 0;
-        public int ignore_existing_ordered_qty
+        public long ignore_existing_ordered_qty
         {
-            get { return data._ignore_existing_ordered_qty; }
-            set { data._ignore_existing_ordered_qty = value; }
+            get { return data.ignore_existing_ordered_qty; }
+            set { data.ignore_existing_ordered_qty = value; }
         }
 
         public string mr_items
@@ -129,18 +126,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Production_plan
             set { data.mr_items = value; }
         }
 
-        private double _total_planned_qty = 0.0;
         public double total_planned_qty
         {
-            get { return data._total_planned_qty; }
-            set { data._total_planned_qty = value; }
+            get { return data.total_planned_qty; }
+            set { data.total_planned_qty = value; }
         }
 
-        private double _total_produced_qty = 0.0;
         public double total_produced_qty
         {
-            get { return data._total_produced_qty; }
-            set { data._total_produced_qty = value; }
+            get { return data.total_produced_qty; }
+            set { data.total_produced_qty = value; }
         }
 
         public Status status

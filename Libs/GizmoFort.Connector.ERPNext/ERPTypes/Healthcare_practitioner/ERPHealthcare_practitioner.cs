@@ -119,11 +119,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_practitioner
             set { data.op_consulting_charge_item = value; }
         }
 
-        private double _op_consulting_charge = 0.0;
         public double op_consulting_charge
         {
-            get { return data._op_consulting_charge; }
-            set { data._op_consulting_charge = value; }
+            get { return data.op_consulting_charge; }
+            set { data.op_consulting_charge = value; }
         }
 
         public string inpatient_visit_charge_item
@@ -132,11 +131,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_practitioner
             set { data.inpatient_visit_charge_item = value; }
         }
 
-        private double _inpatient_visit_charge = 0.0;
         public double inpatient_visit_charge
         {
-            get { return data._inpatient_visit_charge; }
-            set { data._inpatient_visit_charge = value; }
+            get { return data.inpatient_visit_charge; }
+            set { data.inpatient_visit_charge = value; }
         }
 
         public string address_html

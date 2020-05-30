@@ -107,11 +107,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Member
             set { data.customer_id = value; }
         }
 
-        private int _subscription_activated = 0;
-        public int subscription_activated
+        public long subscription_activated
         {
-            get { return data._subscription_activated; }
-            set { data._subscription_activated = value; }
+            get { return data.subscription_activated; }
+            set { data.subscription_activated = value; }
         }
 
         public string subscription_start

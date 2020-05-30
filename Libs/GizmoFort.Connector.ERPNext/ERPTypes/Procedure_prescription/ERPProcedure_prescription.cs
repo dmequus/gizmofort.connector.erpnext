@@ -57,25 +57,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Procedure_prescription
             set { data.comments = value; }
         }
 
-        private int _appointment_booked = 0;
-        public int appointment_booked
+        public long appointment_booked
         {
-            get { return data._appointment_booked; }
-            set { data._appointment_booked = value; }
+            get { return data.appointment_booked; }
+            set { data.appointment_booked = value; }
         }
 
-        private int _procedure_created = 0;
-        public int procedure_created
+        public long procedure_created
         {
-            get { return data._procedure_created; }
-            set { data._procedure_created = value; }
+            get { return data.procedure_created; }
+            set { data.procedure_created = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
 

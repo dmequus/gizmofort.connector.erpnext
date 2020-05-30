@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Monthly_distribution_percentage
 
         }
 
-        private double _percentage_allocation = 0.0;
         public double percentage_allocation
         {
-            get { return data._percentage_allocation; }
-            set { data._percentage_allocation = value; }
+            get { return data.percentage_allocation; }
+            set { data.percentage_allocation = value; }
         }
 
 

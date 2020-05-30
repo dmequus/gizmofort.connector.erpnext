@@ -55,11 +55,13 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bank_statement_transaction_settin
     public enum Mappeddatatype
     {
         [Description("Account")]
-        Account,
+        CustomerAccount,
         [Description("Customer")]
         Customer,
         [Description("Supplier")]
         Supplier,
+        [Description("Account")]
+        SupplierAccount,
     }
 
 

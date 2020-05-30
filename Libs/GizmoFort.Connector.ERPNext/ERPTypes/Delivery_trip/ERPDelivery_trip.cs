@@ -68,18 +68,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Delivery_trip
             set { data.naming_series = value; }
         }
 
-        private int _email_notification_sent = 0;
-        public int email_notification_sent
+        public long email_notification_sent
         {
-            get { return data._email_notification_sent; }
-            set { data._email_notification_sent = value; }
+            get { return data.email_notification_sent; }
+            set { data.email_notification_sent = value; }
         }
 
-        private double _total_distance = 0.0;
         public double total_distance
         {
-            get { return data._total_distance; }
-            set { data._total_distance = value; }
+            get { return data.total_distance; }
+            set { data.total_distance = value; }
         }
 
         public string uom

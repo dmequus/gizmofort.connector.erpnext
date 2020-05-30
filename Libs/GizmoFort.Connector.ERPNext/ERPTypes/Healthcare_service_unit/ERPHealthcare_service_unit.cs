@@ -40,11 +40,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit
             set { data.parent_healthcare_service_unit = value; }
         }
 
-        private int _is_group = 0;
-        public int is_group
+        public long is_group
         {
-            get { return data._is_group; }
-            set { data._is_group = value; }
+            get { return data.is_group; }
+            set { data.is_group = value; }
         }
 
         public string service_unit_type
@@ -53,25 +52,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit
             set { data.service_unit_type = value; }
         }
 
-        private int _allow_appointments = 0;
-        public int allow_appointments
+        public long allow_appointments
         {
-            get { return data._allow_appointments; }
-            set { data._allow_appointments = value; }
+            get { return data.allow_appointments; }
+            set { data.allow_appointments = value; }
         }
 
-        private int _overlap_appointments = 0;
-        public int overlap_appointments
+        public long overlap_appointments
         {
-            get { return data._overlap_appointments; }
-            set { data._overlap_appointments = value; }
+            get { return data.overlap_appointments; }
+            set { data.overlap_appointments = value; }
         }
 
-        private int _inpatient_occupancy = 0;
-        public int inpatient_occupancy
+        public long inpatient_occupancy
         {
-            get { return data._inpatient_occupancy; }
-            set { data._inpatient_occupancy = value; }
+            get { return data.inpatient_occupancy; }
+            set { data.inpatient_occupancy = value; }
         }
 
         public Occupancystatus occupancy_status
@@ -86,18 +82,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Healthcare_service_unit
             set { data.warehouse = value; }
         }
 
-        private int _lft = 0;
         public int lft
         {
-            get { return data._lft; }
-            set { data._lft = value; }
+            get { return data.lft; }
+            set { data.lft = value; }
         }
 
-        private int _rgt = 0;
         public int rgt
         {
-            get { return data._rgt; }
-            set { data._rgt = value; }
+            get { return data.rgt; }
+            set { data.rgt = value; }
         }
 
         public string old_parent

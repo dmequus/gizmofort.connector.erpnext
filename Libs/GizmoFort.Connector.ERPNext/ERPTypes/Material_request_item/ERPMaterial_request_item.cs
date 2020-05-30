@@ -39,11 +39,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_item
             set { data.description = value; }
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string uom
@@ -52,11 +51,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_item
             set { data.uom = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
         public string stock_uom
@@ -89,25 +87,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_item
             set { data.warehouse = value; }
         }
 
-        private double _rate = 0.0;
         public double rate
         {
-            get { return data._rate; }
-            set { data._rate = value; }
+            get { return data.rate; }
+            set { data.rate = value; }
         }
 
-        private double _amount = 0.0;
         public double amount
         {
-            get { return data._amount; }
-            set { data._amount = value; }
+            get { return data.amount; }
+            set { data.amount = value; }
         }
 
-        private double _stock_qty = 0.0;
         public double stock_qty
         {
-            get { return data._stock_qty; }
-            set { data._stock_qty = value; }
+            get { return data.stock_qty; }
+            set { data.stock_qty = value; }
         }
 
         public string item_group
@@ -158,32 +153,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_item
             set { data.material_request_plan_item = value; }
         }
 
-        private double _min_order_qty = 0.0;
         public double min_order_qty
         {
-            get { return data._min_order_qty; }
-            set { data._min_order_qty = value; }
+            get { return data.min_order_qty; }
+            set { data.min_order_qty = value; }
         }
 
-        private double _projected_qty = 0.0;
         public double projected_qty
         {
-            get { return data._projected_qty; }
-            set { data._projected_qty = value; }
+            get { return data.projected_qty; }
+            set { data.projected_qty = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
-        private double _ordered_qty = 0.0;
         public double ordered_qty
         {
-            get { return data._ordered_qty; }
-            set { data._ordered_qty = value; }
+            get { return data.ordered_qty; }
+            set { data.ordered_qty = value; }
         }
 
         public string expense_account
@@ -198,18 +189,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Material_request_item
             set { data.cost_center = value; }
         }
 
-        private int _page_break = 0;
-        public int page_break
+        public long page_break
         {
-            get { return data._page_break; }
-            set { data._page_break = value; }
+            get { return data.page_break; }
+            set { data.page_break = value; }
         }
 
-        private double _received_qty = 0.0;
         public double received_qty
         {
-            get { return data._received_qty; }
-            set { data._received_qty = value; }
+            get { return data.received_qty; }
+            set { data.received_qty = value; }
         }
 
         public string manufacturer

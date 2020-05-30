@@ -60,18 +60,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test_template
             set { data.lab_test_template_type = value.ToString(); }
         }
 
-        private int _is_billable = 0;
-        public int is_billable
+        public long is_billable
         {
-            get { return data._is_billable; }
-            set { data._is_billable = value; }
+            get { return data.is_billable; }
+            set { data.is_billable = value; }
         }
 
-        private double _lab_test_rate = 0.0;
         public double lab_test_rate
         {
-            get { return data._lab_test_rate; }
-            set { data._lab_test_rate = value; }
+            get { return data.lab_test_rate; }
+            set { data.lab_test_rate = value; }
         }
 
         public string lab_test_uom
@@ -92,11 +90,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test_template
             set { data.normal_test_templates = value; }
         }
 
-        private int _sensitivity = 0;
-        public int sensitivity
+        public long sensitivity
         {
-            get { return data._sensitivity; }
-            set { data._sensitivity = value; }
+            get { return data.sensitivity; }
+            set { data.sensitivity = value; }
         }
 
         public string special_test_template
@@ -129,25 +126,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test_template
             set { data.sample_uom = value; }
         }
 
-        private int _change_in_item = 0;
-        public int change_in_item
+        public long change_in_item
         {
-            get { return data._change_in_item; }
-            set { data._change_in_item = value; }
+            get { return data.change_in_item; }
+            set { data.change_in_item = value; }
         }
 
-        private int _disabled = 0;
-        public int disabled
+        public long disabled
         {
-            get { return data._disabled; }
-            set { data._disabled = value; }
+            get { return data.disabled; }
+            set { data.disabled = value; }
         }
 
-        private double _sample_qty = 0.0;
         public double sample_qty
         {
-            get { return data._sample_qty; }
-            set { data._sample_qty = value; }
+            get { return data.sample_qty; }
+            set { data.sample_qty = value; }
         }
 
         public string sample_details

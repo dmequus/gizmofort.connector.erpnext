@@ -109,25 +109,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry
             set { data.posting_time = value; }
         }
 
-        private int _seta_posting_time = 0;
-        public int seta_posting_time
+        public long seta_posting_time
         {
-            get { return data._seta_posting_time; }
-            set { data._seta_posting_time = value; }
+            get { return data.seta_posting_time; }
+            set { data.seta_posting_time = value; }
         }
 
-        private int _inspection_required = 0;
-        public int inspection_required
+        public long inspection_required
         {
-            get { return data._inspection_required; }
-            set { data._inspection_required = value; }
+            get { return data.inspection_required; }
+            set { data.inspection_required = value; }
         }
 
-        private int _from_bom = 0;
-        public int from_bom
+        public long from_bom
         {
-            get { return data._from_bom; }
-            set { data._from_bom = value; }
+            get { return data.from_bom; }
+            set { data.from_bom = value; }
         }
 
         public string bom_no
@@ -136,18 +133,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry
             set { data.bom_no = value; }
         }
 
-        private double _fg_completed_qty = 0.0;
         public double fg_completed_qty
         {
-            get { return data._fg_completed_qty; }
-            set { data._fg_completed_qty = value; }
+            get { return data.fg_completed_qty; }
+            set { data.fg_completed_qty = value; }
         }
 
-        private int _use_multi_level_bom = 0;
-        public int use_multi_level_bom
+        public long use_multi_level_bom
         {
-            get { return data._use_multi_level_bom; }
-            set { data._use_multi_level_bom = value; }
+            get { return data.use_multi_level_bom; }
+            set { data.use_multi_level_bom = value; }
         }
 
         public string from_warehouse
@@ -192,25 +187,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry
             set { data.scan_barcode = value; }
         }
 
-        private double _total_incoming_value = 0.0;
         public double total_incoming_value
         {
-            get { return data._total_incoming_value; }
-            set { data._total_incoming_value = value; }
+            get { return data.total_incoming_value; }
+            set { data.total_incoming_value = value; }
         }
 
-        private double _total_outgoing_value = 0.0;
         public double total_outgoing_value
         {
-            get { return data._total_outgoing_value; }
-            set { data._total_outgoing_value = value; }
+            get { return data.total_outgoing_value; }
+            set { data.total_outgoing_value = value; }
         }
 
-        private double _value_difference = 0.0;
         public double value_difference
         {
-            get { return data._value_difference; }
-            set { data._value_difference = value; }
+            get { return data.value_difference; }
+            set { data.value_difference = value; }
         }
 
         public string additional_costs
@@ -219,11 +211,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry
             set { data.additional_costs = value; }
         }
 
-        private double _total_additional_costs = 0.0;
         public double total_additional_costs
         {
-            get { return data._total_additional_costs; }
-            set { data._total_additional_costs = value; }
+            get { return data.total_additional_costs; }
+            set { data.total_additional_costs = value; }
         }
 
         public string supplier
@@ -298,18 +289,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Stock_entry
             set { data.remarks = value; }
         }
 
-        private double _per_transferred = 0.0;
         public double per_transferred
         {
-            get { return data._per_transferred; }
-            set { data._per_transferred = value; }
+            get { return data.per_transferred; }
+            set { data.per_transferred = value; }
         }
 
-        private double _total_amount = 0.0;
         public double total_amount
         {
-            get { return data._total_amount; }
-            set { data._total_amount = value; }
+            get { return data.total_amount; }
+            set { data.total_amount = value; }
         }
 
         public string job_card

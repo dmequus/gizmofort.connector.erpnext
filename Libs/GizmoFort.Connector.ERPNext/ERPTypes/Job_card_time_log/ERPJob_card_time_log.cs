@@ -16,11 +16,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card_time_log
             return obj;
         }
 
-        private double _completed_qty = 0.0;
         public double completed_qty
         {
-            get { return data._completed_qty; }
-            set { data._completed_qty = value; }
+            get { return data.completed_qty; }
+            set { data.completed_qty = value; }
         }
 
         public string from_time
@@ -35,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Job_card_time_log
             set { data.to_time = value; }
         }
 
-        private double _time_in_mins = 0.0;
         public double time_in_mins
         {
-            get { return data._time_in_mins; }
-            set { data._time_in_mins = value; }
+            get { return data.time_in_mins; }
+            set { data.time_in_mins = value; }
         }
 
 

@@ -139,25 +139,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Vital_signs
             set { data.vital_signs_note = value; }
         }
 
-        private double _height = 0.0;
         public double height
         {
-            get { return data._height; }
-            set { data._height = value; }
+            get { return data.height; }
+            set { data.height = value; }
         }
 
-        private double _weight = 0.0;
         public double weight
         {
-            get { return data._weight; }
-            set { data._weight = value; }
+            get { return data.weight; }
+            set { data.weight = value; }
         }
 
-        private double _bmi = 0.0;
         public double bmi
         {
-            get { return data._bmi; }
-            set { data._bmi = value; }
+            get { return data.bmi; }
+            set { data.bmi = value; }
         }
 
         public string nutrition_note

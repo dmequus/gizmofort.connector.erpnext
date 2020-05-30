@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_alternative
         public ERPItem_alternative() : this(new ERPObject(DocType.Item_alternative)) { }
         public ERPItem_alternative(ERPObject obj) : base(obj) { }
 
-        public static ERPItem_alternative Create(string itemcode, string alternativeitemcode, int twoway, string itemname, string alternativeitemname)
+        public static ERPItem_alternative Create(string itemcode, string alternativeitemcode, long twoway, string itemname, string alternativeitemname)
 
         {
             ERPItem_alternative obj = new ERPItem_alternative();
@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Item_alternative
             set { data.alternative_item_code = value; }
         }
 
-        private int _two_way = 0;
-        public int two_way
+        public long two_way
         {
-            get { return data._two_way; }
-            set { data._two_way = value; }
+            get { return data.two_way; }
+            set { data.two_way = value; }
         }
 
         public string item_name

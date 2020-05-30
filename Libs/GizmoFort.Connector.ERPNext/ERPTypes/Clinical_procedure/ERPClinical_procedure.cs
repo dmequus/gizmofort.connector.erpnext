@@ -119,11 +119,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure
             set { data.sample = value; }
         }
 
-        private int _invoiced = 0;
-        public int invoiced
+        public long invoiced
         {
-            get { return data._invoiced; }
-            set { data._invoiced = value; }
+            get { return data.invoiced; }
+            set { data.invoiced = value; }
         }
 
         public string notes
@@ -138,11 +137,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure
             set { data.company = value; }
         }
 
-        private int _consume_stock = 0;
-        public int consume_stock
+        public long consume_stock
         {
-            get { return data._consume_stock; }
-            set { data._consume_stock = value; }
+            get { return data.consume_stock; }
+            set { data.consume_stock = value; }
         }
 
         public string items
@@ -151,18 +149,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure
             set { data.items = value; }
         }
 
-        private int _invoice_separately_as_consumables = 0;
-        public int invoice_separately_as_consumables
+        public long invoice_separately_as_consumables
         {
-            get { return data._invoice_separately_as_consumables; }
-            set { data._invoice_separately_as_consumables = value; }
+            get { return data.invoice_separately_as_consumables; }
+            set { data.invoice_separately_as_consumables = value; }
         }
 
-        private double _consumable_total_amount = 0.0;
         public double consumable_total_amount
         {
-            get { return data._consumable_total_amount; }
-            set { data._consumable_total_amount = value; }
+            get { return data.consumable_total_amount; }
+            set { data.consumable_total_amount = value; }
         }
 
         public string consumption_details
@@ -171,11 +167,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure
             set { data.consumption_details = value; }
         }
 
-        private int _consumption_invoiced = 0;
-        public int consumption_invoiced
+        public long consumption_invoiced
         {
-            get { return data._consumption_invoiced; }
-            set { data._consumption_invoiced = value; }
+            get { return data.consumption_invoiced; }
+            set { data.consumption_invoiced = value; }
         }
 
         public Status status

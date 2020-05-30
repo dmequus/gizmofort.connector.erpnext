@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_pricing
         public ERPHotel_room_pricing() : this(new ERPObject(DocType.Hotel_room_pricing)) { }
         public ERPHotel_room_pricing(ERPObject obj) : base(obj) { }
 
-        public static ERPHotel_room_pricing Create(int enabled, string currency, string fromdate, string todate, string items)
+        public static ERPHotel_room_pricing Create(long enabled, string currency, string fromdate, string todate, string items)
 
         {
             ERPHotel_room_pricing obj = new ERPHotel_room_pricing();
@@ -20,11 +20,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Hotel_room_pricing
             return obj;
         }
 
-        private int _enabled = 0;
-        public int enabled
+        public long enabled
         {
-            get { return data._enabled; }
-            set { data._enabled = value; }
+            get { return data.enabled; }
+            set { data.enabled = value; }
         }
 
         public string currency

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme
         public ERPPromotional_scheme() : this(new ERPObject(DocType.Promotional_scheme)) { }
         public ERPPromotional_scheme(ERPObject obj) : base(obj) { }
 
-        public static ERPPromotional_scheme Create(Applyon applyon, int disable, string items, string itemgroups, string brands, int mixedconditions, int iscumulative, Applyruleonother applyruleonother, string otheritemcode, string otheritemgroup, string otherbrand, int selling, int buying, Applicablefor applicablefor, string customer, string customergroup, string territory, string salespartner, string campaign, string supplier, string suppliergroup, string validfrom, string validupto, string company, string currency, string pricediscountslabs, string productdiscountslabs)
+        public static ERPPromotional_scheme Create(Applyon applyon, long disable, string items, string itemgroups, string brands, long mixedconditions, long iscumulative, Applyruleonother applyruleonother, string otheritemcode, string otheritemgroup, string otherbrand, long selling, long buying, Applicablefor applicablefor, string customer, string customergroup, string territory, string salespartner, string campaign, string supplier, string suppliergroup, string validfrom, string validupto, string company, string currency, string pricediscountslabs, string productdiscountslabs)
 
         {
             ERPPromotional_scheme obj = new ERPPromotional_scheme();
@@ -48,11 +48,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme
             set { data.apply_on = value.ToString(); }
         }
 
-        private int _disable = 0;
-        public int disable
+        public long disable
         {
-            get { return data._disable; }
-            set { data._disable = value; }
+            get { return data.disable; }
+            set { data.disable = value; }
         }
 
         public string items
@@ -73,18 +72,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme
             set { data.brands = value; }
         }
 
-        private int _mixed_conditions = 0;
-        public int mixed_conditions
+        public long mixed_conditions
         {
-            get { return data._mixed_conditions; }
-            set { data._mixed_conditions = value; }
+            get { return data.mixed_conditions; }
+            set { data.mixed_conditions = value; }
         }
 
-        private int _is_cumulative = 0;
-        public int is_cumulative
+        public long is_cumulative
         {
-            get { return data._is_cumulative; }
-            set { data._is_cumulative = value; }
+            get { return data.is_cumulative; }
+            set { data.is_cumulative = value; }
         }
 
         public Applyruleonother apply_rule_on_other
@@ -111,18 +108,16 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Promotional_scheme
             set { data.other_brand = value; }
         }
 
-        private int _selling = 0;
-        public int selling
+        public long selling
         {
-            get { return data._selling; }
-            set { data._selling = value; }
+            get { return data.selling; }
+            set { data.selling = value; }
         }
 
-        private int _buying = 0;
-        public int buying
+        public long buying
         {
-            get { return data._buying; }
-            set { data._buying = value; }
+            get { return data.buying; }
+            set { data.buying = value; }
         }
 
         public Applicablefor applicable_for

@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Lab_test_groups
             set { data.lab_test_template = value; }
         }
 
-        private double _lab_test_rate = 0.0;
         public double lab_test_rate
         {
-            get { return data._lab_test_rate; }
-            set { data._lab_test_rate = value; }
+            get { return data.lab_test_rate; }
+            set { data.lab_test_rate = value; }
         }
 
         public string lab_test_description

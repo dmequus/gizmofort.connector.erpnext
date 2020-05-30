@@ -34,11 +34,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fee_validity
             set { data.patient = value; }
         }
 
-        private int _visited = 0;
         public int visited
         {
-            get { return data._visited; }
-            set { data._visited = value; }
+            get { return data.visited; }
+            set { data.visited = value; }
         }
 
         public string valid_till
@@ -47,11 +46,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Fee_validity
             set { data.valid_till = value; }
         }
 
-        private int _max_visits = 0;
         public int max_visits
         {
-            get { return data._max_visits; }
-            set { data._max_visits = value; }
+            get { return data.max_visits; }
+            set { data.max_visits = value; }
         }
 
         public Status status

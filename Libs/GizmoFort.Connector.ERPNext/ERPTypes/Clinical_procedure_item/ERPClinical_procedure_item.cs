@@ -30,11 +30,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_item
 
         }
 
-        private double _qty = 0.0;
         public double qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string uom
@@ -61,11 +60,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_item
             set { data.item_name = value; }
         }
 
-        private int _invoice_separately_as_consumables = 0;
-        public int invoice_separately_as_consumables
+        public long invoice_separately_as_consumables
         {
-            get { return data._invoice_separately_as_consumables; }
-            set { data._invoice_separately_as_consumables = value; }
+            get { return data.invoice_separately_as_consumables; }
+            set { data.invoice_separately_as_consumables = value; }
         }
 
         public string batch_no
@@ -74,25 +72,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Clinical_procedure_item
             set { data.batch_no = value; }
         }
 
-        private double _conversion_factor = 0.0;
         public double conversion_factor
         {
-            get { return data._conversion_factor; }
-            set { data._conversion_factor = value; }
+            get { return data.conversion_factor; }
+            set { data.conversion_factor = value; }
         }
 
-        private double _transfer_qty = 0.0;
         public double transfer_qty
         {
-            get { return data._transfer_qty; }
-            set { data._transfer_qty = value; }
+            get { return data.transfer_qty; }
+            set { data.transfer_qty = value; }
         }
 
-        private double _actual_qty = 0.0;
         public double actual_qty
         {
-            get { return data._actual_qty; }
-            set { data._actual_qty = value; }
+            get { return data.actual_qty; }
+            set { data.actual_qty = value; }
         }
 
 

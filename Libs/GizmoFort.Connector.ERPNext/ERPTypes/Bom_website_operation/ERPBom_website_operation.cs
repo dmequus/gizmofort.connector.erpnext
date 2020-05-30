@@ -37,11 +37,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Bom_website_operation
             set { data.workstation = value; }
         }
 
-        private double _time_in_mins = 0.0;
         public double time_in_mins
         {
-            get { return data._time_in_mins; }
-            set { data._time_in_mins = value; }
+            get { return data.time_in_mins; }
+            set { data.time_in_mins = value; }
         }
 
         public string website_image

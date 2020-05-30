@@ -56,11 +56,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.purchase_date = value; }
         }
 
-        private double _gross_purchase_amount = 0.0;
         public double gross_purchase_amount
         {
-            get { return data._gross_purchase_amount; }
-            set { data._gross_purchase_amount = value; }
+            get { return data.gross_purchase_amount; }
+            set { data.gross_purchase_amount = value; }
         }
 
         public string naming_series
@@ -147,32 +146,28 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.available_for_use_date = value; }
         }
 
-        private int _calculate_depreciation = 0;
-        public int calculate_depreciation
+        public long calculate_depreciation
         {
-            get { return data._calculate_depreciation; }
-            set { data._calculate_depreciation = value; }
+            get { return data.calculate_depreciation; }
+            set { data.calculate_depreciation = value; }
         }
 
-        private int _is_existing_asset = 0;
-        public int is_existing_asset
+        public long is_existing_asset
         {
-            get { return data._is_existing_asset; }
-            set { data._is_existing_asset = value; }
+            get { return data.is_existing_asset; }
+            set { data.is_existing_asset = value; }
         }
 
-        private double _opening_accumulated_depreciation = 0.0;
         public double opening_accumulated_depreciation
         {
-            get { return data._opening_accumulated_depreciation; }
-            set { data._opening_accumulated_depreciation = value; }
+            get { return data.opening_accumulated_depreciation; }
+            set { data.opening_accumulated_depreciation = value; }
         }
 
-        private int _number_of_depreciations_booked = 0;
         public int number_of_depreciations_booked
         {
-            get { return data._number_of_depreciations_booked; }
-            set { data._number_of_depreciations_booked = value; }
+            get { return data.number_of_depreciations_booked; }
+            set { data.number_of_depreciations_booked = value; }
         }
 
         public string finance_books
@@ -187,25 +182,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.depreciation_method = value.ToString(); }
         }
 
-        private double _value_after_depreciation = 0.0;
         public double value_after_depreciation
         {
-            get { return data._value_after_depreciation; }
-            set { data._value_after_depreciation = value; }
+            get { return data.value_after_depreciation; }
+            set { data.value_after_depreciation = value; }
         }
 
-        private int _total_number_of_depreciations = 0;
         public int total_number_of_depreciations
         {
-            get { return data._total_number_of_depreciations; }
-            set { data._total_number_of_depreciations = value; }
+            get { return data.total_number_of_depreciations; }
+            set { data.total_number_of_depreciations = value; }
         }
 
-        private int _frequency_of_depreciation = 0;
         public int frequency_of_depreciation
         {
-            get { return data._frequency_of_depreciation; }
-            set { data._frequency_of_depreciation = value; }
+            get { return data.frequency_of_depreciation; }
+            set { data.frequency_of_depreciation = value; }
         }
 
         public string next_depreciation_date
@@ -256,11 +248,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.comprehensive_insurance = value; }
         }
 
-        private int _maintenance_required = 0;
-        public int maintenance_required
+        public long maintenance_required
         {
-            get { return data._maintenance_required; }
-            set { data._maintenance_required = value; }
+            get { return data.maintenance_required; }
+            set { data.maintenance_required = value; }
         }
 
         public Status status
@@ -269,11 +260,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.status = value.ToString(); }
         }
 
-        private int _booked_fixed_asset = 0;
-        public int booked_fixed_asset
+        public long booked_fixed_asset
         {
-            get { return data._booked_fixed_asset; }
-            set { data._booked_fixed_asset = value; }
+            get { return data.booked_fixed_asset; }
+            set { data.booked_fixed_asset = value; }
         }
 
         public string purchase_receipt
@@ -282,11 +272,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.purchase_receipt = value; }
         }
 
-        private double _purchase_receipt_amount = 0.0;
         public double purchase_receipt_amount
         {
-            get { return data._purchase_receipt_amount; }
-            set { data._purchase_receipt_amount = value; }
+            get { return data.purchase_receipt_amount; }
+            set { data.purchase_receipt_amount = value; }
         }
 
         public string purchase_invoice
@@ -307,11 +296,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Asset
             set { data.amended_from = value; }
         }
 
-        private int _allow_monthly_depreciation = 0;
-        public int allow_monthly_depreciation
+        public long allow_monthly_depreciation
         {
-            get { return data._allow_monthly_depreciation; }
-            set { data._allow_monthly_depreciation = value; }
+            get { return data.allow_monthly_depreciation; }
+            set { data.allow_monthly_depreciation = value; }
         }
 
 

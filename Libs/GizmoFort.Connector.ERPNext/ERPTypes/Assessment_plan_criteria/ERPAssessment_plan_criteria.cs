@@ -28,11 +28,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Assessment_plan_criteria
 
         }
 
-        private double _maximum_score = 0.0;
         public double maximum_score
         {
-            get { return data._maximum_score; }
-            set { data._maximum_score = value; }
+            get { return data.maximum_score; }
+            set { data.maximum_score = value; }
         }
 
 

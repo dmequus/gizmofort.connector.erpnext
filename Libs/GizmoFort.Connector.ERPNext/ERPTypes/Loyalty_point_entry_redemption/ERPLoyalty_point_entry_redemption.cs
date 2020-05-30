@@ -35,11 +35,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Loyalty_point_entry_redemption
             set { data.redemption_date = value; }
         }
 
-        private int _redeemed_points = 0;
         public int redeemed_points
         {
-            get { return data._redeemed_points; }
-            set { data._redeemed_points = value; }
+            get { return data.redeemed_points; }
+            set { data.redeemed_points = value; }
         }
 
 

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard_variable
         public ERPSupplier_scorecard_variable() : this(new ERPObject(DocType.Supplier_scorecard_variable)) { }
         public ERPSupplier_scorecard_variable(ERPObject obj) : base(obj) { }
 
-        public static ERPSupplier_scorecard_variable Create(string variablelabel, int iscustom, string paramname, string path, string description)
+        public static ERPSupplier_scorecard_variable Create(string variablelabel, long iscustom, string paramname, string path, string description)
 
         {
             ERPSupplier_scorecard_variable obj = new ERPSupplier_scorecard_variable();
@@ -31,11 +31,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Supplier_scorecard_variable
 
         }
 
-        private int _is_custom = 0;
-        public int is_custom
+        public long is_custom
         {
-            get { return data._is_custom; }
-            set { data._is_custom = value; }
+            get { return data.is_custom; }
+            set { data.is_custom = value; }
         }
 
         public string param_name

@@ -8,7 +8,7 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription_settings
         public ERPSubscription_settings() : this(new ERPObject(DocType.Subscription_settings)) { }
         public ERPSubscription_settings(ERPObject obj) : base(obj) { }
 
-        public static ERPSubscription_settings Create(int graceperiod, int cancelaftergrace, int prorate)
+        public static ERPSubscription_settings Create(int graceperiod, long cancelaftergrace, long prorate)
 
         {
             ERPSubscription_settings obj = new ERPSubscription_settings();
@@ -18,25 +18,22 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription_settings
             return obj;
         }
 
-        private int _grace_period = 0;
         public int grace_period
         {
-            get { return data._grace_period; }
-            set { data._grace_period = value; }
+            get { return data.grace_period; }
+            set { data.grace_period = value; }
         }
 
-        private int _cancel_after_grace = 0;
-        public int cancel_after_grace
+        public long cancel_after_grace
         {
-            get { return data._cancel_after_grace; }
-            set { data._cancel_after_grace = value; }
+            get { return data.cancel_after_grace; }
+            set { data.cancel_after_grace = value; }
         }
 
-        private int _prorate = 0;
-        public int prorate
+        public long prorate
         {
-            get { return data._prorate; }
-            set { data._prorate = value; }
+            get { return data.prorate; }
+            set { data.prorate = value; }
         }
 
 

@@ -17,11 +17,10 @@ namespace GizmoFort.Connector.ERPNext.ERPTypes.Subscription_plan_detail
             return obj;
         }
 
-        private int _qty = 0;
         public int qty
         {
-            get { return data._qty; }
-            set { data._qty = value; }
+            get { return data.qty; }
+            set { data.qty = value; }
         }
 
         public string plan
